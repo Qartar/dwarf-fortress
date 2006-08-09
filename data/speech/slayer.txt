@@ -1,0 +1,14 @@
+bane
+conqueror
+death
+foe
+killer
+lord
+master
+nemesis
+slayer
+vanquisher
+murderer
+crusher
+extinguisher
+strangler
