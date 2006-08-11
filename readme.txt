@@ -10,6 +10,8 @@ For help with gameplay, press the help key (initially '?') after starting the ga
 Visit www.bay12games.com to report problems, discuss the game and read information on future development.  There are also other games there.
 All of the games there are free.  If you paid for this game, get the latest version for free at bay12games.com.
 
+For a (spoily) list of changes, view the development logs at:  bay12games.com/dwarves/dev_now.html
+
 ******************************************************
 
 LICENSE AGREEMENT:
