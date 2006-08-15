@@ -1,0 +1,13 @@
+TO USE OLD SAVES:
+
+(1) Unzip the new dwarves into a *NEW* folder.
+(2) Copy "data\save" from the old folder into the new folder.  Keep a backup in case something is wrong with the new version.
+(3) When you start, your world should be accessible and ready to play.
+
+Unzipping the new dwarves into your old folder will work most of the time, but if files have changed, it can crash, or worse yet, destroy your saves.
+
+******************************************************
+
+Release notes for 0.21.95.19c:
+
+Old save farmplots might show "Ft 0/0" for the fertilizer amount.  It will update at the beginning of the season.

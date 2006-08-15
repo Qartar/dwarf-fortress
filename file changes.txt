@@ -1,0 +1,8 @@
+Auxiliary file changes for 0.21.95.19c:
+
+New keys -- add/adjust these to any interface.txt files you are saving for yourself
+[BUILDJOB_FARM_FERTILIZE:F]
+[BUILDJOB_FARM_SEASFERT:S]
+
+Changed keys
+[CHANGE_BINDINGS:K]
