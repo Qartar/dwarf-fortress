@@ -5,7 +5,7 @@ Copyright (c) 2002-2006 by Tarn Adams.
 
 ******************************************************
 
-For help with gameplay, press the help key (initially '?') after starting the game.
+For help with gameplay, press the help key (initially '?') after starting the game.  You might have to press ESC and use 2/8 to select keybindings on non-US keyboards in order to get the help key to work properly.
 
 Visit www.bay12games.com to report problems, discuss the game and read information on future development.  There are also other games there.
 All of the games there are free.  If you paid for this game, get the latest version for free at bay12games.com.
@@ -58,7 +58,7 @@ Initial Playtesting: Alan Ames, Alex Mooney, Martin Packman, Ben Ringland and Zo
 Lots of HTML/IT stuff: Martin Packman
 
 
-Many suggestions from fans on the bay12games.com Forum and IRC channel have been incorporated over the years.
+Many suggestions from fans on the bay12games.com and other forums (and the #bay12games IRC channel) have been incorporated over the years.
 
 ******************************************************
 

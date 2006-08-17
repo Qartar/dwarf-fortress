@@ -1,3 +1,13 @@
+Auxiliary file changes for 0.21.100.19a:
+
+New init options, and new help inside the file itself
+[SOUND:ON]
+[INTRO:ON]
+
+Added all of the display strings to the interface file.
+
+******************************************************
+
 Auxiliary file changes for 0.21.95.19c:
 
 New keys -- add/adjust these to any interface.txt files you are saving for yourself
