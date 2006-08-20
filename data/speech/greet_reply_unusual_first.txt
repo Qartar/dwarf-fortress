@@ -1,0 +1,5 @@
+[AUDIENCE:FIRST_NAME]...  your parents must have been interesting!
+You know, you don't meet many people with the name [AUDIENCE:FIRST_NAME].
+So, [AUDIENCE:FIRST_NAME]...   [AUDIENCE:FIRST_NAME], was it?
+[AUDIENCE:FIRST_NAME].  Does that mean something?
+[AUDIENCE:FIRST_NAME].  I can't say I've heard that before.

@@ -26,6 +26,10 @@ If you turn this off, you'll see some atrocious 128 character mode crap.  I didn
 
 [EXTENDED_ASCII:YES]
 
+This controls the number of milliseconds that must pass before a held key sends a repeat press to the game.  You might need to adjust this.
+
+[KEY_HOLD_MS:150]
+
 This controls "more" in adventure mode.  If MORE is set to NO, all announcements will be skipped.  DISPLAY_LENGTH controls how many lines are printed before it gives you the "more" prompt.
 
 [MORE:YES]

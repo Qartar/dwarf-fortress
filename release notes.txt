@@ -34,6 +34,14 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.21.101.19a:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
+Several crash bugs should be fixed now.  Most saves will be recoverage, unless they have a load inflate error.
+
+
+
 Release notes for 0.21.100.19a:
 
 See the file changes txt for new init/interface information.

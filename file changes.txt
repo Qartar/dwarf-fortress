@@ -1,3 +1,14 @@
+Auxiliary file changes for 0.21.101.19a:
+
+New init options
+[KEY_HELD_MS:150] -- controls how long a key must be held before it sends a repeat message
+
+New keys for alphabetic string entry
+[STRING_<x>:<x>] pretty much
+[A_ENTER_NAME:E]
+
+******************************************************
+
 Auxiliary file changes for 0.21.100.19a:
 
 New init options, and new help inside the file itself
