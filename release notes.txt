@@ -34,6 +34,35 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.21.101.19d:
+
+Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
+
+Resolved a unit scrambling issue from active saves in adventure mode.  You will no longer turn into the stray dog in town or a random goblin or warthog.
+
+
+
+Release notes for 0.21.101.19c:
+
+Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
+
+Fixed a few more crash problems, but the main thing was to hopefully remove some of the strange mainly adventure mode instability introduced by the last version.  In case this sort of thing persists, please be careful to backup your saves before trying this one.  Worlds that were generated in or even played in the briefly-available 0.21.101.19b are likely to be twisted to pieces, especially if you played adventure mode.
+
+
+
+
+Release notes for 0.21.101.19b:
+
+Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
+
+Many more crash fixes, including stopping some of those inflate errors.  Those saves are still corrupted though.
+
+I've changed how some of the search routines work.  I tested it out on several saves, but you should keep a copy of yours safe before you try this one just in case, as usual.  If you get around to creating a new world, you'll notice a significant speed increase when the years march up.  Some of this also carries over to the main game.
+
+Finally, aqueduct behavior has been partially repaired.  Building an aqueduct over your chasm should work, but aqueducts over water can randomly drown your fortress.  If you want to get lava over the river, try a stone bridge instead.  If you lava is in a channel next to the bridge, you might need to use a floodgate to get it over.  Bridges over water filled channels probably won't conduct lava properly.  I'll get around to fixing the rest of this in time, but there are still some crash bugs etc. that are higher priority.
+
+
+
 Release notes for 0.21.101.19a:
 
 See the file changes txt for new init/interface information.
