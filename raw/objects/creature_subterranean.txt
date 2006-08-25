@@ -335,7 +335,7 @@ creature_subterranean
 
 [CREATURE:ELEMENTMAN_LAVA]
 	[ADD_VERSION:1097]
-	[NAME:lava man:lava men:lava man]
+	[NAME:magma man:magma men:magma man]
 	[TILE:'M'][COLOR:4:0:1]
 	[LARGE_LAVA][FREQUENCY:1][DIFFICULTY:2]
 	[MODVALUE:5]

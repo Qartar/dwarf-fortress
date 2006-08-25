@@ -705,7 +705,7 @@ creature_standard
 [CREATURE:BLIZZARD_MAN]
 	[ADD_VERSION:1097]
 	[NAME:blizzard man:blizzard men:blizzard man]
-	[TILE:'I'][COLOR:3:0:1]
+	[TILE:'M'][COLOR:3:0:1]
 	[MODVALUE:10]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:1]

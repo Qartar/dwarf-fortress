@@ -1,3 +1,22 @@
+Auxiliary file changes for 0.21.102.19a:
+
+New init options
+[NICKNAME_DWARF:REPLACE_FIRST] -- these say how nicknames are handled
+[NICKNAME_ADVENTURE:REPLACE_FIRST]
+[NICKNAME_LEGENDS:REPLACE_FIRST]
+[WINDOWED:PROMPT] -- set if you want fullscreen/windowed mode
+
+New keys
+[A_STATUS_CUSTOMIZE:Y]
+[UNITVIEW_CUSTOMIZE:Y]
+[CUSTOMIZE_UNIT_NICKNAME:N]
+[CUSTOMIZE_UNIT_PROFNAME:P]
+[TOGGLE_FULLSCREEN:F11] -- toggle fullscreen/windowed mode
+
+Removed a few superfluous entries from interface.txt.
+
+******************************************************
+
 Auxiliary file changes for 0.21.101.19a:
 
 New init options

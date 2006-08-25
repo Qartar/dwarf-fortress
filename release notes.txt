@@ -34,6 +34,24 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.21.102.19a:
+
+Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
+
+Fixed a couple more crashes and various other errors (see the change log).
+
+Genders are mixed on starting animals now and horses should breed.  The unit screen will show some other designations beside "No Job" and there it will distinguish merchants and diplomats.  Water should flow into the cliff face now, at least from new channels.
+
+You can give your units nicknames and profession names now.  Do this from the [vpz] profile using [y] to customize them.  In adventure mode, you do it from the [l]ook + [enter] status view (again [y] to customize).  The [y] command appears onscreen.
+
+Some tantrum issues were fixed.  Placing artifact furniture was actually making them unhappier.  Fist fights and beatings still led to a minor version of the civil war bug.  These issues have been resolved.
+
+The "Shift + R Menu" instead of "n" for the N key has been resolved, though you might need to clean up your old files a bit if you are important old ones.
+
+You can toggle between windowed and fullscreen mode using F11 (or whatever key you bind) whenever you like now.  Let me know what problems come up with this.  I haven't handled direct minimization from fullscreen, but you can toggle and minimize from the windowed mode.  You can also get rid of the "fullscreen?" box that pops up the beginning in "data\init\init.txt" now.
+
+
+
 Release notes for 0.21.101.19d:
 
 Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.

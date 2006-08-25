@@ -6,6 +6,10 @@ Change this to skip the wonderful intro movies.
 
 [INTRO:ON]
 
+This lets you set the starting windowed/fullscreen setting.  Can be YES, NO or PROMPT.
+
+[WINDOWED:PROMPT]
+
 This is the size and font for windowed mode.  Changing to 800x600 and the 800x600 font might make you happier.
 
 [WINDOWEDX:640]
@@ -34,6 +38,12 @@ This controls "more" in adventure mode.  If MORE is set to NO, all announcements
 
 [MORE:YES]
 [DISPLAY_LENGTH:23]
+
+You can use these to say how nicknames are displayed in each mode
+Options are REPLACE_FIRST, CENTRALIZE (between first and last), REPLACE_ALL
+[NICKNAME_DWARF:REPLACE_FIRST]
+[NICKNAME_ADVENTURE:REPLACE_FIRST]
+[NICKNAME_LEGENDS:REPLACE_FIRST]
 
 These are the display colors in RGB.  The game is actually displaying extended ASCII characters in OpenGL, so you can modify the colors.
 
