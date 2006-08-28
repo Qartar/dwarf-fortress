@@ -34,8 +34,30 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.21.104.19a:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+Fixed several crash bugs and cleaned up some affected saves.  I also found out why named creatures were disappearing sometimes and fixed that, though saves in which the problem is currently active will still see some of it.
+
+Chasming refuse is in, though there will probably be some irregularities of which you'll have the pleasure of informing me.
+
+There were some other changes that might help with sheriff/injury tantrums.
+
+Some of the tree designation clearance problems should be gone.
+
+Trade agreements should work properly.
+
+The thieves that enter the fortress are somewhat easier to detect now.
+
+Depending on how you've bound your keys, you should have the odd hold-down behavior only when using a cursor or scrolling now.
+
+
+
 Release notes for 0.21.102.19a:
 
+See the file changes txt for new init/interface information.
 Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
 
 Fixed a couple more crashes and various other errors (see the change log).

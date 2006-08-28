@@ -1,3 +1,13 @@
+Auxiliary file changes for 0.21.104.19a:
+
+New keys
+[STORES_CHASM:C]
+[ORDERS_REFUSE_CHASM_CORPSE:C]
+[ORDERS_REFUSE_CHASM_SKIN:I]
+[ORDERS_REFUSE_CHASM_SKULL:L]
+
+******************************************************
+
 Auxiliary file changes for 0.21.102.19a:
 
 New init options
