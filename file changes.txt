@@ -1,3 +1,13 @@
+Auxiliary file changes for 0.21.104.19c:
+
+New init options
+[ENGRAVINGS_START_OBSCURED:NO] -- lets you have your engravings look the same if you want
+
+New keys
+[DESIGNATE_TOGGLE_ENGRAVING:E]
+
+******************************************************
+
 Auxiliary file changes for 0.21.104.19a:
 
 New keys
