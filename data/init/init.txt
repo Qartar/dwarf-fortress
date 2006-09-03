@@ -26,9 +26,9 @@ If you don't like the ,.`' ground, try setting this to NO.  The ground will turn
 
 [VARIED_GROUND_TILES:YES]
 
-If you turn this off, you'll see some atrocious 128 character mode crap.  I didn't try hard on the map for it, or at all.
+If you'd like your engravings to start off looking the same (you can toggle them on individual later), set this to YES.
 
-[EXTENDED_ASCII:YES]
+[ENGRAVINGS_START_OBSCURED:NO]
 
 This controls the number of milliseconds that must pass before a held key sends a repeat press to the game.  You might need to adjust this.
 

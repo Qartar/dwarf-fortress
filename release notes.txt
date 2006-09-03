@@ -34,6 +34,23 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.21.104.19c:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+Some highlights include fixing the disappearing bone/shell problem and allowing engraved wall images to be toggled on and off.  The detailing jobs shouldn't shut off at random any more.
+
+Some of the issues with cat butchery have been handled.
+
+I did a little bit with consolidating announcments (x2, x3, etc.), but I'll need more time to do it properly.
+
+Alt-tabbing in full screen might work a little better.  Seems to work here is all I can say.
+
+Until I make the cleaners smarter, blood disappears at the beginning of every season now.
+
+
+
 Release notes for 0.21.104.19a:
 
 See the file changes txt for new init/interface information.
