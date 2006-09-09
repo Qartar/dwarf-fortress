@@ -22,6 +22,14 @@ Full screen info.
 [FULLSCREENY:600]
 [FULLFONT:curses_800x600.bmp]
 
+Change this to NO if you don't want to have the mouse involved at all.
+
+[MOUSE:YES]
+
+Change this to YES if you'd like to use a BMP for the mouse cursor.  The image currently lags when the game is lagging however.
+
+[MOUSE_PICTURE:NO]
+
 If you don't like the ,.`' ground, try setting this to NO.  The ground will turn into periods only.
 
 [VARIED_GROUND_TILES:YES]

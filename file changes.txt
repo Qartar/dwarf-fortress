@@ -1,3 +1,11 @@
+Auxiliary file changes for 0.21.104.21a:
+
+New init options
+[MOUSE:YES]
+[MOUSE_PICTURE:NO]
+
+******************************************************
+
 Auxiliary file changes for 0.21.104.19c:
 
 New init options
