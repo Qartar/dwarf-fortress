@@ -1,3 +1,10 @@
+Auxiliary file changes for 0.21.104.21c:
+
+New keys
+[HOTKEY_ASHERY_POTASH_DIRECT:A]
+
+******************************************************
+
 Auxiliary file changes for 0.21.104.21b:
 
 New keys
