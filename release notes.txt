@@ -32,6 +32,17 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.21.104.21c:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+I fixed various bugs and implemented other minor changes.  See the changes list for those.  Nobles can still demand items involving small creature bones in old saves, but the preference is no longer generated in new dwarves.
+
+New worlds will see a few cosmetic changes in adventure mode towns (it was not possible to include them in old saves).  It's probably not worth generating a new world for them (and I haven't put up new pregenerated worlds), but the new towns have some larger cookie-cutter buildings like apartment complexes, and everybody will sleep at night and eat three meals a day from a magic barrel in their room that refills at midnight.  Once the caravans and a notion of wealth are in, this can all be differentiated properly instead.  As we progress along the Bustling Town Arc, it'll eventually be worthwhile to regenerate if you play adventure mode, but it's not a big deal right now.  In old worlds, you might notice some things like merchants taking breaks to wander around or sleeping on the beds in the mead hall.  They are just trying their best to follow the new schedules without having a home to go to.
+
+******************************************************
+
 Release notes for 0.21.104.21b:
 
 See the file changes txt for new init/interface information.
