@@ -32,6 +32,19 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.22.107.21a:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+There will be families and guards in new world towns, concluding the first third of the Bustling Town Arc.
+
+There's a wait key in adventure mode now (period), as well as some helpful "are you sure?" prompts.
+
+Various bug fixes -- including the clothing acquirement bug, the shield equipment bug and some ashery bugs.
+
+******************************************************
+
 Release notes for 0.21.104.21c:
 
 See the file changes txt for new init/interface information.

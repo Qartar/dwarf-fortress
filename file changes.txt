@@ -1,3 +1,10 @@
+Auxiliary file changes for 0.22.107.21a:
+
+New keys
+[A_WAIT:PERIOD]
+
+******************************************************
+
 Auxiliary file changes for 0.21.104.21c:
 
 New keys
