@@ -32,6 +32,46 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.22.110.22e:
+
+Fixed a save corrupting problem.
+
+******************************************************
+
+Release notes for 0.22.110.22d:
+
+Quick patch for a crash bug from saving furniture piles.
+
+******************************************************
+
+Release notes for 0.22.110.22c:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+Aside from fixing some crash bugs, the main change this time is the addition of specific pile types.  You can access these from [q] on existing piles or you can set them when you are placing piles by selecting "custom settings".  Piles now make claims on bins and barrels.  This is displayed as "Cedar Bin <#12>".  You can use the [q] view for a pile to set the maximum number of bins and barrels it uses.  For now, a pile will only take one extra empty bin/barrel until something is placed inside, then it will take another until it gets up to the maximum.  We'll add some other options later.  In the [p]ile menu, you can also designate a number of reserved bins and barrels that will be used by jobs such as distillation before any stockpile gets to claim them.
+
+******************************************************
+
+Release notes for 0.22.110.22a:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+I fixed a lot of bugs; see the dev list.
+
+The main change for this version was the rewrite of the inventory system.  There will probably be several compat. issues, as well as various horrible bugs.  I've tested and fixed what I've found, but you'll find more.  **Back up your old saves before trying this version**  The old saves will work with this version, but you need to be careful with them.
+
+Those that deserve fingers and toes have them in this version.  You'll also notice right/left gloves.  Creatures lose items now with severs, so you'll lose your left gauntlet if your left arm is removed, for instance.
+
+Creatures are a bit silly about wear they put on rings and other trinkets.  Rings will probably pile up on the right thumb for instance, and earrings will pile up in the right ear.  Armor stands will also only store one glove and one boot for the time being.  This will be sorted out over time.
+
+There aren't any temperature effects despite the residents wearing clothing depending on the average temperature.  This will also be handled later.
+
+Finally, there aren't any gender links to clothing right now, so you might see male dwarves in "dresses" and "skirts".  Keep in mind that men all over the world wear clothing like this, and that's what is meant by these generic terms.  You can remove the items from the entity raw before you play if it makes you feel uncomfortable.
+
+******************************************************
+
 Release notes for 0.22.107.21a:
 
 See the file changes txt for new init/interface information.
