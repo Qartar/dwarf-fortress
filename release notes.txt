@@ -32,6 +32,15 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.22.110.22f:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+This release is mainly to handle the issues with specific piles.  There are a few other bug fixes as well.
+
+******************************************************
+
 Release notes for 0.22.110.22e:
 
 Fixed a save corrupting problem.
