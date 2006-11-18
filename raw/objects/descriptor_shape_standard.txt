@@ -1,0 +1,73 @@
+descriptor_shape_standard
+
+[OBJECT:DESCRIPTOR]
+
+[SHAPE:STAR]
+	[NAME:star:stars]
+	[WORD:STAR]
+	[ADJ:three-pointed]
+	[ADJ:four-pointed]
+	[ADJ:five-pointed]
+	[ADJ:many-pointed]
+	[TILE:'*']
+
+[SHAPE:CRESCENT]
+	[NAME:crescent:crescents]
+	[WORD:CRESCENT]
+	[ADJ:narrow]
+	[ADJ:thick]
+	[TILE:'(']
+
+[SHAPE:CROSS]
+	[NAME:cross:crosses]
+	[WORD:CROSS_NOUN]
+	[ADJ:broad]
+	[ADJ:tall]
+	[ADJ:thin]
+	[TILE:'+']
+
+[SHAPE:SQUARE]
+	[NAME:square:squares]
+	[TILE:254]
+
+[SHAPE:SQUARE]
+	[NAME:square:squares]
+	[TILE:254]
+
+[SHAPE:CIRCLE]
+	[NAME:circle:circles]
+	[TILE:9]
+
+[SHAPE:DIAMOND]
+	[NAME:diamond:diamonds]
+	[TILE:4]
+
+[SHAPE:SUN]
+	[NAME:sun:suns]
+	[WORD:SUN]
+	[ADJ:shining]
+	[ADJ:blazing]
+	[TILE:15]
+
+[SHAPE:MOON]
+	[NAME:moon:moons]
+	[WORD:MOON]
+	[ADJ:hidden]
+	[ADJ:full]
+	[ADJ:crescent]
+	[ADJ:half]
+	[TILE:7]
+
+[SHAPE:WAVE]
+	[NAME:wave:waves]
+	[WORD:WAVE]
+	[TILE:247]
+
+[SHAPE:MOUNTAIN]
+	[NAME:mountain:mountains]
+	[WORD:MOUNTAIN]
+	[TILE:30]
+
+[SHAPE:CLOUD]
+	[NAME:cloud:clouds]
+	[TILE:236]

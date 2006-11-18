@@ -1,0 +1,391 @@
+descriptor_color_standard
+
+[OBJECT:DESCRIPTOR]
+
+[COLOR:AMBER]
+	[NAME:amber]
+	[RGB:255:191:0]
+
+[COLOR:AMETHYST]
+	[NAME:amethyst]
+	[RGB:153:102:204]
+
+[COLOR:AQUA]
+	[NAME:aqua]
+	[RGB:0:255:255]
+
+[COLOR:AQUAMARINE]
+	[NAME:aquamarine]
+	[RGB:127:255:212]
+
+[COLOR:AZURE]
+	[NAME:azure]
+	[RGB:0:127:255]
+
+[COLOR:BEIGE]
+	[NAME:beige]
+	[RGB:245:245:220]
+
+[COLOR:BLACK]
+	[NAME:black]
+	[WORD:BLACK]
+	[RGB:0:0:0]
+
+[COLOR:BLUE]
+	[NAME:blue]
+	[WORD:BLUE]
+	[RGB:0:0:255]
+
+[COLOR:BRASS]
+	[NAME:brass]
+	[RGB:181:166:66]
+
+[COLOR:BRONZE]
+	[NAME:bronze]
+	[WORD:BRONZE]
+	[RGB:205:127:50]
+
+[COLOR:BROWN]
+	[NAME:brown]
+	[RGB:150:75:0]
+
+[COLOR:BURNT_SIENNA]
+	[NAME:burnt sienna]
+	[RGB:233:116:81]
+
+[COLOR:BURNT_UMBER]
+	[NAME:burnt umber]
+	[RGB:138:51:36]
+
+[COLOR:CARDINAL]
+	[NAME:cardinal]
+	[RGB:196:30:58]
+
+[COLOR:CARMINE]
+	[NAME:carmine]
+	[RGB:150:0:24]
+
+[COLOR:CERULEAN]
+	[NAME:cerulean]
+	[RGB:0:123:167]
+
+[COLOR:CHARTREUSE]
+	[NAME:chartreuse]
+	[RGB:127:255:0]
+
+[COLOR:CHESTNUT]
+	[NAME:chestnut]
+	[RGB:205:92:92]
+
+[COLOR:CHOCOLATE]
+	[NAME:chocolate]
+	[RGB:210:105:30]
+
+[COLOR:CINNAMON]
+	[NAME:cinnamon]
+	[RGB:123:63:0]
+
+[COLOR:COBALT]
+	[NAME:cobalt]
+	[RGB:0:71:171]
+
+[COLOR:COPPER]
+	[NAME:copper]
+	[WORD:COPPER]
+	[RGB:184:115:51]
+
+[COLOR:CREAM]
+	[NAME:cream]
+	[WORD:CREAM]
+	[RGB:255:253:208]
+
+[COLOR:CRIMSON]
+	[NAME:crimson]
+	[WORD:CRIMSON]
+	[RGB:220:20:60]
+
+[COLOR:DARK_BROWN]
+	[NAME:dark brown]
+	[RGB:101:67:33]
+
+[COLOR:DARK_CHESTNUT]
+	[NAME:dark chestnut]
+	[RGB:152:105:96]
+
+[COLOR:DARK_GREEN]
+	[NAME:dark green]
+	[WORD:GREEN]
+	[RGB:1:50:32]
+
+[COLOR:DARK_INDIGO]
+	[NAME:dark indigo]
+	[RGB:49:0:98]
+
+[COLOR:DARK_OLIVE]
+	[NAME:dark olive]
+	[RGB:85:104:50]
+
+[COLOR:DARK_PEACH]
+	[NAME:dark peach]
+	[WORD:PEACH]
+	[RGB:255:218:185]
+
+[COLOR:DARK_PINK]
+	[NAME:dark pink]
+	[RGB:231:84:128]
+
+[COLOR:DARK_SCARLET]
+	[NAME:dark scarlet]
+	[RGB:86:3:25]
+
+[COLOR:DARK_TAN]
+	[NAME:dark tan]
+	[RGB:145:129:81]
+
+[COLOR:DARK_VIOLET]
+	[NAME:dark violet]
+	[WORD:VIOLET]
+	[RGB:66:49:137]
+
+[COLOR:EMERALD]
+	[NAME:emerald]
+	[RGB:80:200:120]
+
+[COLOR:FERN_GREEN]
+	[NAME:fern green]
+	[WORD:GREEN]
+	[RGB:79:121:66]
+
+[COLOR:FLAX]
+	[NAME:flax]
+	[RGB:238:220:130]
+
+[COLOR:FUCHSIA]
+	[NAME:fuchsia]
+	[RGB:244:0:161]
+
+[COLOR:GOLD]
+	[NAME:gold]
+	[WORD:GOLD]
+	[RGB:255:215:0]
+
+[COLOR:GOLDENROD]
+	[NAME:goldenrod]
+	[RGB:218:165:32]
+
+[COLOR:GRAY]
+	[NAME:gray]
+	[RGB:128:128:128]
+
+[COLOR:GREEN]
+	[NAME:green]
+	[WORD:GREEN]
+	[RGB:0:255:0]
+
+[COLOR:GREEN-YELLOW]
+	[NAME:green-yellow]
+	[WORD:GREEN]
+	[WORD:YELLOW]
+	[RGB:173:255:47]
+
+[COLOR:HELIOTROPE]
+	[NAME:heliotrope]
+	[RGB:223:115:255]
+
+[COLOR:INDIGO]
+	[NAME:indigo]
+	[RGB:75:0:130]
+
+[COLOR:JADE]
+	[NAME:jade]
+	[WORD:JADE]
+	[RGB:0:168:107]
+
+[COLOR:LAVENDER]
+	[NAME:lavender]
+	[RGB:230:230:250]
+
+[COLOR:LAVENDER_BLUSH]
+	[NAME:lavender blush]
+	[RGB:255:240:245]
+
+[COLOR:LEMON]
+	[NAME:lemon]
+	[RGB:253:233:16]
+
+[COLOR:LIGHT_BROWN]
+	[NAME:light brown]
+	[RGB:205:133:63]
+
+[COLOR:LILAC]
+	[NAME:lilac]
+	[RGB:200:162:200]
+
+[COLOR:LIME]
+	[NAME:lime]
+	[RGB:204:255:0]
+
+[COLOR:MAROON]
+	[NAME:maroon]
+	[RGB:128:0:0]
+
+[COLOR:MAUVE]
+	[NAME:mauve]
+	[RGB:153:51:102]
+
+[COLOR:MIDNIGHT_BLUE]
+	[NAME:midnight blue]
+	[WORD:BLUE]
+	[RGB:0:51:102]
+
+[COLOR:MINT_GREEN]
+	[NAME:mint green]
+	[WORD:GREEN]
+	[RGB:152:255:152]
+
+[COLOR:MOSS_GREEN]
+	[NAME:moss green]
+	[WORD:GREEN]
+	[RGB:173:223:173]
+
+[COLOR:OCHRE]
+	[NAME:ochre]
+	[RGB:204:119:34]
+
+[COLOR:OLIVE]
+	[NAME:olive]
+	[RGB:128:128:0]
+
+[COLOR:ORANGE]
+	[NAME:orange]
+	[RGB:255:165:0]
+
+[COLOR:PALE_BLUE]
+	[NAME:pale blue]
+	[WORD:BLUE]
+	[RGB:175:238:238]
+
+[COLOR:PALE_BROWN]
+	[NAME:pale brown]
+	[RGB:152:118:84]
+
+[COLOR:PALE_CHESTNUT]
+	[NAME:pale chestnut]
+	[RGB:221:173:175]
+
+[COLOR:PALE_PINK]
+	[NAME:pale pink]
+	[RGB:250:218:221]
+
+[COLOR:PEACH]
+	[NAME:peach]
+	[WORD:PEACH]
+	[RGB:255:229:180]
+
+[COLOR:PERIWINKLE]
+	[NAME:periwinkle]
+	[RGB:204:204:255]
+
+[COLOR:PINE_GREEN]
+	[NAME:pine green]
+	[WORD:GREEN]
+	[WORD:PINE]
+	[RGB:1:121:111]
+
+[COLOR:PINK]
+	[NAME:pink]
+	[RGB:255:192:203]
+
+[COLOR:PLUM]
+	[NAME:plum]
+	[RGB:102:0:102]
+
+[COLOR:PUMPKIN]
+	[NAME:pumpkin]
+	[RGB:255:117:24]
+
+[COLOR:PURPLE]
+	[NAME:purple]
+	[WORD:PURPLE]
+	[RGB:102:0:153]
+
+[COLOR:RAW_UMBER]
+	[NAME:raw umber]
+	[RGB:115:74:18]
+
+[COLOR:RED]
+	[NAME:red]
+	[WORD:RED]
+	[RGB:255:0:0]
+
+[COLOR:RUSSET]
+	[NAME:russet]
+	[RGB:117:90:87]
+
+[COLOR:RUST]
+	[NAME:rust]
+	[WORD:RUST]
+	[RGB:183:65:14]
+
+[COLOR:SAFFRON]
+	[NAME:saffron]
+	[RGB:244:196:48]
+
+[COLOR:SCARLET]
+	[NAME:scarlet]
+	[RGB:255:36:0]
+
+[COLOR:SEA_GREEN]
+	[NAME:sea green]
+	[WORD:GREEN]
+	[WORD:SEA]
+	[WORD:OCEAN]
+	[RGB:46:139:87]
+
+[COLOR:SEPIA]
+	[NAME:sepia]
+	[RGB:112:66:20]
+
+[COLOR:SILVER]
+	[NAME:silver]
+	[WORD:SILVER]
+	[RGB:192:192:192]
+
+[COLOR:SLATE_GRAY]
+	[NAME:slate gray]
+	[RGB:112:128:144]
+
+[COLOR:TAN]
+	[NAME:tan]
+	[RGB:210:180:140]
+
+[COLOR:TAUPE]
+	[NAME:taupe]
+	[RGB:188:152:126]
+
+[COLOR:TEAL]
+	[NAME:teal]
+	[RGB:0:128:128]
+
+[COLOR:TURQUOISE]
+	[NAME:turquoise]
+	[RGB:48:213:200]
+
+[COLOR:VERMILION]
+	[NAME:vermilion]
+	[RGB:227:66:52]
+
+[COLOR:VIOLET]
+	[NAME:violet]
+	[WORD:VIOLET]
+	[RGB:139:0:255]
+
+[COLOR:WHITE]
+	[NAME:white]
+	[WORD:WHITE]
+	[RGB:255:255:255]
+
+[COLOR:YELLOW]
+	[NAME:yellow]
+	[WORD:YELLOW]
+	[RGB:255:255:0]
