@@ -32,6 +32,15 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.22.110.23a:
+
+See the file changes txt for new init/interface information.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+There were various cosmetic changes to the game, mainly the addition of dyes and more art images.  The selection of dyes is very limited at present, and only involves ground plants.  There is a new workshop for this in dwarf mode.  You can use blue mushrooms or import other dyes from human traders.  This will be expanded later.
+
+******************************************************
+
 Release notes for 0.22.110.22f:
 
 See the file changes txt for new init/interface information.

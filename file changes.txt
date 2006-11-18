@@ -1,3 +1,36 @@
+Auxiliary file changes for 0.22.110.23a:
+
+New init options
+[ADVENTURER_TRAPS:NO]
+
+New keys
+[HOTKEY_BUILDING_WORKSHOP_DYER:D]
+[HOTKEY_DYER_THREAD:T]
+[HOTKEY_DYER_CLOTH:C]
+[HOTKEY_CLOTHES_IMAGE:I]
+[HOTKEY_LEATHER_IMAGE:I]
+[ORDERS_LOOM:L]
+[ORDERS_DYED_CLOTH:D]
+
+DESCRIPTOR Raws
+
+	These are a new class of raws that handle colors and shapes.
+
+	[COLOR:<identifier>]/[COLOR:RED]
+		[NAME:<text you want to see>]/[NAME:red]
+		[WORD:<word token>]/[WORD:RED] -- not currently used but will be handy later
+		[RGB:<r>:<g>:<b>]/[RGB:255:0:0] -- uses the init.txt values and picks nearest as the representation
+	[SHAPE:identifier]/[SHAPE:CRESCENT]
+		[NAME:<text>:<text plural>]/[NAME:crescent:crescents]
+		[WORD:<word token>]/[WORD:CRESCENT] -- not currently used but will be handy later
+		[ADJ:<text>]/[ADJ:narrow][ADJ:thick] -- it will choose one of these at random
+		[TILE:<tile>]/[TILE:'('] or [TILE:40]
+
+MATGLOSS Raws
+	[MILL_DYE:<color identifier>]/[COLOR:BLUE]
+
+******************************************************
+
 Auxiliary file changes for 0.22.110.22c:
 
 New keys
