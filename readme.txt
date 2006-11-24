@@ -74,7 +74,9 @@ NOTES ON MODIFICATIONS:
 
 Save files will become unusable if any entries are removed.  If you change the configuration of the bodies of existing creatures, save files will become unstable.  New additions to the files are not incorporated into existing regions but will be added to the next world you generate.
 
-You can look at the examples and try your hand at making modifications if you like, but I'm not going to explain how the files are processed here since the format isn't yet stable.  If you have modified the files and the game becomes unstable, don't bother reporting the problem to us, since modifications aren't officially supported yet.  Because modifications are not officially supported at this time, we do not accept submissions for the official Dwarf Fortress releases.  Please do not ask for your art, sound or object files to be incorporated into the official releases.
+You can look at the examples and try your hand at making modifications if you like, but I'm not going to explain how the files are processed here since the format isn't yet stable.  If you have modified the files and the game becomes unstable, don't bother reporting the problem to us, since modifications aren't officially supported yet.
+
+We do not accept submissions for the official Dwarf Fortress releases.  Please do not ask for your art, sound or object files to be incorporated into the official releases.
 
 ******************************************************
 

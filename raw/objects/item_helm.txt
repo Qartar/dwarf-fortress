@@ -19,6 +19,7 @@ item_helm
 [METAL]
 [BARRED]
 [SCALED]
+[LEATHER]
 
 [ITEM_HELM:ITEM_HELM_CAP]
 [NAME:cap:caps]
