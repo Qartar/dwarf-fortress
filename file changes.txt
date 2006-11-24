@@ -1,3 +1,19 @@
+Auxiliary file changes for 0.22.120.23a:
+
+New keys
+[BUILDJOB_STOCKPILE_BARREL_ZERO:SHIFT+E]
+[BUILDJOB_STOCKPILE_BARREL_MAX:SHIFT+R]
+[BUILDJOB_STOCKPILE_BIN_ZERO:SHIFT+C]
+[BUILDJOB_STOCKPILE_BIN_MAX:SHIFT+V]
+
+MATGLOSS Raws
+
+	Added plurals to gem names
+
+There is now a graphics subfolder in the raw folder.  See graphics_example.txt in that folder for a sample.  In order to see your creature tiles, you have to go into the init.txt file and set [GRAPHICS:YES].  You'll find other options there as well.
+
+******************************************************
+
 Auxiliary file changes for 0.22.110.23a:
 
 New init options
@@ -27,6 +43,7 @@ DESCRIPTOR Raws
 		[TILE:<tile>]/[TILE:'('] or [TILE:40]
 
 MATGLOSS Raws
+
 	[MILL_DYE:<color identifier>]/[COLOR:BLUE]
 
 ******************************************************

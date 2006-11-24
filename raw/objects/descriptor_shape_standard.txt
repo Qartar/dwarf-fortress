@@ -30,10 +30,6 @@ descriptor_shape_standard
 	[NAME:square:squares]
 	[TILE:254]
 
-[SHAPE:SQUARE]
-	[NAME:square:squares]
-	[TILE:254]
-
 [SHAPE:CIRCLE]
 	[NAME:circle:circles]
 	[TILE:9]

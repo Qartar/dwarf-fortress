@@ -1,7 +1,7 @@
 TO BACKUP SAVES:
 
-(1) Copy your "data\save" folder to a safe location.
-(2) When you want to reuse it, first delete the current "data\save" folder, then copy the old one into place.
+(1) Copy your "data/save" folder to a safe location.
+(2) When you want to reuse it, first delete the current "data/save" folder, then copy the old one into place.
 
 Do *NOT* copy save folders over other save folders.  This can cause corruption of saves.
 
@@ -13,7 +13,7 @@ is also an alpha, and your world might become corrupted by an error.
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
 (1) Unzip the new dwarves into a *NEW* folder.
-(2) Copy "data\save" from the old folder into the new folder.  Keep a backup in case something is wrong with the new version.
+(2) Copy "data/save" from the old folder into the new folder.  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
 
 Unzipping the new dwarves into your old folder will work most of the time, but if files have changed, it can crash, or worse yet, destroy your saves.
@@ -22,29 +22,49 @@ Unzipping the new dwarves into your old folder will work most of the time, but i
 
 TO CHANGE DISPLAY AND SOUND OPTIONS:
 
-Go to "data\init\init.txt".  These options will take effect the next time you start the game.
+Go to "data/init/init.txt".  These options will take effect the next time you start the game.
 
 
 
 IF YOUR KEYBOARD ISN'T WORKING:
 
-If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data\init\interface.txt" using the display strings at the top of the file.
+If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
+
+
+
+See file_changes.txt for new init/interface information.
+See command_line.txt for information on world generation from command lines.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+******************************************************
+
+Release notes for 0.22.120.23a:
+
+Lots of bugs fixed this time around.  I caught a lot of the stay-inside problems, but there are probably some new issues with random jobs now.  I'll fix these as I hear about them.  I'll also correct any additional stay-inside problems as I hear about them.  It should be easier now that more infrastructure is in place.
+
+There's also some creature graphics stuff you can play with.  See "raw/graphics/graphics_example.txt" to mess around with it.  You'll also need to set [GRAPHICS:YES] in "init/init.txt".  I only drew a miner picture, and a blobby dwarf thing, so I don't recommend this unless you are going to draw/use some additional tiles.
+
+******************************************************
+
+Release notes for 0.22.110.23c:
+
+Quick fix for missing color definition problem.
+
+******************************************************
+
+Release notes for 0.22.110.23b:
+
+Quick fix for dyes and a crash bug with inventories in adventure mode.
 
 ******************************************************
 
 Release notes for 0.22.110.23a:
-
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 There were various cosmetic changes to the game, mainly the addition of dyes and more art images.  The selection of dyes is very limited at present, and only involves ground plants.  There is a new workshop for this in dwarf mode.  You can use blue mushrooms or import other dyes from human traders.  This will be expanded later.
 
 ******************************************************
 
 Release notes for 0.22.110.22f:
-
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 This release is mainly to handle the issues with specific piles.  There are a few other bug fixes as well.
 
@@ -64,17 +84,11 @@ Quick patch for a crash bug from saving furniture piles.
 
 Release notes for 0.22.110.22c:
 
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
-
 Aside from fixing some crash bugs, the main change this time is the addition of specific pile types.  You can access these from [q] on existing piles or you can set them when you are placing piles by selecting "custom settings".  Piles now make claims on bins and barrels.  This is displayed as "Cedar Bin <#12>".  You can use the [q] view for a pile to set the maximum number of bins and barrels it uses.  For now, a pile will only take one extra empty bin/barrel until something is placed inside, then it will take another until it gets up to the maximum.  We'll add some other options later.  In the [p]ile menu, you can also designate a number of reserved bins and barrels that will be used by jobs such as distillation before any stockpile gets to claim them.
 
 ******************************************************
 
 Release notes for 0.22.110.22a:
-
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 I fixed a lot of bugs; see the dev list.
 
@@ -92,9 +106,6 @@ Finally, there aren't any gender links to clothing right now, so you might see m
 
 Release notes for 0.22.107.21a:
 
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
-
 There will be families and guards in new world towns, concluding the first third of the Bustling Town Arc.
 
 There's a wait key in adventure mode now (period), as well as some helpful "are you sure?" prompts.
@@ -105,9 +116,6 @@ Various bug fixes -- including the clothing acquirement bug, the shield equipmen
 
 Release notes for 0.21.104.21c:
 
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
-
 I fixed various bugs and implemented other minor changes.  See the changes list for those.  Nobles can still demand items involving small creature bones in old saves, but the preference is no longer generated in new dwarves.
 
 New worlds will see a few cosmetic changes in adventure mode towns (it was not possible to include them in old saves).  It's probably not worth generating a new world for them (and I haven't put up new pregenerated worlds), but the new towns have some larger cookie-cutter buildings like apartment complexes, and everybody will sleep at night and eat three meals a day from a magic barrel in their room that refills at midnight.  Once the caravans and a notion of wealth are in, this can all be differentiated properly instead.  As we progress along the Bustling Town Arc, it'll eventually be worthwhile to regenerate if you play adventure mode, but it's not a big deal right now.  In old worlds, you might notice some things like merchants taking breaks to wander around or sleeping on the beds in the mead hall.  They are just trying their best to follow the new schedules without having a home to go to.
@@ -115,9 +123,6 @@ New worlds will see a few cosmetic changes in adventure mode towns (it was not p
 ******************************************************
 
 Release notes for 0.21.104.21b:
-
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 There's a skeleton of a workshop profile now.  It is in progress and undocumented.  You can select workers to work at the shop either by name or by skill level.  The list is not ordered yet.  You can use the mouse on this screen.  It's also written up in a new way that is independent of the 80x25 window to facilitate some more flexibility later on.
 
@@ -127,17 +132,11 @@ Many small fixes (read the dev log).
 
 Release notes for 0.21.104.21a:
 
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
-
 This fixes a problem with the export feature, lets you play around with the mouse when doing designations and cleans up some of the problems with flows and channel-related spam.
 
 ******************************************************
 
 Release notes for 0.21.104.19c:
-
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 Some highlights include fixing the disappearing bone/shell problem and allowing engraved wall images to be toggled on and off.  The detailing jobs shouldn't shut off at random any more.
 
@@ -152,9 +151,6 @@ Until I make the cleaners smarter, blood disappears at the beginning of every se
 ******************************************************
 
 Release notes for 0.21.104.19a:
-
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 Fixed several crash bugs and cleaned up some affected saves.  I also found out why named creatures were disappearing sometimes and fixed that, though saves in which the problem is currently active will still see some of it.
 
@@ -174,9 +170,6 @@ Depending on how you've bound your keys, you should have the odd hold-down behav
 
 Release notes for 0.21.102.19a:
 
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
-
 Fixed a couple more crashes and various other errors (see the change log).
 
 Genders are mixed on starting animals now and horses should breed.  The unit screen will show some other designations beside "No Job" and there it will distinguish merchants and diplomats.  Water should flow into the cliff face now, at least from new channels.
@@ -193,15 +186,11 @@ You can toggle between windowed and fullscreen mode using F11 (or whatever key y
 
 Release notes for 0.21.101.19d:
 
-Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
-
 Resolved a unit scrambling issue from active saves in adventure mode.  You will no longer turn into the stray dog in town or a random goblin or warthog.
 
 ******************************************************
 
 Release notes for 0.21.101.19c:
-
-Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
 
 Fixed a few more crash problems, but the main thing was to hopefully remove some of the strange mainly adventure mode instability introduced by the last version.  In case this sort of thing persists, please be careful to backup your saves before trying this one.  Worlds that were generated in or even played in the briefly-available 0.21.101.19b are likely to be twisted to pieces, especially if you played adventure mode.
 
@@ -209,8 +198,6 @@ Fixed a few more crash problems, but the main thing was to hopefully remove some
 ******************************************************
 
 Release notes for 0.21.101.19b:
-
-Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
 
 Many more crash fixes, including stopping some of those inflate errors.  Those saves are still corrupted though.
 
@@ -222,17 +209,13 @@ Finally, aqueduct behavior has been partially repaired.  Building an aqueduct ov
 
 Release notes for 0.21.101.19a:
 
-See the file changes txt for new init/interface information.
-Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
 Several crash bugs should be fixed now.  Most saves will be recoverage, unless they have a load inflate error.
 
 ******************************************************
 
 Release notes for 0.21.100.19a:
 
-See the file changes txt for new init/interface information.
-See the command line txt for information on world generation from command lines.
-Go to http://www.bay12games/dwarves/dev_now.html to see a list of changes.
+See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 

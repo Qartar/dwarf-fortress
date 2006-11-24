@@ -22,6 +22,21 @@ Full screen info.
 [FULLSCREENY:600]
 [FULLFONT:curses_800x600.bmp]
 
+If this is set to YES, the tiles will not be stretched, but rather the game view will be centralized, surrounded by black space.  Tiles that are too large will always be compressed rather than running off the screen.
+
+[BLACK_SPACE:NO]
+
+Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.
+
+[GRAPHICS:NO]
+[GRAPHICS_WINDOWEDX:1280]
+[GRAPHICS_WINDOWEDY:400]
+[GRAPHICS_FONT:curses_square_16x16.bmp]
+[GRAPHICS_FULLSCREENX:1280]
+[GRAPHICS_FULLSCREENY:800]
+[GRAPHICS_FULLFONT:curses_square_16x16.bmp]
+[GRAPHICS_BLACK_SPACE:YES]
+
 Change this to NO if you don't want to have the mouse involved at all.
 
 [MOUSE:YES]
