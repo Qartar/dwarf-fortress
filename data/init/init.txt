@@ -37,6 +37,10 @@ Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  Thi
 [GRAPHICS_FULLFONT:curses_square_16x16.bmp]
 [GRAPHICS_BLACK_SPACE:YES]
 
+Change this to YES if you want to see an FPS counter at the top left.
+
+[FPS:NO]
+
 Change this to NO if you don't want to have the mouse involved at all.
 
 [MOUSE:YES]
@@ -44,6 +48,11 @@ Change this to NO if you don't want to have the mouse involved at all.
 Change this to YES if you'd like to use a BMP for the mouse cursor.  The image currently lags when the game is lagging however.
 
 [MOUSE_PICTURE:NO]
+
+Use these options to remove features from the game.  This might speed the game up.
+
+[TEMPERATURE:YES]
+[WEATHER:YES]
 
 If you don't like the ,.`' ground, try setting this to NO.  The ground will turn into periods only.
 

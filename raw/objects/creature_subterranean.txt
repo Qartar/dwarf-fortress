@@ -23,6 +23,7 @@ creature_subterranean
 	[FAT:4]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_RIVER]
+	[STANDARD_FLESH]
 
 [CREATURE:TOAD_GIANT]
 	[NAME:giant toad:giant toads:giant toad]
@@ -44,6 +45,7 @@ creature_subterranean
 	[FAT:5]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_RIVER]
+	[STANDARD_FLESH]
 
 [CREATURE:BAT_GIANT]
 	[NAME:giant bat:giant bats:giant bat]
@@ -63,6 +65,9 @@ creature_subterranean
 	[FAT:3]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:RAT_GIANT]
 	[NAME:giant rat:giant rats:giant rat]
@@ -81,6 +86,9 @@ creature_subterranean
 	[FAT:3]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:RAT_LARGE][ADD_VERSION:1069]
 	[NAME:large rat:large rats:large rat]
@@ -99,6 +107,9 @@ creature_subterranean
 	[FAT:2]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:MOLE_DOG_NAKED][ADD_VERSION:1091]
 	[NAME:naked mole dog:naked mole dogs:naked mole dog]
@@ -118,6 +129,8 @@ creature_subterranean
 	[FAT:2]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
 
 [CREATURE:TROGLODYTE][ADD_VERSION:1091]
 	[NAME:troglodyte:troglodytes:troglodyte]
@@ -137,6 +150,9 @@ creature_subterranean
 	[EQUIPS]
 	[DIURNAL]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:50]
 
 [CREATURE:MOLE_GIANT][ADD_VERSION:1091]
 	[NAME:giant mole:giant moles:giant mole]
@@ -155,6 +171,9 @@ creature_subterranean
 	[FAT:2]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:IMP_FIRE]
 	[NAME:fire imp:fire imps:fire imp]
@@ -177,6 +196,8 @@ creature_subterranean
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_LAVA]
 	[NO_GENDER]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10095]
 
 [CREATURE:SPIDER_CAVE_GIANT]
 	[NAME:giant cave spider:giant cave spiders:giant cave spider]
@@ -205,6 +226,7 @@ creature_subterranean
 	[FAT:1]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
 
 [CREATURE:SPIDER_CAVE]
 	[NAME:cave spider:cave spiders:cave spider]
@@ -229,6 +251,7 @@ creature_subterranean
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_RIVER]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
 
 [CREATURE:FISH_CAVE]
 	[NAME:cave fish:cave fish:cave fish]
@@ -241,6 +264,7 @@ creature_subterranean
 	[PREFSTRING:beauty]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_RIVER]
+	[STANDARD_FLESH]
 
 [CREATURE:LOBSTER_CAVE]
 	[NAME:cave lobster:cave lobsters:cave lobster]
@@ -254,6 +278,7 @@ creature_subterranean
 	[PREFSTRING:beauty]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_RIVER]
+	[STANDARD_FLESH]
 
 [CREATURE:SNAKE_FIRE]
 	[NAME:fire snake:fire snakes:fire snake]
@@ -276,6 +301,7 @@ creature_subterranean
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_LAVA]
 	[NO_GENDER]
+	[FIXED_TEMP:14000]
 
 [CREATURE:BAT]
 	[NAME:bat:bats:bat]
@@ -291,6 +317,9 @@ creature_subterranean
 	[BIOME_SUBTERRANEAN_CHASM]
 	[BIOME_NOT_FREEZING]
 	[TRIGGERABLE_GROUP:50:100]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:MAGGOT_PURRING]
 	[NAME:purring maggot:purring maggots:purring maggot]
@@ -309,6 +338,8 @@ creature_subterranean
 	[PREFSTRING:comforting whirs]
 	[ALL_ACTIVE]
 	[BIOME_SUBTERRANEAN_CHASM]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
 
 [CREATURE:ELEMENTMAN_FIRE]
 	[ADD_VERSION:1097]
@@ -333,6 +364,7 @@ creature_subterranean
 	[RIVERATTACK:1:1:1:3:1:5]
 	[ALL_ACTIVE]
 	[NO_GENDER]
+	[FIXED_TEMP:10800]
 
 [CREATURE:ELEMENTMAN_LAVA]
 	[ADD_VERSION:1097]
@@ -357,6 +389,8 @@ creature_subterranean
 	[RIVERATTACK:1:1:1:3:1:5]
 	[ALL_ACTIVE]
 	[NO_GENDER]
+	[MATERIAL:STONE_DARK:USE_SHARPSTONE]
+	[HOMEOTHERM:12000]
 
 [CREATURE:ELEMENTMAN_IRON]
 	[ADD_VERSION:1097]
@@ -383,6 +417,7 @@ creature_subterranean
 	[DAMBLOCK:12]
 	[ALL_ACTIVE]
 	[NO_GENDER]
+	[MATERIAL:IRON:NO_MATGLOSS]
 
 [CREATURE:ELEMENTMAN_MUD]
 	[ADD_VERSION:1097]
@@ -407,3 +442,4 @@ creature_subterranean
 	[RIVERATTACK:1:1:3:5:5:10][RIVERATTACK_CANUSEWELL]
 	[ALL_ACTIVE]
 	[NO_GENDER]
+	[MATERIAL:MUD:NO_MATGLOSS]

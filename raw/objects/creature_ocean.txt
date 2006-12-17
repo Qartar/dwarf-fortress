@@ -13,6 +13,7 @@ creature_ocean
 	[PEARL]
 	[ALL_ACTIVE]
 	[BIOME_OCEAN]
+	[STANDARD_FLESH]
 
 [CREATURE:OYSTER]
 	[NAME:oyster:oysters:oyster]
@@ -25,6 +26,7 @@ creature_ocean
 	[PEARL]
 	[ALL_ACTIVE]
 	[BIOME_OCEAN]
+	[STANDARD_FLESH]
 
 [CREATURE:WALRUS]
 	[NAME:walrus:walruses:walrus]
@@ -47,6 +49,8 @@ creature_ocean
 	[CHILD:1][CHILDNAME:walrus calf:walrus calves]
 	[FAT:10]
 	[BIOME_OCEAN]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
 
 [CREATURE:WHALE]
 	[NAME:whale:whales:whale]
@@ -69,6 +73,8 @@ creature_ocean
 	[CHILD:1][CHILDNAME:baby whale:baby whales]
 	[FAT:20]
 	[BIOME_OCEAN]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
 
 [CREATURE:FISH_SALMON]
 	[NAME:salmon:salmon:salmon]
@@ -81,6 +87,7 @@ creature_ocean
 	[ALL_ACTIVE]
 	[BIOME_ANY_TEMPERATE]
 	[BIOME_OCEAN]
+	[STANDARD_FLESH]
 
 [CREATURE:FISH_SWORDFISH]
 	[NAME:swordfish:swordfish:swordfish]
@@ -91,3 +98,4 @@ creature_ocean
 	[PREFSTRING:beauty]
 	[ALL_ACTIVE]
 	[BIOME_OCEAN]
+	[STANDARD_FLESH]

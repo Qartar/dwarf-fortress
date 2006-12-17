@@ -26,6 +26,7 @@ You must agree to abide by the following terms before using Dwarf Fortress:
 (3)  You may NOT modify any files, except the files in these folders:
 
 	"raw/objects"
+	"raw/graphics"
 	"data/art"
 	"data/init"
 	"data/interface"

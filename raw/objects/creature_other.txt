@@ -14,6 +14,9 @@ creature_other
 	[PREFSTRING:tenacity]
 	[DIURNAL]
 	[BIOME_ANY_TEMPERATE_FOREST]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:MOGHOPPER]
 	[NAME:moghopper:moghoppers:moghopper]
@@ -31,3 +34,4 @@ creature_other
 	[PREFSTRING:round tummies]
 	[CREPUSCULAR]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]

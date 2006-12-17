@@ -38,6 +38,34 @@ Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 ******************************************************
 
+Release notes for 0.22.121.23b:
+
+Few more crash bug fixes and several minor changes.
+
+If you are having speed trouble, you can go to init and turn off temperature and weather to see if that's the issue.
+
+******************************************************
+
+Release notes for 0.22.121.23a:
+
+Here are some fixes for crash problems.  I've also added metal bins and more information to the sites in the setup screen.  I fixed the FPS/black space problems with the BMP export options and a few other minor problems as well.
+
+There are still potentially serious problems from the temperature and other recent additions.  I'm going to continue working on bugs for the time being.
+
+******************************************************
+
+Release notes for 0.22.120.23b:
+
+I'm partly through the temperature rewrite.  This release has a lot of bug potential.  You should back up your save folders if you are updating from an older version.
+
+You can set fire to shrubs as an adventurer using the [g] command when you are standing near one.  This is not a permanent command.
+
+The temperature behavior of flows has not been implemented yet.  Very hot/cold creatures do not change the air temperature yet either.  There are a number of features that are in progress regarding temperature.
+
+The problem with dwarves being stuck outside during the stay-inside order should be fixed, as well as a number of other bugs.  You can now move the cursor quickly by using shift + direction.
+
+******************************************************
+
 Release notes for 0.22.120.23a:
 
 Lots of bugs fixed this time around.  I caught a lot of the stay-inside problems, but there are probably some new issues with random jobs now.  I'll fix these as I hear about them.  I'll also correct any additional stay-inside problems as I hear about them.  It should be easier now that more infrastructure is in place.
