@@ -18,6 +18,9 @@ creature_small_mammals
 	[CREPUSCULAR][NOCTURNAL]
 	[BIOME_NOT_FREEZING]
 	[TRIGGERABLE_GROUP:5:50]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:SQUIRREL_GRAY]
 	[NAME:gray squirrel:gray squirrels:gray squirrel]
@@ -30,6 +33,9 @@ creature_small_mammals
 	[PREFSTRING:tails]
 	[DIURNAL]
 	[BIOME_ANY_TEMPERATE_FOREST]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:SQUIRREL_RED]
 	[NAME:red squirrel:red squirrels:red squirrel]
@@ -42,6 +48,9 @@ creature_small_mammals
 	[PREFSTRING:tails]
 	[DIURNAL]
 	[BIOME_ANY_TEMPERATE_FOREST]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]
 
 [CREATURE:CHIPMUNK]
 	[NAME:chipmunk:chipmunks:chipmunk]
@@ -54,3 +63,6 @@ creature_small_mammals
 	[PREFSTRING:stripes]
 	[DIURNAL][NO_WINTER]
 	[BIOME_ANY_TEMPERATE_FOREST]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:100]

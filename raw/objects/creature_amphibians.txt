@@ -13,3 +13,4 @@ creature_amphibians
 	[PREFSTRING:beauty]
 	[NOCTURNAL]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]

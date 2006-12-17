@@ -14,6 +14,7 @@ creature_reptiles
 	[PREFSTRING:beauty]
 	[DIURNAL]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]
 
 [CREATURE:TURTLE]
 	[NAME:turtle:turtles:turtle]
@@ -27,3 +28,4 @@ creature_reptiles
 	[PREFSTRING:beauty]
 	[DIURNAL]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]

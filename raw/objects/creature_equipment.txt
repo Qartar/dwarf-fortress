@@ -14,3 +14,4 @@ creature_equipment
 	[SIZE:12]
 	[ALL_ACTIVE]
 	[NO_GENDER]
+	[MATERIAL:WOOD:USE_RACEGLOSS]

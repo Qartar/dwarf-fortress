@@ -23,6 +23,9 @@ creature_large_tundra
 	[DIURNAL]
 	[BIOME_TUNDRA]
 	[BIOME_GRASSLAND_TEMPERATE]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:200]
 
 [CREATURE:ELK]
 	[NAME:elk:elk:elk]
@@ -47,6 +50,9 @@ creature_large_tundra
 	[CHILD:1][CHILDNAME:elk fawn:elk fawns]
 	[BIOME_TUNDRA]
 	[BIOME_GRASSLAND_TEMPERATE]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:200]
 
 [CREATURE:BEAR_POLAR]
 	[NAME:polar bear:polar bears:polar bear]
@@ -72,6 +78,9 @@ creature_large_tundra
 	[DIURNAL]
 	[BIOME_GLACIER]
 	[BIOME_TUNDRA]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:300]
 
 [CREATURE:MARMOT_HOARY]
 	[NAME:hoary marmot:hoary marmots:hoary marmot]
@@ -93,3 +102,6 @@ creature_large_tundra
 	[DIURNAL]
 	[BIOME_TUNDRA]
 	[BIOME_GRASSLAND_TEMPERATE]
+	[STANDARD_FLESH]
+	[HOMEOTHERM:10067]
+	[LAYERING:200]

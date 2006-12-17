@@ -13,6 +13,7 @@ creature_insects
 	[PREFSTRING:ability to annoy]
 	[DIURNAL]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]
 
 [CREATURE:ROACH_LARGE]
 	[NAME:large roach:large roaches:large roach]
@@ -27,6 +28,7 @@ creature_insects
 	[ALL_ACTIVE]
 	[BIOME_NOT_FREEZING]
 	[TRIGGERABLE_GROUP:5:50]
+	[STANDARD_FLESH]
 
 [CREATURE:BEETLE]
 	[NAME:beetle:beetles:beetle]
@@ -39,6 +41,7 @@ creature_insects
 	[PREFSTRING:protective shells]
 	[ALL_ACTIVE]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]
 
 [CREATURE:ANT]
 	[NAME:ant:ants:ant]
@@ -51,6 +54,7 @@ creature_insects
 	[PREFSTRING:propensity to dig]
 	[DIURNAL]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]
 
 [CREATURE:BUTTERFLY_MONARCH]
 	[NAME:monarch butterfly:monarch butterflies:monarch butterfly]
@@ -64,6 +68,7 @@ creature_insects
 	[PREFSTRING:coloration]
 	[DIURNAL]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]
 
 [CREATURE:FIREFLY]
 	[NAME:firefly:fireflies:firefly]
@@ -78,6 +83,7 @@ creature_insects
 	[VESPERTINE]
 	[LIGHT_GEN]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]
 
 [CREATURE:DRAGONFLY]
 	[NAME:dragonfly:dragonflies:dragonfly]
@@ -91,3 +97,4 @@ creature_insects
 	[PREFSTRING:faceted eyes]
 	[DIURNAL]
 	[BIOME_NOT_FREEZING]
+	[STANDARD_FLESH]
