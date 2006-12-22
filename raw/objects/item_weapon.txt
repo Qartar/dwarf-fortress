@@ -10,6 +10,7 @@ item_weapon
 [TWO_HANDED:3]
 [MINIMUM_SIZE:3]
 [MATERIAL_SIZE:1]
+[STICK_CHANCE:0]
 
 [ITEM_WEAPON:ITEM_WEAPON_AXE_BATTLE]
 [NAME:battle axe:battle axes]

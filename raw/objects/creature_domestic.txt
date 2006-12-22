@@ -83,7 +83,8 @@ creature_domestic
 	[LAYERING:100]
 
 [CREATURE:COW]
-	[NAME:cow:cows:cow]
+	[NAME:cow:cows:bovine]
+	[SPECNAME:MALE:bull:bulls:bull]
 	[TILE:'C'][COLOR:6:0:0]
 	[MODVALUE:2]
 	[GENPOWER:2]
