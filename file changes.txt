@@ -1,3 +1,21 @@
+Auxiliary file changes for 0.22.123.23a:
+
+New keys
+	[ORDERS_WORKSHOP:SHIFT+W]
+	[ORDERS_COLLECT_WEB:W]
+	[ORDERS_SLAUGHTER:S]
+	[ORDERS_BUTCHER:B]
+	[ORDERS_TAN:T]
+
+Weapon raws
+	[STICK_CHANCE:0] this modifies the stick-in chance from the default for the damage type
+
+Creature raws
+	[SPECNAME:<type>:<sing>:<plural>:<adj>] the only terms it takes for the type entry are MALE and FEMALE
+	example: [SPECNAME:MALE:bull:bulls:bull]
+
+******************************************************
+
 Auxiliary file changes for 0.22.121.23b:
 
 New init options
