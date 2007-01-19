@@ -1,3 +1,16 @@
+Auxiliary file changes for 0.23.125.23a:
+
+New init options
+	[POPULATION_CAP:200]
+	[FPS_CAP:100]
+
+New keys
+	[BUILDJOB_COFFIN_CIV:C]
+	[BUILDJOB_COFFIN_PET:P]
+	[UNITVIEW_SLAUGHTER:S]
+
+******************************************************
+
 Auxiliary file changes for 0.22.123.23a:
 
 New keys
@@ -22,7 +35,7 @@ New init options
 	[TEMPERATURE:YES]
 	[WEATHER:YES]
 
-creatures
+Creature raws
 	[ALCOHOL_DEPENDENT] for dwarves
 
 ******************************************************
@@ -49,7 +62,7 @@ This means that temperatures can go well below absolute zero, but fantasy runs t
 Water has spec heat 4.181 J/gC, and this is stored as 4181 in the raws.
 Spec heat changes with change of state are not currently supported.
 
-creatures
+Creature raws
 	[SPEC_HEAT:amount 0-60000 or NONE]/default NONE
 	[HEATDAM_POINT:temp 0-60000 or NONE]/default NONE
 	[COLDDAM_POINT:temp 0-60000 or NONE]/default NONE
@@ -63,7 +76,8 @@ creatures
 	[STANDARD_FLESH]/sets values above to reasonable numbers for a standard fleshy creature
 	[MATERIAL:mat:matg]/sets values above to the numbers matching the given material
 	[HOMEOTHERM:temp 0-60000 or NONE]/default NONE
-plants
+
+Plant raws
 	[SPEC_HEAT:amount 0-60000 or NONE]/default 420
 	[HEATDAM_POINT:temp 0-60000 or NONE]/default 10250
 	[COLDDAM_POINT:temp 0-60000 or NONE]/default 9900
@@ -74,7 +88,8 @@ plants
 
 	You can also add the words "CLOTH" "EXTRACT" "CHEESE" "DRINK" in front of these
 	as in [CLOTH_IGNITE_POINT:10300].
-stone
+
+Stone raws
 	[SPEC_HEAT:amount 0-60000 or NONE]/default 800
 	[HEATDAM_POINT:temp 0-60000 or NONE]/default NONE
 	[COLDDAM_POINT:temp 0-60000 or NONE]/default NONE
@@ -82,7 +97,8 @@ stone
 	[MELTING_POINT:temp 0-60000 or NONE]/default 11500
 	[BOILING_POINT:temp 0-60000 or NONE]/default 14000
 	[FIXED_TEMP:temp 0-60000 or NONE]/default NONE
-gem
+
+Gem raws
 	[SPEC_HEAT:amount 0-60000 or NONE]/default 1800
 	[HEATDAM_POINT:temp 0-60000 or NONE]/default NONE
 	[COLDDAM_POINT:temp 0-60000 or NONE]/default NONE
@@ -90,7 +106,8 @@ gem
 	[MELTING_POINT:temp 0-60000 or NONE]/default 12268
 	[BOILING_POINT:temp 0-60000 or NONE]/default 14368
 	[FIXED_TEMP:temp 0-60000 or NONE]/default NONE
-wood
+
+Wood raws
 	[SPEC_HEAT:amount 0-60000 or NONE]/default 420
 	[HEATDAM_POINT:temp 0-60000 or NONE]/default 10250
 	[COLDDAM_POINT:temp 0-60000 or NONE]/default 9900

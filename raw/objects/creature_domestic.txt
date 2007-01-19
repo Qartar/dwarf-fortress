@@ -81,6 +81,7 @@ creature_domestic
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10068]
 	[LAYERING:100]
+	[MATERIAL:IRON:NO_MATGLOSS]
 
 [CREATURE:COW]
 	[NAME:cow:cows:bovine]
