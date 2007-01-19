@@ -38,6 +38,12 @@ Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 ******************************************************
 
+Release notes for 0.23.125.23a:
+
+The backbone of temperature is in now, but there's still a lot to do.  I'm not working on it for a while again.
+
+******************************************************
+
 Release notes for 0.22.123.23a:
 
 A bug fix release along with a test-change for the FPS toggling.

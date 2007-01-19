@@ -41,6 +41,10 @@ Change this to YES if you want to see an FPS counter at the top left.
 
 [FPS:NO]
 
+Use this to set the maximum frame rate during play.  The movies are always capped at 100.
+
+[FPS_CAP:100]
+
 Change this to NO if you don't want to have the mouse involved at all.
 
 [MOUSE:YES]
@@ -53,6 +57,10 @@ Use these options to remove features from the game.  This might speed the game u
 
 [TEMPERATURE:YES]
 [WEATHER:YES]
+
+You can set the maximum population of your fortress here.  Keep in mind that your population must exceed 80 to get a king and 100 to obtain the current game features.
+
+[POPULATION_CAP:200]
 
 If you don't like the ,.`' ground, try setting this to NO.  The ground will turn into periods only.
 

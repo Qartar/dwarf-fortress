@@ -527,7 +527,7 @@ creature_standard
 	[ATTACK:MAIN:BYTYPE:GRASP:punch:punches:1:6:BURN][ATTACKFLAG_WITH]
 	[ALL_ACTIVE]
 	[NO_GENDER]
-	[FIXED_TEMP:15000]
+	[FIXED_TEMP:25000]
 
 [CREATURE:FROG_DEMON]
 	[NAME:frog demon:frog demons:frog demon]
