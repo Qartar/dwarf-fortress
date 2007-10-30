@@ -23,17 +23,6 @@ creature_fanciful
 	[PREFSTRING:strength]
 	[ALL_ACTIVE]
 
-[CREATURE:MERMAID]
-	[NAME:mermaid:mermaids:mermaid]
-	[TILE:'M'][COLOR:3:0:1]
-	[MODVALUE:50]
-	[FANCIFUL]
-	[GENPOWER:5]
-	[BUTCHERABLE_NONSTANDARD]
-	[PREFSTRING:tails]
-	[ALL_ACTIVE]
-	[FEMALE]
-
 [CREATURE:GRIFFON]
 	[NAME:griffon:griffons:griffon]
 	[TILE:'G'][COLOR:7:0:1]
