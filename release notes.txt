@@ -1,19 +1,25 @@
+See readme.txt for the license.
+See file_changes.txt for new init/interface information.
+See command_line.txt for information on world generation from command lines.
+Go to http://www.bay12games/dwarves/faq.html for Frequently Asked Questions and their answers.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+
 TO BACKUP SAVES:
 
-(1) Copy your "data/save" folder to a safe location.
-(2) When you want to reuse it, first delete the current "data/save" folder, then copy the old one into place.
-
-Do *NOT* copy save folders over other save folders.  This can cause corruption of saves.
+(1) Copy the relevant region folder in "data/save" to a safe location.
+(2) When you want to reuse it, copy that region back to "data/save".  Do *NOT* overwrite an old folder, as it might leave residual files.
 
 Please *DO* back up saves.  Although the game has permanent death and you might want to play it in that spirit, the game
-is also an alpha, and your world might become corrupted by an error.
+is also an alpha, and your world might become corrupted by an error.  You can also make use of the auto save features settable in "data/init/init.txt".
 
 
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
+(0) ***Note that version 0.27.169.32a is not compatible with old versions.***
 (1) Unzip the new dwarves into a *NEW* folder.
-(2) Copy "data/save" from the old folder into the new folder.  Keep a backup in case something is wrong with the new version.
+(2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
 
 Unzipping the new dwarves into your old folder will work most of the time, but if files have changed, it can crash, or worse yet, destroy your saves.
@@ -30,11 +36,11 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+******************************************************
 
+Release notes for 0.27.169.32a:
 
-See file_changes.txt for new init/interface information.
-See command_line.txt for information on world generation from command lines.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+Well, it has been a while.  That means potential instability, so don't get too attached to your fortresses at this point.  I'll be doing subsequent releases more often now as I solve problems.  In any case, dwarf mode now has a z-axis and you can make fortresses that span several levels.  Fluids behave much more reasonably, and you can walk across the world in adventure mode in the local view without having to step off of an artificial edge.  And various other lots more stuff.
 
 ******************************************************
 

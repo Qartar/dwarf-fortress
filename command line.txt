@@ -1,9 +1,18 @@
+See readme.txt for the license.
+See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
+See file_changes.txt for new init/interface information.
+See command_line.txt for information on world generation from command lines.
+Go to http://www.bay12games/dwarves/faq.html for Frequently Asked Questions and their answers.
+Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+
+
 Dwarf Fortress Command Line Options
 
 
 Dwarf Fortress currently offers one command line option, a world generator, suggested by genmac.  You can use it as follows:
 
-FORMAT:	dwarfort.exe -gen <id number>
-EXAMPLE:	dwarfort.exe -gen 17
+FORMAT:	dwarfort.exe -gen <id number> <seed> <world gen param title>
+EXAMPLE:	dwarfort.exe -gen 1 3498 STANDARD
+EXAMPLE:	dwarfort.exe -gen 2 RANDOM CUSTOM6
 
-This will open a silent, introless dwarf fortress, generate a world with the given id number, export the region files and a picture, and finally quit.  The window remains open so you can see what's going on.  You can still abort world generation while it is running.  If you attempt to create a world number that already exists, it should abort immediately.
+This will open a silent, introless dwarf fortress, generate a world with the given id number and seed, export the region files and a picture, and finally quit.  The window remains open so you can see what's going on.  You can still abort world generation while it is running.  If you attempt to create a world number that already exists, it will abort immediately.

@@ -2,6 +2,10 @@ Change this to turn sound off.
 
 [SOUND:ON]
 
+The sound volume runs from 0 (off) to 255 (full).  You can set the volume from the ESC options menu as well.
+
+[VOLUME:255]
+
 Change this to skip the wonderful intro movies.
 
 [INTRO:ON]
@@ -37,13 +41,29 @@ Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  Thi
 [GRAPHICS_FULLFONT:curses_square_16x16.bmp]
 [GRAPHICS_BLACK_SPACE:YES]
 
+Change this to YES to keep the DF window on top of your other windows.
+
+[TOPMOST:NO]
+
 Change this to YES if you want to see an FPS counter at the top left.
 
 [FPS:NO]
 
-Use this to set the maximum frame rate during play.  The movies are always capped at 100.
+Use this to set the maximum frame rate during play.  The movies are always capped at 100.  A frame in this case is not graphical but related to the movement speed of a creature.  A healthy dwarf takes one step every 10 frames.
 
 [FPS_CAP:100]
+
+Use this to set the maximum graphical frame refresh rate during play.
+
+[G_FPS_CAP:50]
+
+This sets the applications vertical synchronization behavior.  Changing this to ON can impact your FPS if your G_FPS is high.  The other options are ON and DEFAULT.  DEFAULT uses whatever settings you have your system at in general.
+
+[VSYNC:OFF]
+
+Change this to LINEAR if you want the texture values to be averaged over the adjacent pixels.
+
+[TEXTURE_PARAM:NEAREST]
 
 Change this to NO if you don't want to have the mouse involved at all.
 
@@ -53,12 +73,46 @@ Change this to YES if you'd like to use a BMP for the mouse cursor.  The image c
 
 [MOUSE_PICTURE:NO]
 
-Use these options to remove features from the game.  This might speed the game up.
+Use these to control the automatic saving behavior in the dwarf fortress mode of game.  AUTOSAVE can be set to NONE, SEASONAL or YEARLY.  This updates your save at these intervals, so that some of your progress will be saved in case of system instability.  You can set AUTOBACKUP to YES if you want the updated save to be copied to another folder so that you'll have several copies of your world at different times.
+
+[AUTOSAVE:NONE]
+[AUTOBACKUP:NO]
+
+Set this to YES if you want it to save the game when you start a new fortress.  If AUTOBACKUP above is set to YES, it will also create a copy of this new save.
+
+[INITIAL_SAVE:NO]
+
+Use these options to remove features from the game.  This might speed the game up in the case of temperature and weather.
 
 [TEMPERATURE:YES]
 [WEATHER:YES]
+[ECONOMY:YES]
+[INVADERS:YES]
+[CAVEINS:YES]
+[ARTIFACTS:YES]
 
-You can set the maximum population of your fortress here.  Keep in mind that your population must exceed 80 to get a king and 100 to obtain the current game features.
+Change this to YES to output the reasons for world map rejection into a file.
+
+[LOG_MAP_REJECTS:NO]
+
+Change these numbers to set the default weights for traffic designations.  If you make the last numbers too large, pathfinding might lag.
+The format is (PATH_COST:<high>:<normal>:<low>:<restricted>).
+
+[PATH_COST:1:2:5:25]
+
+Change this to YES to disallow pets from coffin burial as the default option.
+
+[COFFIN_NO_PETS_DEFAULT:NO]
+
+This controls the display of areas that are far below outside.  The format is SKY:<character>:<foreground color>:<background color>:<brightness>.  The <character> can be either an ASCII tile number or a character in quotes, like '#'.
+
+[SKY:178:3:0:0]
+
+As above, for inside/subterranean areas.
+
+[CHASM:250:0:0:1]
+
+You can set the maximum population of your fortress here.  Keep in mind that your population must be at least 80 to get a king and 100 to obtain the current game features.
 
 [POPULATION_CAP:200]
 
@@ -70,18 +124,39 @@ If you'd like your engravings to start off looking the same (you can toggle them
 
 [ENGRAVINGS_START_OBSCURED:NO]
 
+If you get annoyed by seeing items like *<*sword*>* you can
+get rid of the outside ** by setting this to NO.
+
+[SHOW_IMP_QUALITY:YES]
+
+Set this to YES to display fluids as numbers indicating depth.
+
+[SHOW_FLOW_AMOUNTS:NO]
+
 This controls the number of milliseconds that must pass before a held key sends a repeat press to the game.  You might need to adjust this.
 
 [KEY_HOLD_MS:150]
+
+This controls the number of milliseconds that must pass before input works again after the view recenters on an event in dwarf mode.
+
+[RECENTER_INTERFACE_SHUTDOWN_MS:0]
 
 This controls "more" in adventure mode.  If MORE is set to NO, all announcements will be skipped.  DISPLAY_LENGTH controls how many lines are printed before it gives you the "more" prompt.
 
 [MORE:YES]
 [DISPLAY_LENGTH:23]
 
-Set this to YES if you want traps to affect you in adventure mode.  This is not recommended -- there are issues with cage traps, and you cannot disarm any of the traps yet, so they effectively stops you from exploring your old fortresses.
+Set this to YES if you want traps to affect you in adventure mode.  This is not recommended -- there are lockup issues with cage traps, and you cannot disarm any of the traps yet, so they effectively stops you from exploring your old fortresses.
 
 [ADVENTURER_TRAPS:NO]
+
+Set this to NO if you want the game to recenter on your adventurer only when you've gotten close to the edge of the view.
+
+[ADVENTURER_ALWAYS_CENTER:YES]
+
+This controls the up/down views in adventure mode.  The first parameter can be OFF, UNHIDDEN, CREATURE or ON.  UNHIDDEN makes the view appear when it contains any unhidden square.  CREATURE makes the view appear when it contains a creature.  The second parameter is the size of the view.  It can be 3, 5, 7 or 9.  A smaller view lets it stack more of them in the column (3 at size 5, and 5 at size 3).
+
+[ADVENTURER_Z_VIEWS:UNHIDDEN:9]
 
 You can use these to say how nicknames are displayed in each mode
 Options are REPLACE_FIRST, CENTRALIZE (between first and last), REPLACE_ALL
