@@ -6,6 +6,13 @@ Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
 
 ******************************************************
 
+Auxiliary file changes for 0.27.169.33a:
+
+New keys
+	[HOTKEY_CARPENTER_BLOCKS:O]
+
+******************************************************
+
 Auxiliary file changes for 0.27.169.32a:
 
 New init options

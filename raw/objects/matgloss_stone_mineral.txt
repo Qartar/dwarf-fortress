@@ -284,7 +284,7 @@ bauxite melts around 2000C, so it's not practical to smelt it for aluminum (magm
 
 aluminum can occasionally be found in its free form in environments that like oxygen, volcanic muds were mentioned
 [MATGLOSS_STONE:ALUMINUM]
-[NAME:aluminum][COLOR:7:7:1][TILE:'^']
+[NAME:native aluminum][COLOR:7:7:1][TILE:'^']
 [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
 [METAL_ORE:ALUMINUM:100]
 [SOLID_DENSITY:2700]
