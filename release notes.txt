@@ -38,6 +38,12 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.27.169.33a:
+
+Various crash and lag fixes.  There are still lags and crashes, but many of the major offenders have been handled now.  There were also several minor fixes.  See the dev log for those.
+
+******************************************************
+
 Release notes for 0.27.169.32a:
 
 Well, it has been a while.  That means potential instability, so don't get too attached to your fortresses at this point.  I'll be doing subsequent releases more often now as I solve problems.  In any case, dwarf mode now has a z-axis and you can make fortresses that span several levels.  Fluids behave much more reasonably, and you can walk across the world in adventure mode in the local view without having to step off of an artificial edge.  And various other lots more stuff.
