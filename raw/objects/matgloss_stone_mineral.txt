@@ -202,6 +202,7 @@ ore of bismuth
 [NAME:bismuthinite][COLOR:7:7:1][TILE:'%']
 [BASIC_COLOR:7:0]
 [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
+[ITEM_SYMBOL:'*']
 [METAL_ORE:BISMUTH:100]
 
 arsenic sulfide
@@ -252,6 +253,7 @@ another titanium ore, same comment applies
 [MATGLOSS_STONE:MAGNETITE]
 [NAME:magnetite][COLOR:0:7:1][TILE:'~']
 [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
+[ITEM_SYMBOL:'*']
 [METAL_ORE:IRON:100]
 [SOLID_DENSITY:5046]
 [VALUE:8]
@@ -286,6 +288,7 @@ aluminum can occasionally be found in its free form in environments that like ox
 [MATGLOSS_STONE:ALUMINUM]
 [NAME:native aluminum][COLOR:7:7:1][TILE:'^']
 [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
+[ITEM_SYMBOL:'*']
 [METAL_ORE:ALUMINUM:100]
 [SOLID_DENSITY:2700]
 [VALUE:40]

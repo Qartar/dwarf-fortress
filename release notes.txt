@@ -17,7 +17,7 @@ is also an alpha, and your world might become corrupted by an error.  You can al
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
-(0) ***Note that version 0.27.169.32a is not compatible with old versions.***
+(0) ***Note that versions numbered 0.27.169.32a+ are not compatible with old versions.***
 (1) Unzip the new dwarves into a *NEW* folder.
 (2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
@@ -35,6 +35,12 @@ Go to "data/init/init.txt".  These options will take effect the next time you st
 IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
+
+******************************************************
+
+Release notes for 0.27.169.33b:
+
+Various crash and lag fixes again.  See the dev log for other minor changes.
 
 ******************************************************
 
