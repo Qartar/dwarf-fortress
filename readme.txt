@@ -15,8 +15,8 @@ All of the games there are free.  If you paid for this game, get the latest vers
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See file_changes.txt for new init/interface information.
 See command_line.txt for information on world generation from command lines.
-Go to http://www.bay12games/dwarves/faq.html for Frequently Asked Questions and their answers.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
+Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
 
 ******************************************************
 

@@ -304,6 +304,7 @@ matgloss_plant
 	[FREQUENCY:100]
 	[CLUSTERSIZE:5]
 	[PREFSTRING:wicked thorns]
+	[SEED:4:0:1]
 
 [MATGLOSS_PLANT:BERRY_SUN]
 	[TILE:58][COLOR:6:0:1]
