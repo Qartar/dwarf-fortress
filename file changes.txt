@@ -1,8 +1,15 @@
 See readme.txt for the license.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
-Go to http://www.bay12games/dwarves/faq.html for Frequently Asked Questions and their answers.
-Go to http://www.bay12games/dwarves/dev_now.html to see a full list of changes.
+Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
+Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.33c:
+
+New init options
+	[PRIORITY:NORMAL]
 
 ******************************************************
 

@@ -65,6 +65,10 @@ Change this to LINEAR if you want the texture values to be averaged over the adj
 
 [TEXTURE_PARAM:NEAREST]
 
+Change this to make the dwarfort.exe process have a different priority.  From highest to lowest, the options are REALTIME, HIGH, ABOVE_NORMAL, NORMAL, BELOW_NORMAL and IDLE.
+
+[PRIORITY:NORMAL]
+
 Change this to NO if you don't want to have the mouse involved at all.
 
 [MOUSE:YES]
