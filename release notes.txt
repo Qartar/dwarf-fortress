@@ -38,6 +38,12 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.27.169.33e:
+
+Continuing along with bug fixing.  See the dev log for other minor changes.
+
+******************************************************
+
 Release notes for 0.27.169.33d:
 
 Fixed a few of the serious problems (one of the trade crashes, resting injury loops, waterskin filling at wells forever).  See the dev log for other minor changes.

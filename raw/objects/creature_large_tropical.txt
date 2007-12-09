@@ -612,7 +612,7 @@ creature_large_tropical
 	[EXTRACT_CHEESE:two-humped camel cheese:6:0:1]
 	[CHEESE_VALUE:30]
 	[FREQUENCY:100]
-	[PREFSTRING:hump]
+	[PREFSTRING:humps]
 	[DIURNAL]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:3:7]
