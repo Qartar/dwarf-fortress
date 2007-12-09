@@ -6,6 +6,13 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
+Auxiliary file changes for 0.27.169.33e:
+
+Body raws
+	Allowed use of [SKELETON] to distinguish things like the spine that shouldn't be removed from skeletons.  Temporary fix.
+
+******************************************************
+
 Auxiliary file changes for 0.27.169.33c:
 
 New init options
