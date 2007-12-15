@@ -4,6 +4,22 @@ See command_line.txt for information on world generation from command lines.
 Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
 Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
 
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.33f:
+
+New graphics tokens
+	"MAYOR"
+	"LEADER"
+	"CAPTAIN_OF_THE_GUARD"
+	"SHERIFF"
+	"MANAGER"
+	"BOOKKEEPER"
+	"BROKER"
+
+In the absence of one of these, it will use their standard creature/profession tile, but you should include all seven of these for a given creature if you want multiple appointments to display properly.  The picture multiple appointments is selected in the order given above, but if a tile doesn't exist for the first appointment, it will jump down to the regular profession tile.
+
 ******************************************************
 
 Auxiliary file changes for 0.27.169.33e:

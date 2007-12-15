@@ -340,6 +340,7 @@ main constituent of limestone, but can be found as crystal
 [REACTION_CLASS:FLUX]
 [ENVIRONMENT_SPEC:LIMESTONE:CLUSTER_SMALL:100]
 [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
+[VALUE:2]
 
 potassium nitrate, good for fertilizer and blowing things up with carbon and sulfur
 [MATGLOSS_STONE:SALTPETER]

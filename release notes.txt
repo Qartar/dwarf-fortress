@@ -38,9 +38,15 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.27.169.33f:
+
+Various fixes people have been waiting for.  Fixed the farm problem from 33e, goblin sieges, mud tracking, made the treeline less annoying, made the missing gemstones available, and lots of other stuff.  See the dev log for a complete list.
+
+******************************************************
+
 Release notes for 0.27.169.33e:
 
-Continuing along with bug fixing.  See the dev log for other minor changes.
+Continuing along with bug fixing.
 
 ******************************************************
 
@@ -52,7 +58,7 @@ Fixed a few of the serious problems (one of the trade crashes, resting injury lo
 
 Release notes for 0.27.169.33c:
 
-Continuing along with bug fixing.  See the dev log for other minor changes.
+Continuing along with bug fixing.
 
 ******************************************************
 
