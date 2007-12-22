@@ -7,6 +7,20 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
+Auxiliary file changes for 0.27.169.33g:
+
+New keys
+	[ASSIGNTRADE_STRING:S]
+	[ASSIGNTRADE_EXCLUDE_PROHIBITED:M]
+	[ASSIGNTRADE_PENDING:P]
+	[ASSIGNTRADE_SORT:D]
+
+New init options
+	[PAUSE_ON_LOAD:NO]
+	[EMBARK_RECTANGLE:6:6]
+
+******************************************************
+
 Auxiliary file changes for 0.27.169.33f:
 
 New graphics tokens
