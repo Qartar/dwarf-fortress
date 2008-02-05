@@ -7,6 +7,245 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
+Auxiliary file changes for *********:
+
+New entity tags
+	[USE_EVIL_WOOD]
+	[USE_GOOD_WOOD]
+	[USE_EVIL_PLANTS]
+	[USE_GOOD_PLANTS]
+	[USE_GOOD_ANIMALS]
+	[USE_ANY_PET_RACE]
+	[USE_MISC_PROCESSED_WOOD_PRODUCTS]
+	[IMPROVED_BOWS]
+	[RESPECT_ANIMALS]
+	[RESPECT_TREES]
+	[LOW_SKILL]
+	[INVADERS_IGNORE_NEUTRALS]
+	[AT_PEACE_WITH_WILDLIFE]
+	[EQUIPMENT_IMPROVEMENTS]
+	[ABUSE_BODIES]
+	[SPHERE_ALIGNMENT:<sphere>:<amount>]
+		<amount> is a multiplicative modifier that runs from 0 to 25600 with 256 being the neutral value
+	[ART_FACET_MODIFIER:<facet>:<amount>]
+		<facet> is one of: OWN_RACE, FANCIFUL, EVIL, GOOD
+		<amount> as above
+	[ART_IMAGE_ELEMENT_MODIFIER:<art image element>:<amount>]
+		<art image element> is one of: CREATURE, PLANT, TREE, SHAPE, ITEM
+		<amount> as above
+	[ITEM_IMPROVEMENT_MODIFIER:<item improvement>:<amount>]
+		<item improvement> is one of:
+			ART_IMAGE
+			COVERED
+			RINGS_HANGING
+			BANDS
+			SPIKES
+			ITEMSPECIFIC
+			THREAD
+			CLOTH
+			SEWN_IMAGE
+		<amount> as above
+	[ADVENTURE_TIER:<placement>]
+		<placement> can run from 0 to 1000.  0 (the default) means the entity's sites won't be listed for adventure mode character creation.
+		Those entities with positive numbers are listed starting at tier 1.  Within a tier, they are ordered by race index.
+	[FRIENDLY_COLOR:<front>:<back>:<brightness>]
+	[DEFAULT_SITE_TYPE:<site>]
+		Used during world gen.
+		<site> is one of:
+			DARK_FORTRESS
+			CAVE
+			CAVE_DETAILED
+			TREE_CITY
+			CITY
+			RUIN
+	[LIKES_SITE:<site>]
+		Used during hist fig sorting after play.
+	[TOLERATES_SITE:<site>]
+		Used by migrants.
+	[LEADER_TYPE:<unit>]
+	[SITE_LEADER_TYPE:<unit>]
+	[CAN_HAVE_MILITARY_LEADER]
+	[CAN_HAVE_MILITARY_SITE_LEADER]
+	[BIOME_SUPPORT:<biome>:<amount>]
+		<amount> ranges from 0 to 10.
+		<biome> can be any of the biome tags used for creatures, including the general groups.  Don't put "BIOME_" in front.
+	[START_BIOME:<biome>]
+	[DIPLOMAT]
+	[MERCHANT_NOBILITY]
+	[TREE_CAP_DIPLOMACY]
+	[DIPLOMAT_BODYGUARDS]
+	[MERCHANT_BODYGUARDS]
+	[ACTIVE_SEASON:<season>]
+	[PROGRESS_TRIGGER_POPULATION:<number>]
+	[PROGRESS_TRIGGER_PRODUCTION:<number>]
+	[PROGRESS_TRIGGER_TRADE:<number>]
+		<number> is from 0 to 5.
+	[ENTITY_GROUPING:<group>]
+		<group> can be one of: FRIENDLY (default), EVIL, NUISANCE
+		Until things become more complicated, this tracks who they side with in fights and during dwarf mode diplomacy/trade.
+	[ITEM_THIEF]
+	[SKULKING]
+		This makes the severity of attacks depend on the extent of item/baby thievery rather than the passage of time.
+	[START_GROUP_NUMBER:<number>]
+		How many mated pairs (or single creatures if forced gender) are created at the beginning of world generation, counting any nobles/diplomats.
+	[MAX_SITE_POP_NUMBER:<number>]
+		How many members the entity can have during world generation in a single site.
+	[MAX_POP_NUMBER:<number]
+		How many members the entity can have during world generation total.
+	[RELIGION:<type>]
+		<type> can be PANTHEON, ANY_APPROPRIATE_POWER or REGIONAL_FORCE.
+		You can have more than one.  It will choose one at random for each entity created using this template.
+	[RELIGION_SPHERE:<sphere>]
+		You can have more than one.  In the case of a pantheon, gods will be created with the goal of covering all of the spheres either a directly or with an umbrella sphere.  In the case of appropriate powers, the spheres are checked against the sphere's of the candidate power's race.  [USE_GOOD_ANIMALS], [USE_GOOD_PLANTS] match with [GOOD] and similarly for [EVIL].  In this case, a sphere match is not required.
+	[MAYOR]
+	[MAX_STARTING_CIV_NUMBER:<number>]
+		How many of this entity it tries to place at the beginning of world generation, cycling through the available races.
+		It will currently place the total of these numbers or 50 civilizations, whichever is lower.
+
+New creature tags
+	[POWER]
+		Lets the creature be picked as a world generation civ leader by entities with [ANY_APPROPRIATE_POWER], provided the race is also immortal and has either matching good/evil tags or matching sphere tags.
+
+New sphere list (old ones included here, only old ones have endgame effects):
+	AGRICULTURE
+	ANIMALS
+	ART
+	BALANCE
+	BEAUTY
+	BIRTH
+	BLIGHT
+	BOUNDARIES
+	CAVERNS
+	CHAOS
+	CHARITY
+	CHILDREN
+	COASTS
+	CONSOLATION
+	COURAGE
+	CRAFTS
+	CREATION
+	DANCE
+	DARKNESS
+	DAWN
+	DAY
+	DEATH
+	DEFORMITY
+	DEPRAVITY
+	DISCIPLINE
+	DISEASE
+	DREAMS
+	DUSK
+	DUTY
+	EARTH
+	FAMILY
+	FAME
+	FATE
+	FERTILITY
+	FESTIVALS
+	FIRE
+	FISH
+	FISHING
+	FOOD
+	FORGIVENESS
+	FORTRESSES
+	FREEDOM
+	GAMBLING
+	GAMES
+	GENEROSITY
+	HAPPINESS
+	HEALING
+	HOSPITALITY
+	HUNTING
+	INSPIRATION
+	JEALOUSY
+	JEWELS
+	JUSTICE
+	LABOR
+	LAKES
+	LAWS
+	LIES
+	LIGHT
+	LIGHTNING
+	LONGEVITY
+	LOVE
+	LOYALTY
+	LUCK
+	LUST
+	MARRIAGE
+	MERCY
+	METALS
+	MINERALS
+	MISERY
+	MIST
+	MOON
+	MOUNTAINS
+	MUCK
+	MURDER
+	MUSIC
+	NATURE
+	NIGHT
+	NIGHTMARES
+	OATHS
+	OCEANS
+	ORDER
+	PAINTING
+	PEACE
+	PERSUASION
+	PLANTS
+	POETRY
+	PREGNANCY
+	RAIN
+	RAINBOWS
+	REBIRTH
+	REVELRY
+	REVENGE
+	RIVERS
+	RULERSHIP
+	RUMORS
+	SACRIFICE
+	SALT
+	SCHOLARSHIP
+	SEASONS
+	SILENCE
+	SKY
+	SONG
+	SPEECH
+	STARS
+	STORMS
+	STRENGTH
+	SUICIDE
+	SUN
+	THEFT
+	THRALLDOM
+	THUNDER
+	TORTURE
+	TRADE
+	TRAVELERS
+	TREACHERY
+	TREES
+	TRICKERY
+	TRUTH
+	TWILIGHT
+	VALOR
+	VICTORY
+	VOLCANOS
+	WAR
+	WATER
+	WEALTH
+	WEATHER
+	WIND
+	WISDOM
+	WRITING
+	YOUTH
+
+New graphics tokens
+	HIGH_PRIEST
+	PRIEST
+	SHOPKEEPER
+
+
+******************************************************
+
 Auxiliary file changes for 0.27.169.33g:
 
 New keys
