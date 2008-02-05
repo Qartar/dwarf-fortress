@@ -139,7 +139,7 @@ DRUNK
 LASHER
 MASTER_LASHER
 
-You can also use the appointment tokens in place of the profession tokens:
+You can also use the entity/site link tokens in place of the profession tokens:
 
 MAYOR
 LEADER
@@ -148,5 +148,8 @@ SHERIFF
 MANAGER
 BOOKKEEPER
 BROKER
+HIGH_PRIEST
+PRIEST
+SHOPKEEPER
 
 In the absence of one of these, it will use their standard creature/profession tile, but you should include all seven of these for a given creature if you want multiple appointments to display properly.  The picture multiple appointments is selected in the order given above, but if a tile doesn't exist for the first appointment, it will jump down to the regular profession tile.
