@@ -38,6 +38,12 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.27.176.38a:
+
+Various little things that people have wanted for a while this time, as well as many additional bug fixes.  See the dev log for a complete list.
+
+******************************************************
+
 Release notes for 0.27.173.38a:
 
 The first army arc release, complete with no armies.  It really is mostly foundational work, but you'll notice some small changes here and there, more if you play adventure mode.  See the dev log for a complete list.
