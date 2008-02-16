@@ -90,7 +90,7 @@ Set this to YES to make Dwarf Fortress start paused whenever you load an active 
 
 [PAUSE_ON_LOAD:NO]
 
-Use these options to remove features from the game.  This might speed the game up in the case of temperature and weather.
+Use these options to remove features from the game.  Permitted values are YES and NO.  Removal might speed the game up in the case of temperature and weather.
 
 [TEMPERATURE:YES]
 [WEATHER:YES]
@@ -98,6 +98,7 @@ Use these options to remove features from the game.  This might speed the game u
 [INVADERS:YES]
 [CAVEINS:YES]
 [ARTIFACTS:YES]
+[ZERO_RENT:NO]
 
 Change this to YES to output the reasons for world map rejection into a file.
 
@@ -127,6 +128,10 @@ As above, for inside/subterranean areas.
 You can set the maximum population of your fortress here.  Keep in mind that your population must be at least 80 to get a king and 100 to obtain the current game features.
 
 [POPULATION_CAP:200]
+
+This allows you to control the number of babies+children in your fortress.  The first number is an absolute cap on the number of babies+children.  The second is a percentage of the current number of adults in your fortress (the default is the essentially meaningless 1000% here).  The lower number is used as the cap.  The cap only prevents further pregancies, so migrant children, multiple births and existing pregnancies from old saves can still push you over the cap.  Setting either number to zero will disallow pregnancies in the fortress.
+
+[BABY_CHILD_CAP:100:1000]
 
 If you don't like the ,.`' ground, try setting this to NO.  The ground will turn into periods only.
 

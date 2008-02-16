@@ -1,13 +1,13 @@
 Slaves to Armok: God of Blood
 Chapter II: Dwarf Fortress
 
-Copyright (c) 2002-2007 by Tarn Adams.
+Copyright (c) 2002-2008 by Tarn Adams.
 
 ******************************************************
 
 For help with gameplay, press the help key (initially '?') after starting the game.  You might have to press ESC and use 2/8 to select keybindings on non-US keyboards in order to get the help key to work properly.
 
-As of October 2007, you can also get help at the fan-created dwarffortresswiki.net.  Please make use of and contribute to this valuable resource.
+As of February 2008, you can also get help at the fan-created dwarffortresswiki.net.  Please make use of and contribute to this valuable resource.
 
 Visit www.bay12games.com to report problems, discuss the game and read information on future development.  There are also other games there.
 All of the games there are free.  If you paid for this game, get the latest version for free at bay12games.com, and let me know who was charging you at tarn.adams@gmail.com.

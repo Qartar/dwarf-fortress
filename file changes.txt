@@ -7,7 +7,33 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
-Auxiliary file changes for *********:
+Auxiliary file changes for 0.27.176.38a:
+
+Plant raws
+	[DROWN_LEVEL:<number from 0 to 7>]
+		The fluid level at which the plant dies in any liquid.  Temperature effects from lava are separate.
+		0 means that fluid level does not affect the plant.  Default is 4.
+
+Wood raws
+	[TREE_DROWN_LEVEL:<number from 0 to 7>]
+	[SAPLING_DROWN_LEVEL:<number from 0 to 7>]
+		As above for plants (irrelevant for full-grown trees at this point).
+		Default is 4 for saplings and 7 for trees.
+
+New keys
+	[UNITVIEW_RELATIONSHIPS:R]
+	[UNITVIEW_RELATIONSHIPS_ZOOM:Z]
+	[UNITVIEW_RELATIONSHIPS_VIEW:V]
+	[BUILDINGLIST_ZOOM_T:T]
+	[BUILDINGLIST_ZOOM_Q:Q]
+
+New init options
+	[ZERO_RENT:NO]
+	[BABY_CHILD_CAP:100:1000]
+
+******************************************************
+
+Auxiliary file changes for 0.27.173.38a:
 
 New entity tags
 	[USE_EVIL_WOOD]
