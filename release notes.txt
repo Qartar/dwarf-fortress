@@ -38,6 +38,12 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.27.176.38b:
+
+This is the first Mac release.  Barring some tragic mistake, this is also the last bug fix release before the continuation of the Army Arc.  Again, this release is made up mostly of small changes that people wanted and some bug fixes for the worst problems introducted during the last release.  See the dev log for a complete list.
+
+******************************************************
+
 Release notes for 0.27.176.38a:
 
 Various little things that people have wanted for a while this time, as well as many additional bug fixes.  See the dev log for a complete list.
