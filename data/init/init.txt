@@ -49,7 +49,7 @@ Change this to YES if you want to see an FPS counter at the top left.
 
 [FPS:NO]
 
-Use this to set the maximum frame rate during play.  The movies are always capped at 100.  A frame in this case is not graphical but related to the movement speed of a creature.  A healthy dwarf takes one step every 10 frames.
+Use this to set the maximum frame rate during play.  The movies are always capped at 100.  A frame in this case is not graphical but related to the movement speed of a creature.  A healthy, unencumbered dwarven peasant takes one step every 10 frames.
 
 [FPS_CAP:100]
 
@@ -77,10 +77,11 @@ Change this to YES if you'd like to use a BMP for the mouse cursor.  The image c
 
 [MOUSE_PICTURE:NO]
 
-Use these to control the automatic saving behavior in the dwarf fortress mode of game.  AUTOSAVE can be set to NONE, SEASONAL or YEARLY.  This updates your save at these intervals, so that some of your progress will be saved in case of system instability.  You can set AUTOBACKUP to YES if you want the updated save to be copied to another folder so that you'll have several copies of your world at different times.
+Use these to control the automatic saving behavior in the dwarf fortress mode of game.  AUTOSAVE can be set to NONE, SEASONAL or YEARLY.  This updates your save at these intervals, so that some of your progress will be saved in case of system instability.  You can set AUTOBACKUP to YES if you want the updated save to be copied to another folder so that you'll have several copies of your world at different times.  Set AUTOSAVE_PAUSE to YES if you want the game to pause every time it autosaves.
 
 [AUTOSAVE:NONE]
 [AUTOBACKUP:NO]
+[AUTOSAVE_PAUSE:NO]
 
 Set this to YES if you want it to save the game when you start a new fortress.  If AUTOBACKUP above is set to YES, it will also create a copy of this new save.
 
@@ -89,6 +90,10 @@ Set this to YES if you want it to save the game when you start a new fortress.  
 Set this to YES to make Dwarf Fortress start paused whenever you load an active game.
 
 [PAUSE_ON_LOAD:NO]
+
+Set this to YES if you want Dwarf Fortress to show the warning window on embark as a confirmation even if there are no issues.
+
+[EMBARK_WARNING_ALWAYS:NO]
 
 Use these options to remove features from the game.  Permitted values are YES and NO.  Removal might speed the game up in the case of temperature and weather.
 

@@ -7,6 +7,27 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
+Auxiliary file changes for 0.27.176.38b:
+
+Entity raws
+	removed *_SETTLEMENTS tags (they haven't done anything since the biome tags went in)
+	in addition to COMMON, UNCOMMON and RARE, armor/clothing types can also have FORCED, which forces the item to appear in all realizations of the entity
+
+New keys
+	[LEAVESCREEN_ALL:SHIFT+SPACE]
+	[MILITARY_ZOOM:C]
+	[STORES_FORBID:F]
+	[WORLD_PARAM_DIM_X_UP:I]
+	[WORLD_PARAM_DIM_X_DOWN:U]
+	[WORLD_PARAM_DIM_Y_UP:P]
+	[WORLD_PARAM_DIM_Y_DOWN:O]
+
+New init options
+	[AUTOSAVE_PAUSE:NO]
+	[EMBARK_WARNING_ALWAYS:NO]
+
+******************************************************
+
 Auxiliary file changes for 0.27.176.38a:
 
 Plant raws
