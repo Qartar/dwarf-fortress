@@ -38,9 +38,15 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.27.176.38c:
+
+This release should stop the command line crash from non-standard worlds, and it also has a shot at stopping the site sprawl issue during repeated world generation.  A fix for Power PC Macs is still in progress.
+
+******************************************************
+
 Release notes for 0.27.176.38b:
 
-This is the first Mac release.  Barring some tragic mistake, this is also the last bug fix release before the continuation of the Army Arc.  Again, this release is made up mostly of small changes that people wanted and some bug fixes for the worst problems introducted during the last release.  See the dev log for a complete list.
+This is the first Mac release.  Barring some tragic mistake, this is also the last bug fix release before the continuation of the Army Arc.  Again, this release is made up mostly of small changes that people wanted and some bug fixes for the worst problems introduced during the last release.  See the dev log for a complete list.
 
 ******************************************************
 
