@@ -24,6 +24,7 @@ creature_small_riverlake
 	[BIOME:POOL_TROPICAL_SALTWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_LOACH_CLOWN]
 	[NAME:clown loach:clown loaches:clown loach]
@@ -39,6 +40,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TROPICAL_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_BULLHEAD_BROWN]
 	[NAME:brown bullhead:brown bullheads:brown bullhead]
@@ -53,6 +55,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_BULLHEAD_YELLOW]
 	[NAME:yellow bullhead:yellow bullheads:yellow bullhead]
@@ -67,6 +70,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_BULLHEAD_BLACK]
 	[NAME:black bullhead:black bullheads:black bullhead]
@@ -81,6 +85,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_KNIFEFISH_BANDED]
 	[NAME:banded knifefish:banded knifefish:banded knifefish]
@@ -96,6 +101,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TROPICAL_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_CHAR]
 	[NAME:char:char:char]
@@ -111,6 +117,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_TROUT_RAINBOW]
 	[NAME:rainbow trout:rainbow trout:rainbow trout]
@@ -126,6 +133,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_MOLLY_SAILFIN]
 	[NAME:sailfin molly:sailfin mollies:sailfin molly]
@@ -145,6 +153,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TEMPERATE_SALTWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_GUPPY]
 	[NAME:guppy:guppies:guppy]
@@ -164,6 +173,7 @@ creature_small_riverlake
 	[BIOME:LAKE_TROPICAL_SALTWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_PERCH]
 	[NAME:perch:perch:perch]
@@ -179,3 +189,4 @@ creature_small_riverlake
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]

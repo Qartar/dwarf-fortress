@@ -18,6 +18,7 @@ creature_insects
 	[STANDARD_FLESH]
 	[POPULATION_NUMBER:2500:5000]
 	[CLUSTER_NUMBER:100:200]
+	[MUNDANE]
 
 [CREATURE:ROACH_LARGE]
 	[NAME:large roach:large roaches:large roach]
@@ -35,6 +36,7 @@ creature_insects
 	[BIOME:NOT_FREEZING]
 	[TRIGGERABLE_GROUP:5:50]
 	[STANDARD_FLESH]
+	[MUNDANE]
 
 [CREATURE:BEETLE]
 	[NAME:beetle:beetles:beetle]
@@ -50,6 +52,7 @@ creature_insects
 	[ALL_ACTIVE]
 	[BIOME:NOT_FREEZING]
 	[STANDARD_FLESH]
+	[MUNDANE]
 
 [CREATURE:ANT]
 	[NAME:ant:ants:ant]
@@ -65,6 +68,7 @@ creature_insects
 	[DIURNAL]
 	[BIOME:NOT_FREEZING]
 	[STANDARD_FLESH]
+	[MUNDANE]
 
 [CREATURE:BUTTERFLY_MONARCH]
 	[NAME:monarch butterfly:monarch butterflies:monarch butterfly]
@@ -81,6 +85,7 @@ creature_insects
 	[DIURNAL]
 	[BIOME:NOT_FREEZING]
 	[STANDARD_FLESH]
+	[MUNDANE]
 
 [CREATURE:FIREFLY]
 	[NAME:firefly:fireflies:firefly]
@@ -100,6 +105,7 @@ creature_insects
 	[STANDARD_FLESH]
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:1:10]
+	[MUNDANE]
 
 [CREATURE:DRAGONFLY]
 	[NAME:dragonfly:dragonflies:dragonfly]
@@ -116,3 +122,4 @@ creature_insects
 	[DIURNAL]
 	[BIOME:ANY_POOL]
 	[STANDARD_FLESH]
+	[MUNDANE]

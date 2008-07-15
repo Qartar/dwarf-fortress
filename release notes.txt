@@ -1,4 +1,4 @@
-See readme.txt for the license.
+See readme.txt for general information about the release.
 See file_changes.txt for new init/interface information.
 See command_line.txt for information on world generation from command lines.
 Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
@@ -35,6 +35,14 @@ Go to "data/init/init.txt".  These options will take effect the next time you st
 IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
+
+******************************************************
+
+Release notes for 0.28.181.39a:
+
+Okay, here's the new version.  You can do various things with world generation, though not much has changed with the regular game.  If you go into the world generation advanced parameters and start designing/drawing your own world, please keep in mind that you'll probably end up getting infinite reject cycles -- you can turn on the reject log in data/init/init.txt to see what's going wrong.  Oftentimes you'll be violating biome restrictions (you can just go through any that you find and 'n'ullify them to solve this problem).  As usual, let me know if it crashes and how to make it crash if it does -- I suspect there are new problems of all sorts lurking within every part of the game, despite having fixed more than 100 bugs for this version.
+
+Save compatibility is a little iffy this time around -- there have been extensive changes to the mid-level maps, so it might get confused about the biome of a particular tile...  and worse.  I haven't noticed anything in limited messing around with old saves, but there will very likely be problems.
 
 ******************************************************
 

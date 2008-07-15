@@ -31,6 +31,7 @@ creature_large_riverlake
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:FISH_GAR_LONGNOSE]
 	[NAME:longnose gar:longnose gars:longnose gar]
@@ -59,6 +60,7 @@ creature_large_riverlake
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_CARP]
 	[NAME:carp:carp:carp]
@@ -88,6 +90,7 @@ creature_large_riverlake
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_TIGERFISH]
 	[NAME:tigerfish:tigerfish:tigerfish]
@@ -115,6 +118,7 @@ creature_large_riverlake
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_PIKE]
 	[NAME:pike:pike:pike]
@@ -143,3 +147,4 @@ creature_large_riverlake
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]

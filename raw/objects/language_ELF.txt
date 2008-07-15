@@ -2106,3 +2106,7 @@ language_ELF
 	[T_WORD:EVISCERATION:abecu]
 	[T_WORD:HEALING:reni]
 	[T_WORD:ADMIRATION:awe]
+	[T_WORD:CONFLICT:vesifa]
+	[T_WORD:ATTACK:irithe]
+	[T_WORD:ONSLAUGHT:pal¢thi]
+	[T_WORD:TREE:thelire]

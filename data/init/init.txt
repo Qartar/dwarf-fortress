@@ -30,7 +30,7 @@ If this is set to YES, the tiles will not be stretched, but rather the game view
 
 [BLACK_SPACE:NO]
 
-Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of February 2008, the Dwarf Fortress Wiki has graphical tilesets available at http://www.dwarffortresswiki.net/index.php/Graphics_sets.
+Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of July 2008, the Dwarf Fortress Wiki has graphical tilesets available at http://www.dwarffortresswiki.net/index.php/List_of_user_graphics_sets.
 
 [GRAPHICS:NO]
 [GRAPHICS_WINDOWEDX:1280]
@@ -130,6 +130,10 @@ As above, for inside/subterranean areas.
 
 [CHASM:250:0:0:1]
 
+This controls the "IDLERS: <number>" that is displayed in dwarf mode.  You can set it to TOP, BOTTOM or OFF.
+
+[IDLERS:TOP]
+
 You can set the maximum population of your fortress here.  Keep in mind that your population must be at least 80 to get a king and 100 to obtain the current game features.
 
 [POPULATION_CAP:200]
@@ -154,6 +158,10 @@ get rid of the outside ** by setting this to NO.
 Set this to YES to display fluids as numbers indicating depth.
 
 [SHOW_FLOW_AMOUNTS:NO]
+
+If you'd prefer to have it show the history behind every engraving you view in dwarf mode, etc., then set this to YES.
+
+[SHOW_ALL_HISTORY_IN_DWARF_MODE:NO]
 
 This controls the number of milliseconds that must pass before a held key sends a repeat press to the game.  You might need to adjust this.
 

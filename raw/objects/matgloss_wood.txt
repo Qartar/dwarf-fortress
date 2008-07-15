@@ -139,7 +139,7 @@ matgloss_wood
 	[NAME:highwood][ADJ:highwood]
 	[TILE:20]
 	[PREFSTRING:magnificence]
-	[DRY][SAVAGE][SAPLING]
+	[DRY][SAVAGE]
 	[BIOME:NOT_FREEZING]
 	[SAPLING]
 	[SOLID_DENSITY:500]
