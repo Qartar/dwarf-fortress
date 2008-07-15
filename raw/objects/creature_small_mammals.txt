@@ -23,6 +23,7 @@ creature_small_mammals
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
 	[POPULATION_NUMBER:250:500]
+	[MUNDANE]
 
 [CREATURE:SQUIRREL_GRAY]
 	[NAME:gray squirrel:gray squirrels:gray squirrel]
@@ -57,6 +58,7 @@ creature_small_mammals
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
 	[POPULATION_NUMBER:250:500]
+	[MUNDANE]
 
 [CREATURE:CHIPMUNK]
 	[NAME:chipmunk:chipmunks:chipmunk]
@@ -74,6 +76,7 @@ creature_small_mammals
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
 	[POPULATION_NUMBER:250:500]
+	[MUNDANE]
 
 [CREATURE:HEDGEHOG]
 	[NAME:hedgehog:hedgehogs:hedgehog]
@@ -92,3 +95,4 @@ creature_small_mammals
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
 	[POPULATION_NUMBER:250:500]
+	[MUNDANE]

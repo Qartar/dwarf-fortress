@@ -18,6 +18,7 @@ creature_small_ocean
 	[BIOME:ANY_LAKE]
 	[BIOME:ANY_RIVER]
 	[STANDARD_FLESH]
+	[MUNDANE]
 
 [CREATURE:OYSTER]
 	[NAME:oyster:oysters:oyster]
@@ -33,6 +34,7 @@ creature_small_ocean
 	[ALL_ACTIVE]
 	[BIOME:ANY_OCEAN]
 	[STANDARD_FLESH]
+	[MUNDANE]
 
 [CREATURE:FISH_SALMON]
 	[NAME:salmon:salmon:salmon]
@@ -51,6 +53,7 @@ creature_small_ocean
 	[BIOME:RIVER_TEMPERATE_SALTWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_CLOWNFISH]
 	[NAME:clownfish:clownfish:clownfish]
@@ -65,6 +68,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TROPICAL]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_HAGFISH]
 	[NAME:hagfish:hagfish:hagfish]
@@ -81,6 +85,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_LAMPREY_BROOK]
 	[NAME:brook lamprey:brook lampreys:brook lamprey]
@@ -98,6 +103,7 @@ creature_small_ocean
 	[BIOME:RIVER_TEMPERATE_SALTWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_RAY_BAT]
 	[NAME:bat ray:bat rays:bat ray]
@@ -114,6 +120,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TROPICAL]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_RAY THORNBACK]
 	[NAME:thornback ray:thornback rays:thornback ray]
@@ -129,6 +136,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TROPICAL]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_RATFISH_SPOTTED]
 	[NAME:spotted ratfish:spotted ratfish:spotted ratfish]
@@ -143,6 +151,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_HERRING]
 	[NAME:herring:herrings:herring]
@@ -159,6 +168,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_SHAD]
 	[NAME:shad:shads:shad]
@@ -178,6 +188,7 @@ creature_small_ocean
 	[BIOME:RIVER_TEMPERATE_SALTWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_ANCHOVY]
 	[NAME:anchovy:anchovies:anchovy]
@@ -193,6 +204,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_TROUT_STEELHEAD]
 	[NAME:steelhead trout:steelhead trout:steelhead trout]
@@ -211,6 +223,7 @@ creature_small_ocean
 	[BIOME:RIVER_TEMPERATE_SALTWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_HAKE]
 	[NAME:hake:hake:hake]
@@ -227,6 +240,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_SEAHORSE]
 	[NAME:seahorse:seahorses:seahorse]
@@ -242,6 +256,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TROPICAL]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_GLASSEYE]
 	[NAME:glasseye:glasseye:glasseye]
@@ -256,6 +271,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TROPICAL]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_PUFFER_WHITE_SPOTTED]
 	[NAME:white-spotted puffer:white-spotted puffers:white-spotted puffer]
@@ -270,6 +286,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TROPICAL]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_SOLE]
 	[NAME:sole:sole:sole]
@@ -285,11 +302,12 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_FLOUNDER]
 	[NAME:flounder:flounders:flounder]
 	[TILE:224][COLOR:6:0:0]
-	[VERMIN_GROUNDER]
+	[VERMIN_GROUNDER][VERMIN_FISH]
 	[POPULATION_NUMBER:250:500]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NOT_BUTCHERABLE][NATURAL]
@@ -299,11 +317,12 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:FISH_MACKEREL]
 	[NAME:mackerel:mackerel:mackerel]
 	[TILE:224][COLOR:7:0:0]
-	[VERMIN_GROUNDER]
+	[VERMIN_GROUNDER][VERMIN_FISH]
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:25:50]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
@@ -315,6 +334,7 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]
 
 [CREATURE:JELLYFISH_SEA_NETTLE]
 	[NAME:sea nettle jellyfish:sea nettle jellyfish:sea nettle jellyfish]
@@ -331,3 +351,4 @@ creature_small_ocean
 	[BIOME:OCEAN_TEMPERATE]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:1500]
+	[MUNDANE]

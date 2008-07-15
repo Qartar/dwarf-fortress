@@ -2106,3 +2106,7 @@ language_GOBLIN
 	[T_WORD:EVISCERATION:snosno]
 	[T_WORD:HEALING:ospmuz]
 	[T_WORD:ADMIRATION:uzsmu]
+	[T_WORD:CONFLICT:uzo]
+	[T_WORD:ATTACK:umuz]
+	[T_WORD:ONSLAUGHT:utu]
+	[T_WORD:TREE:tonspe]

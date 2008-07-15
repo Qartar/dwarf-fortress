@@ -28,6 +28,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:WHALE]
 	[NAME:whale:whales:whale]
@@ -48,12 +49,13 @@ creature_large_ocean
 	[SIZE:16]
 	[MAXAGE:20:30]
 	[NO_DRINK]
-	[CHILD:1][CHILDNAME:whale calf:baby calves]
+	[CHILD:1][CHILDNAME:whale calf:whale calves]
 	[FAT:20]
 	[BIOME:ANY_OCEAN]
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_LAMPREY_SEA]
 	[NAME:sea lamprey:sea lampreys:sea lamprey]
@@ -86,6 +88,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_GREAT_WHITE]
 	[NAME:great white shark:great white sharks:great white shark]
@@ -112,6 +115,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_FRILL]
 	[NAME:frill shark:frill sharks:frill shark]
@@ -138,6 +142,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_SPINY_DOGFISH]
 	[NAME:spiny dogfish:spiny dogfish:spiny dogfish]
@@ -163,6 +168,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_WOBBEGONG_SPOTTED]
 	[NAME:spotted wobbegong:spotted wobbegongs:spotted wobbegong]
@@ -189,6 +195,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_WHALE]
 	[NAME:whale shark:whale sharks:shale shark]
@@ -213,6 +220,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_BASKING]
 	[NAME:basking shark:basking sharks:basking shark]
@@ -237,6 +245,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_NURSE]
 	[NAME:nurse shark:nurse sharks:nurse shark]
@@ -262,6 +271,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_MAKO_SHORTFIN]
 	[NAME:shortfin mako shark:shortfin mako sharks:shortfin mako shark]
@@ -288,6 +298,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_MAKO_LONGFIN]
 	[NAME:longfin mako shark:longfin mako sharks:longfin mako shark]
@@ -314,6 +325,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_TIGER]
 	[NAME:tiger shark:tiger sharks:tiger shark]
@@ -339,6 +351,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_BULL]
 	[NAME:bull shark:bull sharks:bull shark]
@@ -364,6 +377,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_REEF_BLACKTIP]
 	[NAME:blacktip reef shark:blacktip reef sharks:blacktip reef shark]
@@ -390,6 +404,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_REEF_WHITETIP]
 	[NAME:whitetip reef shark:whitetip reef sharks:whitetip reef shark]
@@ -415,6 +430,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_BLUE]
 	[NAME:blue shark:blue sharks:blue shark]
@@ -440,6 +456,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_HAMMERHEAD]
 	[NAME:hammerhead shark:hammerhead sharks:hammerhead shark]
@@ -466,6 +483,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:SHARK_ANGEL]
 	[NAME:angelshark:angelsharks:angelshark]
@@ -492,6 +510,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_SKATE_COMMON]
 	[NAME:common skate:common skates:common skate]
@@ -517,6 +536,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_RAY_MANTA]
 	[NAME:manta ray:manta rays:manta ray]
@@ -540,6 +560,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_STINGRAY]
 	[NAME:stingray:stingrays:stingray]
@@ -570,6 +591,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_COELACANTH]
 	[NAME:coelacanth:coelacanth:coelacanth]
@@ -595,6 +617,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_STURGEON]
 	[NAME:sturgeon:sturgeons:sturgeon]
@@ -624,6 +647,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_CONGER_EEL]
 	[NAME:conger eel:conger eels:conger eel]
@@ -649,6 +673,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_MILKFISH]
 	[NAME:milkfish:milkfish:milkfish]
@@ -681,6 +706,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_COD]
 	[NAME:cod:cod:cod]
@@ -708,6 +734,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_OPAH]
 	[NAME:opah:opah:opah]
@@ -734,6 +761,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_GROUPER_GIANT]
 	[NAME:giant grouper:giant groupers:giant grouper]
@@ -759,6 +787,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_BLUEFISH]
 	[NAME:bluefish:bluefish:bluefish]
@@ -786,6 +815,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_SUNFISH_OCEAN]
 	[NAME:ocean sunfish:ocean sunfish:ocean sunfish]
@@ -813,6 +843,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_SWORDFISH]
 	[NAME:swordfish:swordfish:swordfish]
@@ -839,6 +870,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_MARLIN]
 	[NAME:marlin:marlins:marlin]
@@ -865,6 +897,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_HALIBUT]
 	[NAME:halibut:halibut:halibut]
@@ -891,6 +924,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_BARRACUDA_GREAT]
 	[NAME:great barracuda:great barracudas:great barracuda]
@@ -917,6 +951,7 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]
 
 [CREATURE:FISH_TUNA_BLUEFIN]
 	[NAME:bluefin tuna:bluefin tuna:bluefin tuna]
@@ -945,3 +980,4 @@ creature_large_ocean
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:500]
+	[MUNDANE]

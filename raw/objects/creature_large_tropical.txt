@@ -28,6 +28,7 @@ creature_large_tropical
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10066]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:WARTHOG]
 	[NAME:warthog:warthogs:warthog]
@@ -56,6 +57,7 @@ creature_large_tropical
 	[STANDARD_FLESH]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:LION]
 	[NAME:lion:lions:lion]
@@ -85,6 +87,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:LEOPARD]
 	[NAME:leopard:leopards:leopard]
@@ -115,6 +118,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:JAGUAR]
 	[NAME:jaguar:jaguars:jaguar]
@@ -145,6 +149,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:TIGER]
 	[NAME:tiger:tigers:tiger]
@@ -176,6 +181,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:CHEETAH]
 	[NAME:cheetah:cheetahs:cheetah]
@@ -205,6 +211,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GAZELLE]
 	[NAME:gazelle:gazelles:gazelle]
@@ -230,6 +237,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:MANDRILL]
 	[NAME:mandrill:mandrills:mandrill]
@@ -238,6 +246,7 @@ creature_large_tropical
 	[POPULATION_NUMBER:20:50]
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:50]
+	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_ITEM]
 	[GRASSTRAMPLE:0][NATURAL][PET]
 	[PREFSTRING:colorful faces]
@@ -253,6 +262,7 @@ creature_large_tropical
 	[HOMEOTHERM:10069]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:CHIMPANZEE]
 	[NAME:chimpanzee:chimpanzees:chimpanzee]
@@ -277,6 +287,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:BONOBO]
 	[NAME:bonobo:bonobos:bonobo]
@@ -301,6 +312,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GORILLA]
 	[NAME:gorilla:gorillas:gorilla]
@@ -327,6 +339,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:ORANGUTAN]
 	[NAME:orangutan:orangutans:orangutan]
@@ -351,6 +364,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_SIAMANG]
 	[NAME:siamang:siamangs:siamang]
@@ -375,6 +389,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_INNATE][SWIM_SPEED:2500] siamangs can swim, other gibbons can't in general?
+	[MUNDANE]
 
 [CREATURE:GIBBON_WHITE_HANDED]
 	[NAME:white-handed gibbon:white-handed gibbons:white-handed gibbon]
@@ -399,6 +414,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_BLACK_HANDED]
 	[NAME:black-handed gibbon:black-handed gibbons:black-handed gibbon]
@@ -423,6 +439,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_GRAY]
 	[NAME:gray gibbon:gray gibbons:gray gibbon]
@@ -447,6 +464,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_SILVERY]
 	[NAME:silvery gibbon:silvery gibbons:silvery gibbon]
@@ -471,6 +489,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_PILEATED]
 	[NAME:pileated gibbon:pileated gibbons:pileated gibbon]
@@ -495,6 +514,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_BILOU]
 	[NAME:bilou:bilous:bilou]
@@ -519,6 +539,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_WHITE_BROWED]
 	[NAME:white-browed gibbon:white-browed gibbons:white-browed gibbon]
@@ -543,6 +564,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:GIBBON_BLACK_CRESTED]
 	[NAME:black-crested gibbon:black-crested gibbons:black-crested gibbon]
@@ -567,6 +589,7 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[LAYERING:100]
 	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[MUNDANE]
 
 [CREATURE:CAMEL_1_HUMP]
 	[NAME:one-humped camel:one-humped camels:one-humped camel]
@@ -599,6 +622,7 @@ creature_large_tropical
 	[BIOME:ANY_DESERT]
 	[PACK_ANIMAL]
 	[TRADE_CAPACITY:3000]
+	[MUNDANE]
 
 [CREATURE:CAMEL_2_HUMP]
 	[NAME:two-humped camel:two-humped camels:two-humped camel]
@@ -631,6 +655,7 @@ creature_large_tropical
 	[BIOME:ANY_DESERT]
 	[PACK_ANIMAL]
 	[TRADE_CAPACITY:3000]
+	[MUNDANE]
 
 [CREATURE:CROCODILE_SALTWATER]
 	[NAME:saltwater crocodile:saltwater crocodiles:saltwater crocodile]
@@ -661,3 +686,4 @@ creature_large_tropical
 	[BIOME:RIVER_TROPICAL_FRESHWATER]
 	[STANDARD_FLESH]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]

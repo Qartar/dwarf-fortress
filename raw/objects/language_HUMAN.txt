@@ -2106,3 +2106,7 @@ language_HUMAN
 	[T_WORD:EVISCERATION:esxac]
 	[T_WORD:HEALING:onbir]
 	[T_WORD:ADMIRATION:lami]
+	[T_WORD:CONFLICT:sesta]
+	[T_WORD:ATTACK:nashra]
+	[T_WORD:ONSLAUGHT:gencesh]
+	[T_WORD:TREE:akan]

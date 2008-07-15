@@ -1,9 +1,74 @@
-See readme.txt for the license.
+See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
 Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
 Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
 
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.39a:
+
+New keys
+	[LEGENDS_TOGGLE_CIVSITE:C]
+	[LEGENDS_STRING_FILTER:F]
+	[WORLD_PARAM_COPY:C]
+	[WORLD_PARAM_SET:E]
+	[WORLD_PARAM_INCREASE:6]
+	[WORLD_PARAM_DECREASE:4]
+	[WORLD_PARAM_ENTER_VALUE:ENTER]
+	[WORLD_PARAM_NULLIFY:N]
+	[WORLD_PARAM_PRESET:P]
+	[SELECT_ALL:SHIFT+ENTER]
+	[DESELECT_ALL:SHIFT+Z]
+	[STORES_HIDE:H]
+	[ITEM_HIDE:H]
+	[D_BITEM_DUMP:H]
+	[D_LOOK_HIDE:H]
+	[DESIGNATE_BITEM:B]
+	[DESIGNATE_MELT:M]
+	[DESIGNATE_NO_MELT:SHIFT+M]
+	[DESIGNATE_DUMP:D]
+	[DESIGNATE_NO_DUMP:SHIFT+D]
+	[DESIGNATE_HIDE:H]
+	[DESIGNATE_NO_HIDE:SHIFT+H]
+	[UNITVIEW_KILLS:K]
+	[A_STATUS_KILLS:K]
+
+Changed keys
+	[DESELECT:Z]
+
+Creature raws
+	[CANNOT_UNDEAD]
+	[CURIOUSBEAST] -> [CURIOUSBEAST_EATER]
+	[SLOW_LEARNER]
+	got rid of [RECKLESS] because it wasn't used
+	[BUTCHERABLE_NONSTANDARD] is gone, replaced by civ ethics
+	[MUNDANE]
+		Marks if the creature is an actual real-life creature.  Only used for age-names at present.
+	added/removed [NATURAL] from a few creatures
+
+Entity raws
+	messed with caps and lowered all biome numbers
+	[WANDERER]
+	[BEAST_HUNTER]
+	[SCOUT]
+	[PERMITTED_JOB:<x>]
+	[WORLD_CONSTRUCTION:<type>]
+	got rid of entity grouping
+	[ETHIC:<action>:<response>]
+	[WILL_ACCEPT_TRIBUTE]
+	got rid of respect animals/trees
+
+"TRACKING" is acceptable for skill token now
+
+Lots of new params for data/init/world_gen.txt
+
+New init options
+	[SHOW_ALL_HISTORY_IN_DWARF_MODE:NO]
+
+New graphics tokens:
+	SLAVE, PRISONER
 
 ******************************************************
 

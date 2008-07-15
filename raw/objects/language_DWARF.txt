@@ -2106,3 +2106,7 @@ language_DWARF
 	[T_WORD:EVISCERATION:ngilok]
 	[T_WORD:HEALING:ilon]
 	[T_WORD:ADMIRATION:çlud]
+	[T_WORD:CONFLICT:gemesh]
+	[T_WORD:ATTACK:rashgur]
+	[T_WORD:ONSLAUGHT:mothdast]
+	[T_WORD:TREE:d†k]
