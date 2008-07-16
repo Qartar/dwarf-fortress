@@ -38,6 +38,28 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.39b:
+
+This is the first fix for the new world generation release.  Here's the complete list of changes:
+	(*) fixed bug causing dwarves and others to sleep forever
+	(*) fixed a few crashes with maps with Y dimensions larger than X dimensions
+	(*) fixed another world gen crash
+	(*) fixed bug stopping caves from appearing
+	(*) fixed bug causing hauling, cleaning and health care professions to disappear from labor list
+	(*) made the escape key work properly when setting world gen parameters
+	(*) loosened travel restrictions based on enemy seeing the player
+	(*) changed effects of temperature on food objects
+	(*) changed creature layout during ambushes
+	(*) stopped world gen roads from being obstructed by swamps and fixed a problem with how they handled slopes
+	(*) stopped world gen animals from starting as drunks
+	(*) stopped null civ membership from being added to moving megabeasts
+	(*) changed the text for culled historical parents
+	(*) fixed problem where tundra rejects were being logged instead of grass/hill rejects
+	(*) fixed some grammar issues with battle summaries
+	(*) fixed "Peasants" display in status
+
+******************************************************
+
 Release notes for 0.28.181.39a:
 
 Okay, here's the new version.  You can do various things with world generation, though not much has changed with the regular game.  If you go into the world generation advanced parameters and start designing/drawing your own world, please keep in mind that you'll probably end up getting infinite reject cycles -- you can turn on the reject log in data/init/init.txt to see what's going wrong.  Oftentimes you'll be violating biome restrictions (you can just go through any that you find and 'n'ullify them to solve this problem).  As usual, let me know if it crashes and how to make it crash if it does -- I suspect there are new problems of all sorts lurking within every part of the game, despite having fixed more than 100 bugs for this version.
