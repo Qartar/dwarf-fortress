@@ -38,6 +38,25 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.39c:
+
+This is the second fix for the new world generation release.  Here's the complete list of changes:
+	(*) fixed problem with pathfinding that caused jobs to be randomly cancelled
+	(*) fixed bug stopping fish/turtles from being available during embark selection/trade
+	(*) fixed rng issue causing duplicate cave names and other problems
+	(*) sped up the history export, especially on worlds with lengthy histories
+	(*) stopped merchants from complaining about depot when there is one there
+	(*) stopped hidden items from making buildings invisible when they are used in constructions
+	(*) stopped parameter seeds from being set to Various when you abort a randomly seeded generation
+	(*) stopped people from saying RANDOM_DEF_SPHERE when they talk about their megabeast deities
+	(*) stopped adv mode conversations with paralyzed/ko'd people
+	(*) controlled long names during trading
+	(*) moved "Desel All" out of the way in build menu
+	(*) allowed artifact gloves to be left-handed, based on handedness of creator
+	(*) changed King's to Royal in advisor title text
+
+******************************************************
+
 Release notes for 0.28.181.39b:
 
 This is the first fix for the new world generation release.  Here's the complete list of changes:
