@@ -38,6 +38,52 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.39d:
+
+This is the third and final fix release, barring any silliness that forces another quick patch.  Here's the complete list of changes:
+	(*) added init options/world parameters to show map features during embark
+	(*) added basic site finder to embark
+	(*) added a few optimizations for rivers and designation job selection
+	(*) stopped message spam from repeated animal taming job when no food is available
+	(*) stopped message spam from caging and other jobs when a dwarf is picked that is already leading another animal
+	(*) made dwarves cook quarry leaves properly
+	(*) allowed scrolling and premature stoppage during world generation
+	(*) added display and other features relating to last seed used by world gen
+	(*) added world gen parameter for minimum cave size
+	(*) stopped people from giving quests to kill themselves
+	(*) stopped abandoned stores from being stocked
+	(*) disallowed placement of non-empty bags as container buildings
+	(*) changed insanity text for animals
+	(*) fixed some other minor typos
+	(*) made volcanic shafts that are visible in embark always exit through the surface
+	(*) handled some cavein-at-start cases from pits and volcanos
+	(*) stopped farming restrictions from stopping setting up other seasons
+	(*) stopped dwarves holding a two-handed weapons from seeking another weapon if they are set to carry multiple weapons
+	(*) added races to historical figure list and event text
+	(*) did more context-based name shortening
+	(*) added ability for speakers to use first person when talking about historical events
+	(*) capitalized first names in trading screens
+	(*) got rid of some erroneous birth date display information
+	(*) allowed resters to get up once they are not wounded
+	(*) allowed resters to move again if they've made bad decisions about where to plop down
+	(*) added various detailed map export options (elevation, temperature, etc.)
+	(*) made the generator skip more of the minimum reject values if presets are present
+	(*) made the generator pop up helpful windows after many rejects and give an option to continue, abort, allow that reject type, or allow all rejects
+	(*) fixed crash on large 100 volcanism worlds
+	(*) fixed load crash from nullified items
+	(*) fixed crash from friendship evaluations when stuck merchant animals give birth
+	(*) stopped lockup on artifact creation when 6-7 of the same material are used
+	(*) fixed region rejections from savagery (civs still reject savage regions)
+	(*) made params load the post-region count variables properly
+	(*) added ability to leave notes on the map in dwarf mode
+	(*) stopped ramp removal from highlighting hidden areas for regular dig
+	(*) stopped masterwork ammunition used in weapon traps from making creators go insane
+	(*) stopped removed constructions from removing the floor if another constructed wall is below them
+	(*) made viewing historical event artwork in dwarf mode reveal events
+	(*) stopped double listing of modded MEGABEAST/POWERS in age name
+
+******************************************************
+
 Release notes for 0.28.181.39c:
 
 This is the second fix for the new world generation release.  Here's the complete list of changes:
