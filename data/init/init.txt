@@ -95,6 +95,17 @@ Set this to YES if you want Dwarf Fortress to show the warning window on embark 
 
 [EMBARK_WARNING_ALWAYS:NO]
 
+You can change these to ALWAYS and NO.  More restrictive world parameter settings override these.  ALWAYS lets you see the features in the Local view during embark, and NO stops you from looking for features in the site finder (though if you really want to stop the finder, it might be better for you to generate worlds that restrict the use of this feature completely, in which case you don't need to change the settings here).
+
+[SHOW_EMBARK_RIVER:FINDER]
+[SHOW_EMBARK_POOL:FINDER]
+[SHOW_EMBARK_M_PIPE:FINDER]
+[SHOW_EMBARK_M_POOL:FINDER]
+[SHOW_EMBARK_CHASM:FINDER]
+[SHOW_EMBARK_PIT:FINDER]
+[SHOW_EMBARK_OTHER:FINDER]
+[SHOW_EMBARK_TUNNEL:FINDER]
+
 Use these options to remove features from the game.  Permitted values are YES and NO.  Removal might speed the game up in the case of temperature and weather.
 
 [TEMPERATURE:YES]
