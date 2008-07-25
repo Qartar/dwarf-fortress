@@ -38,6 +38,15 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.39e:
+
+Another quick patch.
+	(*) stopped crash in site finder from large x dims
+	(*) changed designation selection timers (aka lazy miners)
+	(*) made site finder use embark rectangle size from init options
+
+******************************************************
+
 Release notes for 0.28.181.39d:
 
 This is the third and final fix release, barring any silliness that forces another quick patch.  Here's the complete list of changes:
