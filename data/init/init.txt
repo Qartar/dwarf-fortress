@@ -14,6 +14,10 @@ This lets you set the starting windowed/fullscreen setting.  Can be YES, NO or P
 
 [WINDOWED:PROMPT]
 
+This is the dimensions in tiles of the display grid.  Minimum x is 80.  Minimum y is 25.  Maximums are 200.  Make sure the window size or full screen resolution matches the grid/tile size if you don't want the display to be squashed or stretched.  The default windowed font has tiles that are 8x12 pixels, for instance, so for a 80x25 grid, you use a 640x300 window, and for a 125x50 grid, you'd use a 1000x600 window. 
+
+[GRID:80:25]
+
 This is the size and font for windowed mode.  Changing to 800x600 and the 800x600 font might make you happier.
 
 [WINDOWEDX:640]
@@ -30,7 +34,7 @@ If this is set to YES, the tiles will not be stretched, but rather the game view
 
 [BLACK_SPACE:NO]
 
-Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of July 2008, the Dwarf Fortress Wiki has graphical tilesets available at http://www.dwarffortresswiki.net/index.php/List_of_user_graphics_sets.
+Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of August 2008, the Dwarf Fortress Wiki has graphical tilesets available at http://www.dwarffortresswiki.net/index.php/List_of_user_graphics_sets.
 
 [GRAPHICS:NO]
 [GRAPHICS_WINDOWEDX:1280]
