@@ -38,6 +38,40 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.39f:
+
+More fixes, a bit of work toward armies and caravans, and an expandable view.  If you want to try different grid dimensions, change the relevant entry [GRID:80:25] near the top of data/init/init.txt.  You'll also have to adjust your window size or full screen resolution to match if you don't want the new, larger grid to be squashed.  If you overshoot, it'll stretch them unless you turn black space on.
+
+Additions:
+	(*) allowed basic expansion of 80x25 grid
+	(*) gave world gen refugees entities and realized them as moving groups on the map after world gen
+	(*) added notification and history event for reaching summits of peaks and volcanos in adv mode
+
+Minor Changes:
+	(*) added notification for low migration seasons
+	(*) added object of worship to religion view in legends
+	(*) made detailed map export respect new peak heights
+	(*) locally steepened peaks a bit
+	(*) added world name to top of history file
+
+Bug Fixes:
+	(*) fixed crash involving lava pushing objects
+	(*) stopped many bottomless pits from having their upper portions filled with lava
+	(*) made reclaim dwarves start with the proper civilian labors enabled
+	(*) fixed problem causing just good or just evil params not to function
+	(*) stopped message spam from pit/pond/chain/cage jobs where the animal is inaccessible
+	(*) stopped note entry from conflicting with a few of the keys
+	(*) made constructed ramps stick around even if you dig out the walls near them
+	(*) fixed erroneous upper cap on detailed temperature export values
+	(*) fixed problem that caused peaks to be raised in flat areas during erosion
+	(*) suppressed erroneous "Zeroth" text for non-finalized history collections in dwarf-mode art descriptions
+	(*) made usable/unusable option appear when metals are selected in weapon/armor stockpiles
+	(*) fixed spacing problem with related hist fig race display
+	(*) fixed problem with the evil/good conversion of very large subregions
+	(*) fixed lockup from dragon fire modded civs in world gen army fights
+
+******************************************************
+
 Release notes for 0.28.181.39e:
 
 Another quick patch.
