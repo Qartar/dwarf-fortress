@@ -38,6 +38,40 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.40a (August 18, 2008):
+
+Here's another one.  Hopefully I can transition to some new features next month, since I've been handling technical issues and problems for a while now.
+
+Additions:
+	(*) you can save your embark settings for later use
+	(*) added note-taking ability for embark screen
+	(*) added forbid-on-death orders for your corpses, other non-hunted corpses, your items and other items
+	(*) added forbid order for fired projectiles
+	(*) made dwarves prefer to combine items in existing bags/barrels/bins with init options to govern this behavior
+
+Minor Changes:
+	(*) made obsidian an economic stone
+	(*) did some display optimizations
+
+Bug fixes:
+	(*) fixed problem causing site finder to miss areas of the map when hunting for hidden features and rivers
+	(*) stopped new kitchen restrictions on contained items from causing no-ingredient food items
+	(*) stopped new kitchen restrictions on free item from causing silent cancellations of cook jobs
+	(*) fixed problem with up/down windows in adv mode for larger grid sizes
+	(*) changed how fireballs interact with the ground
+	(*) patched up decorated ammo values a bit
+	(*) made cageless traps display properly in all circumstances
+	(*) fixed problem with nobles pushing prices out of the displayable range
+	(*) handled adventurers retired while sleeping
+	(*) fixed display mix-up with FPS/GFPS counter in main dwarf screen
+	(*) fixed problem with cursor scrolling vs. y coord in expanded grids
+	(*) allowed mouse designations to work below y=23
+	(*) stopped the one-step key from messing up pausing when in a menu mode
+	(*) made zombie/skels that die in cages have proper corpses
+
+
+******************************************************
+
 Release notes for 0.28.181.39f:
 
 More fixes, a bit of work toward armies and caravans, and an expandable view.  If you want to try different grid dimensions, change the relevant entry [GRID:80:25] near the top of data/init/init.txt.  You'll also have to adjust your window size or full screen resolution to match if you don't want the new, larger grid to be squashed.  If you overshoot, it'll stretch them unless you turn black space on.
