@@ -7,6 +7,40 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
+Auxiliary file changes for 0.28.181.40a:
+
+Files changed
+	dwarfort.exe
+	data/index
+	data/init/init.txt
+	data/init/interface.txt
+
+New keys
+	[SETUPGAME_SAVE_PROFILE:S]
+	[SETUPGAME_SAVE_PROFILE_ABORT:SHIFT+SPACE]
+	[SETUPGAME_SAVE_PROFILE_GO:ENTER]
+	[SETUPGAME_VIEW_PROFILE_PROBLEMS:P]
+	[ORDERS_AUTOFORBID:SHIFT+F]
+	[ORDERS_FORBID_PROJECTILE:P]
+	[ORDERS_FORBID_YOUR_CORPSE:C]
+	[ORDERS_FORBID_YOUR_ITEMS:I]
+	[ORDERS_FORBID_OTHER_CORPSE:O]
+	[ORDERS_FORBID_OTHER_ITEMS:T]
+	[SETUP_NOTES:N]
+	[SETUP_NOTES_TAKE_NOTES:N]
+	[SETUP_NOTES_DELETE_NOTE:D]
+	[SETUP_NOTES_CHANGE_SYMBOL_SELECTION:C]
+	[SETUP_NOTES_ADOPT_SYMBOL:S]
+
+New init options
+	[STORE_DIST_ITEM_DECREASE:1000]
+	[STORE_DIST_SEED_COMBINE:1000]
+	[STORE_DIST_BUCKET_COMBINE:1000]
+	[STORE_DIST_BARREL_COMBINE:1000]
+	[STORE_DIST_BIN_COMBINE:1000]
+
+******************************************************
+
 Auxiliary file changes for 0.28.181.39d:
 
 New keys
