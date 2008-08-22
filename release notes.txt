@@ -38,6 +38,12 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.40c (August 21, 2008):
+
+Coffee'd up and fixed a display thing.
+
+******************************************************
+
 Release notes for 0.28.181.40b (August 21, 2008):
 
 Another one.  The partial print for graphics has been changed to a default-no init option, so if you weren't having display trouble and had a better framerate, you should turn it on.  It's in data/init/init.txt and it's called "PARTIAL_PRINT".  It'll probably take a while to resolve issues for everyone else.
