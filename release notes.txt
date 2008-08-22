@@ -38,6 +38,30 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.40b (August 21, 2008):
+
+Another one.  The partial print for graphics has been changed to a default-no init option, so if you weren't having display trouble and had a better framerate, you should turn it on.  It's in data/init/init.txt and it's called "PARTIAL_PRINT".  It'll probably take a while to resolve issues for everyone else.
+
+Minor Changes:
+	(*) added an init option for partial screen refreshes (defaults to off)
+	(*) added windowed/fullscreen grid sizes
+
+Bug Fixes:
+	(*) stopped designation cursor from leaving a trail when the minimap is updating
+	(*) fixed reclaim crash from units holding multigrasp clothing
+	(*) fixed lockup for glassmaker moods where the glassmaker doesn't like glass
+	(*) handled some other potential multigrasp inventory indexing issues
+	(*) fixed problem potentially capping caravan wagon number at 2
+	(*) handled new forbid orders vs. butchery, severs and sever-drops
+	(*) fixed problem with delay on up digging tasks
+	(*) fixed problem causing single tile mountain civs from using feature plants
+	(*) fixed wagon occupancy problem leaving behind flags that stopped construction
+	(*) stopped reclaim from creating a second site at the spot
+	(*) stopped dirt road construction at glacier/stone interface
+	(*) fixed problem with map export and flashing job markers
+
+******************************************************
+
 Release notes for 0.28.181.40a (August 18, 2008):
 
 Here's another one.  Hopefully I can transition to some new features next month, since I've been handling technical issues and problems for a while now.
@@ -68,7 +92,6 @@ Bug fixes:
 	(*) allowed mouse designations to work below y=23
 	(*) stopped the one-step key from messing up pausing when in a menu mode
 	(*) made zombie/skels that die in cages have proper corpses
-
 
 ******************************************************
 

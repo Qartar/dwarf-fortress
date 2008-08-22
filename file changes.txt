@@ -7,10 +7,18 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
-Auxiliary file changes for 0.28.181.40a:
+Auxiliary file changes for 0.28.181.40b:
+	data/index
+	data/init/init.txt
+	data/init/interface.txt
 
-Files changed
-	dwarfort.exe
+New init options
+	[FULLGRID:80:25]
+	[PARTIAL_PRINT:NO]
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.40a:
 	data/index
 	data/init/init.txt
 	data/init/interface.txt
