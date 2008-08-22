@@ -14,10 +14,6 @@ This lets you set the starting windowed/fullscreen setting.  Can be YES, NO or P
 
 [WINDOWED:PROMPT]
 
-This is the dimensions in tiles of the display grid.  Minimum x is 80.  Minimum y is 25.  Maximums are 200.  Make sure the window size or full screen resolution matches the grid/tile size if you don't want the display to be squashed or stretched.  The default windowed font has tiles that are 8x12 pixels, for instance, so for a 80x25 grid, you use a 640x300 window, and for a 125x50 grid, you'd use a 1000x600 window. 
-
-[GRID:80:25]
-
 This is the size and font for windowed mode.  Changing to 800x600 and the 800x600 font might make you happier.
 
 [WINDOWEDX:640]
@@ -44,6 +40,15 @@ Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  Thi
 [GRAPHICS_FULLSCREENY:800]
 [GRAPHICS_FULLFONT:curses_square_16x16.bmp]
 [GRAPHICS_BLACK_SPACE:YES]
+
+This is the dimensions in tiles of the display grid.  Minimum x is 80.  Minimum y is 25.  Maximums are 200.  Make sure the window size or full screen resolution matches the grid/tile size if you don't want the display to be squashed or stretched.  The default windowed font has tiles that are 8x12 pixels, for instance, so for a 80x25 grid, you use a 640x300 window, and for a 125x50 grid, you'd use a 1000x600 window.  FULLGRID is used in full screen mode, whether graphics is on or not.
+
+[GRID:80:25]
+[FULLGRID:80:25]
+
+Change this to YES to only refresh portions of the screen that need to be refreshed.  This can have a significant impact on frame rate, especially for people that have slow frame rates on the title screen.  This only works on certain systems, so you might have to disable it again if you notice your display isn't working properly.  Fixes are being investigated.
+
+[PARTIAL_PRINT:NO]
 
 Change this to YES to keep the DF window on top of your other windows.
 
