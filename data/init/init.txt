@@ -46,9 +46,9 @@ This is the dimensions in tiles of the display grid.  Minimum x is 80.  Minimum 
 [GRID:80:25]
 [FULLGRID:80:25]
 
-Change this to YES to only refresh portions of the screen that need to be refreshed.  This can have a significant impact on frame rate, especially for people that have slow frame rates on the title screen.  This only works on certain systems, so you might have to disable it again if you notice your display isn't working properly.  Fixes are being investigated.
+Change this to YES to only refresh portions of the screen that need to be refreshed.  This can have a significant impact on frame rate, especially for people that have slow frame rates on the title screen.  The number refers to how many frames it will redo a printed tile before skipping it, so you might try increasing it a bit.  PARTIAL_PRINT only works on certain systems, so you might have to disable it again if you notice your display isn't working properly.  Fixes are being investigated.
 
-[PARTIAL_PRINT:NO]
+[PARTIAL_PRINT:NO:2]
 
 Change this to YES to keep the DF window on top of your other windows.
 
