@@ -30,7 +30,7 @@ If this is set to YES, the tiles will not be stretched, but rather the game view
 
 [BLACK_SPACE:NO]
 
-Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of July 2008, the Dwarf Fortress Wiki has graphical tilesets available at http://www.dwarffortresswiki.net/index.php/List_of_user_graphics_sets.
+Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of September 2008, the Dwarf Fortress Wiki has graphical tilesets available at http://www.dwarffortresswiki.net/index.php/List_of_user_graphics_sets.
 
 [GRAPHICS:NO]
 [GRAPHICS_WINDOWEDX:1280]

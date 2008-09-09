@@ -38,6 +38,31 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.28.181.40d (September 6, 2008):
+
+I decided to release the current bug fixes since a few of them involve patching up submitted saves and I wanted to get those out before I'm forced to break save compatibility for the next version.  I'll still be able to look at all previously submitted saves (and any saves submitted against this version), but fixes won't apply to the saves themselves as the next release won't be able to load them.
+
+Minor Changes
+	(*) made sparring dwarves work on their selected weapon/unarmed skills rather than using their best skills
+
+Bug Fixes:
+	(*) stopped thrown tantrum items from causing dwarf to become site enemy
+	(*) resolved shared item conflicts during map offloads
+	(*) prevented units with shared items (eg stuckins/wrestles) from leaving the dwarf mode play area
+	(*) got rid of world gen crash during succession after death of prolific long-standing position holders with inbred descendants
+	(*) fixed crash from human siege campfires
+	(*) stopped dwarves from taking their current hauled object off to bed when they schedule a rest due to injuries
+	(*) stopped dwarves from choosing to sleep on top of traps
+	(*) made adventure mode store transactions respect containment
+	(*) made combat-produced chunks respect forbid orders
+	(*) made cats able to carry vermin properly again
+	(*) got rid of erroneous goblin siege announcement for elves
+	(*) stopped custom profession names from obscuring recruitment announcements
+	(*) made forbidden items count toward wealth properly
+	(*) stopped fell moods from occurring if the fortress race does not drop a corpse
+
+******************************************************
+
 Release notes for 0.28.181.40c (August 21, 2008):
 
 Coffee'd up and fixed a display thing.
