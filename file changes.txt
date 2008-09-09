@@ -7,11 +7,17 @@ Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of chang
 
 ******************************************************
 
+Auxiliary file changes for 0.28.181.40d:
+	data/index
+	data/init/init.txt (just the wiki date)
+
+******************************************************
+
 Auxiliary file changes for 0.28.181.40c:
 	data/index
 	data/init/init.txt
 
-Changeed init options
+Changed init options
 	[PARTIAL_PRINT:NO:2]
 
 ******************************************************
