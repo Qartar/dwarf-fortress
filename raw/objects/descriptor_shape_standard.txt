@@ -1,6 +1,6 @@
 descriptor_shape_standard
 
-[OBJECT:DESCRIPTOR]
+[OBJECT:DESCRIPTOR_SHAPE]
 
 [SHAPE:STAR]
 	[NAME:star:stars]

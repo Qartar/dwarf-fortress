@@ -1,9 +1,6 @@
 See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See file_changes.txt for new init/interface information.
-See command_line.txt for information on world generation from command lines.
-Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
-Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
 
 
 Dwarf Fortress Command Line Options

@@ -1,9 +1,12 @@
 See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
-Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
-Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
 
+
+******************************************************
+
+Auxiliary file changes for 0.31.01:
+	Most everything -- I can't compile a list of all of the changes here, but I've included more help notes in the raws themselves.
 
 ******************************************************
 

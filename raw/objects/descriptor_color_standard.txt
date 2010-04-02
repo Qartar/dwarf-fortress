@@ -1,6 +1,8 @@
 descriptor_color_standard
 
-[OBJECT:DESCRIPTOR]
+[OBJECT:DESCRIPTOR_COLOR]
+
+Most of these are from Wikipedia's color list.
 
 [COLOR:AMBER]
 	[NAME:amber]
@@ -17,6 +19,14 @@ descriptor_color_standard
 [COLOR:AQUAMARINE]
 	[NAME:aquamarine]
 	[RGB:127:255:212]
+
+[COLOR:ASH_GRAY]
+	[NAME:ash gray]
+	[RGB:178:190:181]
+
+[COLOR:AUBURN]
+	[NAME:auburn]
+	[RGB:111:53:26]
 
 [COLOR:AZURE]
 	[NAME:azure]
@@ -49,6 +59,10 @@ descriptor_color_standard
 	[NAME:brown]
 	[RGB:150:75:0]
 
+[COLOR:BUFF]
+	[NAME:buff]
+	[RGB:240:220:130]
+
 [COLOR:BURNT_SIENNA]
 	[NAME:burnt sienna]
 	[RGB:233:116:81]
@@ -69,6 +83,10 @@ descriptor_color_standard
 	[NAME:cerulean]
 	[RGB:0:123:167]
 
+[COLOR:CHARCOAL]
+	[NAME:charcoal]
+	[RGB:54:69:79]
+
 [COLOR:CHARTREUSE]
 	[NAME:chartreuse]
 	[RGB:127:255:0]
@@ -84,6 +102,10 @@ descriptor_color_standard
 [COLOR:CINNAMON]
 	[NAME:cinnamon]
 	[RGB:123:63:0]
+
+[COLOR:CLEAR]
+	[NAME:clear]
+	[RGB:128:128:128]
 
 [COLOR:COBALT]
 	[NAME:cobalt]
@@ -103,6 +125,10 @@ descriptor_color_standard
 	[NAME:crimson]
 	[WORD:CRIMSON]
 	[RGB:220:20:60]
+
+[COLOR:DARK_BLUE]
+	[NAME:dark blue]
+	[RGB:0:0:139]
 
 [COLOR:DARK_BROWN]
 	[NAME:dark brown]
@@ -147,6 +173,10 @@ descriptor_color_standard
 	[WORD:VIOLET]
 	[RGB:66:49:137]
 
+[COLOR:ECRU]
+	[NAME:ecru]
+	[RGB:194:178:128]
+
 [COLOR:EMERALD]
 	[NAME:emerald]
 	[RGB:80:200:120]
@@ -167,7 +197,11 @@ descriptor_color_standard
 [COLOR:GOLD]
 	[NAME:gold]
 	[WORD:GOLD]
-	[RGB:255:215:0]
+	[RGB:212:175:55]
+
+[COLOR:GOLDEN_YELLOW]
+	[NAME:golden yellow]
+	[RGB:255:223:0]
 
 [COLOR:GOLDENROD]
 	[NAME:goldenrod]
@@ -196,6 +230,10 @@ descriptor_color_standard
 	[NAME:indigo]
 	[RGB:75:0:130]
 
+[COLOR:IVORY]
+	[NAME:ivory]
+	[RGB:255:255:240]
+
 [COLOR:JADE]
 	[NAME:jade]
 	[WORD:JADE]
@@ -213,6 +251,10 @@ descriptor_color_standard
 	[NAME:lemon]
 	[RGB:253:233:16]
 
+[COLOR:LIGHT_BLUE]
+	[NAME:light blue]
+	[RGB:173:216:230]
+
 [COLOR:LIGHT_BROWN]
 	[NAME:light brown]
 	[RGB:205:133:63]
@@ -225,6 +267,10 @@ descriptor_color_standard
 	[NAME:lime]
 	[RGB:204:255:0]
 
+[COLOR:MAHOGANY]
+	[NAME:mahogany]
+	[RGB:192:64:0]
+
 [COLOR:MAROON]
 	[NAME:maroon]
 	[RGB:128:0:0]
@@ -232,6 +278,10 @@ descriptor_color_standard
 [COLOR:MAUVE]
 	[NAME:mauve]
 	[RGB:153:51:102]
+
+[COLOR:MAUVE_TAUPE]
+	[NAME:mauve taupe]
+	[RGB:145:95:109]
 
 [COLOR:MIDNIGHT_BLUE]
 	[NAME:midnight blue]
@@ -282,6 +332,10 @@ descriptor_color_standard
 	[WORD:PEACH]
 	[RGB:255:229:180]
 
+[COLOR:PEARL]
+	[NAME:pearl]
+	[RGB:240:234:214]
+
 [COLOR:PERIWINKLE]
 	[NAME:periwinkle]
 	[RGB:204:204:255]
@@ -299,6 +353,10 @@ descriptor_color_standard
 [COLOR:PLUM]
 	[NAME:plum]
 	[RGB:102:0:102]
+
+[COLOR:PUCE]
+	[NAME:puce]
+	[RGB:204:136:153]
 
 [COLOR:PUMPKIN]
 	[NAME:pumpkin]
@@ -351,17 +409,49 @@ descriptor_color_standard
 	[WORD:SILVER]
 	[RGB:192:192:192]
 
+[COLOR:SKY_BLUE]
+	[NAME:sky blue]
+	[RGB:135:206:235]
+
 [COLOR:SLATE_GRAY]
 	[NAME:slate gray]
 	[RGB:112:128:144]
+
+[COLOR:SPRING_GREEN]
+	[NAME:spring green]
+	[RGB:0:255:127]
 
 [COLOR:TAN]
 	[NAME:tan]
 	[RGB:210:180:140]
 
-[COLOR:TAUPE]
+[COLOR:TAUPE_DARK]
+	[NAME:dark taupe]
+	[RGB:72:60:50]
+
+[COLOR:TAUPE_GRAY]
+	[NAME:taupe gray]
+	[RGB:139:133:137]
+
+[COLOR:TAUPE_MEDIUM]
 	[NAME:taupe]
+	[RGB:103:76:71]
+
+[COLOR:TAUPE_PURPLE]
+	[NAME:purple taupe]
+	[RGB:80:64:77]
+
+[COLOR:TAUPE_PALE]
+	[NAME:pale taupe]
 	[RGB:188:152:126]
+
+[COLOR:TAUPE_ROSE]
+	[NAME:rose taupe]
+	[RGB:144:93:93]
+
+[COLOR:TAUPE_SANDY]
+	[NAME:sandy taupe]
+	[RGB:150:113:23]
 
 [COLOR:TEAL]
 	[NAME:teal]
@@ -389,3 +479,9 @@ descriptor_color_standard
 	[NAME:yellow]
 	[WORD:YELLOW]
 	[RGB:255:255:0]
+
+[COLOR:YELLOW_GREEN]
+	[NAME:yellow-green]
+	[WORD:GREEN]
+	[WORD:YELLOW]
+	[RGB:154:205:50]

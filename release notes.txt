@@ -1,8 +1,6 @@
 See readme.txt for general information about the release.
 See file_changes.txt for new init/interface information.
 See command_line.txt for information on world generation from command lines.
-Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
-Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
 
 
 TO BACKUP SAVES:
@@ -35,6 +33,12 @@ Go to "data/init/init.txt".  These options will take effect the next time you st
 IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
+
+******************************************************
+
+Release notes for 0.31.01 (April 1, 2010):
+
+It has been a long journey, and it is ongoing.  This release has all of the new stuff we've been talking about for more than a year, but it is quite buggy.  I also still need to do the merge with the OpenGL/Mac/Linux stuff as I mentioned in the dev log.  We have a new bug tracker at http://www.bay1games.com/dwarves/mantisbt/ which we are going to try out.  Expect it to be populated over the next few days with hundreds of issues.  All the same, the testers seemed to be able to enjoy themselves, so please try everything out and have fun!
 
 ******************************************************
 
