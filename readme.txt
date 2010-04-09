@@ -40,7 +40,7 @@ Initial Playtesting: Alan Ames, Alex Mooney, Martin Packman, Ben Ringland and Zo
 
 Lots of HTML/IT stuff: Martin Packman
 
-DF 2010 Playtesting: Svein Ove Aas, Chris Rogers, Alex Mooney, Aquillion
+DF 2010 Playtesting: Svein Ove Aas, Aquillion, Kyle Brodzky, Richard Jensen, Nathan Miller aka Rainseeker, Alex Mooney, Ben Ringland, Chris Rogers
 
 
 Many suggestions from fans on the bay12games.com and other forums (and the #bay12games IRC channel) have been incorporated over the years.

@@ -1,4 +1,4 @@
-body_default
+body_rcp
 
 [OBJECT:BODY]
 
