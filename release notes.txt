@@ -1,8 +1,6 @@
 See readme.txt for general information about the release.
 See file_changes.txt for new init/interface information.
 See command_line.txt for information on world generation from command lines.
-Go to http://www.bay12games.com/dwarves/faq.html for Frequently Asked Questions and their answers.
-Go to http://www.bay12games.com/dwarves/dev_now.html to see a full list of changes.
 
 
 TO BACKUP SAVES:
@@ -38,6 +36,36 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.02 (April 8, 2010):
+
+Here's the first little update.  Things are still settling down after the release, but it looks like I'll be able to work with the new bug tracker and handle things there day by day.  There will be a few more of these small releases before I begin the SDL/Mac/Linux/40d# merge, since there are more crashes and huge problems, but I'm going to start some of the preparation for the merge as well.
+
+Crash fix
+	(*) [GRAPHICS:YES] should no longer crash the arena or world generation
+	(*) fixed training activity crash (from removal of barracks)
+	(*) fixed crash from doing a large flow-style activity zone
+
+Minor changes
+	(*) made zone removal still work if flows are corrected (uses rectangles)
+	(*) made material projectile breath happen intermittently properly
+	(*) corrected gorlak color
+	(*) made blind cave bears eyeless and gave them extravision
+	(*) fixed broken eyelid relationships
+	(*) fixed broken child names for goat/unicorn/cave swallow
+	(*) swapped giant caste names
+	(*) fixed giant cave spider bite (was blunt)
+	(*) fixed alligator eye text
+	(*) made soap bars instead of globs
+	(*) fixed horn silver environment
+
+******************************************************
+
+Release notes for 0.31.01 (April 1, 2010):
+
+It has been a long journey, and it is ongoing.  This release has all of the new stuff we've been talking about for more than a year, but it is quite buggy.  I also still need to do the merge with the OpenGL/Mac/Linux stuff as I mentioned in the dev log.  We have a new bug tracker at http://www.bay12games.com/dwarves/mantisbt/ which we are going to try out.  Expect it to be populated over the next few days with hundreds of issues.  All the same, the testers seemed to be able to enjoy themselves, so please try everything out and have fun!
+
+******************************************************
+
 Release notes for 0.28.181.40d (September 6, 2008):
 
 I decided to release the current bug fixes since a few of them involve patching up submitted saves and I wanted to get those out before I'm forced to break save compatibility for the next version.  I'll still be able to look at all previously submitted saves (and any saves submitted against this version), but fixes won't apply to the saves themselves as the next release won't be able to load them.
@@ -60,6 +88,7 @@ Bug Fixes:
 	(*) stopped custom profession names from obscuring recruitment announcements
 	(*) made forbidden items count toward wealth properly
 	(*) stopped fell moods from occurring if the fortress race does not drop a corpse
+	(*) added cookability/vermin eating to meat material templates
 
 ******************************************************
 
@@ -90,6 +119,7 @@ Bug Fixes:
 	(*) stopped reclaim from creating a second site at the spot
 	(*) stopped dirt road construction at glacier/stone interface
 	(*) fixed problem with map export and flashing job markers
+	(*) added cookability/vermin eating to plant leaf/seed materials
 
 ******************************************************
 

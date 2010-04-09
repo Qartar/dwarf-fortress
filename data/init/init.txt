@@ -30,7 +30,7 @@ If this is set to YES, the tiles will not be stretched, but rather the game view
 
 [BLACK_SPACE:NO]
 
-Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of September 2008, the Dwarf Fortress Wiki has graphical tilesets available at http://www.dwarffortresswiki.net/index.php/List_of_user_graphics_sets.
+Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of April 2010, the Dwarf Fortress Wiki has graphical tilesets available at http://df.magmawiki.com/index.php/Tileset_repository.
 
 [GRAPHICS:NO]
 [GRAPHICS_WINDOWEDX:1280]
@@ -49,6 +49,10 @@ This is the dimensions in tiles of the display grid.  Minimum x is 80.  Minimum 
 Change this to YES to only refresh portions of the screen that need to be refreshed.  This can have a significant impact on frame rate, especially for people that have slow frame rates on the title screen.  The number refers to how many frames it will redo a printed tile before skipping it, so you might try increasing it a bit.  PARTIAL_PRINT only works on certain systems, so you might have to disable it again if you notice your display isn't working properly.  Fixes are being investigated.
 
 [PARTIAL_PRINT:NO:2]
+
+Change this to NO if you want to leave save uncompressed (you might want to do this if you are experience save corruption).
+
+[COMPRESSED_SAVES:YES]
 
 Change this to YES to keep the DF window on top of your other windows.
 
@@ -96,9 +100,9 @@ Set this to YES if you want it to save the game when you start a new fortress.  
 
 [INITIAL_SAVE:NO]
 
-Set this to YES to make Dwarf Fortress start paused whenever you load an active game.
+Set this to NO to make Dwarf Fortress remain in the saved pause state when you load an active game.
 
-[PAUSE_ON_LOAD:NO]
+[PAUSE_ON_LOAD:YES]
 
 Set this to YES if you want Dwarf Fortress to show the warning window on embark as a confirmation even if there are no issues.
 
@@ -106,13 +110,6 @@ Set this to YES if you want Dwarf Fortress to show the warning window on embark 
 
 You can change these to ALWAYS and NO.  More restrictive world parameter settings override these.  ALWAYS lets you see the features in the Local view during embark, and NO stops you from looking for features in the site finder (though if you really want to stop the finder, it might be better for you to generate worlds that restrict the use of this feature completely, in which case you don't need to change the settings here).
 
-[SHOW_EMBARK_RIVER:FINDER]
-[SHOW_EMBARK_POOL:FINDER]
-[SHOW_EMBARK_M_PIPE:FINDER]
-[SHOW_EMBARK_M_POOL:FINDER]
-[SHOW_EMBARK_CHASM:FINDER]
-[SHOW_EMBARK_PIT:FINDER]
-[SHOW_EMBARK_OTHER:FINDER]
 [SHOW_EMBARK_TUNNEL:FINDER]
 
 Use these options to remove features from the game.  Permitted values are YES and NO.  Removal might speed the game up in the case of temperature and weather.
@@ -124,6 +121,7 @@ Use these options to remove features from the game.  Permitted values are YES an
 [CAVEINS:YES]
 [ARTIFACTS:YES]
 [ZERO_RENT:NO]
+[TESTING_ARENA:YES]
 
 Change this to YES to output the reasons for world map rejection into a file.
 
@@ -131,7 +129,7 @@ Change this to YES to output the reasons for world map rejection into a file.
 
 Change these numbers to make the embark rectangle start at a different size.  The format is (EMBARK_RECTANGLE:<width>:<height>).  Numbers may run from 2 to 16.  The map size warning message will go by these numbers.
 
-[EMBARK_RECTANGLE:6:6]
+[EMBARK_RECTANGLE:4:4]
 
 Change these numbers to set the default weights for traffic designations.  If you make the last numbers too large, pathfinding might lag.
 The format is (PATH_COST:<high>:<normal>:<low>:<restricted>).
@@ -149,6 +147,15 @@ Alter these options to control how aggressively your dwarves place objects in a 
 Change this to YES to disallow pets from coffin burial as the default option.
 
 [COFFIN_NO_PETS_DEFAULT:NO]
+
+Use these to set the color of wounded body parts.  The format is <foreground color>:<background color>:<brightness>.
+
+[WOUND_COLOR_NONE:7:0:1]  No recorded active wounds on the part.  Default = white
+[WOUND_COLOR_MINOR:6:0:0]  Any damage that doesn't have functional/structural consequences (might be heavy bleeding though).  Default = brown
+[WOUND_COLOR_INHIBITED:6:0:1]  Any muscular, structural or functional damage without total loss.  Default = yellow
+[WOUND_COLOR_FUNCTION_LOSS:3:0:1]  An important function of the part is completely lost, but the part is structurally sound (or at least partially intact).  Default = bright cyan
+[WOUND_COLOR_BROKEN:4:0:1]  The part has lost all structural integrity or muscular ability.  Default = bright red
+[WOUND_COLOR_MISSING:0:0:1]  The part is completely gone.  Default = dark gray
 
 This controls the display of areas that are far below outside.  The format is SKY:<character>:<foreground color>:<background color>:<brightness>.  The <character> can be either an ASCII tile number or a character in quotes, like '#'.
 
@@ -187,9 +194,9 @@ Set this to YES to display fluids as numbers indicating depth.
 
 [SHOW_FLOW_AMOUNTS:NO]
 
-If you'd prefer to have it show the history behind every engraving you view in dwarf mode, etc., then set this to YES.
+If you'd prefer to leave the history behind every engraving for your adventurers to discover, then set this to NO.
 
-[SHOW_ALL_HISTORY_IN_DWARF_MODE:NO]
+[SHOW_ALL_HISTORY_IN_DWARF_MODE:YES]
 
 This controls the number of milliseconds that must pass before a held key sends a repeat press to the game.  You might need to adjust this.
 
