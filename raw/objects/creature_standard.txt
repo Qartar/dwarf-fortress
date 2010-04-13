@@ -2744,9 +2744,6 @@ creature_standard
 	[BODY_SIZE:12:0:220000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-	[SET_BP_GROUP:BY_CATEGORY:EYE]
-		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:DEEP_SET:0:70:90:100:110:130:200]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -4010,7 +4007,7 @@ creature_standard
 			[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:HARPY]
-	[DESCRIPTION:A monster in the shape of a woman with a bird’s wings in place of arms and talons for feet.]
+	[DESCRIPTION:A monster in the shape of a woman with a bird's wings in place of arms and talons for feet.]
 	[NAME:harpy:harpies:harpy]
 	[CASTE_NAME:harpy:harpies:harpy]
 	[CREATURE_TILE:'h'][COLOR:6:0:0]

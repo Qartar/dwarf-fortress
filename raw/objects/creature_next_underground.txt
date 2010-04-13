@@ -551,7 +551,7 @@ creature_next_underground
 
 [CREATURE:HUNGRY_HEAD]
 	[ARENA_RESTRICTED]
-	[DESCRIPTION:A fearsome, long-toothed mouth the size of a man’s head, flying on bat wings.  It is found in deep caves.]
+	[DESCRIPTION:A fearsome, long-toothed mouth the size of a man's head, flying on bat wings.  It is found in deep caves.]
 	[NAME:hungry head:hungry heads:hungry head]
 	[CASTE_NAME:hungry head:hungry heads:hungry head]
 	[CREATURE_TILE:'h'][COLOR:0:0:1]

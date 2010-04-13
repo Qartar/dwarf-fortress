@@ -2214,7 +2214,7 @@ creature_large_ocean
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_SUNFISH_OCEAN]
-	[DESCRIPTION:A giant oceanic creature resembling a huge fish’s head connected to a wide tail.]
+	[DESCRIPTION:A giant oceanic creature resembling a huge fish's head connected to a wide tail.]
 	[NAME:ocean sunfish:ocean sunfish:ocean sunfish]
 	[CASTE_NAME:ocean sunfish:ocean sunfish:ocean sunfish]
 	[CHILD:1][GENERAL_CHILD_NAME:ocean sunfish fry:ocean sunfish fry]

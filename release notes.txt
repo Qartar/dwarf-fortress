@@ -34,13 +34,41 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+
+******************************************************
+
+Release notes for 0.31.03 (April 12, 2010):
+
+I handled some more crashes and the main pathing issue.  Undead aren't quite where they need to be yet (skeletons in particular still don't understand how the skull and spine should be holding them together), but they are more killable in this version.  Since they don't make sense in the first place, there's a sort of hitpoint system for them now that'll get them dead eventually if you don't break them apart, though punching a skeleton to death takes a long time in this system and maces are still a bit underpowered.  The undead HP will be revisited once the undead have more of a basis in the underlying reality.  I'll get to maces etc. sooner.
+
+Crash fixes
+	(*) fixed a zone deletion crash (only for zones with buildings in them)
+	(*) fixed crash in military screen upon switching to item assignment view when no squads were present
+	(*) fixed crash from copying a schedule cell with fewer orders to one with more
+	(*) fixed crash from changing alert view while scrolling through a schedule cells orders
+
+Major bug fixes
+	(*) fixed pathing problem (root cause was map generation vs. liquids, would mess up ramps/channels and more)
+	(*) stopped missing undead/melted/etc. tissues holding parts from being severed
+
+New stuff
+	(*) allowed undead in arena
+	(*) allowed undead to be killed by accumulated impacts for the time being while they don't make sense
+	(*) stopped people from trying to wrestle the undead at all
+
+Minor changes
+	(*) messed with corpse piece colors a bit
+	(*) fixed "and" spacing in stripe/spot descriptions
+	(*) fixed nervous mannerism typo
+	(*) fixed some raw typos (see file_changes.txt)
+
 ******************************************************
 
 Release notes for 0.31.02 (April 8, 2010):
 
 Here's the first little update.  Things are still settling down after the release, but it looks like I'll be able to work with the new bug tracker and handle things there day by day.  There will be a few more of these small releases before I begin the SDL/Mac/Linux/40d# merge, since there are more crashes and huge problems, but I'm going to start some of the preparation for the merge as well.
 
-Crash fix
+Crash fixes
 	(*) [GRAPHICS:YES] should no longer crash the arena or world generation
 	(*) fixed training activity crash (from removal of barracks)
 	(*) fixed crash from doing a large flow-style activity zone
@@ -57,6 +85,8 @@ Minor changes
 	(*) fixed alligator eye text
 	(*) made soap bars instead of globs
 	(*) fixed horn silver environment
+	(*) added cookability/vermin eating to meat material templates
+	(*) added cookability/vermin eating to plant leaf/seed materials
 
 ******************************************************
 
@@ -88,7 +118,6 @@ Bug Fixes:
 	(*) stopped custom profession names from obscuring recruitment announcements
 	(*) made forbidden items count toward wealth properly
 	(*) stopped fell moods from occurring if the fortress race does not drop a corpse
-	(*) added cookability/vermin eating to meat material templates
 
 ******************************************************
 
@@ -119,7 +148,6 @@ Bug Fixes:
 	(*) stopped reclaim from creating a second site at the spot
 	(*) stopped dirt road construction at glacier/stone interface
 	(*) fixed problem with map export and flashing job markers
-	(*) added cookability/vermin eating to plant leaf/seed materials
 
 ******************************************************
 
