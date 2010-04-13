@@ -2,10 +2,26 @@ See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
 
+******************************************************
+
+Auxiliary file changes for 0.31.03:
+	data/index
+
+New keys
+	[ARENA_CREATURE_UNDEAD:U]
+
+Creature raws
+	Fixed some broken apostrophes (mountain gnome, ocean sunfish, hungry head, harpy).
+	Moved [STANCE] to hands for ARMS_STANCE body parts.
+	Remove eye appearance modifiers from minotaurs.
+
+Entity raws
+	Removed the SOLDIER_COLOR] thing -- it corresponded to a note to myself to handle soldier-like entity position colors, but it was confusing people, so it's just in the notes themselves now.
 
 ******************************************************
 
 Auxiliary file changes for 0.31.02:
+	data/index
 	readme.txt (added to and alphabetized 2010 tester credits)
 
 Creature raws

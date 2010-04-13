@@ -271,7 +271,7 @@ creature_large_mountain
 		[MULTIPLY_VALUE:4]
 
 [CREATURE:GNOME_MOUNTAIN]
-	[DESCRIPTION:A tiny, jolly humanoid creature that dwells in the fair mountains.  They are known to enjoy drinking liquor and don’t care whether it's theirs or not.]
+	[DESCRIPTION:A tiny, jolly humanoid creature that dwells in the fair mountains.  They are known to enjoy drinking liquor and don't care whether it's theirs or not.]
 	[NAME:mountain gnome:mountain gnomes:mountain gnome]
 	[CASTE_NAME:mountain gnome:mountain gnomes:mountain gnome]
 	[CREATURE_TILE:'g'][COLOR:0:0:1]
