@@ -1,0 +1,130 @@
+Use these to control the automatic saving behavior in the dwarf fortress mode of game.  AUTOSAVE can be set to NONE, SEASONAL or YEARLY.  This updates your save at these intervals, so that some of your progress will be saved in case of system instability.  You can set AUTOBACKUP to YES if you want the updated save to be copied to another folder so that you'll have several copies of your world at different times.  Set AUTOSAVE_PAUSE to YES if you want the game to pause every time it autosaves.
+
+[AUTOSAVE:NONE]
+[AUTOBACKUP:NO]
+[AUTOSAVE_PAUSE:NO]
+
+Set this to YES if you want it to save the game when you start a new fortress.  If AUTOBACKUP above is set to YES, it will also create a copy of this new save.
+
+[INITIAL_SAVE:NO]
+
+Set this to NO to make Dwarf Fortress remain in the saved pause state when you load an active game.
+
+[PAUSE_ON_LOAD:YES]
+
+Set this to YES if you want Dwarf Fortress to show the warning window on embark as a confirmation even if there are no issues.
+
+[EMBARK_WARNING_ALWAYS:NO]
+
+You can change these to ALWAYS and NO.  More restrictive world parameter settings override these.  ALWAYS lets you see the features in the Local view during embark, and NO stops you from looking for features in the site finder (though if you really want to stop the finder, it might be better for you to generate worlds that restrict the use of this feature completely, in which case you don't need to change the settings here).
+
+[SHOW_EMBARK_TUNNEL:FINDER]
+
+Use these options to remove features from the game.  Permitted values are YES and NO.  Removal might speed the game up in the case of temperature and weather.
+
+[TEMPERATURE:YES]
+[WEATHER:YES]
+[ECONOMY:YES]
+[INVADERS:YES]
+[CAVEINS:YES]
+[ARTIFACTS:YES]
+[ZERO_RENT:NO]
+[TESTING_ARENA:YES]
+
+Change this to YES to output the reasons for world map rejection into a file.
+
+[LOG_MAP_REJECTS:NO]
+
+Change these numbers to make the embark rectangle start at a different size.  The format is (EMBARK_RECTANGLE:<width>:<height>).  Numbers may run from 2 to 16.  The map size warning message will go by these numbers.
+
+[EMBARK_RECTANGLE:4:4]
+
+Change these numbers to set the default weights for traffic designations.  If you make the last numbers too large, pathfinding might lag.
+The format is (PATH_COST:<high>:<normal>:<low>:<restricted>).
+
+[PATH_COST:1:2:5:25]
+
+Alter these options to control how aggressively your dwarves place objects in a container with like items (rather than an empty container).  The default options are very aggressive.  STORE_DIST_ITEM_DECREASE controls the cap on objects it will consider -- for each object it finds in a container, one tile is removed from its apparent distance to the dwarf, up to this cap.  The others control how many tiles are removed for each combination type for any match at all.  For instance, if ITEM_DECREASE is set to 20, and SEED_COMBINE is set to 100, a dwarf carrying seeds will see a seed bag with 15 seeds as 115 tiles closer than it actually is (and thus pass up any empties within that distance), whereas a seed bag with 30 seeds would be treated as 120 tiles closer (because it hits the ITEM_DECREASE cap).  Values from 2 to 1000 are permitted.  Before these init options, the behavior was roughly ITEM_DECREASE 2, SEED_COMBINE 2 and the rest at 1000.
+
+[STORE_DIST_ITEM_DECREASE:20]
+[STORE_DIST_SEED_COMBINE:1000]
+[STORE_DIST_BUCKET_COMBINE:1000]
+[STORE_DIST_BARREL_COMBINE:1000]
+[STORE_DIST_BIN_COMBINE:1000]
+
+Change this to YES to disallow pets from coffin burial as the default option.
+
+[COFFIN_NO_PETS_DEFAULT:NO]
+
+Use these to set the color of wounded body parts.  The format is <foreground color>:<background color>:<brightness>.
+
+[WOUND_COLOR_NONE:7:0:1]  No recorded active wounds on the part.  Default = white
+[WOUND_COLOR_MINOR:6:0:0]  Any damage that doesn't have functional/structural consequences (might be heavy bleeding though).  Default = brown
+[WOUND_COLOR_INHIBITED:6:0:1]  Any muscular, structural or functional damage without total loss.  Default = yellow
+[WOUND_COLOR_FUNCTION_LOSS:3:0:1]  An important function of the part is completely lost, but the part is structurally sound (or at least partially intact).  Default = bright cyan
+[WOUND_COLOR_BROKEN:4:0:1]  The part has lost all structural integrity or muscular ability.  Default = bright red
+[WOUND_COLOR_MISSING:0:0:1]  The part is completely gone.  Default = dark gray
+
+This controls the display of areas that are far below outside.  The format is SKY:<character>:<foreground color>:<background color>:<brightness>.  The <character> can be either an ASCII tile number or a character in quotes, like '#'.
+
+[SKY:178:3:0:0]
+
+As above, for inside/subterranean areas.
+
+[CHASM:250:0:0:1]
+
+This controls the "IDLERS: <number>" that is displayed in dwarf mode.  You can set it to TOP, BOTTOM or OFF.
+
+[IDLERS:TOP]
+
+You can set the maximum population of your fortress here.  Keep in mind that your population must be at least 80 to get a king and 100 to obtain the current game features.
+
+[POPULATION_CAP:200]
+
+This allows you to control the number of babies+children in your fortress.  The first number is an absolute cap on the number of babies+children.  The second is a percentage of the current number of adults in your fortress (the default is the essentially meaningless 1000% here).  The lower number is used as the cap.  The cap only prevents further pregancies, so migrant children, multiple births and existing pregnancies from old saves can still push you over the cap.  Setting either number to zero will disallow pregnancies in the fortress.
+
+[BABY_CHILD_CAP:100:1000]
+
+If you don't like the ,.`' ground, try setting this to NO.  The ground will turn into periods only.
+
+[VARIED_GROUND_TILES:YES]
+
+If you'd like your engravings to start off looking the same (you can toggle them on individual later), set this to YES.
+
+[ENGRAVINGS_START_OBSCURED:NO]
+
+If you get annoyed by seeing items like *<*sword*>* you can
+get rid of the outside ** by setting this to NO.
+
+[SHOW_IMP_QUALITY:YES]
+
+Set this to YES to display fluids as numbers indicating depth.
+
+[SHOW_FLOW_AMOUNTS:NO]
+
+If you'd prefer to leave the history behind every engraving for your adventurers to discover, then set this to NO.
+
+[SHOW_ALL_HISTORY_IN_DWARF_MODE:YES]
+
+This controls "more" in adventure mode.  If MORE is set to NO, all announcements will be skipped.  DISPLAY_LENGTH controls how many lines are printed before it gives you the "more" prompt.
+
+[MORE:YES]
+[DISPLAY_LENGTH:23]
+
+Set this to YES if you want traps to affect you in adventure mode.  This is not recommended -- there are lockup issues with cage traps, and you cannot disarm any of the traps yet, so they effectively stops you from exploring your old fortresses.
+
+[ADVENTURER_TRAPS:NO]
+
+Set this to NO if you want the game to recenter on your adventurer only when you've gotten close to the edge of the view.
+
+[ADVENTURER_ALWAYS_CENTER:YES]
+
+This controls the up/down views in adventure mode.  The first parameter can be OFF, UNHIDDEN, CREATURE or ON.  UNHIDDEN makes the view appear when it contains any unhidden square.  CREATURE makes the view appear when it contains a creature.  The second parameter is the size of the view.  It can be 3, 5, 7 or 9.  A smaller view lets it stack more of them in the column (3 at size 5, and 5 at size 3).
+
+[ADVENTURER_Z_VIEWS:UNHIDDEN:9]
+
+You can use these to say how nicknames are displayed in each mode
+Options are REPLACE_FIRST, CENTRALIZE (between first and last), REPLACE_ALL
+[NICKNAME_DWARF:REPLACE_FIRST]
+[NICKNAME_ADVENTURE:REPLACE_FIRST]
+[NICKNAME_LEGENDS:REPLACE_FIRST]

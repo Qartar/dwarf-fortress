@@ -37,6 +37,38 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.04 (May 16, 2010):
+
+The main thing here is the new OpenGL code by Svein Ove Aas (Baughn).  Especially if you weren't running at maximum framerates even on the title screen, you should notice a great improvement.  There are some modes worth messing around with in data/init/init.txt -- try "2D" if the game does not work as well as it used to (or stick with the legacy version if truly necessary).
+
+You can get at macros with:
+	Ctrl+r = record
+	Ctrl+p = play
+	Ctrl+s = save
+	Ctrl+l = load
+There is a directory data/init/macros for them.
+
+You can use PNGs for (translucent) tilesets, you can resize the window using the border, you can zoom using the mouse wheel (reset with F10, you can rebind this to keys if you like) and multiple keys can be bound to one command.
+
+A lot of changes were necessary to get this running, so there are likely to be a variety of bugs.  The legacy version has also been reorganized to make releases easier, so there could be new bugs even there.
+
+Aside from that, we have some general fixes:
+
+Crash fixes
+	(*) stopped site finder from eating up a ton of memory (crashing the game on large maps)
+
+Major bug fixes
+	(*) changed day/night temperature calculations (fixes fish availability and melting in the rain)
+	(*) stopped suture and dressing jobs from being repeated over and over on healed wounds
+
+Minor changes
+	(*) made all vermin and smallish outdoor corpse items disappear over time (can be hit after a month for vermin, season for corpse chunks)
+	(*) changed ranges for adv mode temperature text
+	(*) made temperature of squares adjacent to lava slightly lower
+
+
+******************************************************
+
 Release notes for 0.31.03 (April 12, 2010):
 
 I handled some more crashes and the main pathing issue.  Undead aren't quite where they need to be yet (skeletons in particular still don't understand how the skull and spine should be holding them together), but they are more killable in this version.  Since they don't make sense in the first place, there's a sort of hitpoint system for them now that'll get them dead eventually if you don't break them apart, though punching a skeleton to death takes a long time in this system and maces are still a bit underpowered.  The undead HP will be revisited once the undead have more of a basis in the underlying reality.  I'll get to maces etc. sooner.
