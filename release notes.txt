@@ -37,6 +37,37 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.05 (June 4, 2010):
+
+There are probably some Baughn SDL version tweaks not listed below.
+
+Crash fixes
+	(*) SDL graphics mode should work now (Baughn)
+	(*) creating squads in Linux shouldn't crash the game now
+	(*) stopped melting items from eventually crashing the game
+
+Major bug fixes
+	(*) animals/babies no longer try to clean themselves at water sources
+	(*) stopped losers from keeping their positions at elections (could not easily repair old saves with this problem though)
+	(*) fixed problem where ID numbers would be invalid on load after generating a world
+	(*) adjusted seasonal temperatures (should actually fix the rain bug)
+	(*) SDL grid sizes no longer stuck on 80x25 if you let intro movies play (Baughn)
+
+Other bug fixes/tweaks
+	(*) site finder will advanec without keypresses now
+	(*) SDL version 2D mode colors are corrected (Baughn)
+	(*) stopped cursor from skipping over large entries in stocks screen in SDL versions (Baughn)
+	(*) ESC no longer quits SDL keybinding screens instead of going up a level (Baughn)
+	(*) slow SDL unit offloading and other similar problems sped up (Baughn)
+
+New stuff
+	(*) immediately runs elections for unappointed, unelected positions like expedition leader if leader dies
+	(*) can set held key repetition behavior in SDL versions from init.txt (Baughn)
+	(*) SDL version 2D mode not allows zooming (Baughn)
+
+
+******************************************************
+
 Release notes for 0.31.04 (May 16, 2010):
 
 The main thing here is the new OpenGL code by Svein Ove Aas (Baughn).  Especially if you weren't running at maximum framerates even on the title screen, you should notice a great improvement.  There are some modes worth messing around with in data/init/init.txt -- try "2D" if the game does not work as well as it used to (or stick with the legacy version if truly necessary).

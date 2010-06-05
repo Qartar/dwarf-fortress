@@ -2,6 +2,15 @@ See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
 
+
+******************************************************
+
+Auxiliary file changes for 0.31.05:
+	data/index
+	Non-legacy init.txt has new options:
+		[KEY_REPEAT_ACCEL_LIMIT:8]
+		[KEY_REPEAT_ACCEL_START:10]
+
 ******************************************************
 
 Auxiliary file changes for 0.31.04:
