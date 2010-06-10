@@ -37,6 +37,37 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.06 (June 9, 2010):
+
+Crash fixes
+	(*) fixed crash on abandon related to having a box/cabinet building assigned to somebody
+	(*) fixed crash from using nearly spent soap bars to clean people
+	(*) fixed up crash from scrolling over globs in stock screen if certain fats were present
+	(*) SDL mode image export crash fixed (Baughn)
+	(*) fixed cursor position on farm season selection (possible crash)
+
+Major bug fixes
+	(*) made dwarves that initiate individual training recognize when they are no longer doing so properly
+	(*) stopped dwarves from swapping out their equipment for newly made items of equal value
+	(*) stopped dwarves from assigning equipment from caravans or unforbidden possessions held by outsiders
+		also incoming woodcutters/miners/etc.
+	(*) stopped dwarves from being assigned large equipment
+	(*) added default trade capacity to creatures to stop near-infinite caravan goods from being added to certain creatures
+	(*) fixed material template values causing many natural creatures to be very squishy and underpowered
+
+Other bug fixes/tweaks
+	(*) 2D mode colors fixed (Baughn)
+	(*) curses mode color initialization fixed (Baughn)
+	(*) sound header fix (Baughn)
+	(*) fixed temporary pathing problems that came from digging out brook tiles (negative construction distance etc.)
+	(*) fixed deletion for zones that have all their tiles removed
+	(*) fixed problem stopping hospital zones that have some tiles deleted from updating their furniture assignments
+	(*) removed forest temperature dampening for artificially hot worlds
+	(*) fixed some duplicate tags and other issues in the raws (see file_changes.txt)
+	(*) graphical map export should be back in the SDL versions
+
+******************************************************
+
 Release notes for 0.31.05 (June 4, 2010):
 
 There are probably some Baughn SDL version tweaks not listed below.
@@ -63,7 +94,7 @@ Other bug fixes/tweaks
 New stuff
 	(*) immediately runs elections for unappointed, unelected positions like expedition leader if leader dies
 	(*) can set held key repetition behavior in SDL versions from init.txt (Baughn)
-	(*) SDL version 2D mode not allows zooming (Baughn)
+	(*) SDL version 2D mode now allows zooming (Baughn)
 
 
 ******************************************************

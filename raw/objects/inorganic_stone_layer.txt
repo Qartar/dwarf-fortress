@@ -144,7 +144,7 @@ Kidiri
 [IGNEOUS_EXTRUSIVE]
 [MATERIAL_VALUE:3]
 [IS_STONE]
-[MELTING_POINT:11818]
+MELTING_POINT:11818 <-- I think this is from the data collected by the contributors above and is more accurate than the numbers we're using, but we're using a high melting point until environmental lava effects are further along.
 
 [INORGANIC:QUARTZITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
