@@ -5,6 +5,32 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.06:
+	data/index
+	Non-legacy init.txt is set to 2D mode by default now
+	raw/objects/creature_annelids.txt
+		removed duplicate natural tag from worm
+	raw/objects/creature_domestic.txt
+		removed duplicate child tag from donkey
+		added trade capacity to horse
+	raw/objects/creature_insects.txt
+		removed duplicate color/tile tag from monarch butterfly
+	raw/objects/creature_large_tropical.txt
+		removed common domestic and pack animal from warthog
+	raw/objects/creature_small_ocean.txt
+		removed duplicate no sleep tags from oyster and mussel
+	raw/objects/creature_standard.txt
+		removed duplicate pet value tags from ice wolf, nightwing and werewolf
+		removed extra NECK from hydra body
+	raw/objects/inorganic_stone_layer.txt
+		removed duplicate obsidian melting point
+	raw/objects/language_words.txt
+		firey -> fiery
+	raw/objects/material_template_default.txt
+		updated many of the values so that for instance teeth aren't like skin in many ways
+
+******************************************************
+
 Auxiliary file changes for 0.31.05:
 	data/index
 	Non-legacy init.txt has new options:

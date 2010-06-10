@@ -2651,7 +2651,7 @@ language_words
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-	[ADJ:firey]
+	[ADJ:fiery]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 

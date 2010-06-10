@@ -234,7 +234,6 @@ creature_insects
 	[CREATURE_TILE:249][COLOR:4:0:1]
 	[NAME:monarch butterfly:monarch butterflies:monarch butterfly]
 	[CASTE_NAME:monarch butterfly:monarch butterflies:monarch butterfly]
-	[CREATURE_TILE:249][COLOR:4:0:1]
 	[NATURAL]
 	[BIOME:NOT_FREEZING]
 	[VERMIN_GROUNDER][FREQUENCY:100]
