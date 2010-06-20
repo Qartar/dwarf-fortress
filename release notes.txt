@@ -37,6 +37,51 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.08 (June 19, 2010):
+
+Fixed up the crash with the look command and made backing out of embark warnings and reclaim selection work.
+
+******************************************************
+
+Release notes for 0.31.07 (June 19, 2010):
+
+Crash fixes
+	(*)fixed crash when over 200x200 in some screens
+	(*)fixed crash associated to assigning daggers to dwarven soldiers
+	(*)fixed a crash on the military screen
+
+Major bug fixes
+	(*)stopped doctors from picking up and dropping their patients repeatedly when it was time to carry them
+	(*)restricted doctors to using tables and traction benches in hospital zones (stalled doctors from old saves will ignore this)
+	(*)made workers stop taking new jobs if they can and want to eat/drink/sleep instead
+	(*)made certain jobs like updating records and partying quittable at any time due to hunger/thirst/drowsiness
+	(*)fixed pathfinding problem in special features that were placed within surrounding liquid layers
+	(*)allowed options screen from dwarf/adv mode setup
+	(*)fixed some job overwrite issues
+	(*)made stockpiles able to take from other stockpiles again
+	(*)made ownable items like cloaks that are part of uniforms not put soldiers into pickup/drop loops
+	(*)made cooking require a non-liquid object to start (prevents liquid food errors, powders okay)
+	(*)stopped item namers from repeatedly naming their items
+	(*)changed conditions for feeding/watering of injured dwarves so beds aren't required
+	(*)made militia commander assignment from noble screen respect current squad settings properly
+	(*)stopped removal of squad commanders from noble screen if they have subordinates
+	(*)stopped dwarves from holding multiple positions that lead squads
+	(*)got rid of some flashing and debris in SDL version
+
+Other bug fixes/tweaks
+	(*)reduced hunger/thirst/drowsiness skill/speed penalties
+	(*)made hunger/thirst/drowsiness thoughts occur a bit later in the process
+	(*)made alcohol turn into separate liquid objects less often
+	(*)made non-brewing events that create liquids handle alcohol correctly
+	(*)stopped clothier from messing up craft shop task listing (and some related issues)
+	(*)stopped non-locals from announcing their item attachments
+	(*)fixed traction bench situation on manager screen
+	(*)added pillar tile to d_init
+
+SDL Version: Baughn improved the curses and 2D output, fixed a text mode display bug, added keys to change the FPS up/down (default alt-- and alt-=), and likely some other things.
+
+******************************************************
+
 Release notes for 0.31.06 (June 9, 2010):
 
 Crash fixes

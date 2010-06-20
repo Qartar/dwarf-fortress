@@ -5,6 +5,22 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.07:
+	data/index
+	data/init/init.txt, SDL version
+		mode examples added
+	data/init/d_init.txt
+		[PILLAR_TILE:'O']
+	interface.txt, SDL version
+		new keys
+			[BIND:FPS_UP:REPEAT_SLOW]
+			[SYM:4:Equals]
+			[BIND:FPS_DOWN:REPEAT_SLOW]
+			[SYM:4:Minus]
+			
+
+******************************************************
+
 Auxiliary file changes for 0.31.06:
 	data/index
 	Non-legacy init.txt is set to 2D mode by default now

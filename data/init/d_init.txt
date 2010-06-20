@@ -73,6 +73,10 @@ As above, for inside/subterranean areas.
 
 [CHASM:250:0:0:1]
 
+Pillar tile, <character> as above.
+
+[PILLAR_TILE:'O']
+
 This controls the "IDLERS: <number>" that is displayed in dwarf mode.  You can set it to TOP, BOTTOM or OFF.
 
 [IDLERS:TOP]
