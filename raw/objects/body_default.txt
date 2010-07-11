@@ -763,7 +763,7 @@ body_default
 		[CONTYPE:HEAD]
 		[INTERNAL][SMALL]
 		[CATEGORY:SKULL]
-		[DEFAULT_RELSIZE:200]
+		[DEFAULT_RELSIZE:20] -- small until there's a notion of hollowness/etc.
 		This lets you make a totem out of the part.  The relationship between the skull and the brain is established within body detail plans or the creature itself.
 		[TOTEMABLE]
 
