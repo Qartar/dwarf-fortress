@@ -2,6 +2,22 @@ See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
 
+******************************************************
+
+Auxiliary file changes for 0.31.09:
+	data/index
+	data/speech
+		several files shortened
+	interface.txt
+		new keys
+			[A_ACTION:X]
+			[A_ACTION_CREATE:C]
+			[A_ACTION_BUTCHER:B]
+	raws
+		various numbers changed for weapons, ammo, materials (esp. metals)
+		rock sharpening reaction in reaction_other
+	new announcement
+		ANNOUNCEMENT_ADV_REACTION_PRODUCTS
 
 ******************************************************
 
@@ -16,8 +32,7 @@ Auxiliary file changes for 0.31.07:
 			[BIND:FPS_UP:REPEAT_SLOW]
 			[SYM:4:Equals]
 			[BIND:FPS_DOWN:REPEAT_SLOW]
-			[SYM:4:Minus]
-			
+			[SYM:4:Minus]			
 
 ******************************************************
 

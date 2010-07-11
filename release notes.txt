@@ -37,6 +37,68 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.09 (July 10, 2010):
+
+Lots of combat changes this time.  Keep in mind that old saves use the old raws, so you'll want to copy over at least item_weapon.txt, item_ammo.txt and inorganic_metal.txt to get more of the positive effects.  The adventure mode stone-making ability won't be available in old saves but butchery will be.
+
+Crash fixes
+	(*)fixed potential crash with container reactions
+	(*)stopped arena mode from caving in/locking up when you leave control mode
+
+Major bug fixes
+	(*)made material-based random headless beasts killable
+	(*)stuckin bleeding updated properly
+	(*)fixed major artery tag when added from creature raw with TL_MAJOR_ARTERIES (also TL_CONNECTS)
+	(*)made major artery strike for 25%+ fractures on major artery parts mandatory
+	(*)amplified effects for announced major artery strikes
+	(*)fixed swing velocity calculation for weapons
+	(*)fixed clothing size calculation (messed up shields, gloves, boots)
+	(*)changed contact area and size for bolts
+	(*)fixed blowouts in giant creature wrestling
+	(*)fixed weird skill/profession mixup that stopped marksdwarves from firing on enemies
+	(*)freed up some ammo that became lost in limbo after squad deletion/ammo reassignments/etc.
+	(*)made hunters grab ammo more reliably when they run out or when labor is changed
+	(*)fixed reordering of reaction/ore mats and a few other indexing problems between operating systems
+
+Other bug fixes/tweaks
+	(*)reworded some combat announcements
+	(*)fixed reaction screen product display error
+	(*)fixed contact area issue with misc object fighting
+	(*)changed dodging rules for people mounting a charge defense
+	(*)fixed problem with edge being disregarded too soon after impact breaks
+	(*)changed skill effects on firing rate
+	(*)changed contact area calculations for body parts
+	(*)various changes to weapon raws
+	(*)changed edge/impact calculations
+	(*)metal values changed in raws
+	(*)fixed problems preventing some gut pop-outs from happening
+	(*)fixed issue with extra dodge rolls causing shots to become less square
+	(*)other combat tweaks
+	(*)obliterated arsenal dwarf (position will still exist in old saves, but won't be used/needed)
+	(*)extended distance at which hunters are willing to shoot
+	(*)made hunters return kills under more circumstances
+	(*)allowed miners/woodcutters to switch immediately to hunt labor without getting confused about crossbow
+	(*)stopped targeting of benign, far away wilderness creatures after they see you, unless they are close
+	(*)force-allowed targeting of kill targets in some cases where it wasn't permitting it
+	(*)stopped indiv choice melee/ranged from picking out weapons of the opposite type instead of just preferring them
+	(*)fixed problem with custom workshops blanking out at times (save compat iffy here, might have to rebuild shops)
+	(*)made reaction job interface/automation check inside barrels/etc. (stuff manager jobs did right)
+	(*)changed stuckin chances
+
+New stuff
+	(*)added cumulative wounds
+	(*)added adv mode knapping
+	(*)added adv mode butchery
+	(*)allowed use of (buildingless) reactions in adv mode
+	(*)changed adv mode hunger/thirst/drowsiness durations and penalties
+	(*)start with spear/dagger in adv play now
+	(*)default dwf start with a few quivers
+	(*)gave hunters default ammo assignment
+
+SDL Version: Baughn fixed up the macro delay timer, a PPC Mac bug where the screen would be yellow and a seg-fault.
+
+******************************************************
+
 Release notes for 0.31.08 (June 19, 2010):
 
 Fixed up the crash with the look command and made backing out of embark warnings and reclaim selection work.
