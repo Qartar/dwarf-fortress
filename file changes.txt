@@ -4,6 +4,12 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.10:
+	data/index
+	data/help/a_keys -- added the 'x' instructions
+
+******************************************************
+
 Auxiliary file changes for 0.31.09:
 	data/index
 	data/speech
