@@ -37,6 +37,14 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.10 (July 11, 2010):
+
+(*)fixed problem where your units would not recognize the nice people arriving on business as their friends
+(*)stopped problem where removing a worn object in adv mode could leave you with two copies
+(*)stopped seg-fault at quit in linux if sound wasn't initialized (oliver)
+
+******************************************************
+
 Release notes for 0.31.09 (July 10, 2010):
 
 Lots of combat changes this time.  Keep in mind that old saves use the old raws, so you'll want to copy over at least item_weapon.txt, item_ammo.txt and inorganic_metal.txt to get more of the positive effects.  The adventure mode stone-making ability won't be available in old saves but butchery will be.
