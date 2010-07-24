@@ -185,7 +185,7 @@ creature_large_temperate
 		[MULTIPLY_VALUE:2]
 
 [CREATURE:DEER]
-	[DESCRIPTION:A medium-sized hoofed forest creature than grows its antlers back each year.]
+	[DESCRIPTION:A medium-sized hoofed forest creature that grows its antlers back each year.]
 	[NAME:deer:deer:deer]
 	[CASTE_NAME:deer:deer:deer]
 	[CHILD:1][GENERAL_CHILD_NAME:deer fawn:deer fawns]
@@ -902,6 +902,7 @@ creature_large_temperate
 	[BIOME:ANY_DESERT]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MUNDANE]
 	[PREFSTRING:striking red face]
 	[BODY:HUMANOID_ARMLESS:2WINGS:2EYES:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES:BEAK:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
