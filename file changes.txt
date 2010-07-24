@@ -4,6 +4,21 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.11:
+	data/index
+	data/help -- a few typos in files here
+	raws
+		creature_large_ocean.txt -- removed duplicate cluster number on tuna
+		creature_large_temperate.txt -- buzzard given MUNDANE flag, corrected typo in deer description
+		creature_large_tropical.txt -- vulture given MUNDANE flag
+		creature_large_tundra.txt -- corrected hair name for musk ox (was skin)
+		creature_next_underground.txt -- gave giant earthworm larger size
+		creature_other.txt -- removed duplicate natural tag from a few entries
+		creature_small_mammals.txt -- removed duplicate natural tag from all entries
+		creature_subterranean.txt -- removed duplicate natural tag from a few entries
+
+******************************************************
+
 Auxiliary file changes for 0.31.10:
 	data/index
 	data/help/a_keys -- added the 'x' instructions

@@ -37,6 +37,57 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.11 (July 23, 2010):
+
+Combat was the focus last time, and this time I moved over to equipment and training.  There are a number of bugs left to fix, but a lot of the largest problems should be cleaned up and training should be somewhat usable now.  I wanted to shift ammunition over to a default system where it doesn't get tied to particular squads/hunters (with the old way left as a default for people that want to control it more), since that remains one of the more annoying things, but I didn't have time to finish it up.  Just make sure you have some extra bolts sitting around, and 'm'-'f' should show you how your squads are doing ammo-wise.  Barracks should also probably default to a non-reserved/non-purposed system, though that's not as bad as ammunition reservation is.  In any case, I'll be moving on to the month-end project and entity populations, though I'll release again sooner if something comes up.
+
+Crash fixes
+	(*)stopped crash when individual squad members were selected in 's' and you go back to 's' after leaving
+	(*)fixed crash moving from ammo assignment creation to material assignment
+	(*)fixed reclaim crash
+	(*)fixed text mode crash in SDL version (Baughn)
+
+Major bug fixes
+	(*)freed up assigned items properly when uniforms are overwritten
+	(*)freed up equipment properly from empty positions when squad is disbanded
+	(*)made civilian jobs respect attributes properly
+	(*)fixed turtle (vermin) shell crafts/helms/gauntlets/etc.
+	(*)stopped squad/off-time training activities from persisting when guy goes off to eat, do squad orders, die, etc.
+	(*)made inactive/ordered squads free up their old training activities more quickly
+	(*)stopped off-time training from gumming up squad training barracks assignment
+	(*)removed dead/crazy/etc. dwarves from squads
+	(*)dropped injured dwarves out of their activities properly
+	(*)stopped bleeding dwarves from thinking they need to jump on the ground and be dragged to the hospital
+	(*)stopped miners/woodcutters coming out of the military from thinking they had a claim to old tools
+	(*)made people doing off-time training stop if it becomes inappropriate (kicked out of squad, etc.)
+	(*)made quota countdown respect reactions again
+
+Other bug fixes/tweaks
+	(*)stopped body-component-based artifacts from defaulting out to iron figurines
+	(*)made skill rust display properly on 'v' and made temporary skill loss conditions not display on military screen
+	(*)changed rust display for skills
+	(*)restricted shell moods to dwarves with shell prefs
+	(*)stopped metal goblet/flask construction jobs from shuffling metal of product
+	(*)fixed up idle strings for non-soldiers vs. lingering squad activities
+	(*)decreased effect of low self-discipline on individual training
+	(*)sped up training organization
+	(*)WINDOWEDX/Y values respected when moving to windowed mode from full screen (Baughn)
+	(*)fixed problem with skill demonstration session timer
+	(*)added timers for sparring and individual combat drills
+	(*)adjusted sparring pulled shots for recent combat balancing
+	(*)adjusted skill rates for all practice activities
+	(*)put forest start biome on humans (for proactive forest clearing)
+	(*)changed hauling encumbrance speed formula and made hauling build atts slowly
+	(*)stopped picks from being available to indiv choice soldiers
+	(*)required subtype match for armor even under "partial match"
+	(*)made off-duty archery training occur for indiv choice ranged weapons (not just crossbow)
+	(*)cleaned up various raw typos (see file_changes.txt)
+	(*)fixed a bunch of the "you" announcements in dwarf mode
+	(*)made counter to stop excessive party attendence work properly
+	(*)made it set up default ammo profiles for ranged squads
+
+******************************************************
+
 Release notes for 0.31.10 (July 11, 2010):
 
 (*)fixed problem where your units would not recognize the nice people arriving on business as their friends
