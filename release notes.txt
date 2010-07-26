@@ -34,6 +34,26 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+******************************************************
+
+Release notes for 0.31.12 (July 25, 2010):
+
+Aside from the major bug fixes listed below, I made skill increases a little faster during training.  Part of the problem is with how classes work -- the teacher and student skills are important, and they can heavily amplify the effects, so the gains for people without those skills were small.  Now it'll be even more extreme that the base rate has increased, so we'll have to see how that plays out in forts that get good teachers.
+
+If your fort has a dead liaison, your replacement liaison will be named after one of the standard professions most likely, but they should still perform their job.  New forts should have dead liaisons kicked out completely and get new liaisons.
+
+Crash fixes
+	(*)fixed military training crash
+	(*)fixed a crash during dwarf creation in arena mode after dwarf mode game had been played
+	(*)fullscreen/windowed mode switch crash fixed (Baughn)
+
+Major bug fixes
+	(*)fixed new liaison coming when previous liaison is unavailable for any reason
+	(*)fixed problem which stopped the liaison from talking about making a barony
+
+Other bug fixes/tweaks
+	(*)adjusted skill rates up a bit on indiv training and demonstrations
+	(*)made att/skill rate loader treat 0s like NONE instead of the fastest rate
 
 ******************************************************
 
