@@ -4,6 +4,13 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.12:
+	data/index
+	raws
+		creature_standard.txt -- added an extra NONE to kobold rates
+
+******************************************************
+
 Auxiliary file changes for 0.31.11:
 	data/index
 	data/help -- a few typos in files here
