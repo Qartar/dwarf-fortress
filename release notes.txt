@@ -34,13 +34,44 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+
+******************************************************
+
+Release notes for 0.31.13 (September 15, 2010):
+
+The framework for villages and sprawl is in place, and there are now "entity populations" which are made up of thousands of critters for which less information is tracked.  As it stands, this amounts to, say, ten times the number of historical figures after world generation has been running for a while, though it can vary a lot.  These changes have left adventure mode gutted, so don't expect old adventure mode saves to retain much information or work all that well.  Old dwarf mode saves should be fine for continued dwarf fortresses.  In new worlds, you can wander around the new villages, but don't expect anything to be going on.  This is the launching pad for what should be the Funification of adventure mode in the next (non-fix) release, but like many launching pads, it is kind of dull and gray.
+
+As for the merits of this release, there are the bug fixes in the lists below.  The game should also be a bit faster.  I'm on a new compiler in Windows, which led to a general speed increase, and I also optimized some code for improvements on all OSs.  It's not the end of the story there by a long shot, but it is progress, anyway.  World generation itself might be a bit slower overall, since there's a lot more going on site-wise.  This is going to change as we set up relationships between the leaders, one way or another, but I can make a medium island world in around 10 minutes without the memory going totally nuts, and I thought that state was fit for release.
+
+There are some side effects to not having any stable relationships between world gen sites while cutting down on site destructions, like having a site get pillaged for the thousandth time and so on, which will iron themselves out later.  For now, it's a bit weird.  I also saw a battle with negative numbers of soldiers but couldn't reproduce the situation, so there are probably additional issues as well.
+
+The SDL version has the first pass at the experimental TrueType font support that Baughn is working on.  It is off by default in init.txt and it only works in the 2D print mode.  There are lots of justification etc. problems -- you don't need to report those.  Getting those fixed up is part of the process.  It's difficult to read in the standard window size, so you might want to limit yourself to full-screen or a large window with large grid cells when you are trying it out.
+
+Crash fixes
+	(*)fixed some potential problems with aborting zone placement, though it's not guaranteed to solve the crash there
+
+Major bug fixes
+	(*)fixed problem causing dwarves to not sleep in any bed
+	(*)fixed problem causing dwarves not to respect ownership in sleeping priorities
+	(*)made cursor center on buildings properly when linking them up to a lever etc.
+	(*)stopped other civilizations from bringing liaisons
+	(*)stopped building destroyer diplomats/traders from destroying things
+	(*)made units check the validity of targets more often (counters certain interrupt spam)
+
+Other bug fixes/tweaks
+	(*)fixed broken vial making jobs
+	(*)make rock short swords use the proper material for the final product
+	(*)made horn silver use the stone template
+	(*)moved all native metals off of metal template
+	(*)stopped season counter from resetting to spring after travel in adventure mode
+
 ******************************************************
 
 Release notes for 0.31.12 (July 25, 2010):
 
 Aside from the major bug fixes listed below, I made skill increases a little faster during training.  Part of the problem is with how classes work -- the teacher and student skills are important, and they can heavily amplify the effects, so the gains for people without those skills were small.  Now it'll be even more extreme that the base rate has increased, so we'll have to see how that plays out in forts that get good teachers.
 
-If your fort has a dead liaison, your replacement liaison will be named after one of the standard professions most likely, but they should still perform their job.  New forts should have dead liaisons kicked out completely and get new liaisons.
+If your old fort has a dead liaison, your replacement liaison will be named after one of the standard professions most likely, but they should still perform their job.  New worlds should have dead liaisons kicked out completely and get new liaisons.
 
 Crash fixes
 	(*)fixed military training crash

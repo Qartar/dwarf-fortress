@@ -1,0 +1,5 @@
+#!/bin/sh
+PWD=`dirname "${0}"`
+export DYLD_FALLBACK_LIBRARY_PATH=${PWD}/libs
+export DYLD_FALLBACK_FRAMEWORK_PATH=${PWD}/libs
+cd "${PWD}"; ./dwarfort.exe
