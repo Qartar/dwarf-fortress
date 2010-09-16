@@ -4,6 +4,15 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.13:
+	data/index
+	raws
+		entity_default.txt -- START_GROUP NUMBER is gone
+		made horn silver use the stone template
+		moved all native metals off of metal template
+
+******************************************************
+
 Auxiliary file changes for 0.31.12:
 	data/index
 	raws
