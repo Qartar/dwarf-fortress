@@ -35,6 +35,25 @@ IF YOUR KEYBOARD ISN'T WORKING:
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
 
+
+******************************************************
+
+Release notes for 0.31.14 (September 23, 2010):
+
+The main issues here were to handle the new bugs from 0.31.13 which were gumming things up (broken migration, undiggable adamantine) and to address site sprawl concerns a bit.  To the latter end, there's a new world gen option to limit the total number of sites and I've added a few options to "Create World Now!" to make use of that.  It's not going to be truly satisfying until dwarven sprawl is better defined and there are more things to do with the sprawl in adventure mode and in dwarf mode wars, but overall I don't plan to decrease the amount of sprawl drastically on default settings once that is handled -- sprawl will likely increase again once memory problems are addressed, there are more things to do with it, and it shifts more dynamically over long periods of time (improved war, disease, famine, migrations, etc).  For now you can control sprawl with the site cap, with the civilization number, with the savagery, and with the history end year from the "Create World Now!" menu without much fuss (and the default setting is much lighter on sprawl than the default in 0.31.13).
+
+Major bug fixes
+	(*)fixed problems with immigrants having strange unit types and erroneous announcements about terrifying forts
+	(*)allowed raw adamantine to be diggable now by adding a new tag to slade for the time being.  There is a side effect -- slade in old saves will be diggable.  Add [UNDIGGABLE] to slade in the save's raws in inorganic_stone_mineral.txt in your save to fix that.  If you choose to dig through the slade, please don't report any associated bugs.  The game likely won't be able to deal with it properly.
+
+Other bug fixes/tweaks
+	(*)fixed plant text in food preferences and stopped generated forgotten beasts etc. from being chosen
+
+New stuff
+	(*)added site cap option to world gen parameters
+	(*)added beast cap options to world gen parameters
+	(*)added a few options to "create world now"
+
 ******************************************************
 
 Release notes for 0.31.13 (September 15, 2010):
