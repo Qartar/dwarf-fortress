@@ -2,6 +2,34 @@ See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
 
+
+
+
+******************************************************
+
+Auxiliary file changes for 0.31.14:
+	data/index
+
+	raws
+		new mineral tag for slade -- [UNDIGGABLE] until digging accounts for things properly
+		changed material properties for raw adamantine
+
+	New world gen parameters
+		[SITE_CAP:<number>]
+			Limits overall number of sites to this.
+			Caves and ruins are included in this number, so world gen civ spread stops cold once it is attained the way things currently go.
+
+		[MEGABEAST_CAP:<number>]
+			Attempts to place this many megabeast groups (also effectively capped by total cave number).
+			In vanilla DF, there are no megabeasts that actually occur in groups, but it is possible in mods.
+			Placing more beasts than caves will cause all caves to be filled by megabeasts.  This will leave nothing for races like kobolds.
+			Can be zero if you don't want any megabeasts.
+
+		[SEMIMEGABEAST_CAP:<number>]
+			Attempts to place this many semimegabeast groups (they get the last cave remnants).
+			Because they get the last available caves, setting this to maximum causes all remaining caves to be filled with civs unaffected.
+			Can be zero if you don't want any semimegabeasts.
+
 ******************************************************
 
 Auxiliary file changes for 0.31.13:
