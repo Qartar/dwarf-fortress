@@ -96,31 +96,6 @@ class file_compressorst
 			var=(temp!=0);
 			return 1;
 			}
-		void write_file(svector<bool> &vect)
-			{
-			long s=vect.size();
-			write_file(s);
-			bool bl;//JUST FOR PARITY WITH read BELOW
-			long i;
-			for(i=0;i<s;i++)
-				{
-				bl=vect[i];
-				write_file(bl);
-				}
-			}
-		void read_file(svector<bool> &vect)
-			{
-			long s;
-			read_file(s);
-			vect.resize(s);
-			bool bl;//NO IDEA WHY IT CAN'T JUST TAKE vect[i]
-			long i;
-			for(i=0;i<s;i++)
-				{
-				read_file(bl);
-				vect[i]=bl;
-				}
-			}
 		char write_file(unsigned long var)
 			{
 			var=byteswap(var);
@@ -162,14 +137,39 @@ class file_compressorst
 			{
 			return read_file(&var,sizeof(unsigned char));
 			}
+		void write_file(svector<bool> &vect)
+			{
+			long s=vect.size();
+			write_file(s);
+			bool bl;//JUST FOR PARITY WITH read BELOW
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				bl=(*i_b);
+				write_file(bl);
+				}
+			}
+		void read_file(svector<bool> &vect)
+			{
+			long s;
+			read_file(s);
+			vect.resize(s);
+			bool bl;//NO IDEA WHY IT CAN'T JUST TAKE vect[i]
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				read_file(bl);
+				(*i_b)=bl;
+				}
+			}
 		void write_file(svector<short> &vect)
 			{
 			long s=vect.size();
 			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				write_file(vect[i]);
+				write_file((*i_b));
 				}
 			}
 		void read_file(svector<short> &vect)
@@ -177,20 +177,20 @@ class file_compressorst
 			long s;
 			read_file(s);
 			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				read_file(vect[i]);
+				read_file((*i_b));
 				}
 			}
 		void write_file(svector<unsigned short> &vect)
 			{
 			long s=vect.size();
 			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				write_file(vect[i]);
+				write_file((*i_b));
 				}
 			}
 		void read_file(svector<unsigned short> &vect)
@@ -198,83 +198,20 @@ class file_compressorst
 			long s;
 			read_file(s);
 			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				read_file(vect[i]);
-				}
-			}
-		void write_file(svector<unsigned int> &vect)
-			{
-			long s=vect.size();
-			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
-				{
-				write_file(vect[i]);
-				}
-			}
-		void read_file(svector<unsigned int> &vect)
-			{
-			long s;
-			read_file(s);
-			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
-				{
-				read_file(vect[i]);
-				}
-			}
-		void write_file(svector<int> &vect)
-			{
-			long s=vect.size();
-			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
-				{
-				write_file(vect[i]);
-				}
-			}
-		void read_file(svector<int> &vect)
-			{
-			long s;
-			read_file(s);
-			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
-				{
-				read_file(vect[i]);
-				}
-			}
-		void write_file(svector<unsigned long> &vect)
-			{
-			long s=vect.size();
-			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
-				{
-				write_file(vect[i]);
-				}
-			}
-		void read_file(svector<unsigned long> &vect)
-			{
-			long s;
-			read_file(s);
-			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
-				{
-				read_file(vect[i]);
+				read_file((*i_b));
 				}
 			}
 		void write_file(svector<unsigned char> &vect)
 			{
 			long s=vect.size();
 			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				write_file(vect[i]);
+				write_file((*i_b));
 				}
 			}
 		void read_file(svector<unsigned char> &vect)
@@ -282,20 +219,20 @@ class file_compressorst
 			long s;
 			read_file(s);
 			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				read_file(vect[i]);
+				read_file((*i_b));
 				}
 			}
 		void write_file(svector<char> &vect)
 			{
 			long s=vect.size();
 			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				write_file(vect[i]);
+				write_file((*i_b));
 				}
 			}
 		void read_file(svector<char> &vect)
@@ -303,20 +240,20 @@ class file_compressorst
 			long s;
 			read_file(s);
 			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				read_file(vect[i]);
+				read_file((*i_b));
 				}
 			}
 		void write_file(svector<long> &vect)
 			{
 			long s=vect.size();
 			write_file(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				write_file(vect[i]);
+				write_file((*i_b));
 				}
 			}
 		void read_file(svector<long> &vect)
@@ -324,12 +261,76 @@ class file_compressorst
 			long s;
 			read_file(s);
 			vect.resize(s);
-			long i;
-			for(i=0;i<s;i++)
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
 				{
-				read_file(vect[i]);
+				read_file((*i_b));
 				}
 			}
+		void write_file(svector<unsigned long> &vect)
+			{
+			long s=vect.size();
+			write_file(s);
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				write_file((*i_b));
+				}
+			}
+		void read_file(svector<unsigned long> &vect)
+			{
+			long s;
+			read_file(s);
+			vect.resize(s);
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				read_file((*i_b));
+				}
+			}
+		void write_file(svector<int> &vect)
+			{
+			long s=vect.size();
+			write_file(s);
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				write_file((*i_b));
+				}
+			}
+		void read_file(svector<int> &vect)
+			{
+			long s;
+			read_file(s);
+			vect.resize(s);
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				read_file((*i_b));
+				}
+			}
+		void write_file(svector<unsigned int> &vect)
+			{
+			long s=vect.size();
+			write_file(s);
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				write_file((*i_b));
+				}
+			}
+		void read_file(svector<unsigned int> &vect)
+			{
+			long s;
+			read_file(s);
+			vect.resize(s);
+			auto i_b=vect.begin(),i_e=vect.end();
+			for(;i_b<i_e;++i_b)
+				{
+				read_file((*i_b));
+				}
+			}
+
 
 		char load_new_in_buffer();
 		char flush_in_buffer();

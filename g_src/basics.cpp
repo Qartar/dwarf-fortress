@@ -183,15 +183,17 @@ bool grab_token_list_as_string(string &dest,string &source,int32_t &pos,char com
 bool grab_token_string(string &dest,string &source,int32_t &pos,char compc)
 {
 	dest.erase();
+	if(source.length()==0)return false;
 
 	pos++;//GET RID OF FIRST [ OR compc THAT IS ASSUMED TO BE THERE
 
 	//GO UNTIL YOU HIT A compc, ], or the end
-	int32_t s;
-	for(s=pos;s<source.length();s++)
+	auto s=source.begin(),e=source.end();
+	s+=pos;
+	for(;s<e;++s)
 		{
-		if(source[s]==compc||source[s]==']')break;
-		dest+=source[s];
+		if((*s)==compc||(*s)==']')break;
+		dest+=(*s);
 		pos++;
 		}
 	return (dest.length()>0);
@@ -200,13 +202,14 @@ bool grab_token_string(string &dest,string &source,int32_t &pos,char compc)
 bool grab_token_string(string &dest,string &source,char compc)
 {
 	dest.erase();
+	if(source.length()==0)return false;
 
 	//GO UNTIL YOU HIT A :, ], or the end
-	int32_t s;
-	for(s=0;s<source.length();s++)
+	auto s=source.begin(),e=source.end();
+	for(;s<e;++s)
 		{
-		if(source[s]==compc||source[s]==']')break;
-		dest+=source[s];
+		if((*s)==compc||(*s)==']')break;
+		dest+=(*s);
 		}
 	return (dest.length()>0);
 }
@@ -214,13 +217,15 @@ bool grab_token_string(string &dest,string &source,char compc)
 bool grab_token_string_pos(string &dest,string &source,int32_t pos,char compc)
 {
 	dest.erase();
+	if(source.length()==0)return false;
 
 	//GO UNTIL YOU HIT A :, ], or the end
-	int32_t s;
-	for(s=pos;s<source.length();s++)
+	auto s=source.begin(),e=source.end();
+	s+=pos;
+	for(;s<e;++s)
 		{
-		if(source[s]==compc||source[s]==']')break;
-		dest+=source[s];
+		if((*s)==compc||(*s)==']')break;
+		dest+=(*s);
 		}
 	return (dest.length()>0);
 }
@@ -228,17 +233,19 @@ bool grab_token_string_pos(string &dest,string &source,int32_t pos,char compc)
 bool grab_token_string(string &dest,const char *source,char compc)
 {
 	dest.erase();
+	int32_t sz=strlen(source);
+	if(sz==0)return false;
 
 	//GO UNTIL YOU HIT A :, ], or the end
 	int32_t s;
-        const int slen = strlen(source);
-	for(s=0;s<slen;s++)
+	for(s=0;s<sz;s++)
 		{
 		if(source[s]==compc||source[s]==']')break;
 		dest+=source[s];
 		}
 	return (dest.length()>0);
 }
+
 
 void replace_token_string(string &token,string &str,int32_t pos,char compc,string &nw,char repc)
 {
