@@ -2,7 +2,11 @@
 #define TTF_MANAGER_HPP
 
 #include "enabler.h"
+#ifdef __APPLE__
+#include <SDL_ttf/SDL_ttf.h>
+#else
 #include <SDL/SDL_ttf.h>
+#endif
 #include <unordered_map>
 
 using std::unordered_map;

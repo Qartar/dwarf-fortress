@@ -8,10 +8,11 @@
 #include "platform.h"
 #include <SDL/SDL.h>
 #include <SDL/SDL_thread.h>
-#include <SDL/SDL_ttf.h>
 #ifdef __APPLE__
+# include <SDL_ttf/SDL_ttf.h>
 # include <SDL_image/SDL_image.h>
 #else
+# include <SDL/SDL_ttf.h>
 # include <SDL/SDL_image.h>
 #endif
 
