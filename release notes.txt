@@ -35,6 +35,22 @@ IF YOUR KEYBOARD ISN'T WORKING:
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
 
+******************************************************
+
+Release notes for 0.31.15 (October 3, 2010):
+
+The purpose of this release is to restore the missing invasions, and I threw in some easy fixes on top of it, mostly to the raws.
+
+Major bug fixes
+	(*)made invasions come again
+
+Other bug fixes/tweaks
+	(*)lots of raw fixes (see "file changes.txt")
+	(*)made reactions show the proper building
+	(*)made LEAVES load the 'character' style tile properly
+	(*)corrected labor name "soap maker" -> "soap making"
+	(*)fixed typo in world gen rejection dialog for missing civ definitions
+	(*)fixed spelling of chinchilla for forgotten beasts (new ones only)
 
 ******************************************************
 
@@ -63,6 +79,8 @@ The framework for villages and sprawl is in place, and there are now "entity pop
 As for the merits of this release, there are the bug fixes in the lists below.  The game should also be a bit faster.  I'm on a new compiler in Windows, which led to a general speed increase, and I also optimized some code for improvements on all OSs.  It's not the end of the story there by a long shot, but it is progress, anyway.  World generation itself might be a bit slower overall, since there's a lot more going on site-wise.  This is going to change as we set up relationships between the leaders, one way or another, but I can make a medium island world in around 10 minutes without the memory going totally nuts, and I thought that state was fit for release.
 
 There are some side effects to not having any stable relationships between world gen sites while cutting down on site destructions, like having a site get pillaged for the thousandth time and so on, which will iron themselves out later.  For now, it's a bit weird.  I also saw a battle with negative numbers of soldiers but couldn't reproduce the situation, so there are probably additional issues as well.
+
+The SDL version has the first pass at the experimental TrueType font support that Baughn is working on.  It is off by default in init.txt and it only works in the 2D print mode.  There are lots of justification etc. problems -- you don't need to report those.  Getting those fixed up is part of the process.  It's difficult to read in the standard window size, so you might want to limit yourself to full-screen or a large window with large grid cells when you are trying it out.
 
 Crash fixes
 	(*)fixed some potential problems with aborting zone placement, though it's not guaranteed to solve the crash there
