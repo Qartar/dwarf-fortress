@@ -9,7 +9,7 @@ Dwarf Fortress Command Line Options
 Dwarf Fortress currently offers one command line option, a world generator, suggested by genmac.  You can use it as follows:
 
 FORMAT:	dwarfort.exe -gen <id number> <seed> <world gen param title>
-EXAMPLE:	dwarfort.exe -gen 1 3498 STANDARD
-EXAMPLE:	dwarfort.exe -gen 2 RANDOM CUSTOM6
+EXAMPLE: dwarfort.exe -gen 1 3498 STANDARD
+EXAMPLE: dwarfort.exe -gen 2 RANDOM CUSTOM6
 
 This will open a silent, introless dwarf fortress, generate a world with the given id number and seed, export the region files and a picture, and finally quit.  The window remains open so you can see what's going on.  You can still abort world generation while it is running.  If you attempt to create a world number that already exists, it will abort immediately.
