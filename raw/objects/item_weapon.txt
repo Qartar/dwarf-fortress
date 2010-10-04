@@ -24,7 +24,7 @@ Penetration size currently only matters for edged attacks.
 
 [ATTACK:EDGE:40000:6000:hack:hacks:NO_SUB:1250]
 [ATTACK:BLUNT:40000:6000:slap:slaps:flat:1250]
-[ATTACK:BLUNT:1000:1000:strike:strikes:pommel:1000]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
 
 [ITEM_WEAPON:ITEM_WEAPON_HAMMER_WAR]
 [NAME:war hammer:war hammers]
@@ -46,7 +46,7 @@ Penetration size currently only matters for edged attacks.
 [ATTACK:EDGE:20000:4000:slash:slashes:NO_SUB:1250]
 [ATTACK:EDGE:50:2000:stab:stabs:NO_SUB:1000]
 [ATTACK:BLUNT:20000:4000:slap:slaps:flat:1250]
-[ATTACK:BLUNT:1000:1000:strike:strikes:pommel:1000]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
 
 [ITEM_WEAPON:ITEM_WEAPON_SPEAR]
 [NAME:spear:spears]
