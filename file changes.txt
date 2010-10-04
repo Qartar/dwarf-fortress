@@ -4,6 +4,56 @@ See command_line.txt for information on world generation from command lines.
 
 
 
+******************************************************
+
+Auxiliary file changes for 0.31.15:
+
+	data/index
+
+	building_custom.txt
+		added blocked tiles to soap maker
+	body_default.txt
+		3EYES added
+	body_rcp.txt
+		RCP_3_EYES has [LEFT] removed from center eye
+	creature_large_temperate.txt
+		gave rhesus tail
+	creature_large_tropical.txt
+		made elephant tusk attack co-MAIN with kicks
+	creature_next_underground.txt
+		added EXTRAVISION to voracious cave crawler
+		added 2HEAD_HORN to crundle BODY and made them grow up faster
+		added LARGE_ROAMING and NOBREATHE to magma crab
+		added LARGE_ROAMING and LARGE_PREDATOR to helmet snake
+		added LARGE_ROAMING to cave dragon
+		added LARGE_ROAMING to giant earthworm
+		made amethyst men die as ROUGH instead of BOULDER
+		fixed blind cave bear rear toes (they were front instead of rear)
+	creature_savage_tropical.txt
+		moved giant desert scorpion over to chitin templates
+		gave tigermen ears and ribcages
+	creature_standard.txt
+		strangler gets 3EYES instead of 2EYES:1EYE and gave them MALE/FEMALE castes
+		added nouns for eye modifiers for cyclops to fix description typos and got rid of their large iris modifier
+			because of some announces with noun/verb agreement there
+		removed humanoid head/ribcage positioning from grimelings
+	creature_subterranean.txt
+		fixed melting point on fire imp blood
+		gave cave swallow man wings in addition to arms
+		stuck tail on olm
+		removed MUNDANE from fire snake
+		made all the ant man castes grow up faster and made them live a little longer
+		made amphibian men grow up faster
+	inorganic_metal.txt
+		put bending values back in sterling silver
+	item_weapon.txt
+		fixed short sword and battle axe pommel attack contact area (1000 -> 100 like other weapons)
+	material_template_default.txt
+		added [ROTS] to STRUCTURAL_PLANT_TEMPLATE and LEAF_TEMPLATE
+	plant_standard.txt
+		fixed quarry bush LEAVES tile/color mix up
+	world_gen.txt
+		stopped doubling up CAVE_MIN_SIZE in the exporter and initial file
 
 ******************************************************
 
