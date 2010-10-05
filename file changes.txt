@@ -3,6 +3,13 @@ See release_notes.txt for information on handling saves and a brief writeup on t
 See command_line.txt for information on world generation from command lines.
 
 
+Auxiliary file changes for 0.31.16:
+
+	data/index
+
+	d_init.txt
+		[WALKING_SPREADS_SPATTER_DWF:NO]
+		[WALKING_SPREADS_SPATTER_ADV:YES]
 
 ******************************************************
 
