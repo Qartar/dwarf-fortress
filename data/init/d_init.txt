@@ -30,6 +30,8 @@ Use these options to remove features from the game.  Permitted values are YES an
 [ARTIFACTS:YES]
 [ZERO_RENT:NO]
 [TESTING_ARENA:YES]
+[WALKING_SPREADS_SPATTER_DWF:NO]
+[WALKING_SPREADS_SPATTER_ADV:YES]
 
 Change this to YES to output the reasons for world map rejection into a file.
 

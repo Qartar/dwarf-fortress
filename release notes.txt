@@ -37,6 +37,19 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.16 (October 4, 2010):
+
+Hopefully this one doesn't have any weird new issues.  That bumpy lag should be gone now, and there are expanded refuse pile options.  You can also turn off having your dwarves track around blood (it starts off in the init).  I left it on in adventure mode, but you can turn it off there too if you want.
+
+Major bug fixes
+	(*)got rid of intermittent lag that popped up in 0.31.15
+
+New stuff
+	(*)added spatter init options (dwarf mode defaults to no walking spread of spatter)
+	(*)allowed skull/bone/shell/tooth/horn settings from refuse pile
+
+******************************************************
+
 Release notes for 0.31.15 (October 3, 2010):
 
 The purpose of this release is to restore the missing invasions, and I threw in some easy fixes on top of it, mostly to the raws.
