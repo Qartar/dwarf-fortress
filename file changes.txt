@@ -2,6 +2,108 @@ See readme.txt for general information about the release.
 See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
 See command_line.txt for information on world generation from command lines.
 
+******************************************************
+
+Auxiliary file changes for 0.31.17:
+
+	data/index
+
+	announcements.txt
+		[NIGHT_ATTACK_STARTS:A_D:D_D:BOX]
+		[NIGHT_ATTACK_ENDS:A_D:D_D:BOX]
+		[NIGHT_ATTACK_TRAVEL:A_D:D_D]
+		[GHOST_ATTACK:A_D:D_D]
+		[LAIR_HUNTER:A_D:D_D]
+		[TRAVEL_SITE_DISCOVERY:A_D:D_D:BOX]
+		[TRAVEL_SITE_BUMP:A_D:D_D]
+		[ADVENTURE_INTRO:BOX]
+		removed
+			COMBAT_WRESTLE_PINCH
+			COMBAT_WRESTLE_GOUGE
+			COMBAT_WRESTLE_STRANGLE
+			COMBAT_SHAKE
+	world_gen.txt
+		[NIGHT_CREATURE_NUMBER:<number of definitions>]
+	body_default/rcp.txt
+		neck changed over to upper spine (left NECK token), category SPINE
+		neck and lower spine get CONNECTOR
+		upper spine in lower body changed to middle spine
+	creature_large_mountain.txt
+		voice mannerisms neck -> throat
+	creature_standard.txt
+		humans, elves and dwarves get [SPOUSE_CONVERSION_TARGET]
+		added ogress caste name to ogre
+		minotaur gets lair, habit and [NATURAL_SKILL] tags
+		other semis/megas get basic lair stuff
+		dragon/hydra get NOEXERT
+		dragon got willpower boost, skill tags
+		hydra gets skill tags
+		gremlin gets skill tag
+		removed cluster numbers from all semimegabeasts, (unused) pop number from bronze colossus
+		voice mannerisms neck -> throat
+	creature_subterranean.txt
+		voice mannerisms neck -> throat
+	creature_next_underground.txt
+		tweaked DIFFICULTY numbers, which are used for fame rewards now
+		gave blind cave ogre extra vision
+	entity_default.txt
+		BUILDS_OUTDOOR_FORTIFICATIONS added to PLAINS entity
+		banditry tags on humans, goblins and kobolds
+			BANDITRY:<perc>
+			LOCAL_BANDITRY
+	inorganic_stone_soil.txt
+		went over to new SOIL_TEMPLATE
+	xml
+		new historical events: change creature type, hist figure revived
+		added "put to rest", "vanish" and "scared to death" kill causes
+		new site names "hamlet" "town" "fortress" "labyrinth" "lair" "shrine"
+	item_tool.txt
+		new file, used only by adv mode peasants and lair creatures at this point
+	new keys
+		[HOTKEY_BUILDING_SLAB:ALT+S]
+		[HOTKEY_MASON_SLAB:ALT+S]
+		[HOTKEY_CRAFTS_SLAB:ALT+S]
+		[A_TRAVEL_SLEEP:SHIFT+Z]
+		[A_TRAVEL_MAP:M]
+		[A_TRAVEL_HIDE_INSTRUCTIONS:H]
+		[A_SLEEP_SLEEP:S]
+		[A_SLEEP_WAIT:W]
+		[A_SLEEP_DAWN:D]
+		[ORDERS_REFUSE_OUTSIDE_VERMIN:V]
+		[A_COMPANIONS:C]
+		[A_ATTACK_CONFIRM:ALT+Y]
+		renamed
+			A_MOVE_WAIT -> A_MOVE_SAME_SQUARE
+		changed
+			[A_CENTER:V]
+			[A_COMBAT:SHIFT+C]
+	graphics example
+		added GHOST to the list of texture options
+	new bp tag
+		CONNECTOR -- child part with CONNECTOR keeps parent unsevered until receiving severing damage itself
+	new creature tags
+		NIGHT_CREATURE_HUNTER
+		NIGHT_CREATURE_BOGEYMAN
+		SPOUSE_CONVERTER
+		CONVERTED_SPOUSE
+		SPOUSE_CONVERSION_TARGET
+		LAIR_HUNTER
+		LAIR_HUNTER_SPEECH:<speech file>
+		HABIT:<habit token>:<percentage>
+		HABIT_NUM:<TEST_ALL or a number>
+		NATURAL_SKILL:<skill token>:<amount>
+			skill starts here and cannot rust below here
+		CREATURE_SOLDIER_TILE:<tile>
+		SOLDIER_ALTTILE:<tile>
+		CASTE_SOLDIER_TILE:<tile>
+		CASTE_SOLDIER_ALTTILE:<tile>
+		SKILL_LEARN_RATES:<percentage>
+		SKILL_RUST_RATES:<3 rust tags from SKILL_RATES>
+		SKILL_RATE:<skill token>:<4 tags from SKILL_RATES>
+		SKILL_LEARN_RATE:<skill token>:<percentage>
+		SKILL_RUST_RATE:<skill token>:<3 rust tags from SKILL_RATES>
+
+******************************************************
 
 Auxiliary file changes for 0.31.16:
 

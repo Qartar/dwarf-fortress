@@ -1,0 +1,2 @@
+I am [SPEAKER:TRANS_NAME].  Can I be of some help?
+I am [SPEAKER:TRANS_NAME].  How can I be of service?
