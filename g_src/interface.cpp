@@ -1122,7 +1122,7 @@ void interfacest::read_movie_chunk(int &maxmoviepos,char &is_playing)
 {
 	//OPEN UP THE MOVIE FILE AND MOVE TO CORRECT POSITION
 	std::fstream f;
-	f.open(movie_file.c_str(), fstream::in | fstream::out | fstream::binary);
+	f.open(movie_file.c_str(), fstream::in | fstream::binary);
 
 	if(f.is_open())
 		{

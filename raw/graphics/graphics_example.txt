@@ -24,6 +24,7 @@ GUARD
 ROYALGUARD
 SKELETON
 ZOMBIE
+GHOST
 
 For the profession specific options, the format is
 "profession token:creature token:x location on tile page:y location on tile page:whether to color it:texture type"

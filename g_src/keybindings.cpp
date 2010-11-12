@@ -126,7 +126,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_A_MOVE_NE, "A_MOVE_NE");
 	bindingNames.insert(INTERFACEKEY_A_MOVE_SW, "A_MOVE_SW");
 	bindingNames.insert(INTERFACEKEY_A_MOVE_SE, "A_MOVE_SE");
-	bindingNames.insert(INTERFACEKEY_A_MOVE_WAIT, "A_MOVE_WAIT");
+	bindingNames.insert(INTERFACEKEY_A_MOVE_SAME_SQUARE, "A_MOVE_SAME_SQUARE");
 	bindingNames.insert(INTERFACEKEY_A_CARE_MOVE_N, "A_CARE_MOVE_N");
 	bindingNames.insert(INTERFACEKEY_A_CARE_MOVE_S, "A_CARE_MOVE_S");
 	bindingNames.insert(INTERFACEKEY_A_CARE_MOVE_E, "A_CARE_MOVE_E");
@@ -182,8 +182,12 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_CUSTOMIZE_UNIT_PROFNAME, "CUSTOMIZE_UNIT_PROFNAME");
 	bindingNames.insert(INTERFACEKEY_A_CLEAR_ANNOUNCEMENTS, "A_CLEAR_ANNOUNCEMENTS");
 	bindingNames.insert(INTERFACEKEY_A_SLEEP, "A_SLEEP");
+	bindingNames.insert(INTERFACEKEY_A_SLEEP_SLEEP, "A_SLEEP_SLEEP");
+	bindingNames.insert(INTERFACEKEY_A_SLEEP_WAIT, "A_SLEEP_WAIT");
+	bindingNames.insert(INTERFACEKEY_A_SLEEP_DAWN, "A_SLEEP_DAWN");
 	bindingNames.insert(INTERFACEKEY_A_WAIT, "A_WAIT");
 	bindingNames.insert(INTERFACEKEY_A_ATTACK, "A_ATTACK");
+	bindingNames.insert(INTERFACEKEY_A_ATTACK_CONFIRM, "A_ATTACK_CONFIRM");
 	bindingNames.insert(INTERFACEKEY_A_LOOK, "A_LOOK");
 	bindingNames.insert(INTERFACEKEY_A_SEARCH, "A_SEARCH");
 	bindingNames.insert(INTERFACEKEY_A_TALK, "A_TALK");
@@ -206,8 +210,12 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_A_MOVEMENT_SWIM, "A_MOVEMENT_SWIM");
 	bindingNames.insert(INTERFACEKEY_A_SNEAK, "A_SNEAK");
 	bindingNames.insert(INTERFACEKEY_A_CENTER, "A_CENTER");
+	bindingNames.insert(INTERFACEKEY_A_COMPANIONS, "A_COMPANIONS");
 	bindingNames.insert(INTERFACEKEY_A_BUILDING, "A_BUILDING");
 	bindingNames.insert(INTERFACEKEY_A_TRAVEL, "A_TRAVEL");
+	bindingNames.insert(INTERFACEKEY_A_TRAVEL_SLEEP, "A_TRAVEL_SLEEP");
+	bindingNames.insert(INTERFACEKEY_A_TRAVEL_MAP, "A_TRAVEL_MAP");
+	bindingNames.insert(INTERFACEKEY_A_TRAVEL_HIDE_INSTRUCTIONS, "A_TRAVEL_HIDE_INSTRUCTIONS");
 	bindingNames.insert(INTERFACEKEY_A_DATE, "A_DATE");
 	bindingNames.insert(INTERFACEKEY_A_WEATHER, "A_WEATHER");
 	bindingNames.insert(INTERFACEKEY_A_TEMPERATURE, "A_TEMPERATURE");
@@ -332,6 +340,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_PEARL, "HOTKEY_CRAFTS_PEARL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_BONE, "HOTKEY_CRAFTS_BONE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_LEATHER, "HOTKEY_CRAFTS_LEATHER");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SLAB, "HOTKEY_CRAFTS_SLAB");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_MAT_CRAFTS, "HOTKEY_CRAFTS_MAT_CRAFTS");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_MAT_GOBLET, "HOTKEY_CRAFTS_MAT_GOBLET");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_MAT_INSTRUMENT, "HOTKEY_CRAFTS_MAT_INSTRUMENT");
@@ -346,6 +355,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_ARMORSTAND, "HOTKEY_BUILDING_ARMORSTAND");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_BED, "HOTKEY_BUILDING_BED");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_TRACTION_BENCH, "HOTKEY_BUILDING_TRACTION_BENCH");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SLAB, "HOTKEY_BUILDING_SLAB");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CHAIR, "HOTKEY_BUILDING_CHAIR");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_COFFIN, "HOTKEY_BUILDING_COFFIN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_DOOR, "HOTKEY_BUILDING_DOOR");
@@ -607,6 +617,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_ORDERS_FORBID_OTHER_ITEMS, "ORDERS_FORBID_OTHER_ITEMS");
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_GATHER, "ORDERS_REFUSE_GATHER");
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_OUTSIDE, "ORDERS_REFUSE_OUTSIDE");
+	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_OUTSIDE_VERMIN, "ORDERS_REFUSE_OUTSIDE_VERMIN");
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_CORPSE, "ORDERS_REFUSE_DUMP_CORPSE");
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_SKULL, "ORDERS_REFUSE_DUMP_SKULL");
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_SKIN, "ORDERS_REFUSE_DUMP_SKIN");
@@ -708,6 +719,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_MASON_MILLSTONE, "HOTKEY_MASON_MILLSTONE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_MASON_TABLE, "HOTKEY_MASON_TABLE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_MASON_WEAPONRACK, "HOTKEY_MASON_WEAPONRACK");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_MASON_SLAB, "HOTKEY_MASON_SLAB");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_TRAP_BRIDGE, "HOTKEY_TRAP_BRIDGE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_TRAP_GEAR_ASSEMBLY, "HOTKEY_TRAP_GEAR_ASSEMBLY");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_TRAP_DOOR, "HOTKEY_TRAP_DOOR");
@@ -1489,7 +1501,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_A_MOVE_NE, "Adventure: move northeast");
 	displayNames.insert(INTERFACEKEY_A_MOVE_SW, "Adventure: move southwest");
 	displayNames.insert(INTERFACEKEY_A_MOVE_SE, "Adventure: move southeast");
-	displayNames.insert(INTERFACEKEY_A_MOVE_WAIT, "Adventure: move wait");
+	displayNames.insert(INTERFACEKEY_A_MOVE_SAME_SQUARE, "Adventure: move same square");
 	displayNames.insert(INTERFACEKEY_A_CARE_MOVE_N, "Adventure: careful move north up/down");
 	displayNames.insert(INTERFACEKEY_A_CARE_MOVE_S, "Adventure: careful move south up/down");
 	displayNames.insert(INTERFACEKEY_A_CARE_MOVE_E, "Adventure: careful move east up/down");
@@ -1545,8 +1557,12 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_CUSTOMIZE_UNIT_PROFNAME, "Customize Unit, Profession");
 	displayNames.insert(INTERFACEKEY_A_CLEAR_ANNOUNCEMENTS, "Adventure: Clear announcements");
 	displayNames.insert(INTERFACEKEY_A_SLEEP, "Adventure: Sleep");
+	displayNames.insert(INTERFACEKEY_A_SLEEP_SLEEP, "Adventure: Sleep, Sleep");
+	displayNames.insert(INTERFACEKEY_A_SLEEP_WAIT, "Adventure: Sleep, Wait");
+	displayNames.insert(INTERFACEKEY_A_SLEEP_DAWN, "Adventure: Sleep, Dawn");
 	displayNames.insert(INTERFACEKEY_A_WAIT, "Adventure: Wait");
 	displayNames.insert(INTERFACEKEY_A_ATTACK, "Adventure: Attack");
+	displayNames.insert(INTERFACEKEY_A_ATTACK_CONFIRM, "Adventure: Attack, Confirm");
 	displayNames.insert(INTERFACEKEY_A_LOOK, "Adventure: Look");
 	displayNames.insert(INTERFACEKEY_A_SEARCH, "Adventure: Search");
 	displayNames.insert(INTERFACEKEY_A_TALK, "Adventure: Talk");
@@ -1569,8 +1585,12 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_A_MOVEMENT_SWIM, "Adventure: Movement Options, Swim");
 	displayNames.insert(INTERFACEKEY_A_SNEAK, "Adventure: Sneak");
 	displayNames.insert(INTERFACEKEY_A_CENTER, "Adventure: Center");
+	displayNames.insert(INTERFACEKEY_A_COMPANIONS, "Adventure: Companions");
 	displayNames.insert(INTERFACEKEY_A_BUILDING, "Adventure: Building Interact");
 	displayNames.insert(INTERFACEKEY_A_TRAVEL, "Adventure: Travel");
+	displayNames.insert(INTERFACEKEY_A_TRAVEL_SLEEP, "Adventure: Travel, Sleep");
+	displayNames.insert(INTERFACEKEY_A_TRAVEL_MAP, "Adventure: Travel, Map");
+	displayNames.insert(INTERFACEKEY_A_TRAVEL_HIDE_INSTRUCTIONS, "Adventure: Travel, Hide Instructions");
 	displayNames.insert(INTERFACEKEY_A_DATE, "Adventure: Get Date");
 	displayNames.insert(INTERFACEKEY_A_WEATHER, "Adventure: Get Weather");
 	displayNames.insert(INTERFACEKEY_A_TEMPERATURE, "Adventure: Get Temperature");
@@ -1695,6 +1715,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_PEARL, "Hotkey: Crafts, Pearl");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_BONE, "Hotkey: Crafts, Bone");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_LEATHER, "Hotkey: Crafts, Leather");
+	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SLAB, "Hotkey: Crafts, Slab");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_MAT_CRAFTS, "Hotkey: Crafts, Mat Crafts");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_MAT_GOBLET, "Hotkey: Crafts, Mat Goblet");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_MAT_INSTRUMENT, "Hotkey: Crafts, Mat Instrument");
@@ -1709,6 +1730,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_ARMORSTAND, "Hotkey: Building, Armorstand");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_BED, "Hotkey: Building, Bed");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_TRACTION_BENCH, "Hotkey: Building, Traction Bench");
+	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SLAB, "Hotkey: Building, Slab");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CHAIR, "Hotkey: Building, Chair");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_COFFIN, "Hotkey: Building, Coffin");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_DOOR, "Hotkey: Building, Door");
@@ -1970,6 +1992,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_ORDERS_FORBID_OTHER_ITEMS, "Orders: Forbid Other Items");
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_GATHER, "Orders: Gather Refuse");
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_OUTSIDE, "Orders: Gather Outside");
+	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_OUTSIDE_VERMIN, "Orders: Gather Outside Vermin");
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_CORPSE, "Orders: Dump Corpse");
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_SKULL, "Orders: Dump Skull");
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_SKIN, "Orders: Dump Skin");
@@ -2071,6 +2094,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_MASON_MILLSTONE, "Hotkey: Mason, Millstone");
 	displayNames.insert(INTERFACEKEY_HOTKEY_MASON_TABLE, "Hotkey: Mason, Table");
 	displayNames.insert(INTERFACEKEY_HOTKEY_MASON_WEAPONRACK, "Hotkey: Mason, Weaponrack");
+	displayNames.insert(INTERFACEKEY_HOTKEY_MASON_SLAB, "Hotkey: Mason, Slab");
 	displayNames.insert(INTERFACEKEY_HOTKEY_TRAP_BRIDGE, "Hotkey: Trap, Bridge");
 	displayNames.insert(INTERFACEKEY_HOTKEY_TRAP_GEAR_ASSEMBLY, "Hotkey: Trap, Gear Assembly");
 	displayNames.insert(INTERFACEKEY_HOTKEY_TRAP_DOOR, "Hotkey: Trap, Door");
@@ -2282,7 +2306,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_STOCKPILE_CUSTOM, "Stockpile, Custom");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_CUSTOM_SETTINGS, "Stockpile, Custom Settings");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_FURNITURE, "Stockpile, Furniture");
-	displayNames.insert(INTERFACEKEY_STOCKPILE_GRAVEYARD, "Stockpile, Graveyard");
+	displayNames.insert(INTERFACEKEY_STOCKPILE_GRAVEYARD, "Stockpile, Corpse");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_REFUSE, "Stockpile, Refuse");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_WOOD, "Stockpile, Wood");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_STONE, "Stockpile, Stone");
@@ -2740,7 +2764,7 @@ void keybinding_init() {
   sdlNames.insert(SDLK_CLEAR, "Clear");
   sdlNames.insert(SDLK_RETURN, "Enter");
   sdlNames.insert(SDLK_PAUSE, "Pause");
-  sdlNames.insert(SDLK_ESCAPE, "Escape");
+  sdlNames.insert(SDLK_ESCAPE, "ESC");
   sdlNames.insert(SDLK_SPACE, "Space");
   sdlNames.insert(SDLK_EXCLAIM, "Exclaim");
   sdlNames.insert(SDLK_QUOTEDBL, "Quotedbl");

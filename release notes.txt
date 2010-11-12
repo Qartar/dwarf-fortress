@@ -37,6 +37,54 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+If you want to try out the improvements to adventure mode, I'd recommend generating a new world with at least 100 years of history.  I tried out adventuring in a world from 0.31.03, and it technically worked, but there wasn't much to do.  The reason I recommend some history is just to let the beasts get settled a bit, though it's not strictly required.  We haven't gotten threats moving around and arising during actual play yet, so your worlds will inevitably run out of adventure opportunities as you exhaust them, and games tend to be fast-paced and brief overall once you get the hang of it.  This will change during the next few major releases.  There's an update to the "Your First Adventurer" manual section that might be worth glancing at even if you have played an adventurer before.  Don't be surprised if you die learning a few facts about the world.
+
+Release notes for 0.31.17 (November 11, 2010):
+
+Major bug fixes
+	(*)fixed problem with baron not arriving due to stale merchant reports
+	(*)stopped old jobs/projectiles from tying up items on reclaim
+
+Other bug fixes/tweaks
+	(*)changed ring/bracelet symbol to make way for adv mode tools
+	(*)cut kill-bragging to 5 kills
+	(*)fixed bug through which demon could take over two or more civs in one year
+	(*)name change: graveyard -> corpses (since it isn't appropriate for final burial)
+	(*)stopped occupancy from being erased upon entering adv mode in arena
+	(*)allowed labors to be toggled by category
+	(*)added standing order for outdoor vermin refuse
+	(*)fixed erroneous material bonuses in world gen fights
+	(*)updated wrestling interface
+	(*)implemented text for wrestling attacks
+	(*)changed combat announcement colors and stun/paralyze color to light blue from light cyan
+	(*)toes/fingers protected by armor
+	(*)elves are now small e's to match their size
+	(*)different soldier/civilian symbols for human/elf (as with the two dwarf symbols)
+	(*)stopped triggerable vermin groups from becoming visible occasionally
+	(*)fixed some old problems where input wasn't registering properly on movement, etc.
+	(*)disabled need to eat/drink in adv mode until we get some more general work in
+	(*)various minor adv mode tweaks and fixes
+
+New stuff
+	(*)added night creatures
+	(*)added lairs for some creatures
+	(*)added new travel screen (old worlds might have misplaced moons in the sky bar)
+	(*)updated how adv mode sleep works, permission to sleep in buildings
+	(*)updated character generation
+	(*)added memorial slabs to dwarf mode
+	(*)added shops with signs to towns
+	(*)changed how lower body/head severs work (spinal sever required)
+	(*)changed how guts popping out works
+	(*)see file_changes.txt for some new modding tags
+	(*)can get tasks from most people and report success to anybody friendly
+	(*)added human castles
+	(*)made peasants refer you to better quests
+	(*)added banditry
+	(*)added aimed attacks, random combat opportunities and the ability to use secondary attacks/weapons (both adv mode and dwf mode combat reports)
+	(*)added (harder) rolling away for dodgers on the ground
+
+******************************************************
+
 Release notes for 0.31.16 (October 4, 2010):
 
 Hopefully this one doesn't have any weird new issues.  That bumpy lag should be gone now, and there are expanded refuse pile options.  You can also turn off having your dwarves track around blood (it starts off in the init).  I left it on in adventure mode, but you can turn it off there too if you want.
