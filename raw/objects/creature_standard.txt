@@ -160,7 +160,6 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:700]
 
-
 	These are as before.
 
 	[MAXAGE:150:170]
@@ -229,6 +228,8 @@ creature_standard
 	[PROFESSION_NAME:MACEMAN:macedwarf:macedwarves]
 	[PROFESSION_NAME:PIKEMAN:pikedwarf:pikedwarves]
 	[PROFESSION_NAME:BOWMAN:bowdwarf:bowdwarves]
+	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Marksdwarf:Elite Marksdwarves]
+	[PROFESSION_NAME:MASTER_BOWMAN:Elite Bowdwarf:Elite Bowdwarves]
 	[SPEECH:dwarf.txt]
 	[HOMEOTHERM:10067]
 	[ALCOHOL_DEPENDENT]

@@ -3,7 +3,7 @@ See file_changes.txt for new init/interface information.
 See command_line.txt for information on world generation from command lines.
 
 
-TO BACKUP SAVES:
+TO BACK UP SAVES:
 
 (1) Copy the relevant region folder in "data/save" to a safe location.
 (2) When you want to reuse it, copy that region back to "data/save".  Do *NOT* overwrite an old folder, as it might leave residual files.
@@ -37,9 +37,47 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
-If you want to try out the improvements to adventure mode, I'd recommend generating a new world with at least 100 years of history.  I tried out adventuring in a world from 0.31.03, and it technically worked, but there wasn't much to do.  The reason I recommend some history is just to let the beasts get settled a bit, though it's not strictly required.  We haven't gotten threats moving around and arising during actual play yet, so your worlds will inevitably run out of adventure opportunities as you exhaust them, and games tend to be fast-paced and brief overall once you get the hang of it.  This will change during the next few major releases.  There's an update to the "Your First Adventurer" manual section that might be worth glancing at even if you have played an adventurer before.  Don't be surprised if you die learning a few facts about the world.
+Release notes for 0.31.18 (November 16, 2010):
+
+This one fixes up several crashes and other problems.  Maybe most notably, the problem where you'd become a criminal in adventure mode just by going back to a store, the handedness issue with uniform assignments (it might take it a while to clear out problems in old saves, and I can only state this as confidently as the tests I performed), and SDL movie recording.
+
+Major bug fixes
+	(*)fixed crash from shop signs being placed off map
+	(*)fixed crash during character generation of human outsiders if you back out of the name menu
+	(*)fixed crash from trap announcements/reports
+	(*)fixed world gen crash that arose from creature in secondary entity population taking over leadership role when caste mods are present
+	(*)fixed crash from walking off the left or upper edge of the world
+	(*)corrected misaligned bodypart appearance modifiers on load and resulting crash in pref screen, origin of misalignment unclear
+	(*)fixed problem where you are considered a thief after shopping at a store that had previous had its inventory offloaded
+	(*)made uniform assignments respect handedness
+	(*)reenabled SDL movie recording
+	(*)stopped unfinished quests performed by previous characters from stopping nobles from giving new characters quests
+
+Other bug fixes/tweaks
+	(*)made skill rates copy over to castes correctly
+	(*)fixed problem that added bogeyman kills to the wrong parts of the kill lists
+	(*)stopped retirement in town when bogeymen are active
+	(*)stopped unequipable soldier unit types from occasionally appearing in ambushes/sites/migrants
+	(*)corrected placement of cauldrons
+	(*)got rid of size bonus mistakenly applied to opportunity skill rolls and put in the rage penalty it was supposed to be
+	(*)made master pikemen get proper skill
+	(*)stopped lair hatch covers from rotting away
+	(*)added announcement for falling damage
+	(*)adding retching after initial vomiting
+	(*)changed metal use for humans/gobs/kobs via existing raw tags
+	(*)changed a few two-handed weapon sizes
+	(*)updated dwarf party organization conditions
+	(*)fixed problem with movie playback showing an extra garbage frame for each chunk of the movie
+	(*)changed conversation colors
+	(*)fixed double adjective in dark fortress
+	(*)made Elite Bowman name appear correctly (was showing up as blowgunner), and a few related typos
+	(*)fixed some other typos
+
+******************************************************
 
 Release notes for 0.31.17 (November 11, 2010):
+
+If you want to try out the improvements to adventure mode, I'd recommend generating a new world with at least 100 years of history.  I tried out adventuring in a world from 0.31.03, and it technically worked, but there wasn't much to do.  The reason I recommend some history is just to let the beasts get settled a bit, though it's not strictly required.  We haven't gotten threats moving around and arising during actual play yet, so your worlds will inevitably run out of adventure opportunities as you exhaust them, and games tend to be fast-paced and brief overall once you get the hang of it.  This will change during the next few major releases.  There's an update to the "Your First Adventurer" manual section that might be worth glancing at even if you have played an adventurer before.  Don't be surprised if you die learning a few facts about the world.
 
 Major bug fixes
 	(*)fixed problem with baron not arriving due to stale merchant reports
@@ -995,7 +1033,7 @@ Resolved a unit scrambling issue from active saves in adventure mode.  You will 
 
 Release notes for 0.21.101.19c:
 
-Fixed a few more crash problems, but the main thing was to hopefully remove some of the strange mainly adventure mode instability introduced by the last version.  In case this sort of thing persists, please be careful to backup your saves before trying this one.  Worlds that were generated in or even played in the briefly-available 0.21.101.19b are likely to be twisted to pieces, especially if you played adventure mode.
+Fixed a few more crash problems, but the main thing was to hopefully remove some of the strange mainly adventure mode instability introduced by the last version.  In case this sort of thing persists, please be careful to back up your saves before trying this one.  Worlds that were generated in or even played in the briefly-available 0.21.101.19b are likely to be twisted to pieces, especially if you played adventure mode.
 
 
 ******************************************************

@@ -4,6 +4,21 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.18:
+
+	data/index
+
+	creature_standard.txt
+		added elite ranged unit names for dwarves
+	entity_default.txt
+		gave humans METAL/GEM/STONE_PREF
+		gave gobs METAL_PREF and got rid of gem professions
+		gave kobs METAL_PREF/STONE_PREF/FURNACE_OPERATOR for the time being at least, though this will probably change
+	item_weapon.txt
+		changed a few two-handed sizes
+
+******************************************************
+
 Auxiliary file changes for 0.31.17:
 
 	data/index
