@@ -37,6 +37,33 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.19 (February 16, 2010):
+
+This is the first release of what we once called the Caravan Arc, where we'll be changing how trade and the economy work.  The entire release schedule is up at http://bay12games.com/dwarves/dev.html.  This particular release doesn't have visible changes to trade -- just a lot of world generation infrastructure.  People eat and starve in world gen now, though it doesn't matter afterward.  Subsequent releases coming up will be making use of these changes during play, but don't expect too much there this time.  There have been many other changes.  Seeing most of them will require generating a new world.
+
+There are lots of new domestic animals.  We also added giraffes, rhinos, honey bees and bumblebees.  Bees were the winner of the animal sponsorship drive 
+and they had many associated jobs, so we didn't try to get into the other sponsored beasts, but we'll be adding those in with every release.
+
+Animals can be placed in pen/pasture zones, and grazing animals will need to graze on grass (they can also eat underground fungus found in many open cave layers).  Pastures should be made large enough to provide ample grass and to prevent animals from being stacked on top of each other.  Animals crammed into one place for too long can become grumpy and violent, but the animals will stay in the pastures without much tending (a dwarf may occasionally run over to an animal if it wanders off the pasture border to walk around something).  There is no way to trade for hay or animal feed at this time, so don't expect grazing animals in new forts to survive on glaciers or the deepest deserts.  Many deserts have patches of grass (or succulents) now.
+
+Sheep, llamas and alpacas (and trolls for goblins) can be sheared and the wool can be spun into yarn.  Chickens and other birds will lay eggs in nest boxes if you place the boxes in accessible areas.  You can mill rocknuts into paste and press the paste for oil (which goes into jugs).  Pressing occurs at the new screw press building.
+
+You can make many of the more clayish soil types into earthenware ceramics now (and you can make fire clay into stoneware and kaolinite into porcelain).  If a fort embark location has clay above the aquifer (or any clay if there is no aquifer), it'll be displayed in the embark readout.  I didn't get very far into glazing, but you can ash glaze and tin glaze (with cassiterite).  Earthenware jugs need to be glazed to hold liquids.  Stoneware and porcelain jugs don't require glaze but can be glazed.  You can also make large pots out of various materials, and these act like barrels (they are associated to stockpiles in the same way, etc.).
+
+Honey bees can be collected and kept in artificial hives (which you can make out of various materials).  You'll need one natural hive on your embark location to get started, but after that you can split the colony into new artificial hives.  The process is fairly automated.  You just need to place the hive buildings and a beekeeper will do the rest.  You can adjust a few settings on each hive to control which hives are held for splitting and which are collected.  You'll need to have jugs around to collect honeycombs (the royal jelly holds up the process otherwise), and you'll need another jug to collect the honey.  Wax cakes can only be made into crafts by a wax worker at this time.
+
+The site finder records the best hit in each square now, and you can stop the finder at any time and browse the results.  The categories and readout have been changed up a bit.  Minerals have been redistributed on the world map, though this might not be satisfying as I was expecting to get a bit farther with dwarf mode trade.  Adjustments might have to be made there until trade is updated.  We'll see.
+
+Animals and plants occur with more or less contiguous ranges now, respecting biome.  There are specific grasses.  The evil grasses are probably a little extreme and seizure-inducing.  I might throttle that back.
+
+I'm starting the first one to two week bug fix cycle now, so there weren't a lot of bug fixes for this release, but creatures, items and vegetation don't pick up as many contaminants now.
+
+There are new options in the graphical map export from legends mode, and I fixed a bug there with village maps getting cut off.
+
+For a list of the new tags available for modding (container reagents in reactions, etc.) see file_changes.txt or the new stock reactions.
+
+******************************************************
+
 Release notes for 0.31.18 (November 16, 2010):
 
 This one fixes up several crashes and other problems.  Maybe most notably, the problem where you'd become a criminal in adventure mode just by going back to a store, the handedness issue with uniform assignments (it might take it a while to clear out problems in old saves, and I can only state this as confidently as the tests I performed), and SDL movie recording.
