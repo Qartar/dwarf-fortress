@@ -584,6 +584,92 @@ template<class T> VIndex add_unique_to_binary_vector(T ptr,svector<T> &vect)
 	return -1;//push_back() CASE ALREADY HANDLED SO NO else
 }
 
+//NOTE: RETURNS INDEX IF ALREADY PRESENT
+template<class T> VIndex add_unique_to_binary_vector_always_index(T ptr,svector<T> &vect,bool &was_present)
+{
+	was_present=false;
+
+	int32_t size=vect.size();
+	if(size==0)
+		{
+		vect.push_back(ptr);
+		return 0;
+		}
+	if(vect[size-1]<ptr)
+		{
+		vect.push_back(ptr);
+		return size;
+		}
+
+	int32_t start=0;
+	int32_t end=size-1;
+	int32_t mid;
+	T cptr;
+
+	while(start<=end)
+		{
+		mid=(start+end)>>1;
+
+		cptr=vect[mid];
+		if(cptr==ptr){was_present=true;return mid;}//ALREADY IN VECTOR
+		if(start==end)
+			{
+			if(cptr<ptr)
+				{
+				if(start+1>=(int32_t)vect.size())return -1;//push_back() CASE ALREADY HANDLED
+
+				vect.insert(start+1,ptr);
+				return start+1;
+				}
+			else if(cptr>ptr)
+				{
+				vect.insert(start,ptr);
+				return start;
+				}
+			return -1;
+			}
+
+		if(cptr>ptr)end=mid-1;
+		else start=mid+1;
+		}
+
+	if(end<0)
+		{
+		T cptr=vect[start];
+		if(cptr<ptr)
+			{
+			if(start+1>=size)return -1;//push_back() CASE ALREADY HANDLED
+
+			vect.insert(start+1,ptr);
+			return start+1;
+			}
+		else if(cptr>ptr)
+			{
+			vect.insert(start,ptr);
+			return start;
+			}
+		if(cptr==ptr){was_present=true;return start;}//ALREADY IN VECTOR
+		}
+	else if(end<size)
+		{
+		T cptr=vect[end];
+		if(cptr<ptr)
+			{
+			if(end+1>=size)return -1;//push_back() CASE ALREADY HANDLED
+
+			vect.insert(end+1,ptr);
+			return end+1;
+			}
+		else if(cptr>ptr)
+			{
+			vect.insert(end,ptr);
+			return end;
+			}
+		if(cptr==ptr){was_present=true;return end;}//ALREADY IN VECTOR
+		}
+	return -1;//push_back() CASE ALREADY HANDLED SO NO else
+}
+
 template<class T> void remove_from_binary_vector(T ptr,svector<T> &vect)
 {
 	int32_t start=0;

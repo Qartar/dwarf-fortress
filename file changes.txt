@@ -4,6 +4,99 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.19:
+
+	new soil - fired clay, added ceramic reaction information to clay and kaolinite
+	new inorganics - earthenware, stoneware, porcelain
+	new material tag
+		[YARN]
+	new creature tags
+		[APP_MOD_DESC_RANGE:<6 range numbers>] -- adjusts the numeric ranges for getting different adjectives in descriptions
+		[SHEARABLE_TISSUE_LAYER:<body part modifier like LENGTH>:<modifier level when ready>]
+		[LAYS_EGGS]
+		[EGG_MATERIAL:<mat tokens>]
+		[LAYS_UNUSUAL_EGGS:<item tokens>]
+		[EGG_SIZE:<size>]
+		[CLUTCH_SIZE:<min>:<max>]
+		[GRAZER:<amount of hunger removed per bite>] -- only grazer animals in your fort need to eat at this point
+		[ARTIFICIAL_HIVEABLE]
+		[HIVE_PRODUCT:<max in hive>:<timer>:<item/mat tags>]
+		[COLONY_EXTERNAL] -- this caste appears around the colony
+		[DIE_WHEN_VERMIN_BITE]
+		[REMAINS_ON_VERMIN_BITE_DEATH]
+		[UBIQUITOUS] -- creature will occur in absolutely every region that is a biome match (does not apply to evil/good)
+	new tool tag
+		[CONTAINER_CAPACITY:<amount>]
+	new reaction tags
+		[NOT_IMPROVED]
+		[DOES_NOT_ABSORB]
+		[PRODUCT_PASTE]
+		[PRODUCT_PRESSED]
+		[NOT_PRESSED]
+		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[CONTAINS:<reagent token>]
+			not respected in adv mode interface, didn't try nesting containers
+			multiple CONTAINS on one reagent supported if they don't overlap
+	new grass raws
+	added CAN_GLAZE reaction glass to STONE_TEMPLATE
+	added egg/plant oil/plant soap material templates
+	added egg tags to creatures all over (no amphibians/fish/insects yet)
+	rocknuts got oil (instead of adding a new plant)
+	new reactions for milling seeds with new paste tag for glob products
+	new reactions for firing and glazing jugs and other ceramics
+	new reactions related to beekeeping
+	new entries in dwarf/human entity entries for new jobs/reactions
+	creature_standard.txt
+		gobs: [NO_DRINK][NO_EAT] (they keep bonecarn)
+	creature_domestic.txt
+		many new entries
+	new unit types
+		SHEARER
+		SPINNER
+		POTTER
+		GLAZER
+		PRESSER
+		BEEKEEPER
+		WAX_WORKER
+	new labor types
+		SHEARER
+		SPINNER
+		POTTERY
+		GLAZING
+		BEEKEEPING
+		WAX_WORKING
+	new skill type
+		SHEARING
+		SPINNING
+		POTTERY
+		GLAZING
+		BEEKEEPING
+		WAX_WORKING
+	new job item flag
+		ANY_STRAND_TISSUE
+		ANY_YARN_MATERIAL
+	new keys
+		[HOTKEY_FARMER_SHEAR_CREATURE:S]
+		[HOTKEY_FARMER_SPIN_THREAD:SHIFT+S]
+		[ORDERS_REFUSE_DUMP_STRAND_TISSUE:H]
+		[HOTKEY_CLOTHES_MAT_YARN:Y]
+		[HOTKEY_LOOM_WEAVE_YARN:Y]
+		[HOTKEY_BUILDING_NEST_BOX:SHIFT+N]
+		[HOTKEY_BUILDING_HIVE:ALT+H]
+		[CIVZONE_PEN:N]
+		[CIVZONE_PEN_OPTIONS:SHIFT+N]
+		[CIVZONE_CLAY_COLLECT:C]
+		[HOTKEY_COLLECT_CLAY:C]
+		[HIVE_INSTALL_COLONY:C]
+		[HIVE_GATHER_PRODUCTS:G]
+		[HOTKEY_CRAFTS_YARN:Y]
+		[HOTKEY_CRAFTS_SEL_WOOD:W]
+		[HOTKEY_CRAFTS_SEL_BONE:B]
+		[HOTKEY_CRAFTS_SEL_SHELL:S]
+		changed goblet keys to ALT+G
+
+******************************************************
+
 Auxiliary file changes for 0.31.18:
 
 	data/index

@@ -1338,12 +1338,6 @@ void interfacest::handlemovie(char flushall)
 				{
 				int length=write_movie_chunk();
 
-				//********************************** FUCK
-					string str="write: ";
-						add_long_to_string(supermovie_pos,str);str+="/";
-						add_long_to_string(length,str);
-					errorlog_string(str);
-
 				if(length>5000000)
 					{
 					finish_movie();

@@ -267,6 +267,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_GLASS_CLEAR, "HOTKEY_GLASS_CLEAR");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_GLASS_CRYSTAL, "HOTKEY_GLASS_CRYSTAL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_COLLECT_SAND, "HOTKEY_COLLECT_SAND");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_COLLECT_CLAY, "HOTKEY_COLLECT_CLAY");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_GLASS_ROUGH, "HOTKEY_GLASS_ROUGH");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_GLASS_ARMORSTAND, "HOTKEY_GLASS_ARMORSTAND");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_GLASS_BOX, "HOTKEY_GLASS_BOX");
@@ -319,6 +320,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_LEATHER_IMAGE, "HOTKEY_LEATHER_IMAGE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_MAT_PLANT, "HOTKEY_CLOTHES_MAT_PLANT");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_MAT_SILK, "HOTKEY_CLOTHES_MAT_SILK");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_MAT_YARN, "HOTKEY_CLOTHES_MAT_YARN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_SHIRT, "HOTKEY_CLOTHES_SHIRT");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_CLOAK, "HOTKEY_CLOTHES_CLOAK");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_BOX, "HOTKEY_CLOTHES_BOX");
@@ -334,6 +336,10 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_TOTEM, "HOTKEY_CRAFTS_TOTEM");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_CLOTH, "HOTKEY_CRAFTS_CLOTH");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SILK, "HOTKEY_CRAFTS_SILK");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_YARN, "HOTKEY_CRAFTS_YARN");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SEL_WOOD, "HOTKEY_CRAFTS_SEL_WOOD");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SEL_BONE, "HOTKEY_CRAFTS_SEL_BONE");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SEL_SHELL, "HOTKEY_CRAFTS_SEL_SHELL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SHELL, "HOTKEY_CRAFTS_SHELL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_TOOTH, "HOTKEY_CRAFTS_TOOTH");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_HORN, "HOTKEY_CRAFTS_HORN");
@@ -356,6 +362,8 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_BED, "HOTKEY_BUILDING_BED");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_TRACTION_BENCH, "HOTKEY_BUILDING_TRACTION_BENCH");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SLAB, "HOTKEY_BUILDING_SLAB");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_NEST_BOX, "HOTKEY_BUILDING_NEST_BOX");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_HIVE, "HOTKEY_BUILDING_HIVE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CHAIR, "HOTKEY_BUILDING_CHAIR");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_COFFIN, "HOTKEY_BUILDING_COFFIN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_DOOR, "HOTKEY_BUILDING_DOOR");
@@ -441,6 +449,8 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_FURNACE_SMELTER_LAVA, "HOTKEY_BUILDING_FURNACE_SMELTER_LAVA");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_FURNACE_GLASS_LAVA, "HOTKEY_BUILDING_FURNACE_GLASS_LAVA");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_FURNACE_KILN_LAVA, "HOTKEY_BUILDING_FURNACE_KILN_LAVA");
+	bindingNames.insert(INTERFACEKEY_HIVE_INSTALL_COLONY, "HIVE_INSTALL_COLONY");
+	bindingNames.insert(INTERFACEKEY_HIVE_GATHER_PRODUCTS, "HIVE_GATHER_PRODUCTS");
 	bindingNames.insert(INTERFACEKEY_D_ONESTEP, "D_ONESTEP");
 	bindingNames.insert(INTERFACEKEY_D_PAUSE, "D_PAUSE");
 	bindingNames.insert(INTERFACEKEY_D_DEPOT, "D_DEPOT");
@@ -624,6 +634,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_BONE, "ORDERS_REFUSE_DUMP_BONE");
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_SHELL, "ORDERS_REFUSE_DUMP_SHELL");
 	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_OTHER, "ORDERS_REFUSE_DUMP_OTHER");
+	bindingNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_STRAND_TISSUE, "ORDERS_REFUSE_DUMP_STRAND_TISSUE");
 	bindingNames.insert(INTERFACEKEY_ORDERS_GATHER_FURNITURE, "ORDERS_GATHER_FURNITURE");
 	bindingNames.insert(INTERFACEKEY_ORDERS_GATHER_ANIMALS, "ORDERS_GATHER_ANIMALS");
 	bindingNames.insert(INTERFACEKEY_ORDERS_GATHER_FOOD, "ORDERS_GATHER_FOOD");
@@ -671,6 +682,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_LOOM_COLLECT_SILK, "HOTKEY_LOOM_COLLECT_SILK");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_CLOTH, "HOTKEY_LOOM_WEAVE_CLOTH");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_SILK, "HOTKEY_LOOM_WEAVE_SILK");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_YARN, "HOTKEY_LOOM_WEAVE_YARN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_METAL, "HOTKEY_LOOM_WEAVE_METAL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_KITCHEN_COOK_2, "HOTKEY_KITCHEN_COOK_2");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_KITCHEN_COOK_3, "HOTKEY_KITCHEN_COOK_3");
@@ -682,6 +694,8 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FARMER_PROCESS_BARREL, "HOTKEY_FARMER_PROCESS_BARREL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FARMER_CHEESE, "HOTKEY_FARMER_CHEESE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FARMER_MILK, "HOTKEY_FARMER_MILK");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_FARMER_SHEAR_CREATURE, "HOTKEY_FARMER_SHEAR_CREATURE");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_FARMER_SPIN_THREAD, "HOTKEY_FARMER_SPIN_THREAD");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_MILL_MILL, "HOTKEY_MILL_MILL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TRAIN_HUNT, "HOTKEY_KENNEL_TRAIN_HUNT");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_KENNEL_CATCH_VERMIN, "HOTKEY_KENNEL_CATCH_VERMIN");
@@ -921,9 +935,12 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_CIVZONE_POND, "CIVZONE_POND");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_HOSPITAL, "CIVZONE_HOSPITAL");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_SAND_COLLECT, "CIVZONE_SAND_COLLECT");
+	bindingNames.insert(INTERFACEKEY_CIVZONE_CLAY_COLLECT, "CIVZONE_CLAY_COLLECT");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_ACTIVE, "CIVZONE_ACTIVE");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_MEETING, "CIVZONE_MEETING");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_POND_WATER, "CIVZONE_POND_WATER");
+	bindingNames.insert(INTERFACEKEY_CIVZONE_PEN, "CIVZONE_PEN");
+	bindingNames.insert(INTERFACEKEY_CIVZONE_PEN_OPTIONS, "CIVZONE_PEN_OPTIONS");
 	bindingNames.insert(INTERFACEKEY_STOCKPILE_ANIMAL, "STOCKPILE_ANIMAL");
 	bindingNames.insert(INTERFACEKEY_STOCKPILE_FOOD, "STOCKPILE_FOOD");
 	bindingNames.insert(INTERFACEKEY_STOCKPILE_WEAPON, "STOCKPILE_WEAPON");
@@ -1642,6 +1659,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_GLASS_CLEAR, "Hotkey: Clear Glass");
 	displayNames.insert(INTERFACEKEY_HOTKEY_GLASS_CRYSTAL, "Hotkey: Crystal Glass");
 	displayNames.insert(INTERFACEKEY_HOTKEY_COLLECT_SAND, "Hotkey: Collect Sand");
+	displayNames.insert(INTERFACEKEY_HOTKEY_COLLECT_CLAY, "Hotkey: Collect Clay");
 	displayNames.insert(INTERFACEKEY_HOTKEY_GLASS_ROUGH, "Hotkey: Raw Glass");
 	displayNames.insert(INTERFACEKEY_HOTKEY_GLASS_ARMORSTAND, "Hotkey: Glass Armorstand");
 	displayNames.insert(INTERFACEKEY_HOTKEY_GLASS_BOX, "Hotkey: Glass Box");
@@ -1694,6 +1712,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_LEATHER_IMAGE, "Hotkey: Leather, Image");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_MAT_PLANT, "Hotkey: Clothes, Cloth");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_MAT_SILK, "Hotkey: Clothes, Silk");
+	displayNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_MAT_YARN, "Hotkey: Clothes, Yarn");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_SHIRT, "Hotkey: Clothes, Shirt");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_CLOAK, "Hotkey: Clothes, Cloak");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CLOTHES_BOX, "Hotkey: Clothes, Box");
@@ -1709,6 +1728,10 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_TOTEM, "Hotkey: Crafts, Totem");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_CLOTH, "Hotkey: Crafts, Cloth");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SILK, "Hotkey: Crafts, Silk");
+	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_YARN, "Hotkey: Crafts, Yarn");
+	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SEL_WOOD, "Hotkey: Crafts, Wood Material");
+	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SEL_BONE, "Hotkey: Crafts, Bone Material");
+	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SEL_SHELL, "Hotkey: Crafts, Shell Material");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_SHELL, "Hotkey: Crafts, Shell");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_TOOTH, "Hotkey: Crafts, Tooth");
 	displayNames.insert(INTERFACEKEY_HOTKEY_CRAFTS_HORN, "Hotkey: Crafts, Horn");
@@ -1731,6 +1754,8 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_BED, "Hotkey: Building, Bed");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_TRACTION_BENCH, "Hotkey: Building, Traction Bench");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SLAB, "Hotkey: Building, Slab");
+	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_NEST_BOX, "Hotkey: Building, Nest Box");
+	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_HIVE, "Hotkey: Building, Hive");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CHAIR, "Hotkey: Building, Chair");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_COFFIN, "Hotkey: Building, Coffin");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_DOOR, "Hotkey: Building, Door");
@@ -1816,6 +1841,8 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_FURNACE_SMELTER_LAVA, "Hotkey: Building, Furn, Smelter");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_FURNACE_GLASS_LAVA, "Hotkey: Building, Furn, Glass");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_FURNACE_KILN_LAVA, "Hotkey: Building, Furn, Kiln");
+	displayNames.insert(INTERFACEKEY_HIVE_INSTALL_COLONY, "Hotkey: Building, Hive, Install Colony");
+	displayNames.insert(INTERFACEKEY_HIVE_GATHER_PRODUCTS, "Hotkey: Building, Hive, Gather Products");
 	displayNames.insert(INTERFACEKEY_D_ONESTEP, "Main: One-Step");
 	displayNames.insert(INTERFACEKEY_D_PAUSE, "Main: Pause/Resume");
 	displayNames.insert(INTERFACEKEY_D_DEPOT, "Depot Access");
@@ -1999,6 +2026,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_BONE, "Orders: Dump Bone");
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_SHELL, "Orders: Dump Shell");
 	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_OTHER, "Orders: Dump Other");
+	displayNames.insert(INTERFACEKEY_ORDERS_REFUSE_DUMP_STRAND_TISSUE, "Orders: Dump Strand Tissue");
 	displayNames.insert(INTERFACEKEY_ORDERS_GATHER_FURNITURE, "Orders: Gather Furniture");
 	displayNames.insert(INTERFACEKEY_ORDERS_GATHER_ANIMALS, "Orders: Gather Animals");
 	displayNames.insert(INTERFACEKEY_ORDERS_GATHER_FOOD, "Orders: Gather Food");
@@ -2046,6 +2074,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_LOOM_COLLECT_SILK, "Hotkey: Loom, Collect Silk");
 	displayNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_CLOTH, "Hotkey: Loom, Weave Cloth");
 	displayNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_SILK, "Hotkey: Loom, Weave Silk");
+	displayNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_YARN, "Hotkey: Loom, Weave Yarn");
 	displayNames.insert(INTERFACEKEY_HOTKEY_LOOM_WEAVE_METAL, "Hotkey: Loom, Metal");
 	displayNames.insert(INTERFACEKEY_HOTKEY_KITCHEN_COOK_2, "Hotkey: Kitchen, Meal 1");
 	displayNames.insert(INTERFACEKEY_HOTKEY_KITCHEN_COOK_3, "Hotkey: Kitchen, Meal 2");
@@ -2057,6 +2086,8 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_FARMER_PROCESS_BARREL, "Hotkey: Farmer, Barrel");
 	displayNames.insert(INTERFACEKEY_HOTKEY_FARMER_CHEESE, "Hotkey: Farmer, Cheese");
 	displayNames.insert(INTERFACEKEY_HOTKEY_FARMER_MILK, "Hotkey: Farmer, Milk");
+	displayNames.insert(INTERFACEKEY_HOTKEY_FARMER_SHEAR_CREATURE, "Hotkey: Farmer, Shear");
+	displayNames.insert(INTERFACEKEY_HOTKEY_FARMER_SPIN_THREAD, "Hotkey: Farmer, Spin");
 	displayNames.insert(INTERFACEKEY_HOTKEY_MILL_MILL, "Hotkey: Mill, Mill");
 	displayNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TRAIN_HUNT, "Hotkey: Kennel, Hunt");
 	displayNames.insert(INTERFACEKEY_HOTKEY_KENNEL_CATCH_VERMIN, "Hotkey: Kennel, Catch");
@@ -2293,12 +2324,15 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_CIVZONE_POND, "Main: Activity Zone, Pond");
 	displayNames.insert(INTERFACEKEY_CIVZONE_HOSPITAL, "Main: Activity Zone, Hospital");
 	displayNames.insert(INTERFACEKEY_CIVZONE_SAND_COLLECT, "Main: Activity Zone, Sand Collect");
+	displayNames.insert(INTERFACEKEY_CIVZONE_CLAY_COLLECT, "Main: Activity Zone, Clay Collect");
 	displayNames.insert(INTERFACEKEY_CIVZONE_ACTIVE, "Main: Activity Zone, Active");
 	displayNames.insert(INTERFACEKEY_CIVZONE_FISH, "Main: Activity Zone, Fish");
 	displayNames.insert(INTERFACEKEY_CIVZONE_MEETING, "Main: Activity Zone, Meeting");
 	displayNames.insert(INTERFACEKEY_CIVZONE_POND_OPTIONS, "Main: Activity Zone, Pond Options");
 	displayNames.insert(INTERFACEKEY_CIVZONE_POND_WATER, "Main: Activity Zone: Pond, Water");
 	displayNames.insert(INTERFACEKEY_CIVZONE_HOSPITAL_OPTIONS, "Main: Activity Zone, Hospital Options");
+	displayNames.insert(INTERFACEKEY_CIVZONE_PEN, "Main: Activity Zone, Pen");
+	displayNames.insert(INTERFACEKEY_CIVZONE_PEN_OPTIONS, "Main: Activity Zone, Pen Options");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_ANIMAL, "Stockpile, Animal");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_FOOD, "Stockpile, Food");
 	displayNames.insert(INTERFACEKEY_STOCKPILE_WEAPON, "Stockpile, Weapon");
