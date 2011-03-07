@@ -372,7 +372,7 @@ creature_small_ocean
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_RAY_BAT]
-	[DESCRIPTION:A medium-sized, winged fish found in the muddy coasts of temperate waters.]
+	[DESCRIPTION:A medium-sized, winged fish found in the muddy coasts of both temperate and tropical waters.]
 	[NAME:bat ray:bat rays:bat ray]
 	[CASTE_NAME:bat ray:bat rays:bat ray]
 	[CREATURE_TILE:149][COLOR:7:0:0]
