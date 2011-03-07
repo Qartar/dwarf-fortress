@@ -128,6 +128,7 @@ b_detail_plan_default
 	[BP_LAYERS:BY_CATEGORY:CHEEK:ARG1:1]
 	[BP_LAYERS:BY_CATEGORY:EYELID:ARG1:1]
 	[BP_LAYERS:BY_CATEGORY:THROAT:ARG1:1]
+	[BP_LAYERS:BY_CATEGORY:WING:ARG1:1]
 
 [BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS]
 	This body detail plan accepts argument tokens that can fill the role of the tissue token.  For instance, the dwarf sends in SKIN, FAT, MUSCLE, BONE and CARTILAGE.
