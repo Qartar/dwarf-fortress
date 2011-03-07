@@ -186,6 +186,7 @@ bool grab_token_string(string &dest,string &source,int32_t &pos,char compc)
 	if(source.length()==0)return false;
 
 	pos++;//GET RID OF FIRST [ OR compc THAT IS ASSUMED TO BE THERE
+	if(pos>source.size())return false;
 
 	//GO UNTIL YOU HIT A compc, ], or the end
 	auto s=source.begin(),e=source.end();
@@ -218,6 +219,7 @@ bool grab_token_string_pos(string &dest,string &source,int32_t pos,char compc)
 {
 	dest.erase();
 	if(source.length()==0)return false;
+	if(pos>source.length())return false;
 
 	//GO UNTIL YOU HIT A :, ], or the end
 	auto s=source.begin(),e=source.end();

@@ -4,6 +4,45 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.20/21:
+
+	material changes
+		added [DO_NOT_CLEAN_GLOB] to fat, seed and wax materials
+		added [NO_STONE_STOCKPILE] to all inorganic_other entries
+	creature changes
+		deer antlers
+		fixed length text for shearable sheep
+		fixed some biome description issues in fish/cougar, other description issues
+		got rid of left/right on rhino horns
+		added numbing phantom spider bite
+		made reptile man bite attack secondary
+		fixed text for serpent man tail attack
+		closed some brackets
+		bullhead scale color
+		density/text fixes for eggs
+		PET_VALUE_DIVISOR to control bee value
+		changed the hair tissue plan to include wings
+		added EXTRAVISION to some more eyeless critters
+		added tissue layer thickness to alpaca/llama wool
+		honey bee wax gets [STOCKPILE_GLOB_PRESSED]
+		broke up VERMINHUNTER
+			AT_PEACE_WITH_WILDLIFE
+			RETURNS_VERMIN_KILLS_TO_OWNER
+			HUNTS_VERMIN
+			ADOPTS_OWNER
+		[SPECIFIC_FOOD:PLANT:<token>]
+		[SPECIFIC_FOOD:CREATURE:<token>]
+		[SOUND:<type>:<range>:<approximate period/timer>:<VOCALIZATION or NONE>:<verbs/out-of-sight noun>]
+	reaction changes
+		added [FOOD_STORAGE_CONTAINER] for mead reaction
+		changed key for jug glazing
+	language
+		betwitch -> bewitch
+	new announcement
+		CREATURE_SOUND
+
+******************************************************
+
 Auxiliary file changes for 0.31.19:
 
 	new soil - fired clay, added ceramic reaction information to clay and kaolinite
