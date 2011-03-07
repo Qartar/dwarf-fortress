@@ -12840,7 +12840,7 @@ language_words
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
-	[VERB:betwitch:betwitches:betwitched:betwitched:betwitching]
+	[VERB:bewitch:bewitches:bewitched:bewitched:bewitching]
 		[STANDARD_VERB]
 
 [WORD:MAGICIAN]

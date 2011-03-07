@@ -37,12 +37,70 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.20/21 (March 6, 2011):
+
+This is the first bug fix release for 0.31.19, where I've focused on new bugs.  The fixes are listed below.  It also includes a few sponsored critters (pandas and capybaras), as well as some of their wilder relatives.  Pandas are restricted to bamboo grazing and capybaras can vocalize in adv mode (bark, whistle, etc).  I added a mineral availability parameter that you can set from Create World Now or from the detailed parameter screen.  There are a few more things I can do there, but any extensive rewrite is going to have to wait for 3D veins and mine maps (Release 2 in the schedule).  Barring any catastrophes, we'll be moving on to the old-bug-fixing now.
+
+Major bug fixes
+	(*) Stopped the game from treating every tool like a container for stockpiles/adv mode
+	(*) Stopped hive product collection from removing hive building tag
+	(*) Stopped birds from claiming multiple nest boxes when a nest box is deconstructed
+	(*) Fixed crash with unusual egg laying
+	(*) Made pastured animals spread out more during grazing and allowed pets to be grazed
+	(*) Fixed situation where some stockpiled items were not available to jobs (lye, etc.)
+
+Other bug fixes/tweaks
+	(*) Stopped weird bone-glazing situations
+	(*) Made llama/alpacas get sheared properly
+	(*) Stopped dwarves from cleaning up wax cakes in stockpiles
+	(*) Stopped heroes in world gen from picking fights with dead megabeasts
+	(*) Stopped various tug-of-war fights over animals by different jobs
+	(*) Stopped wildlife from claiming nests
+	(*) Stopped masons from using clay
+	(*) Fixed up a situation where the same params would not generate the same worlds
+	(*) Made potters apply their skill to statues etc. properly
+	(*) Added a clay category to stone stockpiles and cut some inorganics out
+	(*) Added wax to food stockpiles pressed material category
+	(*) Added wax goods option to finished goods pile
+	(*) Made empty pots go to the furniture pile
+	(*) Made pots available for brewing
+	(*) Fixed some erroneous names of groups of object in the stocks screen
+	(*) Made ash glazing use the correct amount of ash (0.31.19 saves might have half-exhausted piles that act up a bit until they are used)
+	(*) Stopped extra grass types being stacked on a tile during regrowth
+	(*) Stopped aboveground grass from growing in tunnels
+	(*) Stopped "grass" from appearing in some underground areas
+	(*) Made grass grow back properly in desert etc. areas (0.31.19 saves will get too much regrowth now)
+	(*) Stopped grass ramps from flashing in no-varied-ground-tiles mode
+	(*) Stopped pet/tame vermin from spawning many copies
+	(*) Reordered the new units in the unit list
+	(*) Adjusted value of bees
+	(*) Stopped vermin assignment to pastures
+	(*) Made pen/pasture interface give status of animals (caged, etc.)
+	(*) Stopped dwarves from encrusting honeycombs with jewels, etc.
+	(*) Corrected egg liquid densities/text error
+	(*) Stopped text export from listing zero population animals
+	(*) Fixed some issues with red reactions and other jobs not being listed in the workshops
+	(*) Allowed object melting and yarn rope jobs from manager
+	(*) Made it select the active zone properly when you enter activity zone mode
+	(*) Made zooming to units go to the proper unit when multiple units are in the same tile
+	(*) Cleaned up some pronoun trouble in personality descriptions
+	(*) Properly initialized banditry information (can cut down on some inappropriate dwarf/elf banditry)
+	(*) Deer antlers
+	(*) Sheep text lines up with there shearability now
+	(*) Fixed some creature description text and other small raw tweaks (see file_changes.txt)
+	(*) See file_changes.txt for new raw tags
+
+New stuff
+	(*) Sponsored animals included: panda and capybara, along with related buddies
+	(*) Added world-wide mineral availability parameter
+
+******************************************************
+
 Release notes for 0.31.19 (February 16, 2011):
 
 This is the first release of what we once called the Caravan Arc, where we'll be changing how trade and the economy work.  The entire release schedule is up at http://bay12games.com/dwarves/dev.html.  This particular release doesn't have visible changes to trade -- just a lot of world generation infrastructure.  People eat and starve in world gen now, though it doesn't matter afterward.  Subsequent releases coming up will be making use of these changes during play, but don't expect too much there this time.  There have been many other changes.  Seeing most of them will require generating a new world.
 
-There are lots of new domestic animals.  We also added giraffes, rhinos, honey bees and bumblebees.  Bees were the winner of the animal sponsorship drive 
-and they had many associated jobs, so we didn't try to get into the other sponsored beasts, but we'll be adding those in with every release.
+There are lots of new domestic animals.  We also added giraffes, rhinos, honey bees and bumblebees.  Bees were the winner of the animal sponsorship drive and they had many associated jobs, so we didn't try to get into the other sponsored beasts, but we'll be adding those in with every release.
 
 Animals can be placed in pen/pasture zones, and grazing animals will need to graze on grass (they can also eat underground fungus found in many open cave layers).  Pastures should be made large enough to provide ample grass and to prevent animals from being stacked on top of each other.  Animals crammed into one place for too long can become grumpy and violent, but the animals will stay in the pastures without much tending (a dwarf may occasionally run over to an animal if it wanders off the pasture border to walk around something).  There is no way to trade for hay or animal feed at this time, so don't expect grazing animals in new forts to survive on glaciers or the deepest deserts.  Many deserts have patches of grass (or succulents) now.
 
