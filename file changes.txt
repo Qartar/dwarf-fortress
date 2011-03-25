@@ -4,6 +4,36 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.22:
+
+	new creature tag
+		[PRONE_TO_RAGE:<rate>] -- the creature follow its normal behavior, but flip out on occasion, higher rate = more flipping out
+	body detail
+		leathery egg shell
+	new material template
+		leathery egg shell
+	body parts
+		QUADRUPED_NECK, NECK_SPINE
+	various reptiles and others
+		leathery egg shell
+	temperate creatures
+		4134: capybara sound typos
+		capybara tail removed
+		fixed some tokens in panda bp color tags
+		badger and allies
+		moose and allies
+	river/lake creatures
+		platypus and allies
+	tropical creatures
+		honey badger
+		giraffe tweaks
+	tundra creatures
+		some penguins and allies
+	subterranean creatures
+		rodent man
+
+******************************************************
+
 Auxiliary file changes for 0.31.20/21:
 
 	material changes
