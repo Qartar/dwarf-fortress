@@ -983,3 +983,4 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_STRAIN_AT_YIELD:0]
 	[MAX_EDGE:100000]
 	[DEEP_SPECIAL]
+	[STOCKPILE_THREAD_METAL]
