@@ -4,6 +4,20 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.23:
+
+	creature changes
+		added rodent man teeth
+		added ribcages to various underground animal peoples
+		penguins 2WINGS -> SIDE_FLIPPERS
+		platypus get AMPHIBIOUS/UNDERSWIM
+		changed sizes for most giant creatures
+		domestic birds and penguins get MUNDANE
+		reptile men get GENERIC_TEETH
+		prefstrings for some of the new giant creatures
+
+******************************************************
+
 Auxiliary file changes for 0.31.22:
 
 	new creature tag
