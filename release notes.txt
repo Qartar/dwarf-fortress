@@ -37,6 +37,30 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.23 (March 26, 2011):
+
+Major bug fixes
+	(*) Stopped large pots from forgetting their stockpile assignments
+	(*) Cleaned up some more resting/infinite job issues with hospitals (surgery in particular)
+	(*) Stopped plant regrowth underground from deleting ramps and stairs, and stopped plants underground from regrowing in magma, deep water, and some other situations
+	(*) Stopped buckets from occasionally becoming filled with many, many units of water
+	(*) Stopped goblin siegers from fighting amongst themselves all the time
+
+Other bug fixes/tweaks
+	(*) Fixed some issues with natural skills not being applied
+	(*) Handled some more instances of overstockpiling by the hospital zones
+	(*) Fixed erroneous interlink between furniture/ammo stockpile interfaces
+	(*) Made enraged announcement show up for prone-to-rage critters
+	(*) Some more quick speed tweaks (assorted, but not much: bucket save from 27/28FPS -> 31/32FPS)
+	(*) Gave rodent men their rodent teeth and added them to the subterranean entity definition
+	(*) Gave reptile men teeth
+	(*) Changed penguin wings to flippers
+	(*) Made platypuses amphibious and made them swim underwater
+	(*) Changed sizes for most giant variants of animals and gave some thought preference strings to ones that didn't have them
+	(*) Added missing "mundane" tag to penguins and domestic birds
+
+******************************************************
+
 Release notes for 0.31.22 (March 24, 2011):
 
 Here's the second large bug fix release for 0.31.19.
@@ -44,6 +68,7 @@ Here's the second large bug fix release for 0.31.19.
 Major bug fixes
 	(*) Fixed a linux crash from units leaving the map with a kill order on them
 	(*) Fixed a crash from tileless burrows
+	(*) Fixed adv mode crash on service conversation option
 	(*) Made healthcare work for dwarves that need crutches
 	(*) Made healthcare/hospitals handle plaster/casts properly
 	(*) Stopped creatures from attacking across several Z levels
