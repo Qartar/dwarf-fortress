@@ -2,6 +2,11 @@ Slaves to Armok: God of Blood
 Chapter II: Dwarf Fortress
 
 
+*** IMPORTANT ****************************************
+
+DF is not currently bundled as a proper Mac application.  You'll need to use the "df" script in the folder.  Double-clicking on it should work.  You can also try running it from the Terminal using "sh df" from the Dwarf Fortress directory.
+
+
 *** COPYRIGHT INFORMATION ****************************
 
 Copyright (c) 2002-2011.  All rights are retained by Tarn Adams, save the following:  you may redistribute the binary and accompanying files, unmodified, provided you do so free of charge.  If you'd like to distribute a modified version of the game or portion of the archive and are worried about copyright infringement, please contact Tarn Adams at toadyone@bay12games.com.
