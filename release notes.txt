@@ -37,6 +37,23 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.24 (March 27, 2011):
+
+Major bug fixes
+	(*)stopped bamboo flicker
+	(*)stopped dwarves from ripping patients out of traction to bring them to bed
+
+Other bug fixes/tweaks
+	(*)made it display traction state in health screen
+	(*)decreased triggers for cleaning a bit to try to stop paranoid over-cleaning of patients
+	(*)fixed key conflict for clay crafts/statue
+	(*)corrected NECK_SPINE bodypart token
+	(*)made rodent man bite use teeth properly
+	(*)dragon/hydra natural stance skill removed, given claw attack
+	(*)corrected baby guineafowl to "keets"
+
+******************************************************
+
 Release notes for 0.31.23 (March 26, 2011):
 
 Major bug fixes
