@@ -1916,7 +1916,7 @@ creature_domestic
 [CREATURE:BIRD_GUINEAFOWL]
 	[DESCRIPTION:A small ground-dwelling bird.  It has a featherless head and eats seeds and insects.  It moves about in groups.]
 	[NAME:guineafowl:guineafowls:guineafowl]
-	[CHILD:1][GENERAL_CHILD_NAME:guineachick:guineachicks]
+	[CHILD:1][GENERAL_CHILD_NAME:keet:keets]
 	[CREATURE_TILE:'g'][COLOR:0:0:1]
 	[NATURAL]
 	[LARGE_ROAMING]

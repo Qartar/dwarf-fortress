@@ -4,6 +4,16 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.31.24:
+
+	moved clay crafts key over to C (was conflicting with clay statue's s)
+	NECK_SPINE bodypart token correction (had NECK)
+	rodent man bite attack uses teeth now
+	dragon/hydra stance skill removed, given claw attack
+	guineachick -> keet
+
+******************************************************
+
 Auxiliary file changes for 0.31.23:
 
 	creature changes
