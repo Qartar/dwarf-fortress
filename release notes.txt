@@ -37,6 +37,19 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.31.25 (March 28, 2011):
+
+Major bug fixes
+	(*)fixed crash related to an items vs. temperature optimization
+	(*)fixed world gen crash that could happen if all the beasts were killed
+	(*)fixed world gen crash caused when a prisoner escapes from a site at the same time the last person to arrive at the site commits murder
+
+Other bug fixes/tweaks
+	(*)made dwarves a little more proactive about seeking a diagnosis for health care that might have been interrupted
+	(*)cave dragon gets claw attack, loses stance strike skill
+
+******************************************************
+
 Release notes for 0.31.24 (March 27, 2011):
 
 Major bug fixes
