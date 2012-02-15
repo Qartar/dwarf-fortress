@@ -15,7 +15,7 @@ is also an alpha, and your world might become corrupted by an error.  You can al
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
-(0) ***Note that versions numbered 0.27.169.32a+ are not compatible with old versions.***
+(0) ***Note that this major update 0.34.01 is not compatible with old versions.***
 (1) Unzip the new dwarves into a *NEW* folder.
 (2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
@@ -34,6 +34,59 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+******************************************************
+
+Release notes for 0.34.01 (February 14, 2012):
+
+Here's the release we've been working on for nearly eleven months.  I've tried to collect the major changes below, but it won't be a complete list.  I hope you enjoy the game!
+
+New stuff
+	(*) cities in adventure mode that have various buildings, dungeons, items, livestock, etc.
+	(*) protect your community from secret vampire dwarves or hunt them as an adventurer
+	(*) defend your fort during the full moon or risk a werewolf infestion -- hunt/be hunted as an adventurer
+	(*) face armies of the dead in dwarf mode or visit their necromancers' towers and learn their secrets as an adventurer
+	(*) evil regions where the dead and pieces of the dead can come alive, with evil mists and rain
+	(*) tombs built in world gen which can be visited in adv mode, either beneath towns or out in the wilds -- beware the dead!
+	(*) revamped justice/witness/death notification system in dwarf mode
+	(*) immigrants to your fortress will now be historical figures whenever possible, which means more family relationships and history for each one
+	(*) dropped items/bodies tracked between plays in the wilderness anywhere in the world
+	(*) more battlefield information tracked/war dead raisable in world gen
+	(*) all sponsorship animals and their giant/man versions are in the game now
+	(*) various new abilities for creatures (see file_changes.txt for list and syntax)
+	(*) adventurers can use creature abilities/learned powers and they can be tested from the arena
+	(*) new site travel map to make navigating towns easier
+	(*) reading/swimming/observer (for traps) relevant in adv mode now
+	(*) established historical figures can lead bandits
+	(*) rivers block movement in adv mode travel
+	(*) eating/drinking required in adv mode
+	(*) ingested syndromes are now possible
+	(*) ability to make campfire (from 'g') and warm items at campfire/fire/magma (from 'I') in adv mode
+	(*) traps work in adv mode, once spotted they can be ignored
+	(*) gems now have different cuts
+	(*) necromancers can write books about various topics (all books are in their towers as it stands)
+	(*) moon phase indicator in fort
+	(*) alphanumeric world gen seeds and some more world gen params (see file_changes.txt)
+	(*) the legends xml has a lot of new info for historical figures
+
+Major bug fixes
+	(*) buffer overload from aborted world gen fixed
+	(*) fixed cave-in-on-embark issue with hidden underground structure, and a few others
+
+Other bug fixes/tweaks
+	(*) designations over z levels all at once now possible
+	(*) unit screen divided into four sections
+	(*) rivers/pools have ramps now
+	(*) able to trade portions of stacks in both modes
+	(*) messed with adv mode currency trading and made items teleport to you
+	(*) tweaked how fire damage works
+	(*) made vision work through floor grates and bars properly
+	(*) fixed some road/bridge problems
+	(*) crystal glass items possible again
+	(*) tweaked adventure mode swimming and alt-movement readout (use alt-movement to get into a river you want to cross)
+	(*) skeletons/zombies replaced by animation effect
+	(*) demons masquerading as gods will try a little harder
+	(*) restricted mandates so they'll be more reasonable
+	(*) stopped blank map from being exported when you back out of detailed map export
 
 ******************************************************
 

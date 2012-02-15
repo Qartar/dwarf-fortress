@@ -117,9 +117,9 @@ This controls "more" in adventure mode.  If MORE is set to NO, all announcements
 [MORE:YES]
 [DISPLAY_LENGTH:23]
 
-Set this to YES if you want traps to affect you in adventure mode.  This is not recommended -- there are lockup issues with cage traps, and you cannot disarm any of the traps yet, so they effectively stops you from exploring your old fortresses.
+Set this to NO if you do not want traps to affect you in adventure mode.  Cage traps are always disabled for now.
 
-[ADVENTURER_TRAPS:NO]
+[ADVENTURER_TRAPS:YES]
 
 Set this to NO if you want the game to recenter on your adventurer only when you've gotten close to the edge of the view.
 

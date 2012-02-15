@@ -4,6 +4,160 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.34.01:
+
+	interactions
+		interaction_standard.txt has some basic processes
+		the examples are in "raw/interaction examples"
+	creatures
+		ability to do the interactions, using [CAN_DO_INTERACTION:<token>] -- this includes cleaning, ink spray, and physical social stuff
+			[CAN_DO_INTERACTION:MATERIAL_EMISSION] taken from fire imp, MATERIAL_EMISSION is defined in interaction_standard.txt
+				[CDI:ADV_NAME:Hurl fireball]
+				[CDI:USAGE_HINT:ATTACK]
+				[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+				[CDI:FLOW:FIREBALL]
+				[CDI:TARGET:C:LINE_OF_SIGHT]
+				[CDI:TARGET_RANGE:C:15]
+				[CDI:MAX_TARGET_NUMBER:C:1]
+				[CDI:WAIT_PERIOD:30]
+			[CAN_DO_INTERACTION:MATERIAL_EMISSION_WITH_HIDE_EFFECT] taken from squid
+				[CDI:ADV_NAME:Squirt ink]
+				[CDI:USAGE_HINT:FLEEING]
+				[CDI:LOCATION_HINT:IN_WATER]
+				[CDI:BP_REQUIRED:BY_TYPE:UPPERBODY]
+				[CDI:MATERIAL:LOCAL_CREATURE_MAT:INK:SPATTER_LIQUID] <-- SPATTER_LIQUID is a new "breath" attack, SPATTER_POWDER too
+				[CDI:VERB:squirt ink:squirts ink:NA]
+				[CDI:TARGET:C:SELF_ONLY] <-- this is basically book-keeping for the two effects in the interaction
+				[CDI:TARGET:D:SELF_ONLY]
+				[CDI:WAIT_PERIOD:200]
+				[CDI:FREE_ACTION] <-- they can spray ink and also move away
+			[CAN_DO_INTERACTION:CLEANING] taken from cat
+				[CDI:ADV_NAME:Clean]
+				[CDI:USAGE_HINT:CLEAN_SELF]
+				[CDI:USAGE_HINT:CLEAN_FRIEND]
+				[CDI:BP_REQUIRED:BY_CATEGORY:TONGUE]
+				[CDI:VERB:lick:licks:lick each other]
+				[CDI:CAN_BE_MUTUAL] <-- not yet implemented
+				[CDI:TARGET:A:SELF_ALLOWED:TOUCHABLE] <-- so the animal can lick themselves or anybody nearby
+				[CDI:TARGET_RANGE:A:1]
+				[CDI:MAX_TARGET_NUMBER:A:1]
+				[CDI:WAIT_PERIOD:10]
+			[CAN_DO_INTERACTION:BP_BUMP] taken from cat
+				[CDI:ADV_NAME:Head bump]
+				[CDI:USAGE_HINT:GREETING]
+				[CDI:BP_REQUIRED:BY_CATEGORY:HEAD]
+				[CDI:VERB:head-bump:head-bumps:bump heads]
+				[CDI:CAN_BE_MUTUAL] <-- not yet implemented
+				[CDI:TARGET:A:SELF_ONLY]
+				[CDI:TARGET:B:TOUCHABLE]
+				[CDI:TARGET_RANGE:B:1]
+				[CDI:MAX_TARGET_NUMBER:B:1]
+				[CDI:WAIT_PERIOD:20]
+		they can retract into bodyparts/roll into balls using RETRACT_INTO_BP
+			[RETRACT_INTO_BP:BY_CATEGORY:BODY_UPPER:roll into a ball:rolls into a ball:unroll:unrolls]
+			they will retract when they are frightened and near to an enemy
+			attacks while retracted will be much more likely to hit the retract part
+		they can root around and stir up vermin using ROOT_AROUND
+			[ROOT_AROUND:BY_CATEGORY:BILL:root around in:roots around in]
+		they can be made to eat vermin using GOBBLE_VERMIN_CREATURE and GOBBLE_VERMIN_CLASS
+			[GOBBLE_VERMIN_CREATURE:<creature>:<caste>] where <caste> can be ALL
+			[GOBBLE_VERMIN_CLASS:<class>] where class is a CREATURE_CLASS like the new EDIBLE_GROUND_BUG
+		they can drop extra objects during butchery with EXTRA_BUTCHER_OBJECT
+			[EXTRA_BUTCHER_OBJECT:BY_CATEGORY:GIZZARD]
+				[EBO_ITEM:SMALLGEM:NONE:ANY_HARD_STONE] <-- ANY_HARD_STONE is special, but you can use the standard material token list too
+				[EBO_SHAPE:GIZZARD_STONE] <-- this is a shape for a gem from descriptor_shape_standard.txt
+		DIVE_HUNTS_VERMIN is a new vermin hunting behavior, although it is limited for fortress pets because of the known flier troubles there
+		removed werewolf and whale and some redundant animal people from the old files
+		a ton of new sponsorship creatures -- the eight that got new tags are in the old files, the 112 that didn't get their own tags are in probationary new files, although I don't promise to give every one of them a special tag over time
+		NOT_LIVING replaces CANNOT_UNDEAD
+		material force multiplier, general material force multiplier
+	syndromes
+		SYN_INGESTED will work now
+		there are new tags here -- see the interaction examples in "raw/interaction examples" for syntax, here are some examples:
+		CE_ADD_TAG -- It's a pretty zombie-centric list (basically whatever came up for us).  Support for other creature tags will be added.
+			EXTRAVISION
+			OPPOSED_TO_LIFE
+			SUPERNATURAL
+			NOT_LIVING
+			NOEXERT
+			CRAZED
+			BLOODSUCKER
+			NOPAIN
+			NOBREATHE
+			HAS_BLOOD
+			NOSTUN
+			NONAUSEA
+			NO_DIZZINESS
+			NO_FEVERS
+			TRANCES
+			NOEMOTION
+			LIKESFIGHTING
+			PARALYZEIMMUNE
+			NOFEAR
+			NO_EAT
+			NO_DRINK
+			NO_SLEEP
+			MISCHIEVOUS
+			NO_PHYS_ATT_GAIN
+			NO_PHYS_ATT_RUST
+			NOTHOUGHT
+			NO_THOUGHT_CENTER_FOR_MOVEMENT
+			NO_CONNECTIONS_FOR_MOVEMENT
+			CAN_SPEAK
+			CAN_LEARN
+			UTTERANCES
+			MORTAL
+			NO_AGING
+			STERILE
+			FIT_FOR_ANIMATION
+			FIT_FOR_RESURRECTION
+		CE_REMOVE_TAG
+		CE_DISPLAY_TILE
+		CE_DISPLAY_NAME
+		CE_FLASH_TILE
+		CE_PHYS_ATT_CHANGE
+		CE_MENT_ATT_CHANGE
+		CE_BODY_APPEARANCE_MODIFIER
+		CE_BP_APPEARANCE_MODIFIER
+		CE_MATERIAL_FORCE_MULTIPLIER
+		CE_SPEED_CHANGE
+		CE_BODY_MAT_INTERACTION -- only works on hist figs, causes that hist figs body material to cause interaction as a syndrome mat.
+		CE_CAN_DO_INTERACTION
+		CE_BODY_TRANSFORMATION
+		CE_SKILL_ROLL_ADJUST
+	xml
+		the legends xml has a lot of new info for historical figures
+	entities
+		PLAINS gets BUILDS_OUTDOOR_TOMBS
+		PLAINS gets all the trap comps
+	world gen params
+		some have been replaced, here are the new ones (might be missing some):
+		NIGHT_TROLL_NUMBER -- all of the following control how many random definitions are created, if set to zero that world won't have any
+		BOGEYMAN_NUMBER
+		VAMPIRE_NUMBER
+		WEREBEAST_NUMBER
+		SECRET_NUMBER
+		REGIONAL_INTERACTION_NUMBER
+		DISTURBANCE_INTERACTION_NUMBER
+		EVIL_CLOUD_NUMBER
+		EVIL_RAIN_NUMBER
+	graphics
+		SKELETON/ZOMBIE -> ANIMATED
+	announcements
+		there are some new ones, mostly or all at the bottom of the file
+	reactions
+		you can make BOOK items in reactions, and add PAGES improvements to them
+			pages are always blank though
+	new keys (this might not be it, but it wasn't many)
+		A_ACTION_ABILITY:A
+		A_ACTION_POWER:P
+	changed keys
+		A_BARTER_CURRENCY_2 -> O
+	removed keys
+		A_BARTER_CURRENCY_3 to 9
+
+******************************************************
+
 Auxiliary file changes for 0.31.25:
 
 	cave dragon stance strike skill removed, given claw attack
