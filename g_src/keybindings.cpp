@@ -195,6 +195,8 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_A_ACTION, "A_ACTION");
 	bindingNames.insert(INTERFACEKEY_A_ACTION_CREATE, "A_ACTION_CREATE");
 	bindingNames.insert(INTERFACEKEY_A_ACTION_BUTCHER, "A_ACTION_BUTCHER");
+	bindingNames.insert(INTERFACEKEY_A_ACTION_ABILITY, "A_ACTION_ABILITY");
+	bindingNames.insert(INTERFACEKEY_A_ACTION_POWER, "A_ACTION_POWER");
 	bindingNames.insert(INTERFACEKEY_A_INV_LOOK, "A_INV_LOOK");
 	bindingNames.insert(INTERFACEKEY_A_INV_REMOVE, "A_INV_REMOVE");
 	bindingNames.insert(INTERFACEKEY_A_INV_WEAR, "A_INV_WEAR");
@@ -880,13 +882,6 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_A_BARTER_VIEW, "A_BARTER_VIEW");
 	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_1, "A_BARTER_CURRENCY_1");
 	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_2, "A_BARTER_CURRENCY_2");
-	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_3, "A_BARTER_CURRENCY_3");
-	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_4, "A_BARTER_CURRENCY_4");
-	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_5, "A_BARTER_CURRENCY_5");
-	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_6, "A_BARTER_CURRENCY_6");
-	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_7, "A_BARTER_CURRENCY_7");
-	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_8, "A_BARTER_CURRENCY_8");
-	bindingNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_9, "A_BARTER_CURRENCY_9");
 	bindingNames.insert(INTERFACEKEY_A_BARTER_TRADE, "A_BARTER_TRADE");
 	bindingNames.insert(INTERFACEKEY_TRADE_VIEW, "TRADE_VIEW");
 	bindingNames.insert(INTERFACEKEY_TRADE_TRADE, "TRADE_TRADE");
@@ -1399,6 +1394,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_CUSTOM_ALT_Z, "CUSTOM_ALT_Z");
 	bindingNames.insert(INTERFACEKEY_FPS_UP, "FPS_UP");
 	bindingNames.insert(INTERFACEKEY_FPS_DOWN, "FPS_DOWN");
+        bindingNames.insert(INTERFACEKEY_TOGGLE_TTF, "TOGGLE_TTF");
         
 
 	displayNames.insert(INTERFACEKEY_NONE, "None");
@@ -1584,9 +1580,11 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_A_SEARCH, "Adventure: Search");
 	displayNames.insert(INTERFACEKEY_A_TALK, "Adventure: Talk");
 	displayNames.insert(INTERFACEKEY_A_INTERACT, "Adventure: Inv. Interact");
-	displayNames.insert(INTERFACEKEY_A_ACTION, "Adventure: Action");
-	displayNames.insert(INTERFACEKEY_A_ACTION_CREATE, "Adventure: Action, Create");
-	displayNames.insert(INTERFACEKEY_A_ACTION_BUTCHER, "Adventure: Action, Butcher");
+	displayNames.insert(INTERFACEKEY_A_ACTION, "Adventure: Misc. Action");
+	displayNames.insert(INTERFACEKEY_A_ACTION_CREATE, "Adventure: Misc. Action, Create");
+	displayNames.insert(INTERFACEKEY_A_ACTION_BUTCHER, "Adventure: Misc. Action, Butcher");
+	displayNames.insert(INTERFACEKEY_A_ACTION_ABILITY, "Adventure: Misc. Action, Ability");
+	displayNames.insert(INTERFACEKEY_A_ACTION_POWER, "Adventure: Misc. Action, Power");
 	displayNames.insert(INTERFACEKEY_A_INV_LOOK, "Adventure: Inv. Look");
 	displayNames.insert(INTERFACEKEY_A_INV_REMOVE, "Adventure: Inv. Remove");
 	displayNames.insert(INTERFACEKEY_A_INV_WEAR, "Adventure: Inv. Wear");
@@ -2272,13 +2270,6 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_A_BARTER_VIEW, "Adventure: Barter, View");
 	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_1, "Adventure: Barter, Currency 1");
 	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_2, "Adventure: Barter, Currency 2");
-	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_3, "Adventure: Barter, Currency 3");
-	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_4, "Adventure: Barter, Currency 4");
-	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_5, "Adventure: Barter, Currency 5");
-	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_6, "Adventure: Barter, Currency 6");
-	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_7, "Adventure: Barter, Currency 7");
-	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_8, "Adventure: Barter, Currency 8");
-	displayNames.insert(INTERFACEKEY_A_BARTER_CURRENCY_9, "Adventure: Barter, Currency 9");
 	displayNames.insert(INTERFACEKEY_A_BARTER_TRADE, "Adventure: Barter, Trade");
 	displayNames.insert(INTERFACEKEY_TRADE_VIEW, "Trade, View");
 	displayNames.insert(INTERFACEKEY_TRADE_TRADE, "Trade, Trade");
@@ -2791,6 +2782,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_CUSTOM_ALT_Z, "Custom: Alt + Z");
 	displayNames.insert(INTERFACEKEY_FPS_UP, "Increase FPS limit");
 	displayNames.insert(INTERFACEKEY_FPS_DOWN, "Decrease FPS limit");
+        displayNames.insert(INTERFACEKEY_TOGGLE_TTF, "Toggle truetype rendering");
         
 
   sdlNames.insert(SDLK_BACKSPACE, "Backspace");

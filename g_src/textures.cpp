@@ -227,11 +227,15 @@ void textures::remove_uploaded_textures() {
 }
 
 SDL_Surface *textures::get_texture_data(long pos) {
-  if (raws.size() > pos)
+  if (raws.size() > pos) {
     return raws[pos];
-  else {
+  } else {
     std::cerr << "Asked for nonexistent texture data\n";
-    return NULL;
+    SDL_Surface *surf = SDL_CreateRGBSurface(SDL_SWSURFACE, 8, 8, 32, 0, 0, 0, 0);
+    SDL_FillRect(surf, NULL, SDL_MapRGB(surf->format, 255, 0, 255));
+    raws.resize(pos+1);
+    raws[pos] = surf;
+    return raws[pos];
   }
 }
 
@@ -240,7 +244,7 @@ long textures::clone_texture(long src) {
 	
   if (raws.size() > src && raws[src]) {
     SDL_Surface *dst = SDL_ConvertSurface(raws[src], raws[src]->format, SDL_SWSURFACE);
-	tx=add_texture(dst);
+    tx=add_texture(dst);
   }
   else {
   // Okay, we've been asked to clone a nonexistent texture. Riight...

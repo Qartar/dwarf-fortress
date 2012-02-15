@@ -124,8 +124,9 @@ public:
 
   virtual void render() {
     // Render the TTFs, which we left for last
-    for (auto it = ttfs_to_render.begin(); it != ttfs_to_render.end(); ++it)
+    for (auto it = ttfs_to_render.begin(); it != ttfs_to_render.end(); ++it) {
       SDL_BlitSurface(it->first, NULL, screen, &it->second);
+    }
     ttfs_to_render.clear();
     // And flip out.
     SDL_Flip(screen);

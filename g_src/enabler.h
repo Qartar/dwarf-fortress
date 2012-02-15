@@ -733,18 +733,16 @@ struct gl_texpos {
 struct ttf_id {
   std::string text;
   unsigned char fg, bg, bold;
-  unsigned char justification;
   
   bool operator< (const ttf_id &other) const {
     if (fg != other.fg) return fg < other.fg;
     if (bg != other.bg) return bg < other.bg;
     if (bold != other.bold) return bold < other.bold;
-    if (justification != other.justification) return justification < other.justification;
     return text < other.text;
   }
 
   bool operator== (const ttf_id &other) const {
-    return fg == other.fg && bg == other.bg && bold == other.bold && justification == other.justification && text == other.text;
+    return fg == other.fg && bg == other.bg && bold == other.bold && text == other.text;
   }
 };
 
@@ -752,7 +750,7 @@ namespace std {
   template<> struct hash<ttf_id> {
     size_t operator()(ttf_id val) const {
       // Not the ideal hash function, but it'll do. And it's better than GCC's. id? Seriously?
-      return hash<string>()(val.text) + val.fg + (val.bg << 4) + (val.bold << 8) + (val.justification << 12);
+      return hash<string>()(val.text) + val.fg + (val.bg << 4) + (val.bold << 8);
     }
   };
 };

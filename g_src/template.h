@@ -1,4 +1,4 @@
-template <class T> int32_t get_vector_sum(svector<T> vec)
+template <class T> int32_t get_vector_sum(svector<T> &vec)
 {
 	T total=0;
 	auto ii_s=vec.begin(),ii_e=vec.end();
@@ -9,7 +9,7 @@ template <class T> int32_t get_vector_sum(svector<T> vec)
 	return total;
 }
 
-template <class T> int32_t get_random_biased_index(svector<T> chance)
+template <class T> int32_t get_random_biased_index(svector<T> &chance)
 {
 	if(chance.size()==0)
 		{
@@ -376,6 +376,28 @@ template<class T> void remove_from_global_id_vector(T ptr,svector<T> &vect)
 			}
 
 		if(cptr->global_id>ptr->global_id)end=mid-1;
+		else start=mid+1;
+		}
+}
+
+template<class T> void remove_from_global_id_vector_by_id(int32_t id,svector<T> &vect)
+{
+	int32_t start=0;
+	int32_t end=(int32_t)vect.size()-1;
+
+	T cptr;
+	int32_t mid;
+	while(start<=end)
+		{
+		mid=(start+end)>>1;
+		cptr=vect[mid];
+		if(cptr->global_id==id)
+			{
+			vect.erase(mid);
+			return;
+			}
+
+		if(cptr->global_id>id)end=mid-1;
 		else start=mid+1;
 		}
 }

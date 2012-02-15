@@ -273,6 +273,7 @@ void enablerst::async_wait() {
 void enablerst::async_loop() {
   async_paused = false;
   async_frames = 0;
+  int total_frames = 0;
   int fps = 100; // Just a thread-local copy
   for (;;) {
     // cout << "FRAMES: " << frames << endl;
@@ -299,7 +300,10 @@ void enablerst::async_loop() {
           break;
         case async_cmd::render:
           if (flag & ENABLERFLAG_RENDER) {
+            total_frames++;
             renderer->swap_arrays();
+            if (total_frames % 1800 == 0)
+              ttf_manager.gc();
             render_things();
             flag &= ~ENABLERFLAG_RENDER;
             update_gfps();

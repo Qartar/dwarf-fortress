@@ -833,6 +833,9 @@ bool enabler_inputst::is_recording() {
 
 void enabler_inputst::play_macro() {
   Time now = SDL_GetTicks();
+  for_each(timeline.begin(), timeline.end(), [&](Event e){
+      now = MAX(now, e.time);
+    });
   for (macro::iterator sim = active_macro.begin(); sim != active_macro.end(); ++sim) {
     Event e; e.r = REPEAT_NOT; e.repeats = 0; e.serial = next_serial(); e.time = now;
     for (set<InterfaceKey>::iterator k = sim->begin(); k != sim->end(); ++k) {

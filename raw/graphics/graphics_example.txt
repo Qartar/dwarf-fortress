@@ -22,8 +22,7 @@ DEFAULT
 ADVENTURER
 GUARD
 ROYALGUARD
-SKELETON
-ZOMBIE
+ANIMATED
 GHOST
 
 For the profession specific options, the format is

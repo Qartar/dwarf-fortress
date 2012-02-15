@@ -71,11 +71,20 @@ void initst::begin()
 					grab_token_string_pos(token2,str,token.length()+2);
 					}
                                 if(!token.compare("TRUETYPE")) {
-                                  if (token2=="YES") {
-                                    font.use_ttf = true;
+                                  const char *str = token2.c_str();
+                                  char *endptr;
+                                  int limit = strtol(str, &endptr, 10);
+                                  font.ttf_limit = 0;
+                                  if (endptr != str) {
+                                    font.use_ttf = ttf_auto;
+                                    font.ttf_limit = limit;
+                                  } else if (token2 == "YES") {
+                                    font.use_ttf = ttf_on;
+                                  } else {
+                                    font.use_ttf = ttf_off;
                                   }
                                 }
-
+                                
 				if(!token.compare("FONT"))
 					{
 					small_font="data/art/";

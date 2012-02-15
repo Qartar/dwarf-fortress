@@ -43,7 +43,7 @@ If this is set to YES, the tiles will not be stretched, but rather the game view
 
 [BLACK_SPACE:YES]
 
-Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of March 2011, the Dwarf Fortress Wiki has custom tilesets available at http://df.magmawiki.com/index.php/Tileset_repository and creature graphics at http://df.magmawiki.com/index.php/Graphics_set_repository.
+Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of February 2012, the Dwarf Fortress Wiki has custom tilesets available at http://df.magmawiki.com/index.php/Tileset_repository and creature graphics at http://df.magmawiki.com/index.php/Graphics_set_repository.
 
 [GRAPHICS:NO]
 [GRAPHICS_WINDOWEDX:0]
@@ -58,6 +58,8 @@ These settings can have a significant impact on frame rate, especially for peopl
 
 By and large, 2D should be the most reliable, while STANDARD has a good combination of speed and reliability. However, all 2D modes are normally far slower than even STANDARD, which may be the slowest OpenGL mode.
 
+On a multi-core machine none of this is very likely to matter; stick to 2D.
+
 2DASYNC may be slightly more responsive than 2D on a multi-core machine, but this has recently become doubtful due to improvements to the other modes.
 
 Linux/OS X users may also use PRINT_MODE:TEXT for primitive ncurses output.
@@ -70,9 +72,9 @@ Linux/OS X users may also use PRINT_MODE:TEXT for primitive ncurses output.
 	 PRINT_MODE:PARTIAL:0
 [SINGLE_BUFFER:NO]
 
-Change this to YES if you want to experiment with the TrueType font support that is currently in progress.  It only works in the 2D print mode set above.
+Switches truetype on whenever the vertical tile size is this many pixels or larger.  You may also use YES/NO to force it on/off.  Turning it off may provide a minor speed boost (using font small enough that it doesn't activate won't).
 
-[TRUETYPE:NO]
+[TRUETYPE:24]
 
 Change this to YES to keep the DF window on top of your other windows.
 
