@@ -15,7 +15,7 @@ is also an alpha, and your world might become corrupted by an error.  You can al
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
-(0) ***Note that this major update 0.34.01 is not compatible with old versions.***
+(0) ***Note that 0.34.02 is not compatible with old versions.***
 (1) Unzip the new dwarves into a *NEW* folder.
 (2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
@@ -33,6 +33,46 @@ Go to "data/init/init.txt".  These options will take effect the next time you st
 IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
+
+
+
+******************************************************
+
+Release notes for 0.34.02 (February 18, 2012):
+
+The first bugfix release has arrived.  Unfortunately, you'll have to restart -- even if your save seems fine, it's likely that it is dying a slow death due to corrupted buildings.  Hopefully a compatibility break won't be necessary again for a while.  There are still many new issues to resolve, and I'll be focusing on those for the next bugfix release(s) before we start to transition over to older bugs.
+
+New stuff
+	(*) Generated some default interaction effects for arena use
+	(*) SDL version: Can repeat commands/macros - default Ctrl+u <number> <command> (Baughn)
+	(*) SDL version: Can toggle TrueType - default F12 (Baughn)
+
+Major bug fixes
+	(*) Save corruption/crash from old forts and some other sites corrected
+	(*) Fixed conversation crash
+	(*) Fixed werewolf crash after aborted world generation
+	(*) Stopped books and other artifacts from duplicating in player inventory
+	(*) Stopped companions from getting hungry/thirsty during travel
+	(*) Correct ambush frequency in adv mode
+	(*) Made it possible to remove designation jobs again
+
+Other bug fixes/tweaks
+	(*) SDL version: various technical fixes (Baughn)
+	(*) Dwarves will stop walking toward cancelled jobs
+	(*) Made wagons appear again (Quietust)
+	(*) Stopped mouse designation from messing with keyboard designation
+	(*) Stopped lye making from using full water buckets (Quietust)
+	(*) Made magma/fire safe building materials work properly (Quietust)
+	(*) Stopped worshippers of certain beings from mentioning it
+	(*) Cleaned up stone menu (Quietust)
+	(*) Doors/floodgates display properly after being placed (Quietust)
+	(*) Stopped glazed items from having cabochon shapes in the glaze
+	(*) Sped up conversation initialization
+	(*) Made forge jobs use bar amounts properly (Quietust)
+	(*) Made automated fisher/kitchen/etc. settings display properly (Quietust)
+	(*) Stopped weird job cancellation numbers for bars/cloth/thread
+	(*) Various manual/other grammar tweaks
+	(*) Various broken creature tweaks, notably the giant mosquito epidemic should end
 
 ******************************************************
 
