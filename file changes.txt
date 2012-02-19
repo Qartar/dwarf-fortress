@@ -4,6 +4,27 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.34.02:
+
+	inorganic
+		added BUILD_COLOR for all metals
+	creatures
+		rodent men given skin and hair properly
+		amphibian man changed
+		missing tapir sponsor information added
+		rodent removed from rabbit description
+		fixed material value in unicorn
+		fixed iron/mud man depths
+		reindeer plural fixed
+		peacock color fixed
+	creature variations
+		removed POPULATION_NUMBER and CLUSTER_NUMBER and COLOR and MOUNT and MOUNT_EXOTIC from GIANT
+	language
+		changed SQUASH from MAGIC to VIOLENT symbol
+	manual files updated
+
+******************************************************
+
 Auxiliary file changes for 0.34.01:
 
 	interactions
