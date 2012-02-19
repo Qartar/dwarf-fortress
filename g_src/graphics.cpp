@@ -462,6 +462,12 @@ void render_things()
     gps.changecolor(2,1,1);
     gps.addst("PLAY");
   }
+  // Render # <i> when building a repetition prefix
+  if (enabler.prefix_building()) {
+    gps.locate(0,20);
+    gps.changecolor(3,1,1);
+    gps.addst("#" + enabler.prefix());
+  }
   if (gps.display_frames) {
     ostringstream fps_stream;
     fps_stream << "FPS: " << setw(3) << enabler.calculate_fps() << " (" << enabler.calculate_gfps() << ")";

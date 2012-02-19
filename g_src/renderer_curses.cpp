@@ -305,7 +305,13 @@ extern "C" {
     // Initialize curses
     if (!curses_initialized) {
       curses_initialized = true;
-      initscr();
+      WINDOW *new_window = initscr();
+      if (!new_window) {
+        puts("unable to create ncurses window - initscr failed!");
+        exit(EXIT_FAILURE);
+      }
+      // in some versions of curses, initscr does not update stdscr!
+      if (!*stdscr_p) *stdscr_p = new_window;
       raw();
       noecho();
       keypad(*stdscr_p, true);

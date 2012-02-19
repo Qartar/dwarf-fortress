@@ -112,6 +112,13 @@ class enabler_inputst {
   void save_macro(string name); // Saves the active macro under some name
   void delete_macro(string name);
 
+  // Prefix commands
+  bool prefix_building();
+  void prefix_toggle();
+  void prefix_add_digit(char digit);
+  int prefix_end();
+  string prefix();
+
   // Updating the key-bindings
   void register_key(); // Sets the next key-press to be stored instead of executed.
   list<RegisteredKey> getRegisteredKey(); // Returns a description of stored keys. Max one of each type.

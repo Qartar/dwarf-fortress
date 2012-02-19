@@ -916,6 +916,33 @@ char interfacest::loop() {
           if(currentscreen->movies_okay()) use_movie_input();
         if (era.count(INTERFACEKEY_HELP)&&!currentscreen->key_conflict(INTERFACEKEY_HELP))
           currentscreen->help();
+        // Prefix commands
+        // Most prefix commands we don't want to touch game management commands,
+        // i.e. what's in here. Macro playback is a notable exception.
+        if (era.count(INTERFACEKEY_PREFIX))
+          enabler.prefix_toggle();
+        int repeats = 1;  // If this input ends a prefix command, we'll want to repeat it.
+        if (enabler.prefix_building()) {
+          // TODO: OMGWTFBBQ
+          char c = 0;
+          if (era.count(INTERFACEKEY_STRING_A048)) c = '0';
+          else if (era.count(INTERFACEKEY_STRING_A049)) c = '1';
+          else if (era.count(INTERFACEKEY_STRING_A050)) c = '2';
+          else if (era.count(INTERFACEKEY_STRING_A051)) c = '3';
+          else if (era.count(INTERFACEKEY_STRING_A052)) c = '4';
+          else if (era.count(INTERFACEKEY_STRING_A053)) c = '5';
+          else if (era.count(INTERFACEKEY_STRING_A054)) c = '6';
+          else if (era.count(INTERFACEKEY_STRING_A055)) c = '7';
+          else if (era.count(INTERFACEKEY_STRING_A056)) c = '8';
+          else if (era.count(INTERFACEKEY_STRING_A057)) c = '9';
+
+          if (c) {
+            enabler.prefix_add_digit(c);
+            era.clear();
+          } else {
+            repeats = enabler.prefix_end();
+          }
+        }
         // TTF toggle
         if (era.count(INTERFACEKEY_TOGGLE_TTF)) {
           if (init.font.use_ttf == ttf_auto) {
@@ -945,14 +972,17 @@ char interfacest::loop() {
           else
             enabler.record_input();
         }
-        if (era.count(INTERFACEKEY_PLAY_MACRO))
-          enabler.play_macro();
+        if (era.count(INTERFACEKEY_PLAY_MACRO)) {
+          for (int i = 0; i < repeats; i++)
+            enabler.play_macro();
+        }
         if (era.count(INTERFACEKEY_SAVE_MACRO))
           gview.addscreen(new MacroScreenSave(), INTERFACE_PUSH_AT_BACK, NULL);
         if (era.count(INTERFACEKEY_LOAD_MACRO))
           gview.addscreen(new MacroScreenLoad(), INTERFACE_PUSH_AT_BACK, NULL);
         // Feed input
-        currentscreen->feed(era);
+        for (int i = 0; i < repeats; i++)
+          currentscreen->feed(era);
         if (era.count(INTERFACEKEY_TOGGLE_FULLSCREEN)) {
           enabler.toggle_fullscreen();
         }

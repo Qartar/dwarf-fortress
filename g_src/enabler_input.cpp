@@ -75,6 +75,10 @@ static macro active_macro; // Active macro
 static map<string,macro> macros;
 static Time macro_end = 0; // Time at which the currently playing macro will end
 
+// Prefix command state
+static bool in_prefix_command = false;
+static string prefix_command;
+
 // Keybinding editing
 static bool key_registering = false;
 static list<EventMatch> stored_keys;
@@ -638,7 +642,7 @@ void enabler_inputst::add_input_ncurses(int key, Time now, bool esc) {
 #endif
 
 void enabler_inputst::add_input_refined(KeyEvent &e, Uint32 now, int serial) {
-// We may be registering a new mapping, in which case we skip the
+  // We may be registering a new mapping, in which case we skip the
   // rest of this function.
   if (key_registering && !e.release) {
     stored_keys.push_back(e.match);
@@ -1048,4 +1052,34 @@ void enabler_inputst::remove_key(InterfaceKey key, EventMatch ev) {
   map<InterfaceKey,set<string,less_sz> >::iterator it = keydisplay.find(key);
   if (it != keydisplay.end())
     it->second.erase(display(ev));
+}
+
+bool enabler_inputst::prefix_building() {
+  return in_prefix_command;
+}
+
+void enabler_inputst::prefix_toggle() {
+  in_prefix_command = !in_prefix_command;
+  prefix_command.clear();
+}
+
+void enabler_inputst::prefix_add_digit(char digit) {
+  prefix_command.push_back(digit);
+#ifdef DEBUG
+  cout << "Built prefix to " << prefix_command << endl;
+#endif
+}
+
+int enabler_inputst::prefix_end() {
+  if (prefix_command.size()) {
+    int repeats = atoi(prefix_command.c_str());
+    prefix_toggle();
+    return repeats;
+  } else {
+    return 1;
+  }
+}
+
+string enabler_inputst::prefix() {
+  return prefix_command;
 }
