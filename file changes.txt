@@ -4,6 +4,25 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.34.03:
+
+	creatures
+		horseshoe crab gets heart/brain, removed NOT_BUTCHERABLE (not sure what the deal is in reality)
+		horseshoe crab man gets working body
+		kea gets LOOSE_CLUSTERS
+	entities
+		changed TOLERATES_SITE for entities, it only controls which cities world gen people will migrate too
+			keep in mind that an elf can be found in a dwarf town if it moves to a human city first, since they'll be in the human entity
+	interaction examples
+		LIKES_FIGHTING:MISCHIEVOUS instead of misspellings
+		added STERILE to mummy interaction examples (zombie don't need the tag since it applies to all animations)
+	material templates
+		removed extra [BUTCHER_SPECIAL:MEAT:NONE] from gizzard
+	d_init
+		SET_LABOR_LISTS:YES
+
+******************************************************
+
 Auxiliary file changes for 0.34.02:
 
 	inorganic
