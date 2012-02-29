@@ -71,6 +71,11 @@ public:
     tab_width = 2;
     em_width = 8;
   }
+  ~ttf_managerst() {
+	  for (auto it = textures.cbegin(); it != textures.cend(); ++it)
+      SDL_FreeSurface(it->second);
+    if (font) TTF_CloseFont(font);
+  }
   bool init(int ceiling, int tile_width);
   bool was_init() const { return font != NULL; }
   // Return the expected size of a bit of text, in tiles.

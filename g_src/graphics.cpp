@@ -112,10 +112,12 @@ void graphicst::addcoloredst(const char *str,const char *colorstr)
     }
 }
 
-list<ttf_id> ttfstr;
+static list<ttf_id> ttfstr;
 
 void graphicst::addst(const string &str_orig, justification just)
 {
+  if (!str_orig.size())
+    return;
   string str = str_orig;
   if (just == not_truetype || !ttf_manager.ttf_active()) {
     int s;
@@ -136,29 +138,32 @@ void graphicst::addst(const string &str_orig, justification just)
       str[1] = '\t'; // EVIL HACK
     struct ttf_id id = {str, screenf, screenb, screenbright};
     ttfstr.push_back(id);
+    // if (str.size() == 80) {
+    //   cout << "(" << int(str[0]) << ") ";
+    // }
+    // cout << screeny << "," << str.size() << ":" << str;
+    // if (just == justify_cont)
+    //   cout << "|";
+    // else
+    //   cout << endl;
     if (just == justify_cont)
       return; // More later
     // This string is done. Time to render.
     ttf_details details = ttf_manager.get_handle(ttfstr, just);
     const int handle = details.handle;
     const int offset = details.offset;
-    const int width = details.width;
+    int width = details.width;
     const int ourx = screenx + offset;
-    // addchar('x');
-    unsigned char * const s = screen + ourx*dimy*4 + screeny*4;
-    s[0] = (handle >> 16) & 0xff;
-    s[1] = (handle >> 8) & 0xff;
-    s[2] = handle & 0xff;
-    s[3] = GRAPHICSTYPE_TTF;
-    // Also set the other tiles this text covers
-    for (int x = 1; x < width; ++x) {
-      *(s + x*dimy*4 + 0) = (handle >> 16) & 0xff;
-      *(s + x*dimy*4 + 1) = (handle >> 8) & 0xff;
-      *(s + x*dimy*4 + 2) = handle & 0xff;
-      *(s + x*dimy*4 + 3) = GRAPHICSTYPE_TTFCONT;
-    }
-    screenx = ourx + width;
+    unsigned int * const s = ((unsigned int*)screen + ourx*dimy + screeny);
+    if (s < (unsigned int*)screen_limit)
+      s[0] = (((unsigned int)GRAPHICSTYPE_TTF) << 24) | handle;
+    // Also set the other tiles this text covers, but don't write past the end.
+    if (width + ourx >= dimx)
+      width = dimx - ourx - 1;
+    for (int x = 1; x < width; ++x)
+      s[x * dimy] = (((unsigned int)GRAPHICSTYPE_TTFCONT) << 24) | handle;
     // Clean up, prepare for next string.
+    screenx = ourx + width;
     ttfstr.clear();
   }
 }

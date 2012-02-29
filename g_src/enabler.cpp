@@ -43,19 +43,28 @@ Either<texture_fullid,texture_ttfid> renderer::screen_to_texid(int x, int y) {
   const int tile = x * gps.dimy + y;
   const unsigned char *s = screen + tile*4;
 
+  struct texture_fullid ret;
+  int ch;
+  int bold;
+  int fg;
+  int bg;
+
   // TTF text does not get the full treatment.
   if (s[3] == GRAPHICSTYPE_TTF) {
-    texture_ttfid texpos = (s[0] << 16) | (s[1] << 8) | s[2];
+    texture_ttfid texpos = *((unsigned int *)s) & 0xffffff;
     return Either<texture_fullid,texture_ttfid>(texpos);
-  } else if (s[3] == GRAPHICSTYPE_TTFCONT)
-    return Either<texture_fullid,texture_ttfid>(0);
-
-  // Otherwise, it's a normal (graphical?) tile.
-  struct texture_fullid ret;
-  const int ch   = s[0];
-  const int bold = (s[3] != 0) * 8;
-  const int fg   = (s[1] + bold) % 16;
-  const int bg   = s[2] % 16;
+  } else if (s[3] == GRAPHICSTYPE_TTFCONT) {
+    // TTFCONT means this is a tile that does not have TTF anchored on it, but is covered by TTF.
+    // Since this may actually be stale information, we'll draw it as a blank space,
+    ch = 32;
+    fg = bg = bold = 0;
+  } else {
+    // Otherwise, it's a normal (graphical?) tile.
+    ch   = s[0];
+    bold = (s[3] != 0) * 8;
+    fg   = (s[1] + bold) % 16;
+    bg   = s[2] % 16;
+  }
   
   static bool use_graphics = init.display.flag.has_flag(INIT_DISPLAY_FLAG_USE_GRAPHICS);
   
@@ -163,7 +172,7 @@ void renderer::display()
   if (gps.force_full_display_count > 0) gps.force_full_display_count--;
 }
 
-void renderer::gps_allocate(int x, int y) {
+void renderer::cleanup_arrays() {
   if (screen) delete[] screen;
   if (screentexpos) delete[] screentexpos;
   if (screentexpos_addcolor) delete[] screentexpos_addcolor;
@@ -176,6 +185,10 @@ void renderer::gps_allocate(int x, int y) {
   if (screentexpos_grayscale_old) delete[] screentexpos_grayscale_old;
   if (screentexpos_cf_old) delete[] screentexpos_cf_old;
   if (screentexpos_cbr_old) delete[] screentexpos_cbr_old;
+}
+
+void renderer::gps_allocate(int x, int y) {
+  cleanup_arrays();
   
   gps.screen = screen = new unsigned char[x*y*4];
   memset(screen, 0, x*y*4);
@@ -542,7 +555,7 @@ int enablerst::loop(string cmdline) {
 #ifdef CURSES
     renderer = new renderer_curses();
 #else
-    report_error("PRINT_MODE","TEXT not supported on windows");
+    report_error("PRINT_MODE", "TEXT not supported on windows");
     exit(EXIT_FAILURE);
 #endif
   } else if (init.display.flag.has_flag(INIT_DISPLAY_FLAG_2D)) {

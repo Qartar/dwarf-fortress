@@ -103,15 +103,14 @@ class graphicst
                 {
                   /* assert (screen_limit == screen + dimy * dimx * 4); */
                   unsigned char *s = screen + screenx*dimy*4 + screeny*4;
-                  if(s < screen_limit)
-                    {
-                      *s++ = c;
-                      *s++ = screenf;
-                      *s++ = screenb;
-                      *s++ = screenbright;
-                      screentexpos[screenx*dimy + screeny]=0;
-                    }
-                  if(advance)screenx++;
+                  if (s < screen_limit) {
+                    *s++ = c;
+                    *s++ = screenf;
+                    *s++ = screenb;
+                    *s++ = screenbright;
+                    screentexpos[screenx*dimy + screeny]=0;
+                  }
+                  screenx += advance;
                 }
                 void addchar(unsigned int x, unsigned int y, unsigned char c,
                              unsigned char f, unsigned char b, unsigned char bright) {
@@ -137,19 +136,6 @@ class graphicst
 
 		void prepare_graphics(string &src_dir);
 
-		void gray_out_rect(long sx,long ex,long sy,long ey)
-                {
-                  long x,y;
-                  for(x=sx;x<=ex;x++)
-                    {
-                      for(y=sy;y<=ey;y++)
-                        {
-                          screen[x*dimy*4 + y*4 + 1]=0;
-                          screen[x*dimy*4 + y*4 + 2]=7;
-                          screen[x*dimy*4 + y*4 + 3]=0;
-                        }
-                    }
-                }
 		void dim_colors(long x,long y,char dim);
 
 		void rain_color_square(long x,long y);

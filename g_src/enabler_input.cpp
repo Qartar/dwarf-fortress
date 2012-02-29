@@ -22,10 +22,11 @@ extern initst init;
 struct Event {
   Repeat r;
   InterfaceKey k;
-  int repeats; // Starts at 0, increments once per repeat
+  int repeats;  // Starts at 0, increments once per repeat
   int serial;
   int time;
-  int tick; // The sim-tick at which we last returned this event
+  int tick;  // The sim-tick at which we last returned this event
+  bool macro;  // Created as part of macro playback.
 
   bool operator== (const Event &other) const {
     if (r != other.r) return false;
@@ -33,6 +34,7 @@ struct Event {
     if (repeats != other.repeats) return false;
     if (serial != other.serial) return false;
     if (time != other.time) return false;
+    if (macro != other.macro) return false;
     return true;
   }
 
@@ -44,6 +46,7 @@ struct Event {
     if (r != o.r) return r < o.r;
     if (k != o.k) return k < o.k;
     if (repeats != o.repeats) return repeats < o.repeats;
+    if (macro != o.macro) return macro < o.macro;
     return false;
   }
 };
@@ -718,12 +721,16 @@ set<InterfaceKey> enabler_inputst::get_input(Time now) {
   const Time first_time = ev->time;
   const int first_serial = ev->serial;
   int simtick = enabler.simticks.read();
+  bool event_from_macro = false;
   while (ev != timeline.end() && ev->time == first_time && ev->serial == first_serial) {
+    // Avoid recording macro-sources events as macro events.
+    if (ev->macro) event_from_macro = true;
     // To make sure the user had a chance to cancel (by lifting the key), we require there
     // to be at least three simulation ticks before the first repeat.
     if (ev->repeats == 1 && ev->tick > simtick - 3) {
-    } else
+    } else {
       input.insert(ev->k);
+    }
     // Schedule a repeat
     Event next = *ev;
     next.repeats++;
@@ -762,7 +769,7 @@ set<InterfaceKey> enabler_inputst::get_input(Time now) {
   // belongs in add_input, not here.  I don't hold with this
   // argument. The whole point is to record events as the user seems
   // them happen.
-  if (macro_recording) {
+  if (macro_recording && !event_from_macro) {
     set<InterfaceKey> macro_input = input;
     macro_input.erase(INTERFACEKEY_RECORD_MACRO);
     macro_input.erase(INTERFACEKEY_PLAY_MACRO);
@@ -842,6 +849,7 @@ void enabler_inputst::play_macro() {
     });
   for (macro::iterator sim = active_macro.begin(); sim != active_macro.end(); ++sim) {
     Event e; e.r = REPEAT_NOT; e.repeats = 0; e.serial = next_serial(); e.time = now;
+    e.macro = true;  // Avoid exponential macro blowup.
     for (set<InterfaceKey>::iterator k = sim->begin(); k != sim->end(); ++k) {
       e.k = *k;
       timeline.insert(e);

@@ -24,8 +24,8 @@ bool ttf_managerst::init(int ceiling, int tile_width) {
     font = TTF_OpenFont("data/art/font.ttf", sz);
     if (!font) continue;
     if (TTF_FontHeight(font) <= ceiling) {
-      cout << "Picked font at " << sz << " points for ceiling " << ceiling << endl;
 #ifdef DEBUG
+      cout << "Picked font at " << sz << " points for ceiling " << ceiling << endl;
       // get the glyph metric for the letter 'M' in a loaded font
       cout << "TTF_FontHeight " << TTF_FontHeight(font) << endl;
       cout << "TTF_FontAscent " << TTF_FontAscent(font) << endl;
@@ -33,8 +33,8 @@ bool ttf_managerst::init(int ceiling, int tile_width) {
       cout << "TTF_FontLineSkip " << TTF_FontLineSkip(font) << endl;
 #endif
       int minx,maxx,miny,maxy,advance;
-      if(TTF_GlyphMetrics(font,'M',&minx,&maxx,&miny,&maxy,&advance)==-1)
-        printf("%s\n",TTF_GetError());
+      if (TTF_GlyphMetrics(font, 'M', &minx, &maxx, &miny, &maxy, &advance) == -1)
+        puts(TTF_GetError());
       else {
         em_width = maxx;
 #ifdef DEBUG
@@ -133,7 +133,8 @@ ttf_details ttf_managerst::get_handle(const list<ttf_id> &text, justification ju
   // Outputs:
   const int grid_offset = int(integral + 0.001); // Tiles to move to the right in addst
   const int pixel_offset = int(fraction * tile_width); // Black columns to add to the left of the image
-  const int full_grid_width = int(ceil(double(ttf_width) / double(tile_width) + fraction) + 0.1); // Total width of the image in grid units
+  // const int full_grid_width = int(ceil(double(ttf_width) / double(tile_width) + fraction) + 0.1); // Total width of the image in grid units
+  const int full_grid_width = text_width;
   const int pixel_width = full_grid_width * tile_width; // And pixels
   assert(pixel_width >= ttf_width);
   // Store for later
@@ -180,10 +181,12 @@ SDL_Surface *ttf_managerst::get_texture(int handle) {
                                 Uint8(enabler.ccolor[bg][0]*255),
                                 Uint8(enabler.ccolor[bg][1]*255),
                                 Uint8(enabler.ccolor[bg][2]*255));
+#ifdef DEBUG
         // SDL_Color white = {255,255,255};
-        // Uint32 black = SDL_MapRGB(textimg->format, 0,0,0);
-        // fgc = white; bgc = black;
-// #ifndef DEBUG
+        // Uint32 red = SDL_MapRGB(textimg->format, 255,0,0);
+        // fgc = white;
+        // bgc = red;
+#endif
         if (idx == 0) {
           // Fill in the left side
           SDL_Rect left = {0, 0, Sint16(xpos), Sint16(height)};
@@ -193,7 +196,6 @@ SDL_Surface *ttf_managerst::get_texture(int handle) {
           SDL_Rect right = {Sint16(xpos), 0, Sint16(it->pixel_width), Sint16(height)};
           SDL_FillRect(textimg, &right, bgc);
         }
-// #endif
         // Render the TTF segment
         SDL_Surface *textimg_seg = TTF_RenderUNICODE_Blended(font, &text_unicode[0], fgc);
         // Fill the background color of this part of the textimg
@@ -226,7 +228,11 @@ SDL_Surface *ttf_managerst::get_texture(int handle) {
     todo.clear();
   }
   // Find the li'l texture
-  return textures[handle];
+  SDL_Surface *tex = textures[handle];
+  if (!tex) {
+    cout << "Missing/broken TTF handle: " << handle << endl;
+  }
+  return tex;
 }
 
 void ttf_managerst::gc() {

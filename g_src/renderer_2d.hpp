@@ -106,12 +106,10 @@ public:
       tex = tile_cache_lookup(id.left);
       // And blit.
       SDL_BlitSurface(tex, NULL, screen, &dst);
-    } else { // TTF, cached in ttf_manager so no point in also caching here
-      if (id.right) {
-        tex = ttf_manager.get_texture(id.right);
-        // Blit later
-        ttfs_to_render.push_back(make_pair(tex, dst));
-      }
+    } else {  // TTF, cached in ttf_manager so no point in also caching here
+      tex = ttf_manager.get_texture(id.right);
+      // Blit later
+      ttfs_to_render.push_back(make_pair(tex, dst));
     }
   }
 
@@ -132,12 +130,11 @@ public:
     SDL_Flip(screen);
   }
 
-  ~renderer_2d_base() {
-    for (map<texture_fullid,SDL_Surface*>::iterator it = tile_cache.begin();
-         it != tile_cache.end();
-         ++it) {
+  virtual ~renderer_2d_base() {
+	for (auto it = tile_cache.cbegin(); it != tile_cache.cend(); ++it)
       SDL_FreeSurface(it->second);
-    }
+	for (auto it = ttfs_to_render.cbegin(); it != ttfs_to_render.cend(); ++it)
+      SDL_FreeSurface(it->first);
   }
 
   void grid_resize(int w, int h) {
@@ -153,6 +150,7 @@ public:
   renderer_2d_base() {
     zoom_steps = forced_steps = 0;
   }
+  
   int zoom_steps, forced_steps;
   int natural_w, natural_h;
 
@@ -346,7 +344,7 @@ public:
 class renderer_offscreen : public renderer_2d_base {
   virtual bool init_video(int, int);
 public:
-  ~renderer_offscreen();
+  virtual ~renderer_offscreen();
   renderer_offscreen(int, int);
   void update_all(int, int);
   void save_to_file(const string &file);

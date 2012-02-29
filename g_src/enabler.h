@@ -773,6 +773,10 @@ class textures
     uploaded = false;
     gl_texpos = NULL;
   }
+  ~textures() {
+    for (auto it = raws.cbegin(); it != raws.cend(); ++it)
+      SDL_FreeSurface(*it);
+}
   int textureCount() {
     return raws.size();
   }
@@ -845,6 +849,7 @@ struct texture_fullid {
 typedef int texture_ttfid; // Just the texpos
 
 class renderer {
+  void cleanup_arrays();
  protected:
   unsigned char *screen;
   long *screentexpos;
@@ -885,6 +890,9 @@ class renderer {
     screentexpos_grayscale_old = NULL;
     screentexpos_cf_old = NULL;
     screentexpos_cbr_old = NULL;
+  }
+  virtual ~renderer() {
+    cleanup_arrays();
   }
   virtual bool get_mouse_coords(int &x, int &y) = 0;
   virtual bool uses_opengl() { return false; };

@@ -296,7 +296,6 @@ if(luminosity>255)luminosity=255;
 // It uses the same pixel format (RGBA, R at lowest address) regardless of
 // hardware.
 SDL_Surface *canonicalize_format(SDL_Surface *src, bool convert_magenta) {
-  SDL_Surface *tgt;
   SDL_PixelFormat fmt;
   fmt.palette = NULL;
   fmt.BitsPerPixel = 32;
@@ -314,13 +313,11 @@ SDL_Surface *canonicalize_format(SDL_Surface *src, bool convert_magenta) {
   fmt.colorkey = 0;
   fmt.alpha = 255;
 
-  tgt = SDL_CreateRGBSurface(SDL_SWSURFACE, src->w, src->h, 32,
-			     fmt.Rmask, fmt.Gmask, fmt.Bmask, fmt.Amask);
   if (src->format->Amask == 0 && convert_magenta) { // No alpha
     SDL_SetColorKey(src, SDL_SRCCOLORKEY,
 		    SDL_MapRGB(src->format, 255, 0, 255));
   }
-  tgt = SDL_ConvertSurface(src, &fmt, SDL_SWSURFACE);
+  SDL_Surface *tgt = SDL_ConvertSurface(src, &fmt, SDL_SWSURFACE);
   SDL_FreeSurface(src);
   return tgt;
 }
@@ -351,11 +348,11 @@ void textures::load_multi_pdim(const string &filename, long *tex_pos, long dimx,
     exit(1);
   }
   SDL_Surface *src = canonicalize_format(raw, convert_magenta);
-  SDL_SetAlpha(src, 0,255);
+  SDL_SetAlpha(src, 0, 255);
   *disp_x = src->w / dimx;
   *disp_y = src->h / dimy;
   long idx = 0;
-  for (int y=0; y < dimy; y++)
+  for (int y=0; y < dimy; y++) {
     for (int x=0; x < dimx; x++) {
       SDL_Surface *tile = SDL_CreateRGBSurface(SDL_SWSURFACE, *disp_x, *disp_y,
 					       32, src->format->Rmask,
@@ -369,9 +366,10 @@ void textures::load_multi_pdim(const string &filename, long *tex_pos, long dimx,
       pos_src.w =  *disp_x;
       pos_src.h =  *disp_y;
       SDL_BlitSurface(src, &pos_src, tile, NULL);
-      tex_pos[idx] = add_texture(tile);
-      idx++;
+      tex_pos[idx++] = add_texture(tile);
     }
+  }
+  SDL_FreeSurface(src);
   // Re-upload textures if necessary
   enabler.reset_textures();
 }

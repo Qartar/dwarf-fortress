@@ -228,6 +228,13 @@ public:
     init_opengl();
   }
 
+  virtual ~renderer_opengl() {
+    free(vertexes);
+    free(fg);
+    free(bg);
+    free(tex);
+  }
+
   int zoom_steps, forced_steps;
   int natural_w, natural_h; // How large our view would be if it wasn't zoomed
 
