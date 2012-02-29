@@ -13,7 +13,7 @@ This software is still in development, and this means that there are going to be
 
 For help with gameplay, press the help key (initially '?') after starting the game.  You might have to press ESC and use 2/8 to select keybindings on non-US keyboards in order to get the help key to work properly.
 
-As of February 2012, you can also get help at the fan-created df.magmawiki.com.  Please make use of and contribute to this valuable resource.
+As of February 2012, you can also get help at the fan-created dwarffortresswiki.org.  Please make use of and contribute to this valuable resource.
 
 Visit www.bay12games.com to report problems, discuss the game and read information on future development.  There are also other games there.
 All of the games there are free.  If you paid for this game, get the latest version for free at bay12games.com, and let me know who was charging you at tarn.adams@gmail.com.
@@ -49,6 +49,10 @@ OpenGL upgrade to this millenium, and additional changes: Svein Ove Aas (see lic
 Additional changes to the SDL Port and related main loop/input code: Theodorick Grau (see license below)
 
 DF 2010 Playtesting: Svein Ove Aas, Aquillion, Kyle Brodzky, Richard Jensen, Nathan Miller aka Rainseeker, Alex Mooney, Ben Ringland, Chris Rogers
+
+Bug Tracker Managers: Anthony Drawdy, Knight Otu, Logical2u, Chris Rogers
+
+
 
 
 Many suggestions from fans on the bay12games.com and other forums (and the #bay12games IRC channel) have been incorporated over the years.  The code contributions credited above that are in use by the game are distributed with the Linux version (see the g_src directory and licenses below).

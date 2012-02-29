@@ -15,7 +15,7 @@ is also an alpha, and your world might become corrupted by an error.  You can al
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
-(0) ***Note that 0.34.02 is not compatible with old versions.***
+(0) ***Note that 0.34.03 is only compatible with saves from 0.34.02+.***
 (1) Unzip the new dwarves into a *NEW* folder.
 (2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
@@ -35,6 +35,63 @@ IF YOUR KEYBOARD ISN'T WORKING:
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
 
+
+******************************************************
+
+Release notes for 0.34.03 (February 28, 2012):
+
+Here is the second set of fixes for the major release.  There are still enough problems with the new stuff to warrant continued work there before I move on to older issues, and the next release will probably be within the timeframe of the last two.
+
+Major bug fixes
+	(*) Fixed crash with historical figure cull vs. wandering groups
+	(*) Stopped historical figures from starving
+	(*) Stopped various corruption crashes and weird effects, mainly from aborted world gens (nice catch, Lightning4!)
+	(*) Stopped original population associated to historical figure from screwing up its allegiances
+	(*) Stopped it from moving criminal leaders with routine civilian moves, changing their allegiances
+	(*) Stopped populations from villages/trade partners from migrating into dungeon outcast groups all at once (one group had 15000!)
+	(*) Stopped werebeasts from gumming up world gen
+	(*) Stopped raised corpses from having various allegiances
+	(*) Vampires that take over sites lose other allegiances
+	(*) Made soldiers from previous forts clean up military info upon arrival at current fort
+	(*) Stopped ghosts and royal family members and undisguised vampires (aside from the king/king's group vamps) from immigrating to fort
+	(*) Fixed a new bug that completely stopped archery training
+	(*) SDL version: TrueType crash from long strings (Baughn)
+
+Other bug fixes/tweaks
+	(*) Changed which entity moves to which sites, mainly so elf pops don't live in fortresses and vice versa without acclimating to a city first
+	(*) Set labor list for migrants by default (can turn off in data/d_init.txt)
+	(*) Added a tab for other stones in stone list and made stones with a reaction product class list as economic in stone list
+	(*) Sped up adv mode loading/offloading somewhat, and cleaning should be a bit faster -- there are still really slow patches that need work
+	(*) Controlled snatcher number in world gen
+	(*) Decreased questing rate in world gen
+	(*) Stopped reraised corpses from bleeding to death
+	(*) Stopped forbid/melt/traffic/etc. mouse from messing with keyboard
+	(*) Gave more indication for forbidden workshops
+	(*) Made forbid/etc. from stocks screen not effect building items when applied to an entire group
+	(*) Changed ramp names to indicate unusability due to missing walls or lack of space above
+	(*) Sterilized zombies and mummies (only husk-type zombies need the STERILE tag)
+	(*) Cleaned up some botched zombie names (old saves will need to let their zombies fall once and they should be better on reraise)
+	(*) Made vampires fleeing to site in world gen require pop to fit into
+	(*) Made vampire cults follow tyrant vampires properly
+	(*) Vampire nicknames, profession, position names work
+	(*) Vampires won't try to pin crimes on animals
+	(*) Can 'g'et items from cabinets and other building furniture in adv mode now
+	(*) Kea will not follow each other so closely when stealing
+	(*) Fixed busted horseshoe crabs/men
+	(*) Improved the age name calculator, especially as it regards the dominant race after megabeasts are cleared
+	(*) Changed treasure room quality and item selection
+	(*) Stopped designation at the bottom of the map from unhiding portions of it sometimes
+	(*) Unobscured unit list option from main menu
+	(*) Stopped world gen group from lingering in memory after bandits become criminals under town
+	(*) Goblins can have higher pops in their important towns
+	(*) Applied att change syndrome size modifiers properly (stops weird speed issues with adv blood drinking)
+	(*) A few other minor tweaks listed in file_changes.txt
+	(*) SDL version: Highlighting on unit screen fixed for TrueType (Baughn)
+	(*) SDL version: Turning on playback while recording will no longer record the previously recorded keys (Baughn)
+	(*) SDL version: TrueType text will now overwrite properly in some adventure mode circumstances (Baughn)
+	(*) SDL version: Fixed some minor memory leaks (Baughn)
+	(*) SDL version: Minor stability improvements (Baughn)
+	(*) SDL version: Fixed some of the spacing issues with TrueType
 
 ******************************************************
 
