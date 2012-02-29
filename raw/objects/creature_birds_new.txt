@@ -454,7 +454,7 @@ Kea were sponsored by the generous contributions of the Bay 12 community.
 	[GENERAL_CHILD_NAME:kea chick:kea chicks]
 	[CREATURE_TILE:'k'][COLOR:2:0:0]
 	[POPULATION_NUMBER:15:30]
-	[CLUSTER_NUMBER:5:10]
+	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[NATURAL]
 	[LARGE_ROAMING]
 	[CURIOUSBEAST_EATER]
