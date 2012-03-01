@@ -132,9 +132,9 @@ public:
 
   virtual ~renderer_2d_base() {
 	for (auto it = tile_cache.cbegin(); it != tile_cache.cend(); ++it)
-      SDL_FreeSurface(it->second);
+		SDL_FreeSurface(it->second);
 	for (auto it = ttfs_to_render.cbegin(); it != ttfs_to_render.cend(); ++it)
-      SDL_FreeSurface(it->first);
+		SDL_FreeSurface(it->first);
   }
 
   void grid_resize(int w, int h) {

@@ -10,6 +10,21 @@ bool renderer_offscreen::init_video(int w, int h) {
 }
 
 renderer_offscreen::~renderer_offscreen() {
+  //ASSUMES renderer_offscreen IS NEVER gps_allocate()'d THROUGH reshape()/grid_resize()
+		//to-do: flag for those calls on the renderer to control this behavior?
+  renderer::screen = NULL;
+  renderer::screentexpos = NULL;
+  renderer::screentexpos_addcolor = NULL;
+  renderer::screentexpos_grayscale = NULL;
+  renderer::screentexpos_cf = NULL;
+  renderer::screentexpos_cbr = NULL;
+  renderer::screen_old = NULL;
+  renderer::screentexpos_old = NULL;
+  renderer::screentexpos_addcolor_old = NULL;
+  renderer::screentexpos_grayscale_old = NULL;
+  renderer::screentexpos_cf_old = NULL;
+  renderer::screentexpos_cbr_old = NULL;
+
   SDL_FreeSurface(screen);
 }
 

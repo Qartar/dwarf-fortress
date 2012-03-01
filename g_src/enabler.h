@@ -774,8 +774,8 @@ class textures
     gl_texpos = NULL;
   }
   ~textures() {
-    for (auto it = raws.cbegin(); it != raws.cend(); ++it)
-      SDL_FreeSurface(*it);
+  	for (auto it = raws.cbegin(); it != raws.cend(); ++it)
+		SDL_FreeSurface(*it);
 }
   int textureCount() {
     return raws.size();

@@ -72,8 +72,8 @@ public:
     em_width = 8;
   }
   ~ttf_managerst() {
-	  for (auto it = textures.cbegin(); it != textures.cend(); ++it)
-      SDL_FreeSurface(it->second);
+	for (auto it = textures.cbegin(); it != textures.cend(); ++it)
+		SDL_FreeSurface(it->second);
     if (font) TTF_CloseFont(font);
   }
   bool init(int ceiling, int tile_width);
