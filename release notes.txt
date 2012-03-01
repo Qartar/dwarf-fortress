@@ -15,7 +15,7 @@ is also an alpha, and your world might become corrupted by an error.  You can al
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
-(0) ***Note that 0.34.03 is only compatible with saves from 0.34.02+.***
+(0) ***Note that this version of DF is only compatible with saves from 0.34.02+.***
 (1) Unzip the new dwarves into a *NEW* folder.
 (2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
@@ -35,6 +35,12 @@ IF YOUR KEYBOARD ISN'T WORKING:
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
 
+
+******************************************************
+
+Release notes for 0.34.04 (February 29, 2012):
+
+There was a world gen crash if you exported an image after it was done running the history and then tried to offload the world.
 
 ******************************************************
 
