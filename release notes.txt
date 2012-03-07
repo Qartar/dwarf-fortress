@@ -38,6 +38,34 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.34.05 (March 6, 2012): The necromancer crash was coming up so often in crash reports that I figured now was a good time for another release.  Here it is!  Note that any old vanilla saves you move over will have a short error log on load for their broken eyelid raws.  This isn't a big deal, and you can either update the body detail plan file or just leave it.  New saves won't have this problem.
+
+Major bug fixes
+	(*) fixed crash from necromancers in dwarf mode
+	(*) fixed crash from seed traders that only have access to wool bags
+	(*) stopped adv mode sleeping from sticking you on rooftops and teleporting you outside of castles (underground case not done yet)
+	(*) removed many effects and secret identity from ghosts (vampirism/lycanthropy/necromancer status etc.)
+
+Other bug fixes/tweaks
+	(*) traded adv mode items will go to backpack/quiver first depending on type
+	(*) dwarves won't get unhappy thoughts from dead/rotting relatives if their deaths are not known
+	(*) made various animals non-threatening (new saves only -- BENIGN tag can be added to old save raws, see file_changes.txt)
+	(*) stopped untowered necromancers from losing their zombie pops in their camps
+	(*) fixed broken names for bones and other butcher products
+	(*) removed items from abandoned houses/shops
+	(*) allowed adv mode abilities/powers to page through targets
+	(*) vampires no longer blame children/babies
+	(*) fixed broken companion paging/viewing for large numbers of companions
+	(*) stopped undead cats from adopting dwarves
+	(*) messed with crabs/horseshoe crab water behavior
+	(*) disallowed animation of bogeymen (new saves only)
+	(*) changed mule/muskox color
+	(*) fixed a few animal descriptions
+	(*) eyes/eyelids were broken in various ways
+	(*) tweaked appearance of nearly empty sleep bar
+
+******************************************************
+
 Release notes for 0.34.04 (February 29, 2012):
 
 There was a world gen crash if you exported an image after it was done running the history and then tried to offload the world.

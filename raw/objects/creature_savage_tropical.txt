@@ -447,7 +447,7 @@ creature_savage_tropical
 		[MULTIPLY_VALUE:4]
 
 [CREATURE:SCORPION_DESERT_GIANT]
-	[DESCRIPTION:A gigantic insect with huge pincers and a poisonous barbed tail.  It is found in the savage lands.]
+	[DESCRIPTION:A gigantic arachnid with huge pincers and a poisonous barbed tail.  It is found in the savage lands.]
 	[NAME:giant desert scorpion:giant desert scorpions:giant desert scorpion]
 	[CASTE_NAME:giant desert scorpion:giant desert scorpions:giant desert scorpion]
 	[CREATURE_TILE:'S'][COLOR:6:0:0]

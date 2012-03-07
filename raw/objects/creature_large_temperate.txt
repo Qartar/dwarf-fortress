@@ -1702,7 +1702,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	m0nster
 
 [CREATURE:RED PANDA]
-	[DESCRIPTION:A small tree-dwelling mammal will distinctive color.  It rears up on its hind legs when cornered.  It uses its front paws like hands.]
+	[DESCRIPTION:A small tree-dwelling mammal with distinctive color.  It rears up on its hind legs when cornered.  It uses its front paws like hands.]
 	[NAME:red panda:red pandas:red panda]
 	[CHILD:1][GENERAL_CHILD_NAME:red panda cub:red panda cubs]
 	[CREATURE_TILE:'p'][COLOR:4:0:0]
