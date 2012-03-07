@@ -825,6 +825,7 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:25]
+	[BENIGN]
 	[PET]
 	[FLIER]
 	[BONECARN]

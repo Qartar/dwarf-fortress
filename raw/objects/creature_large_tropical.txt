@@ -2540,7 +2540,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[CHILD:1][GENERAL_CHILD_NAME:giant tortoise hatchling:giant tortoise hatchlings]
 	[CREATURE_TILE:'T'][COLOR:6:0:0]
 	[PETVALUE:50]
-	[NATURAL][PET_EXOTIC]
+	[BENIGN][NATURAL][PET_EXOTIC]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[POPULATION_NUMBER:10:30]

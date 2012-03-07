@@ -958,7 +958,7 @@ Pond turtles were sponsored by the generous contributions of the Bay 12 communit
 	[PETVALUE:10]
 	[VERMIN_FISH][FISHITEM]
 	[AMPHIBIOUS][SMALL_REMAINS][NO_WINTER]
-	[NATURAL][PET_EXOTIC]
+	[BENIGN][NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
 	[CARNIVORE]
 	[BIOME:ANY_POOL]
