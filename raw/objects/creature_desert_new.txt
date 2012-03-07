@@ -132,7 +132,7 @@ Desert tortoises were sponsored by the generous contributions of the Bay 12 comm
 	[CHILD:1][GENERAL_CHILD_NAME:desert tortoise hatchling:desert tortoise hatchlings]
 	[CREATURE_TILE:'t'][COLOR:6:0:0]
 	[PETVALUE:50]
-	[NATURAL][PET_EXOTIC]
+	[BENIGN][NATURAL][PET_EXOTIC]
 	[BIOME:ANY_DESERT]
 	[POPULATION_NUMBER:10:30]
 	[CLUSTER_NUMBER:1:1]
