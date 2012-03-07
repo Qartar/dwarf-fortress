@@ -4,6 +4,31 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.34.05:
+
+	body parts
+		new eyelids in rcp body
+	body plans
+		fixed r_eye/l_eye
+	creatures
+		red panda: will -> with
+		giant desert scorp: description typo
+		mules -> gray M, muskox -> brown M and brown color and brown description
+		crab -> [AMPHIBIOUS]
+		horseshoe crab -> [AMPHIBIOUS][UNDERSWIM]
+		added benign to
+			BIRD_FALCON_PEREGRINE,BIRD_CROW,BIRD_RAVEN,BIRD_OWL_SNOWY,
+			SPARROW,BIRD_OWL_BARN,BIRD_PARAKEET,BIRD_PARROT_GREY,
+			BIRD_LORIKEET,BIRD_WREN,BIRD_OSPREY,GIANT_COCKATIEL,
+			BIRD_MAGPIE,GIANT_KESTREL,BIRD_EAGLE,GIANT_HORNBILL,
+			BIRD_BUSHTIT,MOTH,GRASSHOPPER,THRIPS,SLUG,SNAIL,
+			DESERT TORTOISE,GIANT TORTOISE,SPONGE,HORSESHOE_CRAB,
+			POND_TURTLE,HAMSTER,HEDGEHOG,SQUIRREL_FLYING,
+			GREEN_TREE_FROG,CAPUCHIN,SLOTH,SPIDER_MONKEY,AYE-AYE,
+			LION_TAMARIN
+
+******************************************************
+
 Auxiliary file changes for 0.34.03:
 
 	creatures

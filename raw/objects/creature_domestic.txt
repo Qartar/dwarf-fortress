@@ -259,7 +259,7 @@ creature_domestic
 	[NAME:mule:mules:mule]
 	[CASTE_NAME:mule:mules:mule]
 	[CHILD:1][GENERAL_CHILD_NAME:mule foal:mule foals]
-	[CREATURE_TILE:'M'][COLOR:6:0:0]
+	[CREATURE_TILE:'M'][COLOR:7:0:0]
 	[PETVALUE:200]
 	[PREFSTRING:stubborness]
 	[LARGE_ROAMING]
