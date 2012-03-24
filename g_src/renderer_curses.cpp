@@ -8,7 +8,7 @@ static void endwin_void() {
 }
 
 class renderer_curses : public renderer {
-  std::map<std::pair<int,int>,int> color_pairs; // For curses. MOVEME.
+  std::map<std::pair<int,int>,int> color_pairs;
 
   // Map from DF color to ncurses color
   static int ncurses_map_color(int color) {
@@ -39,10 +39,41 @@ class renderer_curses : public renderer {
       color_pairs[color] = pair;
       return pair;
     }
-    // We don't have it, and there's no space for more. Panic!
-    endwin();
-    puts("Ran out of space for color pairs! Ask Baughn to implement a fallback!");
-    exit(EXIT_FAILURE);
+    // We don't have it, and there's no space for more. Find the closest equivalent.
+    int score = 999, pair = 0;
+    int rfg = color.first % 16, rbg = color.second % 16;
+    for (auto it = color_pairs.cbegin(); it != color_pairs.cend(); ++it) {
+      int fg = it->first.first;
+      int bg = it->first.second;
+      int candidate = it->second;
+      int candidate_score = 0;  // Lower is better.
+      if (rbg != bg) {
+        if (rbg == 0 || rbg == 15)
+          candidate_score += 3;  // We would like to keep the background black/white.
+        if ((rbg == 7 || rbg == 8)) {
+          if (bg == 7 || bg == 8)
+            candidate_score += 1; // Well, it's still grey.
+          else
+            candidate_score += 2;
+        }
+      }
+      if (rfg != fg) {
+        if (rfg == 0 || rfg == 15)
+          candidate_score += 5; // Keep the foreground black/white if at all possible.
+        if (rfg == 7 || rfg == 8) {
+          if (fg == 7 || fg == 8)
+            candidate_score += 1; // Still grey. Meh.
+          else
+            candidate_score += 3;
+        }
+      }
+      if (candidate_score < score) {
+        score = candidate_score;
+        pair = candidate;
+      }
+    }
+    color_pairs[color] = pair;
+    return pair;
   }
 
 public:

@@ -114,11 +114,94 @@ void graphicst::addcoloredst(const char *str,const char *colorstr)
 
 static list<ttf_id> ttfstr;
 
-void graphicst::addst(const string &str_orig, justification just)
+static void abbreviate_string_helper_hackaroundmissingcode(string &str, int len) {
+       if(str.length()>=2)
+		{
+		if((str[0]=='A'||str[0]=='a')&&
+			str[1]==' ')
+			{
+			str.erase(str.begin()+1);
+			str.erase(str.begin());
+
+			if(str.length()<=len)return;
+			}
+
+		if(str.length()>=3)
+			{
+			if((str[0]=='A'||str[0]=='a')&&
+				(str[1]=='N'||str[1]=='n')&&
+				str[2]==' ')
+				{
+				str.erase(str.begin()+2);
+				str.erase(str.begin()+1);
+				str.erase(str.begin());
+
+				if(str.length()<=len)return;
+				}
+
+			if(str.length()>=4)
+				{
+				if((str[0]=='T'||str[0]=='t')&&
+					(str[1]=='H'||str[1]=='h')&&
+					(str[2]=='E'||str[2]=='e')&&
+					str[3]==' ')
+					{
+					str.erase(str.begin()+3);
+					str.erase(str.begin()+2);
+					str.erase(str.begin()+1);
+					str.erase(str.begin());
+
+					if(str.length()<=len)return;
+					}
+				}
+			}
+		}
+
+	int32_t l;
+	for(l=(int32_t)str.length()-1;l>=1;l--)
+		{
+		if(str[l-1]==' ')continue;
+
+		if(str[l]=='a'||
+			str[l]=='e'||
+			str[l]=='i'||
+			str[l]=='o'||
+			str[l]=='u'||
+			str[l]=='A'||
+			str[l]=='E'||
+			str[l]=='I'||
+			str[l]=='O'||
+			str[l]=='U')
+			{
+			str.erase(str.begin()+l);
+			if(str.length()<=len)return;
+			}
+		}
+
+	if(str.length()>len)str.resize(len);
+}
+
+
+static void abbreviate_string_hackaroundmissingcode(string &str, int32_t len)
+{
+  if (ttf_manager.ttf_active()) {
+    // We'll need to use TTF-aware text shrinking.
+    while (ttf_manager.size_text(str) > len)
+      abbreviate_string_helper_hackaroundmissingcode(str, str.length() - 1);
+  } else if(str.length()>len){
+    // 1 letter = 1 tile.
+    abbreviate_string_helper_hackaroundmissingcode(str, len);
+  }
+}
+
+
+void graphicst::addst(const string &str_orig, justification just, int space)
 {
   if (!str_orig.size())
     return;
   string str = str_orig;
+  if (space)
+    abbreviate_string_hackaroundmissingcode(str, space);
   if (just == not_truetype || !ttf_manager.ttf_active()) {
     int s;
     for(s=0;s<str.length()&&screenx<init.display.grid_x;s++)
@@ -166,12 +249,6 @@ void graphicst::addst(const string &str_orig, justification just)
     screenx = ourx + width;
     ttfstr.clear();
   }
-}
-
-void graphicst::addst(const char *str, justification just)
-{
-  string s(str);
-  addst(s, just);
 }
 
 void graphicst::erasescreen_clip()

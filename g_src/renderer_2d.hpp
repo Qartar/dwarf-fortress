@@ -19,7 +19,7 @@ protected:
   // Viewport origin
   int origin_x, origin_y;
 
-  SDL_Surface *tile_cache_lookup(texture_fullid &id) {
+  SDL_Surface *tile_cache_lookup(texture_fullid &id, bool convert=true) {
     map<texture_fullid, SDL_Surface*>::iterator it = tile_cache.find(id);
     if (it != tile_cache.end()) {
       return it->second;
@@ -63,8 +63,9 @@ protected:
       SDL_UnlockSurface(color);
       SDL_UnlockSurface(tex);
       
-      // Convert to display format; deletes color
-      SDL_Surface *disp = SDL_Resize(color, dispx_z, dispy_z);
+      SDL_Surface *disp = convert ?
+        SDL_Resize(color, dispx_z, dispy_z) :  // Convert to display format; deletes color
+        color;  // color is not deleted, but we don't want it to be.
       // Insert and return
       tile_cache[id] = disp;
       return disp;

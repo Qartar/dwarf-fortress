@@ -699,11 +699,8 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FARMER_SHEAR_CREATURE, "HOTKEY_FARMER_SHEAR_CREATURE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FARMER_SPIN_THREAD, "HOTKEY_FARMER_SPIN_THREAD");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_MILL_MILL, "HOTKEY_MILL_MILL");
-	bindingNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TRAIN_HUNT, "HOTKEY_KENNEL_TRAIN_HUNT");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_KENNEL_CATCH_VERMIN, "HOTKEY_KENNEL_CATCH_VERMIN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TAME_VERMIN, "HOTKEY_KENNEL_TAME_VERMIN");
-	bindingNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TAME_UNIT, "HOTKEY_KENNEL_TAME_UNIT");
-	bindingNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TRAIN_WAR, "HOTKEY_KENNEL_TRAIN_WAR");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FISHERY_PROCESS, "HOTKEY_FISHERY_PROCESS");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FISHERY_EXTRACT, "HOTKEY_FISHERY_EXTRACT");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_FISHERY_CATCH, "HOTKEY_FISHERY_CATCH");
@@ -909,6 +906,9 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_MANAGER_MAX, "MANAGER_MAX");
 	bindingNames.insert(INTERFACEKEY_MANAGER_WAGES, "MANAGER_WAGES");
 	bindingNames.insert(INTERFACEKEY_PET_BUTCHER, "PET_BUTCHER");
+	bindingNames.insert(INTERFACEKEY_ANIMAL_SELECT_TRAINER, "ANIMAL_SELECT_TRAINER");
+	bindingNames.insert(INTERFACEKEY_ANIMAL_WAR_TRAINING, "ANIMAL_WAR_TRAINING");
+	bindingNames.insert(INTERFACEKEY_ANIMAL_HUNTING_TRAINING, "ANIMAL_HUNTING_TRAINING");
 	bindingNames.insert(INTERFACEKEY_KITCHEN_COOK, "KITCHEN_COOK");
 	bindingNames.insert(INTERFACEKEY_KITCHEN_BREW, "KITCHEN_BREW");
 	bindingNames.insert(INTERFACEKEY_SETUPGAME_NEW, "SETUPGAME_NEW");
@@ -933,6 +933,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_CIVZONE_CLAY_COLLECT, "CIVZONE_CLAY_COLLECT");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_ACTIVE, "CIVZONE_ACTIVE");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_MEETING, "CIVZONE_MEETING");
+	bindingNames.insert(INTERFACEKEY_CIVZONE_ANIMAL_TRAINING, "CIVZONE_ANIMAL_TRAINING");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_POND_WATER, "CIVZONE_POND_WATER");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_PEN, "CIVZONE_PEN");
 	bindingNames.insert(INTERFACEKEY_CIVZONE_PEN_OPTIONS, "CIVZONE_PEN_OPTIONS");
@@ -1028,8 +1029,6 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_GEN_MISC, "UNITVIEW_GEN_MISC");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_PROF, "UNITVIEW_PRF_PROF");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET, "UNITVIEW_PRF_PET");
-	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET_HUNT, "UNITVIEW_PRF_PET_HUNT");
-	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET_WAR, "UNITVIEW_PRF_PET_WAR");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_VIEW, "UNITVIEW_PRF_VIEW");
 
 	bindingNames.insert(INTERFACEKEY_STRING_A000, "STRING_A000");
@@ -2088,11 +2087,8 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_FARMER_SHEAR_CREATURE, "Hotkey: Farmer, Shear");
 	displayNames.insert(INTERFACEKEY_HOTKEY_FARMER_SPIN_THREAD, "Hotkey: Farmer, Spin");
 	displayNames.insert(INTERFACEKEY_HOTKEY_MILL_MILL, "Hotkey: Mill, Mill");
-	displayNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TRAIN_HUNT, "Hotkey: Kennel, Hunt");
 	displayNames.insert(INTERFACEKEY_HOTKEY_KENNEL_CATCH_VERMIN, "Hotkey: Kennel, Catch");
 	displayNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TAME_VERMIN, "Hotkey: Kennel, Tame Small");
-	displayNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TAME_UNIT, "Hotkey: Kennel, Tame Large");
-	displayNames.insert(INTERFACEKEY_HOTKEY_KENNEL_TRAIN_WAR, "Hotkey: Kennel, War");
 	displayNames.insert(INTERFACEKEY_HOTKEY_FISHERY_PROCESS, "Hotkey: Fishery, Process");
 	displayNames.insert(INTERFACEKEY_HOTKEY_FISHERY_EXTRACT, "Hotkey: Fishery, Extract");
 	displayNames.insert(INTERFACEKEY_HOTKEY_FISHERY_CATCH, "Hotkey: Fishery, Catch");
@@ -2298,6 +2294,9 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_MANAGER_MAX, "Manager, Max");
 	displayNames.insert(INTERFACEKEY_MANAGER_WAGES, "Manager, Wages");
 	displayNames.insert(INTERFACEKEY_PET_BUTCHER, "Animals, Slaughter");
+	bindingNames.insert(INTERFACEKEY_ANIMAL_SELECT_TRAINER, "Animals, Trainer");
+	bindingNames.insert(INTERFACEKEY_ANIMAL_WAR_TRAINING, "Animals, War Training");
+	bindingNames.insert(INTERFACEKEY_ANIMAL_HUNTING_TRAINING, "Animals, Hunting Training");
 	displayNames.insert(INTERFACEKEY_KITCHEN_COOK, "Kitchen, Cook");
 	displayNames.insert(INTERFACEKEY_KITCHEN_BREW, "Kitchen, Brew");
 	displayNames.insert(INTERFACEKEY_SETUPGAME_NEW, "Setup, New");
@@ -2320,6 +2319,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_CIVZONE_ACTIVE, "Main: Activity Zone, Active");
 	displayNames.insert(INTERFACEKEY_CIVZONE_FISH, "Main: Activity Zone, Fish");
 	displayNames.insert(INTERFACEKEY_CIVZONE_MEETING, "Main: Activity Zone, Meeting");
+	displayNames.insert(INTERFACEKEY_CIVZONE_ANIMAL_TRAINING, "Main: Activity Zone, Animal Training");
 	displayNames.insert(INTERFACEKEY_CIVZONE_POND_OPTIONS, "Main: Activity Zone, Pond Options");
 	displayNames.insert(INTERFACEKEY_CIVZONE_POND_WATER, "Main: Activity Zone: Pond, Water");
 	displayNames.insert(INTERFACEKEY_CIVZONE_HOSPITAL_OPTIONS, "Main: Activity Zone, Hospital Options");
@@ -2417,8 +2417,6 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_UNITVIEW_GEN_MISC, "Unitview, General, Misc");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_PROF, "Unitview, Prefs, Labor");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET, "Unitview, Prefs, Pets");
-	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET_HUNT, "Unitview, Prefs, Pets, Hunting");
-	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET_WAR, "Unitview, Prefs, Pets, War");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_VIEW, "Unitview, Prefs, Profile");
 
 	displayNames.insert(INTERFACEKEY_STRING_A000, "String: Backspace");

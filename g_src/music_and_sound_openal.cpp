@@ -609,6 +609,7 @@ static void (*_sf_write_sync) (SNDFILE *sndfile);
 
 static bool init_sndfile() {
   void *handle = dlopen("libsndfile.so", RTLD_LAZY);
+  if (!handle) handle = dlopen("libsndfile.so.1", RTLD_LAZY);
   if (!handle) return false;
   
   if (!linkit((void**)&_sf_open, "sf_open", handle)) return false;

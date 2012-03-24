@@ -1076,6 +1076,8 @@ void enabler_inputst::prefix_add_digit(char digit) {
 #ifdef DEBUG
   cout << "Built prefix to " << prefix_command << endl;
 #endif
+  if (atoi(prefix_command.c_str()) > 99)
+    prefix_command = "99";  // Let's not go overboard here.
 }
 
 int enabler_inputst::prefix_end() {
