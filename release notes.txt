@@ -38,7 +38,51 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
-Release notes for 0.34.05 (March 6, 2012): The necromancer crash was coming up so often in crash reports that I figured now was a good time for another release.  Here it is!  Note that any old vanilla saves you move over will have a short error log on load for their broken eyelid raws.  This isn't a big deal, and you can either update the body detail plan file or just leave it.  New saves won't have this problem.
+Release notes for 0.34.06 (March 23, 2012):
+
+Here is the next one!  The main features are the animal training and clothing changes.  You can get at the animal training options from the 'z' animal tab.
+
+New stuff
+	(*) Each civilization has animal training familiarity based on locale/journeys/domestication
+	(*) Your site picks up training knowledge as you go
+	(*) Your civilization picks it up from you if merchants survive
+	(*) Animals have training status which can deteriorate
+	(*) Added tools to the arena
+	(*) Added text site color key for town map export
+
+Major bug fixes
+	(*) Fixed a save corruption from saving at the moment of trade meetings
+	(*) Animals that have killed/attacked civ members no longer attack when trained
+	(*) Allowed people to pick up their own owned clothes
+	(*) Stopped sever victims from obsessing over lost clothes
+	(*) Stopped failed pickup job from keeping item in uniform plan
+	(*) Pickup equipment spam handled
+	(*) Workshop clutter changed
+
+Other bug fixes/tweaks
+	(*) Evil/good trees/shrubs are back
+	(*) Made ownership lapse for things that have been thrown away -- can take about 10-20 days
+	(*) Clothing deterioration in refuse pile
+	(*) Training jobs for large animals decoupled from kennels -- assign trainers in animal screen
+	(*) Animals being trained wander around less
+	(*) Allowed selection of war/hunting animals
+	(*) Stopped young animals from lashing out
+	(*) Decreased vampire frequency for fort migration
+	(*) Fixed metal/bone helm artifacts (Quietust)
+	(*) Fixed problems with socks going on the same foot
+	(*) Champion can be appointed, fixed various circumstances causing failed position activations
+	(*) Tool weights fixed (at least to align with raws)
+	(*) Material size respected in standard tool construction jobs
+	(*) Reintroduced negative thoughts from clothing, nakedness thoughts take a few weeks
+	(*) Stopped zillions of chat thoughts from being stacked up
+	(*) Stopped critters from breaking away from being led in an inconsistent way
+	(*) Various string changes for TrueType (will also affect other modes in hopefully minor ways)
+
+******************************************************
+
+Release notes for 0.34.05 (March 6, 2012):
+
+The necromancer crash was coming up so often in crash reports that I figured now was a good time for another release.  Here it is!  Note that any old vanilla saves you move over will have a short error log on load for their broken eyelid raws.  This isn't a big deal, and you can either update the body detail plan file or just leave it.  New saves won't have this problem.
 
 Major bug fixes
 	(*) fixed crash from necromancers in dwarf mode
