@@ -4,6 +4,33 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.34.06:
+
+	entity_default.txt
+		removed dungeon master and tax collector from MOUNTAIN
+	creatures
+		jabberer/cave dragon get TRAINABLE
+	new keys
+		ANIMAL_SELECT_TRAINER
+		ANIMAL_WAR_TRAINING
+		ANIMAL_HUNTING_TRAINING
+		CIVZONE_ANIMAL_TRAINING
+	removed keys
+		UNITVIEW_PRF_PET_HUNT
+		UNITVIEW_PRF_PET_WAR
+		HOTKEY_KENNEL_TRAIN_HUNT
+		HOTKEY_KENNEL_TRAIN_WAR
+		HOTKEY_KENNEL_TAME_UNIT
+	announcement
+		[TRAINING_DOWN_TO_SEMI_WILD:A_D:D_D]
+		[TRAINING_FULL_REVERSION:A_D:D_D:P:R]
+		[ANIMAL_TRAINING_KNOWLEDGE:A_D:D_D]
+	items
+		added [SHAPED] to various headwear
+
+
+******************************************************
+
 Auxiliary file changes for 0.34.05:
 
 	body parts
