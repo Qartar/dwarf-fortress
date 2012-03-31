@@ -35,6 +35,45 @@ IF YOUR KEYBOARD ISN'T WORKING:
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
 
+******************************************************
+
+Release notes for 0.34.07 (March 30, 2012):
+
+Here is another set of bug fixes.  Be warned that some animals had their tiles changed to match the size convention.
+
+Major bug fixes
+	(*) Stopped crash from some odd creatures transforming into werebeasts
+	(*) Fixed crash from sites on the edge of the map
+	(*) Fixed old adv mode save imports
+	(*) Slab to missing allowed, once missing status has been announced (unless from reclaim, then you can always do it)
+	(*) Made animated corpses that collapse still count toward putting down ghosts
+	(*) Stopped undead from getting werecurses -- generally made animation/ghost/acquired tags count for more
+	(*) Removed negative clothing thoughts for children
+
+Other bug fixes/tweaks
+	(*) Stopped people from dropping random crafts/weapons on edge of map again
+	(*) People should more consistently bring axes, picks, crossbows, quivers, ammo
+	(*) Temporarily made amulets/backpacks etc. have no layering info (was screwing up clothing, will return to it)
+	(*) Limited number of hunting/vamp crafts
+	(*) Flux check in site finder should match with text now
+	(*) Stopped vamps from bragging about their kills
+	(*) Lists ghost/slab number/burial state in memorial list and stuck announced ghosts without slab item on the very top
+	(*) Fixed blank memorial names
+	(*) Husks have more information removed (pasture/pet/some job targeting/etc)
+	(*) Opposition to life now overrides peace with wildlife
+	(*) Stopped dwarves leading animals from going moody
+	(*) Imported saves from 34.05 and earlier will have eggs that produce tame hatchlings
+	(*) Option between skill/unit based profession setting in d_init
+	(*) Made initial equipment based on profession setting rather than unit type
+	(*) Fixed broken animal overall training scrolling
+	(*) Mood dwarves no longer ask for "rock bars" and it says "bones" instead of "body parts"
+	(*) Displayed medical dates correctly (they were a day off)
+	(*) Season announcement appears with correct date
+	(*) Correct year will show up on announcement screen
+	(*) Displayed gender for some items that were showing up as duplicate entries
+	(*) Gender in kill list (duplicate entries again)
+	(*) Fixed some mannerism pronouns
+	(*) Various raw fixes (see file_changes) -- highlight is that various underground animal men have attacks again
 
 ******************************************************
 
