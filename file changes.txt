@@ -4,6 +4,50 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.34.07:
+
+	creatures
+		rat gets [CREATURE_CLASS:GENERAL_POISON]
+		sponge man -> [CV_REMOVE_TAG:BODY:BASIC_1PARTBODY_THOUGHT]
+		giant bushtit -> [PREFSTRING:small size] -> [PREFSTRING:somewhat great size]
+		weasel ANY_LAND -> NOT_FREEZING + TUNDRA
+		teeth and teeth attacks for
+			great barracuda
+			longnose gar
+			tigerfish
+			pike
+		reef sharks S->s
+		coelacanth plural gets s and c->C
+		great barracuda B->b
+		deer d->D
+		cougar C->c
+		warthog w->W
+		leopard L->l
+		new seal men got
+			[CV_CONVERT_TAG]
+				[CVCT_MASTER:BODY]
+				[CVCT_TARGET:FRONT_BODY_FLIPPERS:REAR_BODY_FLIPPERS]
+				[CVCT_REPLACEMENT:REAR_BODY_FLIPPERS]
+			[APPLY_CURRENT_CREATURE_VARIATION]
+			and lost their KICK_ATTACK
+		cave swallow man gets new body
+		underground people get attacks
+	creature variations
+		animal people ones get
+			[CV_REMOVE_TAG:SPECIALATTACK_INJECT_EXTRACT]
+			[CV_REMOVE_TAG:SPECIALATTACK_SUCK_BLOOD]
+			[CV_REMOVE_TAG:ATTACL_VELOCITY_MODIFIER]
+			[CV_CONVERT_TAG]
+				[CVCT_MASTER:BODY]
+				[CVCT_TARGET:QUADRUPED_NECK]
+				[CVCT_REPLACEMENT:HUMANOID_NECK:3FINGERS]
+				or
+				[CVCT_REPLACEMENT:HUMANOID_LEGLESS_NECK:3FINGERS]
+	d_init
+		[SET_LABOR_LISTS:SKILLS]
+
+******************************************************
+
 Auxiliary file changes for 0.34.06:
 
 	entity_default.txt
