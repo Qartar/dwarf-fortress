@@ -719,6 +719,8 @@ plant_standard
 		[EDIBLE_COOKED]
 	[SEED:whip vine seed:whip vine seeds:0:0:1:LOCAL_PLANT_MAT:SEED]
 
+Uristocrat did the density values.
+
 [PLANT:MANGROVE]
 	[NAME:mangrove][NAME_PLURAL:mangroves][ADJ:mangrove]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
@@ -727,6 +729,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:mangrove]
 		[STATE_ADJ:ALL_SOLID:mangrove]
 		[PREFIX:NONE]
+	 	Based on black mangrove (Avicennia spp.)
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/avicenniaeng.html
+	 	[SOLID_DENSITY:830]
+	 	[STATE_COLOR:ALL_SOLID:TAUPE_DARK]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
 	[PREFSTRING:roots]
 	[WET]
@@ -741,6 +747,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:saguaro rib wood]
 		[STATE_ADJ:ALL_SOLID:saguaro rib]
 		[PREFIX:NONE]
+	         Density was determined experimentally.  Contact Uristocrat for a sample if you want to verify this yourself.
+	         A 6g (+/- 0.1g) piece of dry Saguaro wood had a volume of approximately 14 cm^3 (+/- 1 cm^3)
+	 	[SOLID_DENSITY:430]
+	 	[STATE_COLOR:ALL_SOLID:ECRU]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:198]
 	[PREFSTRING:amazing arms]
 	[DRY]
@@ -754,6 +764,11 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:pine]
 		[STATE_ADJ:ALL_SOLID:pine]
 		[PREFIX:NONE]
+	 	Based on the Red Pine (Pinus resinosa):
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/SoftwoodNA/htmlDocs/pinusresinosa.html
+	 	I checked many pines, but couldn't find any with a density as high as 5.6.
+	 	[STATE_COLOR:ALL_SOLID:BEIGE]
+	 	[SOLID_DENSITY:510]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:24]
 	[PREFSTRING:cones]
 	[PREFSTRING:needles]
@@ -762,7 +777,6 @@ plant_standard
 	[BIOME:FOREST_TEMPERATE_CONIFER]
 	[BIOME:FOREST_TROPICAL_CONIFER]
 	[SAPLING]
-	[SOLID_DENSITY:560]
 
 [PLANT:CEDAR]
 	[NAME:cedar][NAME_PLURAL:cedars][ADJ:cedar]
@@ -772,13 +786,16 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:cedar]
 		[STATE_ADJ:ALL_SOLID:cedar]
 		[PREFIX:NONE]
+	 	Based on White-Cedar (Tabebuia spp.)
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/htmlDocs_tropamerican/Tabebuiasppwhitecedar.html
+	 	[STATE_COLOR:ALL_SOLID:OLIVE]
+	 	[SOLID_DENSITY:570]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:23]
 	[PREFSTRING:majesty]
 	[DRY]
 	[BIOME:FOREST_TEMPERATE_CONIFER]
 	[BIOME:FOREST_TROPICAL_CONIFER]
 	[SAPLING]
-	[SOLID_DENSITY:380]
 
 [PLANT:OAK]
 	[NAME:oak][NAME_PLURAL:oaks][ADJ:oaken]
@@ -789,13 +806,16 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:oak]
 		[STATE_ADJ:ALL_SOLID:oaken]
 		[PREFIX:NONE]
+	 	Based on Quercus spp.
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/htmlDocs_tropamerican/Quercusspp.html
+	 	[STATE_COLOR:ALL_SOLID:AUBURN]
+		[SOLID_DENSITY:700]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
 	[PREFSTRING:acorns]
 	[PREFSTRING:autumn coloration]
 	[DRY]
 	[BIOME:ANY_TEMPERATE_BROADLEAF]
 	[SAPLING]
-	[SOLID_DENSITY:700]
 
 [PLANT:MAHOGANY]
 	[NAME:mahogany][NAME_PLURAL:mahoganies][ADJ:mahogany]
@@ -805,12 +825,15 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:mahogany]
 		[STATE_ADJ:ALL_SOLID:mahogany]
 		[PREFIX:NONE]
+	 	Based on African Mahogany (Khaya grandifoliola and K. senegalensis)
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/African/htmlDocs_africa/khayagrandi.html
+	 	[STATE_COLOR:ALL_SOLID:MAHOGANY]
+		[SOLID_DENSITY:600]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
 	[PREFSTRING:loose inflorescences]
 	[DRY]
 	[BIOME:ANY_TROPICAL_FOREST]
 	[SAPLING]
-	[SOLID_DENSITY:600]
 
 [PLANT:ACACIA]
 	[NAME:acacia][NAME_PLURAL:acacias][ADJ:acacia]
@@ -820,6 +843,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:acacia]
 		[STATE_ADJ:ALL_SOLID:acacia]
 		[PREFIX:NONE]
+	 	Based on Acacia mollissima syn. A. mearnsii
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/SEAsian_Oceanic/htmlDocs_SEAsian/acaciamollissima.html
+	 	[SOLID_DENSITY:600]
+	 	[STATE_COLOR:ALL_SOLID:PEACH]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
 	[PREFSTRING:thorns]
 	[DRY]
@@ -837,6 +864,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:kapok]
 		[STATE_ADJ:ALL_SOLID:kapok]
 		[PREFIX:NONE]
+	 	Based on Cieba pentandra:
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/African/htmlDocs_africa/Ceibapentandra.html
+	 	[SOLID_DENSITY:260]
+	 	[STATE_COLOR:ALL_SOLID:TAN]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
 	[PREFSTRING:buttresses]
 	[DRY]
@@ -852,6 +883,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:maple]
 		[STATE_ADJ:ALL_SOLID:maple]
 		[PREFIX:NONE]
+	 	Based on Acer spp.
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/acersp1.html
+	 	[SOLID_DENSITY:540]	Used a more average value.  Softer maples are around 400, harder ones around 600.
+	 	[STATE_COLOR:ALL_SOLID:RUST]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
 	[PREFSTRING:autumn coloration]
 	[DRY]
@@ -860,7 +895,6 @@ plant_standard
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[SAPLING]
-	[SOLID_DENSITY:755]
 
 [PLANT:WILLOW]
 	[NAME:willow][NAME_PLURAL:willows][ADJ:willow]
@@ -870,6 +904,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:willow]
 		[STATE_ADJ:ALL_SOLID:willow]
 		[PREFIX:NONE]
+	 	Based on black willow (Salix nigra)
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/salixn1.html
+	 	[SOLID_DENSITY:390]
+	 	[STATE_COLOR:ALL_SOLID:TAN]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:244]
 	[PREFSTRING:sad appearance]
 	[PREFSTRING:fluffy catkins]
@@ -884,7 +922,6 @@ plant_standard
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
 	[BIOME:MARSH_TROPICAL_SALTWATER]
 	[SAPLING]
-	[SOLID_DENSITY:420]
 
 [PLANT:TOWER_CAP]
 	[NAME:tower-cap][NAME_PLURAL:tower-caps][ADJ:tower-cap]
@@ -1119,6 +1156,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:larch]
 		[STATE_ADJ:ALL_SOLID:larch]
 		[PREFIX:NONE]
+	 	Based on Western Larch (Larix occidentalis)
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/SoftwoodNA/htmlDocs/larixocciden.html
+	 	[STATE_COLOR:ALL_SOLID:LIGHT_BROWN]
+	 	[SOLID_DENSITY:590]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:24]
 	[PREFSTRING:cones]
 	[PREFSTRING:needles]
@@ -1126,7 +1167,6 @@ plant_standard
 	[BIOME:FOREST_TAIGA]
 	[BIOME:FOREST_TEMPERATE_CONIFER]
 	[SAPLING]
-	[SOLID_DENSITY:590]
 
 [PLANT:CHESTNUT]
 	[NAME:chestnut][NAME_PLURAL:chestnuts][ADJ:chestnut]
@@ -1137,6 +1177,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:chestnut]
 		[STATE_ADJ:ALL_SOLID:chestnut]
 		[PREFIX:NONE]
+	 	Based on American Chestnut (Castanea dentata)
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/CASTAN.html
+	 	[SOLID_DENSITY:430]
+	 	[STATE_COLOR:ALL_SOLID:DARK_CHESTNUT]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
 	[PREFSTRING:smelly catkins]
 	[PREFSTRING:spiny pods]
@@ -1145,7 +1189,6 @@ plant_standard
 	[DRY]
 	[BIOME:ANY_TEMPERATE_BROADLEAF]
 	[SAPLING]
-	[SOLID_DENSITY:500]
 
 [PLANT:ALDER]
 	[NAME:alder][NAME_PLURAL:alders][ADJ:alder]
@@ -1156,13 +1199,15 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:alder]
 		[STATE_ADJ:ALL_SOLID:alder]
 		[PREFIX:NONE]
+	 	Based on Red Alder (Alnus rubra)
+		[SOLID_DENSITY:410]
+	 	[STATE_COLOR:ALL_SOLID:TAN]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
 	[PREFSTRING:catkins]
 	[PREFSTRING:autumn coloration]
 	[DRY]
 	[BIOME:ANY_TEMPERATE_BROADLEAF]
 	[SAPLING]
-	[SOLID_DENSITY:410]
 
 [PLANT:BIRCH]
 	[NAME:birch][NAME_PLURAL:birches][ADJ:birchen]
@@ -1173,6 +1218,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:birch]
 		[STATE_ADJ:ALL_SOLID:birchen]
 		[PREFIX:NONE]
+	 	Based on American Birch (Betula spp.)
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/betula1.html
+	 	[SOLID_DENSITY:650]
+	 	[STATE_COLOR:ALL_SOLID:BURNT_UMBER]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
 	[PREFSTRING:catkins]
 	[PREFSTRING:silver bark]
@@ -1180,7 +1229,6 @@ plant_standard
 	[DRY]
 	[BIOME:ANY_TEMPERATE_BROADLEAF]
 	[SAPLING]
-	[SOLID_DENSITY:670]
 
 [PLANT:ASH]
 	[NAME:ash][NAME_PLURAL:ashes][ADJ:ashen]
@@ -1191,13 +1239,16 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:ash]
 		[STATE_ADJ:ALL_SOLID:ashen]
 		[PREFIX:NONE]
+	 	Based on Fraxinus spp.
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/fraxinus.html
+	 	[SOLID_DENSITY:600]
+	 	[STATE_COLOR:ALL_SOLID:PALE_BROWN]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
 	[PREFSTRING:flying keys]
 	[PREFSTRING:autumn coloration]
 	[DRY]
 	[BIOME:ANY_TEMPERATE_BROADLEAF]
 	[SAPLING]
-	[SOLID_DENSITY:620]
 
 [PLANT:CANDLENUT]
 	[NAME:candlenut][NAME_PLURAL:candlenuts][ADJ:candlenut]
@@ -1207,6 +1258,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:candlenut]
 		[STATE_ADJ:ALL_SOLID:candlenut]
 		[PREFIX:NONE]
+	 	Based on Aleurites moluccana 
+	 	http://www.thewoodexplorer.com/maindata/we71.html
+	 	[SOLID_DENSITY:140]
+	 	[STATE_COLOR:ALL_SOLID:OCHRE]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
 	[PREFSTRING:nuts]
 	[DRY]
@@ -1221,6 +1276,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:mango wood]
 		[STATE_ADJ:ALL_SOLID:mango wood]
 		[PREFIX:NONE]
+	 	Based on Mangifera spp.
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/SEAsian_Oceanic/htmlDocs_SEAsian/mangifera_spp.html
+	 	[SOLID_DENSITY:520]
+	 	[STATE_COLOR:ALL_SOLID:BURNT_SIENNA]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
 	[PREFSTRING:sweet-smelling flowers]
 	[DRY]
@@ -1235,6 +1294,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:rubber wood]
 		[STATE_ADJ:ALL_SOLID:rubber wood]
 		[PREFIX:NONE]
+	 	Based on Hevea brasiliensis
+	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/html_files/heveab1new.html
+	 	[SOLID_DENSITY:490]
+	 	[STATE_COLOR:ALL_SOLID:FLAX]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
 	[PREFSTRING:branch shedding]
 	[DRY]
@@ -1249,6 +1312,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:cacao wood]
 		[STATE_ADJ:ALL_SOLID:cacao wood]
 		[PREFIX:NONE]
+	 	Based on Theobroma cacao
+	 	http://acta.inpa.gov.br/fasciculos/30-4/PDF/v30n4a06.pdf
+	 	[STATE_COLOR:ALL_SOLID:CHOCOLATE]  A delicious mix of irony and realism.
+	 	[SOLID_DENSITY:430]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
 	[PREFSTRING:flowers]
 	[DRY]
@@ -1263,6 +1330,10 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:palm]
 		[STATE_ADJ:ALL_SOLID:palm]
 		[PREFIX:NONE]
+	 	Based on Red Palm (Cocos nucifera)
+	 	http://www.wood-database.com/lumber-identification/monocots/red-palm/
+	 	[STATE_COLOR:ALL_SOLID:TAUPE_DARK]
+	 	[SOLID_DENSITY:680]
 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
 	[PREFSTRING:leaves]
 	[DRY]

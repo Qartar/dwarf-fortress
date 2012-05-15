@@ -4,6 +4,7 @@ item_toy
 
 [ITEM_TOY:ITEM_TOY_PUZZLEBOX]
 [NAME:puzzlebox:puzzleboxes]
+[HARD_MAT]
 
 [ITEM_TOY:ITEM_TOY_BOAT]
 [NAME:toy boat:toy boats]
