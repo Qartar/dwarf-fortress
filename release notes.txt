@@ -37,6 +37,39 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.34.08 (May 14, 2012):
+
+Here is a hauling release.  I'm sure it has all kinds of interesting issues -- we're going to iron out problems for the next few releases without embarking on anything major in order to restabilize it.  The tile-wise physics causes some oddities on its own (items can't be given a meaningful sub-tile width, so they act a bit strangely if you look at the collisions closely).  Dwarves are also a bit enthusiastic with their new bin/barrel jobs -- when they grab a bin/barrel to load it up, it might have objects in it, and that might lead to conflicts/false shortages on occasion.  We'll have to continue playing around with it.  As far as I can tell, old saves load up fine and have usable minecart/wheelbarrows, so feel free to move your data/save folder over to the new version.  You'll notice your old save stone haulers moving slower -- get some wheelbarrows built at the carpenter's for your stone stockpiles to alleviate that problem.
+
+New stuff
+	(*) Minecarts can be used to haul things around on carved/constructed tracks/bridges ('h'auling to set up routes)
+	(*) Dwarves can be set to guide, push off, or ride carts that are ready to move to the next stop
+	(*) Track stops used to slow/stop cart and/or dump the contents on vehicle entry, can be disengaged with lever/plate
+	(*) Pressure plates can be triggered by carts
+	(*) Rollers can be used to push cart along when powered
+	(*) Minecarts limited to one per tile in general, various collisions can occur
+	(*) Wheelbarrows can be linked to stockpiles in order to move heavy objects (it'll auto-request one for stone stockpiles)
+	(*) Falling objects can collide with critters
+	(*) Camera can be attached to unit or item, can be linked to hotkeys from the unit/item screens
+
+Other bug fixes/tweaks
+	(*) Stockpiles can be linked to workshops, can be set to give to multiple piles, can be set to accept items from links only
+	(*) Hauling jobs will often be combined, using one container
+	(*) Heavy items harder to haul
+	(*) Densities/colors updated, based on Uristocrat's data collection thread
+	(*) Can filter creature names in arena
+	(*) Mine drop rates tweaked, no longer skill-based
+	(*) Puzzleboxes/drum makeable
+	(*) Stopped blinking on bridges
+	(*) Projectiles using new code (most non-shot/thrown projectiles) can skip/skid on liquid/ground
+	(*) All flying units use new minecart parabolic flight paths
+	(*) Many projectiles do not resolve in adventure mode before your turn (so you can dodge a flying cart by moving away)
+	(*) Can create/assign to squads from v-p
+	(*) Squads can be given nicknames from v-p or the military screen
+	(*) Fixed broken clay stockpile option
+
+******************************************************
+
 Release notes for 0.34.07 (March 30, 2012):
 
 Here is another set of bug fixes.  Be warned that some animals had their tiles changed to match the size convention.

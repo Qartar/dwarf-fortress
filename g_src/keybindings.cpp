@@ -406,6 +406,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_GEAR_ASSEMBLY, "HOTKEY_BUILDING_MACHINE_GEAR_ASSEMBLY");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_AXLE_HORIZONTAL, "HOTKEY_BUILDING_MACHINE_AXLE_HORIZONTAL");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_AXLE_VERTICAL, "HOTKEY_BUILDING_MACHINE_AXLE_VERTICAL");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_ROLLERS, "HOTKEY_BUILDING_MACHINE_ROLLERS");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SIEGEENGINE_BALLISTA, "HOTKEY_BUILDING_SIEGEENGINE_BALLISTA");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SIEGEENGINE_CATAPULT, "HOTKEY_BUILDING_SIEGEENGINE_CATAPULT");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_TRAP_STONE, "HOTKEY_BUILDING_TRAP_STONE");
@@ -422,6 +423,8 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_STAIR_UP, "HOTKEY_BUILDING_CONSTRUCTION_STAIR_UP");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_STAIR_DOWN, "HOTKEY_BUILDING_CONSTRUCTION_STAIR_DOWN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_STAIR_UPDOWN, "HOTKEY_BUILDING_CONSTRUCTION_STAIR_UPDOWN");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_TRACK, "HOTKEY_BUILDING_CONSTRUCTION_TRACK");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_TRACK_STOP, "HOTKEY_BUILDING_CONSTRUCTION_TRACK_STOP");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_WORKSHOP_LEATHER, "HOTKEY_BUILDING_WORKSHOP_LEATHER");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_WORKSHOP_QUERN, "HOTKEY_BUILDING_WORKSHOP_QUERN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_BUILDING_WORKSHOP_MILLSTONE, "HOTKEY_BUILDING_WORKSHOP_MILLSTONE");
@@ -520,6 +523,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_D_MILITARY_ADD_UNIFORM, "D_MILITARY_ADD_UNIFORM");
 	bindingNames.insert(INTERFACEKEY_D_MILITARY_DELETE_UNIFORM, "D_MILITARY_DELETE_UNIFORM");
 	bindingNames.insert(INTERFACEKEY_D_MILITARY_NAME_UNIFORM, "D_MILITARY_NAME_UNIFORM");
+	bindingNames.insert(INTERFACEKEY_D_MILITARY_NAME_SQUAD, "D_MILITARY_NAME_SQUAD");
 	bindingNames.insert(INTERFACEKEY_D_MILITARY_ADD_ARMOR, "D_MILITARY_ADD_ARMOR");
 	bindingNames.insert(INTERFACEKEY_D_MILITARY_ADD_PANTS, "D_MILITARY_ADD_PANTS");
 	bindingNames.insert(INTERFACEKEY_D_MILITARY_ADD_HELM, "D_MILITARY_ADD_HELM");
@@ -558,6 +562,28 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_D_JOBLIST, "D_JOBLIST");
 	bindingNames.insert(INTERFACEKEY_D_UNITLIST, "D_UNITLIST");
 	bindingNames.insert(INTERFACEKEY_D_LOOK, "D_LOOK");
+	bindingNames.insert(INTERFACEKEY_D_HAULING, "D_HAULING");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_NEW_ROUTE, "D_HAULING_NEW_ROUTE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_NEW_STOP, "D_HAULING_NEW_STOP");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_REMOVE, "D_HAULING_REMOVE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_PROMOTE, "D_HAULING_PROMOTE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_VEHICLE, "D_HAULING_VEHICLE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_NICKNAME, "D_HAULING_NICKNAME");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_NEW_DEPART, "D_HAULING_STOP_NEW_DEPART");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_NEW_LINK, "D_HAULING_STOP_NEW_LINK");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_REMOVE, "D_HAULING_STOP_REMOVE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_SL_SELECT_PILE, "D_HAULING_STOP_SL_SELECT_PILE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_SL_TAKE_GIVE, "D_HAULING_STOP_SL_TAKE_GIVE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_DIR, "D_HAULING_STOP_LC_DIR");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_MODE, "D_HAULING_STOP_LC_MODE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_TIMER_UP, "D_HAULING_STOP_LC_TIMER_UP");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_TIMER_DOWN, "D_HAULING_STOP_LC_TIMER_DOWN");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_FULLNESS_UP, "D_HAULING_STOP_LC_FULLNESS_UP");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_FULLNESS_DOWN, "D_HAULING_STOP_LC_FULLNESS_DOWN");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_MORE_LESS, "D_HAULING_STOP_LC_MORE_LESS");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_DESIRED_TOTAL, "D_HAULING_STOP_LC_DESIRED_TOTAL");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_CHANGE, "D_HAULING_STOP_LC_CHANGE");
+	bindingNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_ADVANCED, "D_HAULING_STOP_LC_ADVANCED");
 	bindingNames.insert(INTERFACEKEY_D_BURROWS, "D_BURROWS");
 	bindingNames.insert(INTERFACEKEY_D_BURROWS_ADD, "D_BURROWS_ADD");
 	bindingNames.insert(INTERFACEKEY_D_BURROWS_DELETE, "D_BURROWS_DELETE");
@@ -594,6 +620,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_D_LOOK_DUMP, "D_LOOK_DUMP");
 	bindingNames.insert(INTERFACEKEY_D_LOOK_MELT, "D_LOOK_MELT");
 	bindingNames.insert(INTERFACEKEY_D_LOOK_HIDE, "D_LOOK_HIDE");
+	bindingNames.insert(INTERFACEKEY_D_LOOK_FOLLOW, "D_LOOK_FOLLOW");
 	bindingNames.insert(INTERFACEKEY_D_LOOK_ARENA_CREATURE, "D_LOOK_ARENA_CREATURE");
 	bindingNames.insert(INTERFACEKEY_D_LOOK_ARENA_ADV_MODE, "D_LOOK_ARENA_ADV_MODE");
 	bindingNames.insert(INTERFACEKEY_D_LOOK_ARENA_WATER, "D_LOOK_ARENA_WATER");
@@ -604,6 +631,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_ARENA_CREATURE_BLANK_LIST, "ARENA_CREATURE_BLANK_LIST");
 	bindingNames.insert(INTERFACEKEY_ARENA_CREATURE_REMOVE_ITEM, "ARENA_CREATURE_REMOVE_ITEM");
 	bindingNames.insert(INTERFACEKEY_ARENA_CREATURE_UNDEAD, "ARENA_CREATURE_UNDEAD");
+	bindingNames.insert(INTERFACEKEY_ARENA_CREATURE_STRING, "ARENA_CREATURE_STRING");
 	bindingNames.insert(INTERFACEKEY_A_ENTER_NAME, "A_ENTER_NAME");
 	bindingNames.insert(INTERFACEKEY_A_CUST_NAME, "A_CUST_NAME");
 	bindingNames.insert(INTERFACEKEY_A_RANDOM_NAME, "A_RANDOM_NAME");
@@ -747,6 +775,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_HOTKEY_TRAP_CHAIN, "HOTKEY_TRAP_CHAIN");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_TRAP_CAGE, "HOTKEY_TRAP_CAGE");
 	bindingNames.insert(INTERFACEKEY_HOTKEY_TRAP_PULL_LEVER, "HOTKEY_TRAP_PULL_LEVER");
+	bindingNames.insert(INTERFACEKEY_HOTKEY_TRAP_TRACK_STOP, "HOTKEY_TRAP_TRACK_STOP");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_ADD, "BUILDJOB_ADD");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_CANCEL, "BUILDJOB_CANCEL");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_PROMOTE, "BUILDJOB_PROMOTE");
@@ -821,6 +850,9 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_FARM_AUTUMN, "BUILDJOB_FARM_AUTUMN");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_FARM_WINTER, "BUILDJOB_FARM_WINTER");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_MASTER, "BUILDJOB_STOCKPILE_MASTER");
+	bindingNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_LINK_ANYWHERE, "BUILDJOB_STOCKPILE_LINK_ANYWHERE");
+	bindingNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_GIVE_TO, "BUILDJOB_STOCKPILE_GIVE_TO");
+	bindingNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_WHEELBARROW, "BUILDJOB_STOCKPILE_WHEELBARROW");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_DELETE_CHILD, "BUILDJOB_STOCKPILE_DELETE_CHILD");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_SETTINGS, "BUILDJOB_STOCKPILE_SETTINGS");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_BARREL_UP, "BUILDJOB_STOCKPILE_BARREL_UP");
@@ -986,6 +1018,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_SMOOTH, "DESIGNATE_SMOOTH");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_ENGRAVE, "DESIGNATE_ENGRAVE");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_FORTIFY, "DESIGNATE_FORTIFY");
+	bindingNames.insert(INTERFACEKEY_DESIGNATE_TRACK, "DESIGNATE_TRACK");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_TOGGLE_ENGRAVING, "DESIGNATE_TOGGLE_ENGRAVING");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_UNDO, "DESIGNATE_UNDO");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_REMOVE_CONSTRUCTION, "DESIGNATE_REMOVE_CONSTRUCTION");
@@ -1011,6 +1044,16 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MIN_MAGMA_DOWN, "BUILDING_TRIGGER_MIN_MAGMA_DOWN");
 	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_MAGMA_UP, "BUILDING_TRIGGER_MAX_MAGMA_UP");
 	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_MAGMA_DOWN, "BUILDING_TRIGGER_MAX_MAGMA_DOWN");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_ENABLE_TRACK_CART, "BUILDING_TRIGGER_ENABLE_TRACK_CART");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MIN_TRACK_CART_DOWN, "BUILDING_TRIGGER_MIN_TRACK_CART_DOWN");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MIN_TRACK_CART_UP, "BUILDING_TRIGGER_MIN_TRACK_CART_UP");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_TRACK_CART_DOWN, "BUILDING_TRIGGER_MAX_TRACK_CART_DOWN");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_TRACK_CART_UP, "BUILDING_TRIGGER_MAX_TRACK_CART_UP");
+	bindingNames.insert(INTERFACEKEY_BUILDING_ROLLERS_SPEED_UP, "BUILDING_ROLLERS_SPEED_UP");
+	bindingNames.insert(INTERFACEKEY_BUILDING_ROLLERS_SPEED_DOWN, "BUILDING_ROLLERS_SPEED_DOWN");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRACK_STOP_FRICTION_UP, "BUILDING_TRACK_STOP_FRICTION_UP");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRACK_STOP_FRICTION_DOWN, "BUILDING_TRACK_STOP_FRICTION_DOWN");
+	bindingNames.insert(INTERFACEKEY_BUILDING_TRACK_STOP_DUMP, "BUILDING_TRACK_STOP_DUMP");
 	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_ENABLE_CREATURE, "BUILDING_TRIGGER_ENABLE_CREATURE");
 	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_ENABLE_LOCALS, "BUILDING_TRIGGER_ENABLE_LOCALS");
 	bindingNames.insert(INTERFACEKEY_BUILDING_TRIGGER_RESETS, "BUILDING_TRIGGER_RESETS");
@@ -1022,6 +1065,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_INV, "UNITVIEW_INV");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF, "UNITVIEW_PRF");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_WND, "UNITVIEW_WND");
+	bindingNames.insert(INTERFACEKEY_UNITVIEW_FOLLOW, "UNITVIEW_FOLLOW");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_NEXT, "UNITVIEW_NEXT");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_SLAUGHTER, "UNITVIEW_SLAUGHTER");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_GEN_COMBAT, "UNITVIEW_GEN_COMBAT");
@@ -1030,6 +1074,10 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_PROF, "UNITVIEW_PRF_PROF");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET, "UNITVIEW_PRF_PET");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_VIEW, "UNITVIEW_PRF_VIEW");
+	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_NEW_SQUAD, "UNITVIEW_PRF_NEW_SQUAD");
+	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_REMOVE_FROM_SQUAD, "UNITVIEW_PRF_REMOVE_FROM_SQUAD");
+	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_NAME_CURRENT_SQUAD, "UNITVIEW_PRF_NAME_CURRENT_SQUAD");
+	bindingNames.insert(INTERFACEKEY_UNITVIEW_PRF_NAME_SELECTED_SQUAD, "UNITVIEW_PRF_NAME_SELECTED_SQUAD");
 
 	bindingNames.insert(INTERFACEKEY_STRING_A000, "STRING_A000");
 	bindingNames.insert(INTERFACEKEY_STRING_A001, "STRING_A001");
@@ -1794,6 +1842,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_GEAR_ASSEMBLY, "Hotkey: Building, Machine Component, Gear Assembly");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_AXLE_HORIZONTAL, "Hotkey: Building, Machine Component, Horizontal Axle");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_AXLE_VERTICAL, "Hotkey: Building, Machine Component, Vertical Axle");
+	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_MACHINE_ROLLERS, "Hotkey: Building, Machine Component, Rollers");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SIEGEENGINE_BALLISTA, "Hotkey: Building, Siege, Ballista");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_SIEGEENGINE_CATAPULT, "Hotkey: Building, Siege, Catapult");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_TRAP_STONE, "Hotkey: Building, Trap, Stone");
@@ -1810,6 +1859,8 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_STAIR_UP, "Hotkey: Building, Construction, Upward Stair");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_STAIR_DOWN, "Hotkey: Building, Construction, Downward Stair");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_STAIR_UPDOWN, "Hotkey: Building, Construction, Up/Down Stair");
+	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_TRACK, "Hotkey: Building, Construction, Track");
+	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_CONSTRUCTION_TRACK_STOP, "Hotkey: Building, Construction, Track Stop");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_WORKSHOP_LEATHER, "Hotkey: Building, Wksp, Leather");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_WORKSHOP_QUERN, "Hotkey: Building, Wksp, Quern");
 	displayNames.insert(INTERFACEKEY_HOTKEY_BUILDING_WORKSHOP_MILLSTONE, "Hotkey: Building, Wksp, Millstone");
@@ -1908,6 +1959,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_D_MILITARY_ADD_UNIFORM, "Main: Military, Add Uniform");
 	displayNames.insert(INTERFACEKEY_D_MILITARY_DELETE_UNIFORM, "Main: Military, Delete Uniform");
 	displayNames.insert(INTERFACEKEY_D_MILITARY_NAME_UNIFORM, "Main: Military, Name Uniform");
+	displayNames.insert(INTERFACEKEY_D_MILITARY_NAME_SQUAD, "Main: Military, Name Squad");
 	displayNames.insert(INTERFACEKEY_D_MILITARY_ADD_ARMOR, "Main: Military, Add Armor");
 	displayNames.insert(INTERFACEKEY_D_MILITARY_ADD_PANTS, "Main: Military, Add Pants");
 	displayNames.insert(INTERFACEKEY_D_MILITARY_ADD_HELM, "Main: Military, Add Helm");
@@ -1946,6 +1998,28 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_D_JOBLIST, "Main: Job List");
 	displayNames.insert(INTERFACEKEY_D_UNITLIST, "Main: Unit List");
 	displayNames.insert(INTERFACEKEY_D_LOOK, "Main: Look");
+	displayNames.insert(INTERFACEKEY_D_HAULING, "Main: Hauling");
+	displayNames.insert(INTERFACEKEY_D_HAULING_NEW_ROUTE, "Main: Hauling, New Route");
+	displayNames.insert(INTERFACEKEY_D_HAULING_NEW_STOP, "Main: Hauling, New Stop");
+	displayNames.insert(INTERFACEKEY_D_HAULING_REMOVE, "Main: Hauling, Remove");
+	displayNames.insert(INTERFACEKEY_D_HAULING_PROMOTE, "Main: Hauling, Promote");
+	displayNames.insert(INTERFACEKEY_D_HAULING_VEHICLE, "Main: Hauling, Vehicle");
+	displayNames.insert(INTERFACEKEY_D_HAULING_NICKNAME, "Main: Hauling, Name");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_NEW_DEPART, "Main: Hauling, Stop, New Leave Condition");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_NEW_LINK, "Main: Hauling, Stop, New Stockpile Link");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_REMOVE, "Main: Hauling, Stop, Remove");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_SL_SELECT_PILE, "Main: Hauling, Stop, Stockpile, Select");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_SL_TAKE_GIVE, "Main: Hauling, Stop, Stockpile, Take/Give");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_DIR, "Main: Hauling, Stop, Leave Condition, Dir");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_MODE, "Main: Hauling, Stop, Leave Condition, Mode");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_TIMER_UP, "Main: Hauling, Stop, Leave Condition, Timer Up");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_TIMER_DOWN, "Main: Hauling, Stop, Leave Condition, Timer Down");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_FULLNESS_UP, "Main: Hauling, Stop, Leave Condition, Fullness Up");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_FULLNESS_DOWN, "Main: Hauling, Stop, Leave Condition, Fullness Down");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_MORE_LESS, "Main: Hauling, Stop, Leave Condition, More/Less");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_DESIRED_TOTAL, "Main: Hauling, Stop, Leave Condition, Desired/Total");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_CHANGE, "Main: Hauling, Stop, Leave Condition, Change");
+	displayNames.insert(INTERFACEKEY_D_HAULING_STOP_LC_ADVANCED, "Main: Hauling, Stop, Leave Condition, Advanced");
 	displayNames.insert(INTERFACEKEY_D_BURROWS, "Main: Burrows");
 	displayNames.insert(INTERFACEKEY_D_BURROWS_ADD, "Main: Burrows, Add");
 	displayNames.insert(INTERFACEKEY_D_BURROWS_DELETE, "Main: Burrows, Delete");
@@ -1982,6 +2056,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_D_LOOK_DUMP, "Dwf Look: Dump");
 	displayNames.insert(INTERFACEKEY_D_LOOK_MELT, "Dwf Look: Melt");
 	displayNames.insert(INTERFACEKEY_D_LOOK_HIDE, "Dwf Look: Hide");
+	displayNames.insert(INTERFACEKEY_D_LOOK_FOLLOW, "Dwf Look: Follow");
 	displayNames.insert(INTERFACEKEY_D_LOOK_ARENA_CREATURE, "Dwf Look: Arena Creature");
 	displayNames.insert(INTERFACEKEY_D_LOOK_ARENA_ADV_MODE, "Dwf Look: Arena Adv Mode");
 	displayNames.insert(INTERFACEKEY_D_LOOK_ARENA_WATER, "Dwf Look: Arena Water");
@@ -1992,6 +2067,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_ARENA_CREATURE_BLANK_LIST, "Arena Creature: Blank List");
 	displayNames.insert(INTERFACEKEY_ARENA_CREATURE_REMOVE_ITEM, "Arena Creature: Remove Item");
 	displayNames.insert(INTERFACEKEY_ARENA_CREATURE_UNDEAD, "Arena Creature: Undead");
+	displayNames.insert(INTERFACEKEY_ARENA_CREATURE_STRING, "Arena Creature: String");
 	displayNames.insert(INTERFACEKEY_A_ENTER_NAME, "Adventure: Creation, Name Entry");
 	displayNames.insert(INTERFACEKEY_A_CUST_NAME, "Adventure: Creation, Customize Name");
 	displayNames.insert(INTERFACEKEY_A_RANDOM_NAME, "Adventure: Creation, Random Name");
@@ -2135,6 +2211,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_HOTKEY_TRAP_CHAIN, "Hotkey: Trap, Chain");
 	displayNames.insert(INTERFACEKEY_HOTKEY_TRAP_CAGE, "Hotkey: Trap, Cage");
 	displayNames.insert(INTERFACEKEY_HOTKEY_TRAP_PULL_LEVER, "Hotkey: Trap, Lever");
+	displayNames.insert(INTERFACEKEY_HOTKEY_TRAP_TRACK_STOP, "Hotkey: Trap, Track Stop");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_ADD, "Buildjob: Add");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_CANCEL, "Buildjob: Cancel");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_PROMOTE, "Buildjob: Promote");
@@ -2209,6 +2286,9 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_BUILDJOB_FARM_AUTUMN, "Buildjob: Farm, Autumn");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_FARM_WINTER, "Buildjob: Farm, Winter");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_MASTER, "Buildjob: Stockpile, Master");
+	displayNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_LINK_ANYWHERE, "Buildjob: Stockpile, Link/Anywhere");
+	displayNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_GIVE_TO, "Buildjob: Stockpile, Give To");
+	displayNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_WHEELBARROW, "Buildjob: Stockpile, Wheelbarrow");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_DELETE_CHILD, "Buildjob: Stockpile, Delete Child");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_SETTINGS, "Buildjob: Stockpile, Settings");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_STOCKPILE_BARREL_UP, "Buildjob: Stockpile, Barrel Up");
@@ -2374,6 +2454,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_DESIGNATE_SMOOTH, "Designate, Smooth");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_ENGRAVE, "Designate, Engrave");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_FORTIFY, "Designate, Fortify");
+	displayNames.insert(INTERFACEKEY_DESIGNATE_TRACK, "Designate, Carve Track");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_TOGGLE_ENGRAVING, "Designate, Toggle Engraving");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_UNDO, "Designate, Undo");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_REMOVE_CONSTRUCTION, "Designate, Remove Construction");
@@ -2399,6 +2480,16 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MIN_MAGMA_DOWN, "Building, Trigger, Min Magma Down");
 	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_MAGMA_UP, "Building, Trigger, Max Magma Up");
 	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_MAGMA_DOWN, "Building, Trigger, Max Magma Down");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_ENABLE_TRACK_CART, "Building, Trigger, Enable Cart");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MIN_TRACK_CART_DOWN, "Building, Trigger, Min Cart Down");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MIN_TRACK_CART_UP, "Building, Trigger, Min Cart Up");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_TRACK_CART_DOWN, "Building, Trigger, Max Cart Down");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_MAX_TRACK_CART_UP, "Building, Trigger, Max Cart Up");
+	displayNames.insert(INTERFACEKEY_BUILDING_ROLLERS_SPEED_UP, "Building, Rollers, Speed Up");
+	displayNames.insert(INTERFACEKEY_BUILDING_ROLLERS_SPEED_DOWN, "Building, Rollers, Speed Down");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRACK_STOP_FRICTION_UP, "Building, Track Stop, Friction Up");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRACK_STOP_FRICTION_DOWN, "Building, Track Stop, Friction Down");
+	displayNames.insert(INTERFACEKEY_BUILDING_TRACK_STOP_DUMP, "Building, Track Stop, Dump");
 	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_ENABLE_CREATURE, "Building, Trigger, Enable Creature");
 	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_ENABLE_LOCALS, "Building, Trigger, Enable Locals");
 	displayNames.insert(INTERFACEKEY_BUILDING_TRIGGER_RESETS, "Building, Trigger, Resets");
@@ -2411,6 +2502,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF, "Unitview, Prefs");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_WND, "Unitview, Wounds");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_NEXT, "Unitview, Next Unit");
+	displayNames.insert(INTERFACEKEY_UNITVIEW_FOLLOW, "Unitview, Follow");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_SLAUGHTER, "Unitview, Slaughter");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_GEN_COMBAT, "Unitview, General, Combat");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_GEN_LABOR, "Unitview, General, Labor");
@@ -2418,6 +2510,10 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_PROF, "Unitview, Prefs, Labor");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_PET, "Unitview, Prefs, Pets");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_VIEW, "Unitview, Prefs, Profile");
+	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_NEW_SQUAD, "Unitview, Prefs, New Squad");
+	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_REMOVE_FROM_SQUAD, "Unitview, Prefs, Remove From Squad");
+	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_NAME_CURRENT_SQUAD, "Unitview, Prefs, Name Current Squad");
+	displayNames.insert(INTERFACEKEY_UNITVIEW_PRF_NAME_SELECTED_SQUAD, "Unitview, Prefs, Name Selected Squad");
 
 	displayNames.insert(INTERFACEKEY_STRING_A000, "String: Backspace");
 	displayNames.insert(INTERFACEKEY_STRING_A001, "String: Character 001");
