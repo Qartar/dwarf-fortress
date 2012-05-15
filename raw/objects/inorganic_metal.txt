@@ -3,6 +3,7 @@ inorganic_metal
 [OBJECT:INORGANIC]
 
 Dwarfoloid picked out a lot of the material numbers here to replace my placeholders.
+Colors added by Bohandas.
 
 [INORGANIC:IRON]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -42,6 +43,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[BENDING_FRACTURE:310000]
 	[BENDING_STRAIN_AT_YIELD:73]
 	[MAX_EDGE:10000]
+	[STATE_COLOR:ALL_SOLID:GRAY]
 
 [INORGANIC:GOLD]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -82,6 +84,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:GOLD]
 
 [INORGANIC:SILVER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -121,6 +124,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[BENDING_FRACTURE:170000]
 	[BENDING_STRAIN_AT_YIELD:120]
 	[MAX_EDGE:10000]
+	[STATE_COLOR:ALL_SOLID:SILVER]
 
 [INORGANIC:COPPER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -160,6 +164,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[BENDING_FRACTURE:220000]
 	[BENDING_STRAIN_AT_YIELD:58]
 	[MAX_EDGE:10000]
+	[STATE_COLOR:ALL_SOLID:COPPER]
 
 [INORGANIC:NICKEL]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -198,6 +203,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:SILVER]
 
 [INORGANIC:ZINC]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -236,6 +242,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:SILVER]
 
 [INORGANIC:BRONZE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -275,6 +282,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[BENDING_FRACTURE:241000]
 	[BENDING_STRAIN_AT_YIELD:156]
 	[MAX_EDGE:10000]
+	[STATE_COLOR:ALL_SOLID:BRONZE]
 
 [INORGANIC:BRASS]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -313,6 +321,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:BRASS]
 
 [INORGANIC:STEEL]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -352,6 +361,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:GRAY]
 
 [INORGANIC:PIG_IRON]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -386,6 +396,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[BENDING_FRACTURE:200000]
 	[BENDING_STRAIN_AT_YIELD:62]
 	[MAX_EDGE:10000]
+	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
 
 [INORGANIC:PLATINUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -424,6 +435,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:WHITE]
 
 [INORGANIC:ELECTRUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -436,7 +448,9 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[SPEC_HEAT:180]
 	[MELTING_POINT:11828]
 	[BOILING_POINT:14968]
-	[SOLID_DENSITY:15000]
+Density based on an alloy of 50% gold + 50% silver, per the recipe for creating it (1 gold + 1 silver = 2 electrum)
+Also found a more accurate source, which gives a range of 13000-16000 -- http://books.google.com/books?id=OuoV-o_Xf-EC&pg=PA21&lpg=PA21&dq=electrum+density&source=bl&ots=Ar0C0iCqq9&sig=hy58B_naO8sUQtmwdRUNfrmiwBI&hl=en&ei=9lisTqH9IIaHtweDx5T0Dg&sa=X&oi=book_result&ct=result&resnum=4&ved=0CDUQ6AEwAw
+	[SOLID_DENSITY:14905]
 	[LIQUID_DENSITY:13000]
 	[MOLAR_MASS:150000]
 	Used gold.
@@ -463,6 +477,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:OCHRE]
 
 [INORGANIC:TIN]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -501,6 +516,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:SILVER]
 
 [INORGANIC:PEWTER_FINE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -539,6 +555,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:SILVER]
 
 [INORGANIC:PEWTER_TRIFLE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -577,6 +594,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
 
 [INORGANIC:PEWTER_LAY]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -615,6 +633,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:WHITE]
 
 [INORGANIC:LEAD]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -653,6 +672,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
 
 [INORGANIC:ALUMINUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -691,6 +711,7 @@ Dwarfoloid picked out a lot of the material numbers here to replace my placehold
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:WHITE]
 
 temperature values unknown, used nickel
 [INORGANIC:NICKEL_SILVER]
@@ -730,6 +751,7 @@ temperature values unknown, used nickel
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:SILVER]
 
 temperature values unknown, used copper
 [INORGANIC:BILLON]
@@ -769,6 +791,7 @@ temperature values unknown, used copper
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:PALE_BROWN]
 
 temperature values unknown, used silver
 value is weighted average of 3 silver and 1 copper
@@ -809,6 +832,7 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:WHITE]
 
 temperature values unknown, used copper
 also called shakudo or hepatizon depending on the proportions (some have no silver)
@@ -852,6 +876,7 @@ value of 11 is the weighted average value of 2copper/1silver/1gold components
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:BLACK] (actually dark blue, but this is less confusing)
 
 temperature values unknown, used gold
 value is weighted average of 3 gold and 1 copper
@@ -892,6 +917,7 @@ value is weighted average of 3 gold and 1 copper
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:PINK]
 
 bismuth itself is brittle, but you can alloy it with tin/copper to make a light-colored bronze
 [INORGANIC:BISMUTH]
@@ -927,6 +953,7 @@ bismuth itself is brittle, but you can alloy it with tin/copper to make a light-
 	[BENDING_FRACTURE:50000]
 	[BENDING_STRAIN_AT_YIELD:94]
 	[MAX_EDGE:10000]
+	[STATE_COLOR:ALL_SOLID:HELIOTROPE]
 
 you can make a lighter colored bronze by adding bismuth, used temp values from bronze, used by incas, at least according to one source ha ha
 [INORGANIC:BISMUTH_BRONZE]
@@ -967,6 +994,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+	[STATE_COLOR:ALL_SOLID:TAN]
 
 [INORGANIC:ADAMANTINE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -1010,3 +1038,4 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[MAX_EDGE:100000]
 	[DEEP_SPECIAL]
 	[STOCKPILE_THREAD_METAL]
+	[STATE_COLOR:ALL_SOLID:AQUA]
