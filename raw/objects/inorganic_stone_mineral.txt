@@ -2,6 +2,10 @@ inorganic_stone_mineral
 
 [OBJECT:INORGANIC]
 
+Uristocrat: Density values from the research thread:
+http://www.bay12forums.com/smf/index.php?topic=80022.0
+
+
 [INORGANIC:HEMATITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:hematite][DISPLAY_COLOR:4:7:0][TILE:156]
@@ -9,7 +13,7 @@ inorganic_stone_mineral
 [ENVIRONMENT:IGNEOUS_EXTRUSIVE:VEIN:100]
 [ITEM_SYMBOL:'*']
 [METAL_ORE:IRON:100]
-[SOLID_DENSITY:5100]
+[SOLID_DENSITY:5260]
 [MATERIAL_VALUE:8]
 [IS_STONE]
 [MELTING_POINT:12736]
@@ -32,6 +36,7 @@ inorganic_stone_mineral
 [METAL_ORE:NICKEL:100]
 [MATERIAL_VALUE:2]
 [IS_STONE]
+[SOLID_DENSITY:2540]
 
 [INORGANIC:NATIVE_GOLD]
 [ENVIRONMENT:IGNEOUS_ALL:VEIN:100]
@@ -164,6 +169,7 @@ inorganic_stone_mineral
 [METAL_ORE:COPPER:100]
 [MATERIAL_VALUE:2]
 [IS_STONE]
+[SOLID_DENSITY:3800]
 [MELTING_POINT:10295]
 
 [INORGANIC:GALENA]
@@ -192,6 +198,7 @@ inorganic_stone_mineral
 [IS_STONE]
 [MELTING_POINT:NONE]
 [BOILING_POINT:12133]
+[SOLID_DENSITY:4050]
 
 [INORGANIC:CASSITERITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -203,6 +210,7 @@ inorganic_stone_mineral
 [MATERIAL_VALUE:2]
 [IS_STONE]
 [MELTING_POINT:12025]
+[SOLID_DENSITY:6900]
 [MATERIAL_REACTION_PRODUCT:GLAZE_MAT:INORGANIC:TIN_GLAZE]
 
 [INORGANIC:COAL_BITUMINOUS]
@@ -225,7 +233,7 @@ inorganic_stone_mineral
 [IGNITE_POINT:11440]
 [MELTING_POINT:NONE]
 [BOILING_POINT:16708]
-[SOLID_DENSITY:1346]
+[SOLID_DENSITY:1250]  Should be less dense than bituminous coal.
 [IS_STONE]
 
 [INORGANIC:NATIVE_PLATINUM]
@@ -280,6 +288,7 @@ ore of mercury, powdered gives vermilion dye
 [ITEM_SYMBOL:'*']
 [IS_STONE]
 [MELTING_POINT:11044]
+[SOLID_DENSITY:8100]
 
 [INORGANIC:COBALTITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -300,6 +309,7 @@ ore of mercury, powdered gives vermilion dye
 [MATERIAL_VALUE:3]
 [IS_STONE]
 [MELTING_POINT:11111]
+[SOLID_DENSITY:4900]
 
 [INORGANIC:HORN_SILVER]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -317,7 +327,7 @@ this is common gypsum, 3 vars below, any gypsum can be heated to and then mixed 
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:gypsum][DISPLAY_COLOR:6:7:1][TILE:'#']
 [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
-[SOLID_DENSITY:2787]
+[SOLID_DENSITY:2320]  Gypsum density was rather high.  My sources all give ~2300.
 [IS_STONE]
 [REACTION_CLASS:GYPSUM]
 [MELTING_POINT:10261]
@@ -335,12 +345,14 @@ this is common gypsum, 3 vars below, any gypsum can be heated to and then mixed 
 [STATE_NAME_ADJ:ALL_SOLID:jet][DISPLAY_COLOR:0:7:1][TILE:176]
 [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
 [IS_STONE]
+[SOLID_DENSITY:1320]
 
 [INORGANIC:PUDDINGSTONE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:puddingstone][DISPLAY_COLOR:6:7:0][TILE:233]
 [ENVIRONMENT_SPEC:CONGLOMERATE:CLUSTER:100][AQUIFER]
 [IS_STONE]
+[SOLID_DENSITY:2000] Based on congolomorate
 
 [INORGANIC:PETRIFIED_WOOD]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -349,6 +361,7 @@ this is common gypsum, 3 vars below, any gypsum can be heated to and then mixed 
 [IS_STONE]
 [MELTING_POINT:12970]
 [BOILING_POINT:14014]
+[SOLID_DENSITY:2200]
 
 [INORGANIC:GRAPHITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -382,6 +395,7 @@ kimberlite can have diamonds
 [STATE_NAME_ADJ:ALL_SOLID:kimberlite][DISPLAY_COLOR:1:7:0][TILE:'%']
 [ENVIRONMENT_SPEC:GABBRO:VEIN:100]
 [IS_STONE]
+[SOLID_DENSITY:2540]
 
 ore of bismuth
 [INORGANIC:BISMUTHINITE]
@@ -393,6 +407,7 @@ ore of bismuth
 [METAL_ORE:BISMUTH:100]
 [IS_STONE]
 [MELTING_POINT:11368]
+[SOLID_DENSITY:7000]
 
 arsenic sulfide
 [INORGANIC:REALGAR]
@@ -402,6 +417,7 @@ arsenic sulfide
 [IS_STONE]
 [MELTING_POINT:10639]
 [BOILING_POINT:11017]
+[SOLID_DENSITY:3560]
 
 another arsenic sulfide, comes from realgar
 [INORGANIC:ORPIMENT]
@@ -411,6 +427,7 @@ another arsenic sulfide, comes from realgar
 [IS_STONE]
 [MELTING_POINT:10639]
 [BOILING_POINT:11017]
+[SOLID_DENSITY:4250]
 
 ore of antimony
 [INORGANIC:STIBNITE]
@@ -420,6 +437,7 @@ ore of antimony
 [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
 [IS_STONE]
 [MELTING_POINT:10990]
+[SOLID_DENSITY:4630]
 
 [INORGANIC:MARCASITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -427,6 +445,7 @@ ore of antimony
 [ENVIRONMENT_SPEC:KAOLINITE:CLUSTER_SMALL:100]
 [IS_STONE]
 [MELTING_POINT:10810]
+[SOLID_DENSITY:4890]
 
 KCl, can be used/processed to fertilizer, destroyed by water -- should only be in very dry environments
 [INORGANIC:SYLVITE]
@@ -436,6 +455,7 @@ KCl, can be used/processed to fertilizer, destroyed by water -- should only be i
 [IS_STONE]
 [MELTING_POINT:11397]
 [BOILING_POINT:12700]
+[SOLID_DENSITY:1990]
 
 [INORGANIC:CRYOLITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -443,6 +463,7 @@ KCl, can be used/processed to fertilizer, destroyed by water -- should only be i
 [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 [IS_STONE]
 [MELTING_POINT:11817]
+[SOLID_DENSITY:2975]
 
 [INORGANIC:PERICLASE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -451,13 +472,14 @@ KCl, can be used/processed to fertilizer, destroyed by water -- should only be i
 [IS_STONE]
 [MELTING_POINT:15040]
 [BOILING_POINT:16000] *** made up because template is 14000
+[SOLID_DENSITY:3785]
 
 a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 [INORGANIC:ILMENITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:ilmenite][DISPLAY_COLOR:0:7:1][TILE:'.']
 [ENVIRONMENT_SPEC:GABBRO:CLUSTER_SMALL:100]
-[SOLID_DENSITY:2307]
+[SOLID_DENSITY:4720]  Previous value was much too low.
 [IS_STONE]
 [MELTING_POINT:12457]
 
@@ -469,6 +491,7 @@ another titanium ore, same comment applies
 [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 [IS_STONE]
 [MELTING_POINT:13285]
+[SOLID_DENSITY:4250]
 
 [INORGANIC:MAGNETITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -487,7 +510,7 @@ to actually get chromium, have to heat 'in the presence of aluminum or silicon'
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:chromite][DISPLAY_COLOR:0:7:1][TILE:'=']
 [ENVIRONMENT_SPEC:OLIVINE:VEIN:100]
-[SOLID_DENSITY:2162]
+[SOLID_DENSITY:4795]   Former value was far too low.
 [IS_STONE]
 [MELTING_POINT:13645]
 
@@ -499,6 +522,7 @@ major source of manganese
 [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 [IS_STONE]
 [MELTING_POINT:10963]
+[SOLID_DENSITY:4730]
 
 this is uranium oxide, but was possibly used for glazing ceramics (colored glass most likely came later involving refinement beyond our tech level)
 [INORGANIC:PITCHBLENDE]
@@ -508,6 +532,7 @@ this is uranium oxide, but was possibly used for glazing ceramics (colored glass
 [IS_STONE]
 [MELTING_POINT:12070]
 [BOILING_POINT:12340]
+[SOLID_DENSITY:7600] Ranges from ~6000-9000+ based on UO2-UO3 ratio.  This might be too low.
 
 an ore of aluminum, but through a too-advanced process, in-game as the source of the corundum gemstones (ruby and sapphire)
 bauxite melts around 2000C, so it's not practical to smelt it for aluminum (magma only goes up to 1300-1400)
@@ -518,6 +543,7 @@ bauxite melts around 2000C, so it's not practical to smelt it for aluminum (magm
 [MELTING_POINT:13600]
 [BOILING_POINT:15000]
 [IS_STONE]
+[SOLID_DENSITY:3100]
 
 aluminum can occasionally be found in its free form in environments that like oxygen, volcanic muds were mentioned
 [INORGANIC:NATIVE_ALUMINUM]
@@ -566,6 +592,7 @@ aluminum can occasionally be found in its free form in environments that like ox
 [IS_STONE]
 [MELTING_POINT:11334]
 [BOILING_POINT:12835]
+[SOLID_DENSITY:1730]
 
 [INORGANIC:OLIVINE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -573,6 +600,7 @@ aluminum can occasionally be found in its free form in environments that like ox
 [ENVIRONMENT_SPEC:GABBRO:CLUSTER:100]
 [IS_STONE]
 [MELTING_POINT:13168]
+[SOLID_DENSITY:3320]
 
 [INORGANIC:HORNBLENDE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -581,6 +609,7 @@ aluminum can occasionally be found in its free form in environments that like ox
 [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 [IS_STONE]
 [MELTING_POINT:11890]
+[SOLID_DENSITY:3235]
 
 [INORGANIC:KAOLINITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -588,6 +617,7 @@ aluminum can occasionally be found in its free form in environments that like ox
 [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
 [IS_STONE]
 [MELTING_POINT:13150]
+[SOLID_DENSITY:2600]
 [MATERIAL_REACTION_PRODUCT:FIRED_MAT:INORGANIC:CERAMIC_PORCELAIN]
 
 [INORGANIC:SERPENTINE]
@@ -596,6 +626,7 @@ aluminum can occasionally be found in its free form in environments that like ox
 [ENVIRONMENT_SPEC:OLIVINE:CLUSTER_SMALL:100]
 [IS_STONE]
 [MELTING_POINT:10281]
+[SOLID_DENSITY:2450]
 
 used with kaolinite sometimes for ceramics
 [INORGANIC:ORTHOCLASE]
@@ -605,6 +636,7 @@ used with kaolinite sometimes for ceramics
 [ENVIRONMENT:METAMORPHIC:CLUSTER:100]
 [IS_STONE]
 [MELTING_POINT:12250]
+[SOLID_DENSITY:2560]
 
 used with kaolinite sometimes for ceramics
 [INORGANIC:MICROCLINE]
@@ -612,6 +644,7 @@ used with kaolinite sometimes for ceramics
 [STATE_NAME_ADJ:ALL_SOLID:microcline][DISPLAY_COLOR:3:7:1][TILE:'%']
 [ENVIRONMENT:ALL_STONE:CLUSTER:100]
 [IS_STONE]
+[SOLID_DENSITY:2560]
 
 mica group contains various minerals, this is based on muscovite
 [INORGANIC:MICA]
@@ -633,13 +666,14 @@ main constituent of limestone, but can be found as crystal
 [MATERIAL_VALUE:2]
 [IS_STONE]
 [MELTING_POINT:12902]
+[SOLID_DENSITY:2930]
 
 potassium nitrate, good for fertilizer and blowing things up with carbon and sulfur
 [INORGANIC:SALTPETER]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:saltpeter][DISPLAY_COLOR:6:7:1][TILE:'x']
 [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
-[SOLID_DENSITY:1201]
+[SOLID_DENSITY:2105]  Previous value was much too low
 [IS_STONE]
 [MELTING_POINT:10601]
 [BOILING_POINT:10720]
@@ -648,7 +682,7 @@ potassium nitrate, good for fertilizer and blowing things up with carbon and sul
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:alabaster][DISPLAY_COLOR:7:7:1][TILE:'^']
 [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
-[SOLID_DENSITY:2787]
+[SOLID_DENSITY:2300]
 [IS_STONE]
 [REACTION_CLASS:GYPSUM]
 [MELTING_POINT:10261]
@@ -657,7 +691,7 @@ potassium nitrate, good for fertilizer and blowing things up with carbon and sul
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:selenite][DISPLAY_COLOR:7:7:1][TILE:';']
 [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
-[SOLID_DENSITY:2787]
+[SOLID_DENSITY:2300]
 [IS_STONE]
 [REACTION_CLASS:GYPSUM]
 [MELTING_POINT:10225]
@@ -666,7 +700,7 @@ potassium nitrate, good for fertilizer and blowing things up with carbon and sul
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:satinspar][DISPLAY_COLOR:7:7:1][TILE:'-']
 [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
-[SOLID_DENSITY:2787]
+[SOLID_DENSITY:2300]
 [IS_STONE]
 [REACTION_CLASS:GYPSUM]
 [MELTING_POINT:10261]
@@ -680,11 +714,12 @@ gypsum without any water (plaster still has some)
 [ENVIRONMENT_SPEC:SATINSPAR:CLUSTER_ONE:100]
 [ENVIRONMENT_SPEC:ALABASTER:CLUSTER_ONE:100]
 [ENVIRONMENT_SPEC:SELENITE:CLUSTER_ONE:100]
-[SOLID_DENSITY:2787]
+[SOLID_DENSITY:2960]  Significantly denser than the other gypsum-related minerals.
 [IS_STONE]
 [MELTING_POINT:12610]
 
-used to make alum, a mordant/deoderant/used in tanning/fire retardent/astringent/preservative, although alunite makes potassium alum and ammonium alum might be the one for tanning
+used to make alum, a mordant/deoderant/used in tanning/fire retardent/astringent/preservative,
+although alunite makes potassium alum and ammonium alum might be the one for tanning
 [INORGANIC:ALUNITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:alunite][DISPLAY_COLOR:7:7:1][TILE:'`']
@@ -693,6 +728,7 @@ used to make alum, a mordant/deoderant/used in tanning/fire retardent/astringent
 [IS_STONE]
 [MELTING_POINT:13690]
 [BOILING_POINT:15364]
+[SOLID_DENSITY:2745]
 
 [INORGANIC:RAW_ADAMANTINE]
 [ITEM_SYMBOL:'*']
