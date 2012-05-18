@@ -4,6 +4,15 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.34.09:
+
+	inorganic soil
+		fixed white sand density (got rid of the second entry)
+	smelter reactions
+		coke output up to 9 and 5 from 3 and 2
+
+******************************************************
+
 Auxiliary file changes for 0.34.08:
 
 	arena

@@ -37,6 +37,31 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.34.09 (May 17, 2012):
+
+Here are the latest fixes.  Note that your furniture stockpiles have some more type options now, and your old piles that had pots enabled will start with all the new tool options enabled (you should set them how you want them after you load it).
+
+Major bug fixes
+	(*) Fixed various broken bucket jobs
+	(*) Rollers require power properly now and get carts to speed faster
+	(*) Stopped injuries from channeling and made objects and the digger move down to the ramp square when appropriate
+	(*) Stopped picking up of unit-occupied/speeding carts in adv mode
+	(*) Stopped wheelbarrow from getting stuck on obstacles that are built as it is moving
+	(*) Fixed problem where carts leaving ramps get their velocity throttled too much (or just outright stopped)
+
+Other bug fixes/tweaks
+	(*) Stopped salt from spreading to fresh water, made fresh water destroy stagnant water
+	(*) Cleaned up stockpile options for tools
+	(*) Increased output of coke reactions
+	(*) Made materials for embark tools match definition
+	(*) Stopped fast travel when riding carts
+	(*) Fixed scrolling of hauling menu for screen heights greater than 25
+	(*) Made older saves set new vehicle ids correctly
+	(*) Fixed busted string when looking at objects on rollers
+	(*) Fixed typo in white sand density
+
+******************************************************
+
 Release notes for 0.34.08 (May 14, 2012):
 
 Here is a hauling release.  I'm sure it has all kinds of interesting issues -- we're going to iron out problems for the next few releases without embarking on anything major in order to restabilize it.  The tile-wise physics causes some oddities on its own (items can't be given a meaningful sub-tile width, so they act a bit strangely if you look at the collisions closely).  Dwarves are also a bit enthusiastic with their new bin/barrel jobs -- when they grab a bin/barrel to load it up, it might have objects in it, and that might lead to conflicts/false shortages on occasion.  We'll have to continue playing around with it.  As far as I can tell, old saves load up fine and have usable minecart/wheelbarrows, so feel free to move your data/save folder over to the new version.  You'll notice your old save stone haulers moving slower -- get some wheelbarrows built at the carpenter's for your stone stockpiles to alleviate that problem.
