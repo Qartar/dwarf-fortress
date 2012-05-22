@@ -37,6 +37,20 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.34.10 (May 21, 2012):
+
+Major bug fixes
+	(*) stopped powered rollers from pushing every track cart everywhere
+	(*) fixed lye/milk bucket storage jobs
+	(*) stopped them from storing assigned cart that is on a valid trackless stop
+	(*) allowed them to store unassigned cart that is on a track
+
+Other bug fixes/tweaks
+	(*) updated some screens for higher dimensions (if you enlarge in windowed mode for instance)
+	(*) wrestles/shared items don't persist when cart moves
+
+******************************************************
+
 Release notes for 0.34.09 (May 17, 2012):
 
 Here are the latest fixes.  Note that your furniture stockpiles have some more type options now, and your old piles that had pots enabled will start with all the new tool options enabled (you should set them how you want them after you load it).
