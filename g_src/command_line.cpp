@@ -83,11 +83,27 @@ void command_linest::handle_arg(string &arg)
 	if(dest=="gen")
 		{
 		//KEEP GOING FOR A NUMBER
-		while(pos<arg.length())
+		while(pos+1<arg.length())
 			{
 			dest.erase();
-			pos++;grab_token_string_pos(dest,arg,pos,' ');
+			pos++;
+			auto s=arg.begin(),e=arg.end();
+			s+=pos;
+			bool quote=false;
+			for(;s<e;++s)
+				{
+				if((*s)=='"')
+					{
+					if(quote)break;
+					else quote=true;
+					++pos;
+					continue;
+					}
+				else if((*s)==' '&&!quote)break;
+				dest+=(*s);
+				}
 			pos+=dest.length();
+
 
 			if(!dest.empty())
 				{

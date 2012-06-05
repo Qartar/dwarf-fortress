@@ -774,8 +774,23 @@ int main (int argc, char* argv[]) {
   string cmdLine;
   for (int i = 1; i < argc; ++i) { 
     char *option = argv[i];
-    cmdLine += option;
-    cmdLine += " ";
+	string opt=option;
+	if(opt.length()>=1)
+		{
+		//main removes quotes, unlike the winmain version, so it has to be rebuilt
+		if(opt[0]=='-')
+			{
+			cmdLine += opt;
+			cmdLine += " ";
+			}
+		else
+			{
+			cmdLine += "\"";
+			cmdLine += opt;
+			cmdLine += "\"";
+			cmdLine += " ";
+			}
+		}
   }
   int result = enabler.loop(cmdLine);
 
