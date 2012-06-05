@@ -37,6 +37,43 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.34.11 (June 4, 2012):
+
+Major bug fixes
+	(*) Stopped crash from forbidden or otherwise lost containers in haul jobs
+	(*) Stopped crash from naming routes when no routes are present
+	(*) Stopped crash from renaming non-squads in the military screen
+	(*) Stopped adventurer from turning into an underground creature when solid ground for placement couldn't be found
+	(*) Stopped children from having missing/damaged clothing thoughts
+
+Other bug fixes/tweaks
+	(*) Stopped dwarves from walling/isolating themselves oftentimes
+	(*) Worker chooses the closest tile instead of preferring tile at the top left of each designation job location (they don't use path distance, nor does this impact global behavior like choosing which designation job is picked overall)
+	(*) Removed ramps near natural waterfalls
+	(*) Added confirmation for burrow deletion
+	(*) Added generic armor options (like those in the default uniforms)
+	(*) Stopped haulers from wandering in loops in certain circumstances
+	(*) Stopped removed constructions from injuring dwarves
+	(*) Stopped dwarves from looping between civ/squad equipment if they can't follow their orders
+	(*) Allowed dwarves to ride/push minecarts even when they don't have walking access to destination
+	(*) Made dwarves equip items based on clothing layering order (there can still be conflicts if some items are already worn)
+	(*) Made dwarves eat from backpacks/drink from waterskins earlier
+	(*) Made armor objects count for missing clothing thoughts
+	(*) Made dwarves drop equipment extra equipment more promptly when they are hungry/thirsty
+	(*) Stopped empty bags from popping out of minecarts
+	(*) Cleared kill orders when completed (they can take a few extra clicks to clear up)
+	(*) Non-fire-immune creatures will dodge out of hot squares
+	(*) Fixed extra flashing _ problem when naming routes
+	(*) Random seeds can now be typed up to the proper number of characters
+	(*) Auto-assign new baby animals to mother's pasture/pond
+	(*) Stopped certain game actions from advancing when designations are placed
+	(*) Added indication of items which are already assigned in specific item assignment on military screen
+	(*) Stopped objects from being forbidden on enemy deaths if they are associated to fort military equipment
+	(*) Made command line world gen exit without forcing a key press confirmation
+	(*) Made command line understand quotes so that parameters with spaces in their names can be used
+
+******************************************************
+
 Release notes for 0.34.10 (May 21, 2012):
 
 Major bug fixes
