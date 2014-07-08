@@ -4,6 +4,47 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.01:
+
+	As with the 0.31.01 release, managing the file changes list would be a daunting task this time.  There are the new plant files, and creature now have gait information among other things like odor, sweat, tears, and so on (along with some material templates and creature variations to support them).  The material emission interaction has been tweaked to allow specific creature targeting, and items have some new attack information.  There are new reactions to respect the new plant growths.
+
+	There are many new keys of course.  This is a partial list:
+		QUICK_ATTACK
+		HEAVY_ATTACK
+		WILD_ATTACK
+		PRECISE_ATTACK
+		CHARGE_ATTACK
+		MULTI_ATTACK
+		A_DISPLAY_TRACKS
+		A_FRESHEST_TRACK
+		A_ODOR
+		A_DISPLAY_ODOR
+		A_YIELD
+		A_INV_DRAW_WEAPON
+		A_LOG_PEOPLE
+		A_LOG_AGREEMENTS
+		A_LOG_EVENTS
+		A_LOG_BESTIARY
+		A_LOG_FILTER
+		A_SPEED_SNEAK
+		A_JUMP
+		A_HOLD
+		ARENA_CONFLICT_STATE_1
+		ARENA_CONFLICT_STATE_2
+		ARENA_MORALE
+		ARENA_WEATHER
+		ARENA_WEATHER_SNOW
+		ARENA_WEATHER_MUD
+		ARENA_WEATHER_CLEAR_SPATTER
+		D_LOOK_ARENA_TREE
+		ARENA_TREE_FILTER
+		ARENA_TREE_AGE
+		RECENTER_ON_LEVER
+		D_LOOK_ARENA_MOUNT
+
+
+******************************************************
+
 Auxiliary file changes for 0.34.11:
 
 	armor items

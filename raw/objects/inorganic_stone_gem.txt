@@ -13,7 +13,7 @@ QUARTZ		Amethyst, agates, aventurine, bloodstone, carnelian, citrine, chalcedoni
 JADES		Jades
 OPALS		Opals
 FELDSPAR	Moonstone, Sunstone
-TOURMALINES	Tourmalines
+TOURMALINES	Tourmalines, schorl
 ZIRCONS		Zircons
 GARNETS		Garnets, pyropes, melanite, demantoid, topazolite, grossulars / tsavorite,
 		almandine, rhodolite, spessartines
@@ -22,7 +22,7 @@ CHRYSOBERYLS	Chrysoberyl, alexandrite, cat's eye
 SPINELS		Spinels, rubicelle
 CORUNDUMS	Ruby, sapphire
 DIAMONDS	Diamonds
-OTHER		Schorl, variscite, chrysocolla, tiger iron, pyrite, peridot, tanzanite, kunzite
+OTHER		Variscite, chrysocolla, tiger iron, pyrite, peridot, tanzanite, kunzite
  
 I'm leaving this data here in case it can someday be used to organize things in the future.
 

@@ -23,3 +23,4 @@ creature_equipment
 	[ALL_ACTIVE]
 	[TRADE_CAPACITY:15000]
 	[MUNDANE]
+	[ODOR_LEVEL:0]

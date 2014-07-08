@@ -15,7 +15,7 @@ is also an alpha, and your world might become corrupted by an error.  You can al
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
-(0) ***Note that this version of DF is only compatible with saves from 0.34.02+.***
+(0) ***Note that this version of DF is only compatible with saves from 0.40.01+.***
 (1) Unzip the new dwarves into a *NEW* folder.
 (2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
@@ -34,6 +34,36 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+
+******************************************************
+
+Release notes for 0.40.01 (July 7, 2014):
+
+Here is the world activation release!  Lots of processes from world generation -- birth, invasions, succession, site foundation, and so on -- now operate in the world after play has begun.  Getting all of that to work led to a meandering route through various pieces of the game, some of which are described below.  Aside from any bugginess, a lot of it will still feel rough and unfinished as things bump around.
+
+New stuff
+	(*) World activation!  There are a few things that aren't active, like megabeast invasions, but lots of world gen actions made it into the game.  Birth, death (to the extent it wasn't handled before), marriages, site foundation as well as reclaims, basic succession and appointments/etc., invasions, as well as some more detail beyond world gen, like patrols, banditry and animal population handling.  We still don't have army battles -- the invasions are all successful right now, unless they are locally interfered with by you.
+	(*) The game advances two weeks before each play -- the calendar there still moves slowly when there's a lot of action, as there is in larger worlds, but there are quite a few things I can do soon to speed that up.  Due to the speed of the calendar, new forts in particular also get just two weeks.  This'll probably cause some shenanigans with the caravan (or you'll just have to wait a year in an autumn fort for your first one) until we sort it out.
+	(*) Fortresses can be retired and unretired.  Losing is still fun but if it doesn't happen when you want, you can put it off for a while.  Retired forts can be conquered (much more easily than they would be if you still controlled them), so don't be surprised if you have to reclaim instead of being able to unretire sometimes.  You can reclaim forts that didn't make it through world generation.
+	(*) Site maps for dwarves, elves and goblins.  These are very basic, but they are there, anyway.
+	(*) Multi-tile trees and lots of new plants.  Fruit and flowers.  Leaves that fall in little clouds.  I had to put off dwarf mode tree harvesting, but we should get to that before long.
+	(*) Megabeasts/forgotten beasts can attack, destroy and then reside within world gen sites like dwarf fortresses.
+	(*) Various movement changes.  Climbing/jumping/sprinting in both modes, though invaders still require a line of site to use them.  Adventure mode has a stealth rewrite, and some elements of that are present in dwarf mode (it is generally easier to spot thieves and ambushers, and I'll probably need to make them smarter about finding cover).  Movement and combat are separate now.  Startled people climb up the walls of their homes a little too often.
+	(*) Tracking information in adventure mode.  You can pull up a little window and see tracks (capital K), and you can also have it describe the freshest track that isn't yours to more easily stay on a trail (alt K).  Tracks are also part of the regular look command.
+	(*) Different levels of conflict -- your opponents in adventure mode will be listed with the current status (non-lethal, lethal, no quarter, etc.).
+	(*) Combat moves take place over a period of time now, and you can do things like catching an opponent's attack -- you have to do that by targeting a grab at the offending part now (reactions used to have a menu, but that was before combat got more smeared out).  You can get information about what attacks your opponent is doing in the attack menu -- the quality of the information depends on your situational awareness skill.  You can add adjective modifiers to your attacks (quick/heavy/etc.) and you can perform more than one attack at a time for a significant penalty to its force.  It might make sense with two adamantine swords or something, twirling them about.
+	(*) Rumors of incidents can be spread, and the rumors need to be spread before you gain reputation (good or bad).  Killing all of the witnesses to an event will effectively remove it from play if you don't let them get off the screen.  People are a little psychic as it regards ongoing conflicts, so that they can make decisions non-stupidly.  Your liaison can share rumors with your fort, but I still need to set up the screen for reviewing them after you've seen them the first time...  not that you can do much with the information.
+	(*) You can travel through tunnels.
+	(*) You can get a guide to travel with you to a faraway place -- it still ended up being too cumbersome, so locals continue to be able to tell you the location of sites, but only within a certain distance of their home town.
+	(*) In general, conversations have been redone.  They no longer have their own screen, but run along with other actions, and there are many more options.
+	(*) The mind has been rewritten quite a bit -- people now experience emotions according to different circumstances (lots of awkward monologues there), and they consider actions differently.  The main outstanding issue is that I didn't get around to converting existing dwarf mode thoughts, so they sort of exist concurrently with the new emotions and that needs to be changed.  I'll get to that before job priorities (which was one of the main shorter-term reasons for the rewrite).  Some dwarves have life-long dreams and it is possible for them to recognize that they've accomplished the ones relating to skills and family.  They cannot yet realize their dreams of taking over the world.
+	(*) The paragraph at the beginning of adventure mode was marginally more useful, but that slipped a bit at the end as things were tweaked.  I think it'll still describe certain invasions and abductions, but it needs to be redone.
+	(*) Lots of new arena options -- not just the conflict state, but you can set the temperature etc. to all sorts of extremes.
+	(*) Some experiments with procedural items, though the new demon-type sites are still quite un-fun now.  The knowledge on the slab at the bottom can be used, but it is probably not worth the trouble.
+	(*) The stuff I forgot
+
+Bug fixes
+	(*) I'm sure several old bugs were "fixed" as large portions of the code was rewritten/removed, but I haven't tried to track exactly which ones.  Bug fixes will commence in earnest now, and everything will be handled over at the bug tracker http://www.bay12games.com/dwarves/mantisbt/.
 
 ******************************************************
 
