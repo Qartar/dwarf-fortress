@@ -209,6 +209,10 @@ Most of these are from Wikipedia's color list.
 	[WORD:ECRU]
 	[RGB:194:178:128]
 
+[COLOR:EGGPLANT]
+	[NAME:eggplant]
+	[RGB:97:64:81]
+
 [COLOR:EMERALD]
 	[NAME:emerald]
 	[WORD:EMERALD]
@@ -442,6 +446,17 @@ Most of these are from Wikipedia's color list.
 	[NAME:red]
 	[WORD:RED]
 	[RGB:255:0:0]
+
+[COLOR:RED_PURPLE]
+	[NAME:red-purple]
+	[WORD:RED]
+	[WORD:PURPLE]
+	[RGB:178:0:75]
+
+[COLOR:ROSE]
+	[NAME:rose]
+	[WORD:ROSE]
+	[RGB:244:194:194] went with tea rose
 
 [COLOR:RUSSET]
 	[NAME:russet]

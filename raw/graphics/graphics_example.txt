@@ -130,7 +130,6 @@ You can also use the entity/site link tokens in place of the profession tokens:
 FORCED_ADMINISTRATOR
 HIGH_PRIEST
 PRIEST
-SHOPKEEPER
 SLAVE
 PRISONER
 
