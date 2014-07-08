@@ -32,7 +32,7 @@ interaction_standard
 	[I_TARGET:B:LOCATION]
 		[IT_LOCATION:CONTEXT_LOCATION] <-- this is always the emitter for now
 	[I_TARGET:C:LOCATION]
-		[IT_LOCATION:CONTEXT_LOCATION]
+		[IT_LOCATION:CONTEXT_CREATURE_OR_LOCATION] <-- lets projectiles be aimed at specific creatures
 		[IT_MANUAL_INPUT:target]
 	[I_EFFECT:MATERIAL_EMISSION]
 		[IE_TARGET:A]
