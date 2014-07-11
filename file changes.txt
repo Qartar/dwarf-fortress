@@ -4,6 +4,14 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.02:
+
+	Fixed the tracking key for the SDL version in data/init/interface.txt.
+	Added A_SHORT_WAIT to the manual (you can use , instead of . to wait for just one instant instead of ten).
+	Changed raw/objects/plant_standard.txt so that quarry bushes process to the correct edible leaf material.
+
+******************************************************
+
 Auxiliary file changes for 0.40.01:
 
 	As with the 0.31.01 release, managing the file changes list would be a daunting task this time.  There are the new plant files, and creature now have gait information among other things like odor, sweat, tears, and so on (along with some material templates and creature variations to support them).  The material emission interaction has been tweaked to allow specific creature targeting, and items have some new attack information.  There are new reactions to respect the new plant growths.
