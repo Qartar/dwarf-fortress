@@ -15,7 +15,7 @@ is also an alpha, and your world might become corrupted by an error.  You can al
 
 TO USE OLD SAVES WHEN UPDATING VERSIONS:
 
-(0) ***Note that this version of DF is only compatible with saves from 0.40.01+.***
+(0) ***Note that this version of DF is only compatible with saves from 0.40.02+.***
 (1) Unzip the new dwarves into a *NEW* folder.
 (2) Copy "data/save" from the old folder into the new folder, or copy over the relevant region folders you've saved to "data/save".  Keep a backup in case something is wrong with the new version.
 (3) When you start, your world should be accessible and ready to play.
@@ -34,6 +34,26 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+
+******************************************************
+
+Release notes for 0.40.02 (July 10, 2014):
+
+It's not DF without save corruption!  This release should fix an issue with autosaves corrupting and causing various crash issues down the line.  For this reason 0.40.01 saves are not compatible with this version -- I'm going to try to avoid compatibility breaks as we go, but sometimes they happen.  I've also fixed the talk-to-deity crash (closely related to the shout-when-nobody-is-around crash, also fixed), the blocking crash, and some other bad issues.  Due to the save corruption, I didn't get a chance to work on the calendar speed, but assuming this release works as planned, I should be able to jump into that now.
+
+Major bug fixes
+	(*) Stopped autosave features from corrupting worlds (thanks to everybody that helped sort that out so quickly!)
+	(*) Made the game not crash when talking to a deity or shouting out in the wilderness
+	(*) Fixed a crash from trying to actively block in the adventure attack menu
+	(*) Fixed the size bug where 9 of 10 young critters did not grow up beyond baby size (thanks Urist Da Vinci and so many others for all the work on that!  I'd thank you all properly if I could do the archaeology to figure out how it was sorted out...)
+	(*) Fixed a crash that came sometimes when asking about the position of site forces
+	(*) Stopped a freeze that happened when swimming in deep water
+
+Other bug fixes/tweaks
+	(*) Fixed the tracking key in the SDL version so you should be able to do that with capital K now
+	(*) Added the short wait button to the adventurer manual -- you can use , instead of . to wait for one instant
+	(*) Made quarry bushes process to an edible leaf properly
+	(*) Typo when impersonating divine being
 
 ******************************************************
 
