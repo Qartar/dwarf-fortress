@@ -4,6 +4,12 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.03:
+
+	Just the usual (index/manual technical).
+
+******************************************************
+
 Auxiliary file changes for 0.40.02:
 
 	Fixed the tracking key for the SDL version in data/init/interface.txt.
