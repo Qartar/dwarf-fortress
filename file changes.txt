@@ -4,6 +4,14 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.04:
+
+	Changed key
+		A_LOG_ENTITIES was e in SDL, n in legacy, now it is g
+	index/manual technical
+
+******************************************************
+
 Auxiliary file changes for 0.40.03:
 
 	Just the usual (index/manual technical).
