@@ -999,7 +999,7 @@ language_GOBLIN
 	[T_WORD:YEAR:usle]
 	[T_WORD:YEARLING:otub]
 	[T_WORD:YELLOW:stoko]
-	[T_WORD:YOR:stusto]
+	[T_WORD:YORE:stusto]
 	[T_WORD:YOUNG:xoxo]
 	[T_WORD:YOUTH:uznuk]
 	[T_WORD:ZEAL:otst‰]

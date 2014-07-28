@@ -999,7 +999,7 @@ language_DWARF
 	[T_WORD:YEAR:Œd]
 	[T_WORD:YEARLING:budam]
 	[T_WORD:YELLOW:inol]
-	[T_WORD:YOR:okang]
+	[T_WORD:YORE:okang]
 	[T_WORD:YOUNG:ging]
 	[T_WORD:YOUTH:rilem]
 	[T_WORD:ZEAL:kizest]

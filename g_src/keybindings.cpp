@@ -2315,8 +2315,8 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_BUILDJOB_COFFIN_FREE, "Buildjob: Coffin, Free");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_COFFIN_SIZE, "Buildjob: Coffin, Size");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_COFFIN_BURIAL, "Buildjob: Coffin, Gen. Burial");
-	displayNames.insert(INTERFACEKEY_BUILDJOB_COFFIN_CIV, "Buildjob: Coffing, Allow Citizens");
-	displayNames.insert(INTERFACEKEY_BUILDJOB_COFFIN_PET, "Buildjob: Coffing, Allow Pets");
+	displayNames.insert(INTERFACEKEY_BUILDJOB_COFFIN_CIV, "Buildjob: Coffin, Allow Citizens");
+	displayNames.insert(INTERFACEKEY_BUILDJOB_COFFIN_PET, "Buildjob: Coffin, Allow Pets");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_CHAIR_ASSIGN, "Buildjob: Chair, Assign");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_CHAIR_FREE, "Buildjob: Chair, Free");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_CHAIR_SIZE, "Buildjob: Chair, Size");
