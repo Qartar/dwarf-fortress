@@ -4,6 +4,54 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.05:
+
+	creatures
+		added removal of UBIQUITOUS/FREQUENCY in animal person/giant variations (ab9rf)
+		allowed frequencies to be modified by percentage in creature variations
+		changed frequencies/population numbers for animal people
+		moved tiger man to large_tropical after tiger and made it use the standard animal person variation
+		fixed various broken eyelash color/descriptions
+		used correct legless variation for king cobra people
+		added LARGE_ROAMING to desert tortoise and giant tortoise
+		removed lots of HOMEOTHERM tags from bugs
+		added a missing CONNECTOR to generated lower spines, and PREVENTS_PARENT_COLLAPSE to generated upper spines
+		fixed duck/goose root around part category
+		fixed antlers for reindeer/moose/elk/deer, added them to elk bird
+		fixed typo in tapir description
+		fixed typo in dragon description
+		fixed reversed stoat caste names
+		fixed reversed giant armadillo caste names
+		fixed problem with squid skin coloration
+		gave crabs, horseshoe crabs, oysters and mussels blue blood
+		fixed proboscis plural
+		perseverence->ance in creature standard
+		'curiousity' fixed in creature large ocean
+
+	plants
+		fixed several density placement mistakes in the older trees/underground megafungi of plant_standard
+		fixed strawberry plural
+		'buckwheet' fixed in a few places in plant crops
+
+	materials
+		set obsidian's material values properly (UristDaVinci)
+		fixed topaz plural
+
+	entities
+		perseverence->ance in entity values
+		added elven diplomat
+
+	announcements
+		fixed ruler arrival announcement
+
+	manual
+		added a line break so TSK shows up properly in building items page of manual
+
+	language
+		additional typos in language_words fixed
+
+******************************************************
+
 Auxiliary file changes for 0.40.04:
 
 	Changed key
