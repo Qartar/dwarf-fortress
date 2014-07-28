@@ -600,7 +600,7 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:platypus man:platypus men:platypus man]
 	[DESCRIPTION:A humanoid with the head, tail and poison spurs of a platypus.]
-	[POPULATION_NUMBER:30:50]
+	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:60:80]
 	[CREATURE_TILE:'p']

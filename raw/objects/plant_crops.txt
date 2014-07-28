@@ -310,7 +310,7 @@ plant_crops
 		[MATERIAL_VALUE:1]
 		[EDIBLE_VERMIN]
 		[EDIBLE_COOKED]
-	[SEED:buckwheet seed:buckwheet seeds:0:0:1:LOCAL_PLANT_MAT:SEED]
+	[SEED:buckwheat seed:buckwheat seeds:0:0:1:LOCAL_PLANT_MAT:SEED]
 	[FREQUENCY:50]
 	[CLUSTERSIZE:5]
 	[PREFSTRING:beer]
