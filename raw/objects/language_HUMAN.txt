@@ -999,7 +999,7 @@ language_HUMAN
 	[T_WORD:YEAR:tol]
 	[T_WORD:YEARLING:leteng]
 	[T_WORD:YELLOW:sutad]
-	[T_WORD:YOR:uthral]
+	[T_WORD:YORE:uthral]
 	[T_WORD:YOUNG:setshi]
 	[T_WORD:YOUTH:kethi]
 	[T_WORD:ZEAL:issok]
