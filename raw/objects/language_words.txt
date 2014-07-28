@@ -392,7 +392,7 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_PLUR]
-	[VERB:beguil:beguils:beguiled:beguiled:beguiling]
+	[VERB:beguile:beguiles:beguiled:beguiled:beguiling]
 		[STANDARD_VERB]
 
 [WORD:BELCH]
@@ -2052,7 +2052,7 @@ language_words
 		[OF_NOUN_PLUR]
 
 [WORD:DOMESTIC]
-	[NOUN:domescile:domesciles]
+	[NOUN:domicile:domiciles]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[THE_NOUN_PLUR]
@@ -9454,8 +9454,8 @@ language_words
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 
-[WORD:YOR]
-	[NOUN:yor:yor]
+[WORD:YORE]
+	[NOUN:yore:yore]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
@@ -9572,7 +9572,7 @@ language_words
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-	[VERB:daub:daubs:daubed:daubed:daubbing]
+	[VERB:daub:daubs:daubed:daubed:daubing]
 		[STANDARD_VERB]
 
 [WORD:DESERT]
@@ -10857,7 +10857,7 @@ language_words
 		[THE_NOUN_SING]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-	[VERB:counsel:counsels:counselled:counselled:counselling]
+	[VERB:counsel:counsels:counselled:counselled:counseling]
 		[STANDARD_VERB]
 
 [WORD:GNARLED]
@@ -12271,7 +12271,7 @@ language_words
 	[ADJ:trussed]
 		[ADJ_DIST:2]
 		[REAR_COMPOUND_ADJ]
-	[VERB:truss:trusss:trussed:trussed:trussing]
+	[VERB:truss:trusses:trussed:trussed:trussing]
 		[STANDARD_VERB]
 
 [WORD:SKEWER]
@@ -13401,7 +13401,7 @@ language_words
 		[ADJ_DIST:2]
 
 [WORD:CURIOUS]
-	[NOUN:curiousity:]
+	[NOUN:curiosity:]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 	[ADJ:curious]
@@ -15062,7 +15062,7 @@ language_words
 		[OF_NOUN_SING]
 
 [WORD:CHERISH]
-	[VERB:cherish:cherishs:cherished:cherished:cherishing]
+	[VERB:cherish:cherishes:cherished:cherished:cherishing]
 		[STANDARD_VERB]
 
 [WORD:TRAMPLE]
@@ -16441,7 +16441,7 @@ language_words
 	[ADJ:vanished]
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]
-	[VERB:vanish:vanishs:vanished:vanished:vanishing]
+	[VERB:vanish:vanishes:vanished:vanished:vanishing]
 		[STANDARD_VERB]
 
 [WORD:WASH]
@@ -17570,7 +17570,7 @@ language_words
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-	[VERB:clutch:clutchs:clutched:clutched:clutching]
+	[VERB:clutch:clutches:clutched:clutched:clutching]
 		[STANDARD_VERB]
 
 [WORD:DOMINATE]
@@ -18005,7 +18005,7 @@ language_words
 		[OF_NOUN_SING]
 	[ADJ:nourishing]
 		[ADJ_DIST:2]
-	[VERB:nourish:nourishs:nourished:nourished:nourishing]
+	[VERB:nourish:nourishes:nourished:nourished:nourishing]
 		[STANDARD_VERB]
 
 [WORD:SQUEEZE]
@@ -18126,7 +18126,7 @@ language_words
 	[ADJ:brushed]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
-	[VERB:brush:brushs:brushed:brushed:brushing]
+	[VERB:brush:brushes:brushed:brushed:brushing]
 		[STANDARD_VERB]
 
 [WORD:CLARIFY]
