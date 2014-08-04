@@ -4,6 +4,20 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.06:
+
+	creatures
+		removed leathery egg materials from copperhead in creature_temperate_new
+		went ahead and updated the "evil" animal people pops as with other animal people for completeness
+	
+	keys
+		fixed utf-8 encoding for sdl interface.txt
+
+	plants
+		made soybeans edible when cooked
+
+******************************************************
+
 Auxiliary file changes for 0.40.05:
 
 	creatures

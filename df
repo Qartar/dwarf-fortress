@@ -9,4 +9,4 @@ else
 	export DYLD_FALLBACK_LIBRARY_PATH=${PWD}/libs
 	export DYLD_FALLBACK_FRAMEWORK_PATH=${PWD}/libs
 fi
-cd "${PWD}"; ./dwarfort.exe &
+cd "${PWD}"; ./dwarfort.exe "$@" &

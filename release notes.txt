@@ -37,6 +37,61 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.06 (August 3, 2014):
+
+Another bug fix release.
+
+Major bug fixes
+	(*) Fixed a problem causing certain jobs to become stuck when their paths were interrupted
+	(*) Stopped dwarves from starting conflicts with led creatures
+	(*) Stopped led creatures from wandering away from leader
+	(*) Made buildings with burrows require a connectivity check when searching for items
+	(*) Made dwarves forbid webs that are "accessible" but require pathing through unexplored areas
+	(*) Reduced number of automation jobs created
+	(*) Made some jobs respect fish/vermin amount when producing products
+	(*) Make potash from lye respects lye stacks
+	(*) Made jobs requiring several e.g. bones not need many individual stacks
+	(*) Made thread spinning job not use up all of a stack of wool
+	(*) Stopped decoration job from consuming entire stacks
+	(*) Stopping using entire stack of meat to bait animal trap
+	(*) Stopped reactions from consuming way too many raw materials from stacks (ag), though reactions that use very small amounts still use at least 1 item from a stack
+	(*) Stopped mining of root from removing the tree
+
+Other bug fixes/tweaks
+	(*) Stopped announcement of theft of hidden reclaimed underground objects
+	(*) Stopped birth announcements for hidden creatures and separated wild/tame animal birth announcements
+	(*) Stopped hidden/forbidden buildings from being listed in lever link menu
+	(*) Stopped hidden/forbidden buildings from appearing in room list
+	(*) Stopped hidden items from appearing in military equipment lists
+	(*) Made trees update indoor/etc. settings properly upon removal
+	(*) Made building/stockpile menus to respect different window heights
+	(*) Made hunger/thirst/etc. indicators display properly in travel
+	(*) Made vision arc display turn off for blinded creatures
+	(*) Made scarred over wounds to broken functional layers continue to impair function
+	(*) Removed requirement that a creature have a baby/child state to breed
+	(*) Fixed plant growth consumption preferences (Quietust)
+	(*) Fixed display of tree roots designated for mining
+	(*) Fixed reversed display of zone sizing controls
+	(*) Made random creatures only spit liquid spittle
+	(*) Fixed state token for mud creature tissues (Quietust)
+	(*) Stopped traders from bringing unspecified "liquid" from bloodsucking animals (Quietust)
+	(*) Fixed problem causing multiple plant listings in stockpile
+	(*) Made jobs properly cut away pieces of corpses for use (so that reanimation etc. respects partial use)
+	(*) Made reactions count up and trim away body component materials properly
+	(*) Added wound description for partially butchered parts
+	(*) Made globs stackable
+	(*) Fixed unretire message on linux/osx
+	(*) Stopped dwarven forges in world gen sites from using thrones instead of anvils
+	(*) Fixed message for being caught in a cloud of vapor/dust (Quietust)
+	(*) Removed special materials from dwarf prefs
+	(*) Clarified generated items in stockpiles (can't remove yet)
+	(*) Fixed adjectives for randomly generated blowdarts/bolts (old saves still broken)
+	(*) Made burrow indicator show over hidden areas
+	(*) Fixed broken language selection for certain names
+	(*) Can copy basic item type/subtype with reagent using GET_ITEM_DATA_FROM_REAGENT:<reagent token>:NONE
+
+******************************************************
+
 Release notes for 0.40.05 (July 27, 2014):
 
 This is a bug fix and optimization release, which is probably something we should get used to for a while, since there is a lot left to do!  I've tried to make it possible to play in larger worlds again, but there's also more that can be done.
