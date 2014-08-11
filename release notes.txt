@@ -37,6 +37,49 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.07 (August 10, 2014):
+
+Enjoy another set of bug fixes!
+
+Major bug fixes
+	(*) Fixed crash that involved promoting certain stops above their route
+	(*) Removed some stale invasion data preventing further invasions
+	(*) Stopped dwarves from breeding like animals, technically speaking
+	(*) Made diplomats search for civ-level land-holders properly
+	(*) Fixed some path buffering problems that could screw up neighbor list etc.
+	(*) Fixed a few problems with undead AI
+	(*) Stopped sleeping/incapacitated dwarves from doing things
+	(*) Fixed problem with squad leader assignment in military screen
+	(*) Made sparring people use their weapons properly
+	(*) Made unretired forts unhide fully, flowing from surface and all units
+
+Other bug fixes/tweaks
+	(*) Made masterpiece announcements wait for all item info to be decided before trying to print item name
+	(*) Eliminated an OSX key conflict for text deletion
+	(*) Made install colony jobs respect each other's targets
+	(*) Made install colony jobs react to missing hive at gather destination
+	(*) Added another adjustment to designation jobs to help them vs. paths that became bad
+	(*) Required animal hauling labor for various jobs
+	(*) Added new labors for hauling trade goods, pulling levers, removing constructions and hauling water
+	(*) Attached trap cleaning to clean labor
+	(*) Made laborless building construct/destroy jobs take furniture hauling
+	(*) Allowed burrows to restrict workshop item search or not (default off)
+	(*) Added assigned citizen number to burrow list
+	(*) Stopped paralyzed injured dwarves from spamming rest cancellation messages
+	(*) Stopped some CPU-intensive temperature wobble (ag)
+	(*) Cleaned up the creature pressure plate interface
+	(*) Made paved roads only need as much material as required by the road tiles (rather than the whole rectangle)
+	(*) Made translated name appear properly at the top of the screen when viewing creature
+	(*) Stopped dwarves from liking special items
+	(*) Fixed a problem with unnamed historical figure statue/figurine item names and descriptions
+	(*) Fixed color display problem in civ list
+	(*) Gave not-you civs range of 30 path-wise for neighbor status on embark (towers still 10)
+	(*) Allowed use of number in burrow names without moving cursor
+	(*) SDL string question mark should no longer enter as a pipe, and pipe should be enterable
+	(*) Respected question mark entry in several places
+
+******************************************************
+
 Release notes for 0.40.06 (August 3, 2014):
 
 Another bug fix release.
@@ -1831,7 +1874,7 @@ Finally, aqueduct behavior has been partially repaired.  Building an aqueduct ov
 
 Release notes for 0.21.101.19a:
 
-Several crash bugs should be fixed now.  Most saves will be recoverage, unless they have a load inflate error.
+Several crash bugs should be fixed now.  Most saves will be recoverable, unless they have a load inflate error.
 
 ******************************************************
 
