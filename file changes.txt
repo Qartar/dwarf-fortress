@@ -4,6 +4,21 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.07:
+
+	plants
+		acacia flowers/seed pods got GROWTH_HOST_TILE
+
+	keys
+		[BUILDING_TRIGGER_MIN_SIZE_UP_PLUS:SHIFT+R]
+		[BUILDING_TRIGGER_MIN_SIZE_DOWN_PLUS:SHIFT+E]
+		[BUILDING_TRIGGER_MAX_SIZE_UP_PLUS:SHIFT+F]
+		[BUILDING_TRIGGER_MAX_SIZE_DOWN_PLUS:SHIFT+D]
+		STRING_A124 -> | for SDL versions
+		removed STRING_A127 as it was causing a conflict on OSX
+
+******************************************************
+
 Auxiliary file changes for 0.40.06:
 
 	creatures
