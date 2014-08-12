@@ -34,6 +34,15 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+******************************************************
+
+Release notes for 0.40.08 (August 11, 2014):
+
+A few new errors crept in.  Hopefully they will creep out now.
+
+Major bug fixes
+	(*) Stopped ESC from ending the game when setting up fort or adventurer
+	(*) Made constructions use materials properly again
 
 ******************************************************
 
