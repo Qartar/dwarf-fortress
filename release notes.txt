@@ -36,6 +36,47 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.09 (August 17, 2014):
+
+The cleaning continues with this release!  Some notes on poles:  For no-pole, you'll need to handle glacier and tundra biomes in one way or another (wider temperature range, remove region requirements, etc.).  For instance, to make a valid no-pole large island, all I needed to do was widen the temperature max/min from 75/25 to 110/-10.  This made a few glaciers and tundras scattered around the world, and it also allowed a few tropical biomes to appear.  For no-pole, base temperatures of at least 85 make an environment tropical (worlds with poles continue to use latitude), though 75 works for certain biomes.  You should be able to input your own temperatures in the txt parameters now without the game applying a polar shift.  No-pole worlds do not yet experience any seasonal temperature variations, and worlds with two poles still have seasons at the same time of year on either side of the equator until that can be made less confusing.
+
+Major bug fixes
+	(*) Fixed problem causing domestic underground animals to be placed beyond their number (and then replaced at that new number)
+	(*) Made people not so eager to jump in on the side of their relatives and friends if the relative/friend is berserk/etc.
+	(*) Made creatures prefer to flee normally if possible (rather than jumping off cliffs etc.)
+	(*) Stopped liquid flows in confined spaces from sometimes making items disappear
+	(*) Made items that froze in ice reappear properly when ice melts
+	(*) Allowed dwarves interested in marriage to start relationships properly (Quietust)
+	(*) Removed some vestigial code stopping wagons from moving properly after move/attack speed split
+	(*) Fixed a wagon AI error that caused them to fail to unload sometimes
+	(*) Gave wagons the ability to go past each other in certain instances
+	(*) Made invaders not come back as ghosts
+	(*) Stopped non-historical dwarves from coming back as ghosts (put in fix for old saves that should lay them to rest soon after unpause)
+	(*) Stopped ghosts from being considered in regular sight code
+	(*) Fixed the defend burrow order
+	(*) Allowed items made from gem materials (including large gems) to be stored in finished goods pile
+	(*) Fixed broken logic that made trade good hauling require both trade good hauling and lever operation labors
+
+Other bug fixes/tweaks
+	(*) Fixed up quarry bush bag job vs. rock nuts
+	(*) Added appropriate announcements for some additional circumstances under which a fort dwarf could assume a civ-level position
+	(*) Added embark warning if civ is dead
+	(*) Added optional confirmation window after preparing embark (default: pops up if points remain)
+	(*) Printed job after name when following unit
+	(*) Marked dwarves as "New Arrival" on unit/job screen instead of "No Job" while they are new
+	(*) Added pole-setting parameters for world gen, allowed north+south pole and no-pole options
+	(*) Fixed an error causing nearby site maps to be offloaded too often
+	(*) Made hill dwarf sites put animals in pastures properly
+	(*) Made animals not placed in pasture/waste/yard get placed even if their preferred type isn't available
+	(*) Fixed some manual typos (Gorobay)
+	(*) Initialized strict pop cap to 220 if not present in d_init
+	(*) Made alerts without names show properly as "Alert State #" in squad mode
+	(*) Finished updating pineapple raws
+	(*) Made several export filenames use the format (region)-YYYYY-MM-DD-(etc)
+	(*) Added error for unrecognized CREATURE in entity raw
+
+******************************************************
+
 Release notes for 0.40.08 (August 11, 2014):
 
 A few new errors crept in.  Hopefully they will creep out now.
