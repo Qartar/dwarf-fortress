@@ -1,3 +1,11 @@
+WARNING: Do NOT copy over the init.txt from an earlier version of DF.
+Always read the file carefully, including the comments.
+
+In general, you can copy savegames and tilesets from older DF
+versions, but you should not copy anything else.  You should not, under any
+circumstances, unpack a new DF on top of an older one.
+
+
 Change this to turn sound off.
 
 [SOUND:ON]

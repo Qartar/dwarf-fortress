@@ -4,6 +4,20 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.09:
+
+	plants
+		finished conversion of pineapple plant out of tree format
+		added seed mat reaction product to quarry bush
+
+	reaction
+		added seeds to bag job, made bag not determine reaction amount
+
+	manual
+		typos and a few updates (Gorobay)
+
+******************************************************
+
 Auxiliary file changes for 0.40.08:
 
 	Just the usual.
