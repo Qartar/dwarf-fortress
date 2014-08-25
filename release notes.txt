@@ -36,6 +36,46 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.10 (August 24, 2014):
+
+Here is another round of fixes.  Note that for morale fixes in old saves there could be some persistent alarm data that causes people to continue to run for a bit, even for a few in-game hours in some cases, so you might need to let things work themselves out.
+
+Major bug fixes
+	(*) Fixed crash that could happen when refugee rumors were created
+	(*) Fixed crash from visiting former player fortress with adventurer if certain army is present
+	(*) Fixed crash related to surgery
+	(*) Fixed crash that happened when it considered certain units in play for succession
+	(*) Stopped a conversation crash from talking to mute creatures about their troubles
+	(*) Allowed flying/climbing wilderness critters to work their way off the map
+	(*) Fixed problem allow the player to become invisible among many units even when clearly visible
+	(*) Made running away in terror/fear respect only valid combat location information
+	(*) Made genuine retreat and alarm state more separate from each other (being alarmed was being equated with flight for morale)
+	(*) Stopped certain old conflicts from causing alarm
+	(*) Made people that are attacked briefly have some knowledge of attacker's position
+	(*) Stopped certain jobs from being able to teleport items and engage in other action-at-a-distance antics
+	(*) Stopped necromancer towers from doing various inappropriate townish things that lead to tower proliferation etc.
+	(*) Fixed some reclaim/unretire bugs involving unavailable seeds
+	(*) Adjusted projectile firing speed which became broken during wagon fix
+
+Other bug fixes/tweaks
+	(*) Adjusted emotional strain vs. willpower etc. calculation
+	(*) Made non-extra-sensory creatures also respect z coord of potential targets
+	(*) Fixed a pathing lag associated to mood dwarves not being able to get to their buildings
+	(*) Added stockpile option for cut stones
+	(*) Removed obsolete relieved/drafted thoughts
+	(*) Made extra-sensory creatures even less perturbable by critters sensed through layers of rock
+	(*) Stopped erroneous conflicts between certain hunting creatures
+	(*) Stopped shared/wrestled items from being used for block/parry
+	(*) Stopped creatures with multiple attacks like hydra from stacking attack modifiers incorrectly
+	(*) Made attacker always look at target upon initiating attack
+	(*) Ordered farm plot plant lists by seed availability/name
+	(*) Lowered cap for wrestle skill gain so it wouldn't be hit triple digits attacking large opponents
+	(*) Removed double entry of "slabs" from stocks screen
+	(*) Adjusted 'v' menu location for window height (so it wouldn't overwrite certain lists, etc.)
+	(*) Fixed a few typos causing double periods in personality paragraphs
+
+******************************************************
+
 Release notes for 0.40.09 (August 17, 2014):
 
 The cleaning continues with this release!  Some notes on poles:  For no-pole, you'll need to handle glacier and tundra biomes in one way or another (wider temperature range, remove region requirements, etc.).  For instance, to make a valid no-pole large island, all I needed to do was widen the temperature max/min from 75/25 to 110/-10.  This made a few glaciers and tundras scattered around the world, and it also allowed a few tropical biomes to appear.  For no-pole, base temperatures of at least 85 make an environment tropical (worlds with poles continue to use latitude), though 75 works for certain biomes.  You should be able to input your own temperatures in the txt parameters now without the game applying a polar shift.  No-pole worlds do not yet experience any seasonal temperature variations, and worlds with two poles still have seasons at the same time of year on either side of the equator until that can be made less confusing.
