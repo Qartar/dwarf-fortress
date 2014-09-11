@@ -36,6 +36,45 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.12 (September 10, 2014):
+
+This release has some more bug fixes in it, mostly related to healthcare, prisoners and morale.
+
+Major bug fixes
+	(*) Made dwarves that fall unconscious while going to rest or sleep location not get stuck on the spot
+	(*) Fixed symptoms of wrestling error that could cause dwarves to freeze in place forever
+	(*) Stopped civs from sending a squad when they failed to find thieves/snatchers to send (led to small sieges in the first year)
+	(*) Allowed recover wounded jobs to bring dwarves to hospital floor if no beds are available
+	(*) Stopped recover wounded jobs from bringing dwarves to non-hospital beds
+	(*) Made caged/chained people request water/food with proper frequency
+
+Other bug fixes/tweaks
+	(*) Made doctors remove dwarves from traction properly (checks weekly)
+	(*) Made dwarves move/get moved to new hospital more quickly if old hospital is removed
+	(*) Roots function as ramp walls properly now
+	(*) Can cross ramps covered by bridges in adventure mode
+	(*) Made critters that join up with your adventurer stop traveling if they were on a journey
+	(*) Made critters with entity-based army duties unwilling to join adventurers
+	(*) Stopped critters joined with you from considering moving, joining armies and other issues
+	(*) Added ability to repeat, suspend and cancel jobs from unit/job lists
+	(*) Made civ-level nobles attached to locations (e.g. barons) include their site in their name when possible
+	(*) Made dwarves that have been grabbed for chaining/etc. cancel their jobs properly
+	(*) Stopped certain events (like giving birth, resting or getting an artifact mood) from causing a working dwarf to suspend jobs for the whole fort
+	(*) Stopped chained mothers from seeking wandering infants
+	(*) Changed name of chaining/other jobs to include target instead of saying "animal" for everybody
+	(*) Made certain creatures like minotaurs act less civilized (requires LARGE_PREDATOR in raws)
+	(*) Stopped alarm moods from persisting long beyond event itself
+	(*) Made non-soldier adventure companions not default to flight (this could include giant demons, etc.)
+	(*) Stopped companions with stranger-kill ethics from starting no-quarter fights with strangers the party meets
+	(*) Made stranger-kill creatures respect their own prisoners/etc.
+	(*) Stopped adventure mode critters from persisting on outmoded paths when destination has changed
+	(*) Made sure dipscripts were loaded in the same order on different platforms (Quietust)
+	(*) Trading a worthless item for a non-worthless item no longer results in you initiating a robbery
+	(*) Wooden chests brought by elven traders are grown now
+	(*) Seeds that should be edible raw in adv mode are now edible
+
+******************************************************
+
 Release notes for 0.40.11 (September 3, 2014):
 
 Here is the first release for September!  As usual, a few bugs like sleep screwups, cowardly companions and wandering children might persist for a while into old saves until the system clears itself out.
