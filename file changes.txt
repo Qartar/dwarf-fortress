@@ -4,6 +4,17 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.12:
+
+	creature_standard
+		(semi)megabeasts that were missing LARGE_PREDATOR received it
+
+	changed keys
+		UNITJOB_REMOVE_CRE from r -> x
+		UNITJOB_ZOOM_CRE from c -> z
+
+******************************************************
+
 Auxiliary file changes for 0.40.11:
 
 	material templates
