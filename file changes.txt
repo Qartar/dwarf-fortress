@@ -4,10 +4,21 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
-Auxiliary file changes for 0.40.12:
+Auxiliary file changes for 0.40.13:
 
 	creature_standard
 		(semi)megabeasts that were missing LARGE_PREDATOR received it
+
+	grazing creatures
+		STANDARD_GRAZER added to replace all grazing numbers, can set coefficient in d_init
+
+	d_init
+		GRAZE_COEFFICIENT to scale grazing amounts
+
+
+******************************************************
+
+Auxiliary file changes for 0.40.12:
 
 	changed keys
 		UNITJOB_REMOVE_CRE from r -> x
