@@ -36,6 +36,41 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.13 (September 17, 2014):
+
+This release fixes some more bugs, old and new.
+
+Major bug fixes
+	(*) Fixed item storage crash related to minecart being destroyed
+	(*) Stopped dwarves from trying to clean their own missing or internal body parts
+	(*) Cleared old activities properly so they aren't considered by dwarves for too long
+
+Other bug fixes/tweaks
+	(*) Decreased frequency of conversation-skill-building dwarf chats
+	(*) Reworked grazing formula, used fractional exponent to scale properly according to size
+	(*) Made grazing tile selection less top-left biased and made it prefer non-creature'd tiles with denser grass
+	(*) Made butcher jobs for corpses not in piles respect z coordinate of building (Quietust)
+	(*) Handled some issues with subterranean areas being removed through trees
+	(*) Made workshop profile skill checks ignore skill rust
+	(*) Fixed problem with siege operator skill check (Quietust)
+	(*) Stopped a lever linking job from being added if it is already in progress
+	(*) Stopped fort dwarves from throwing their clothes off into a pile during unretire after being visited by adventurer
+	(*) Stopped fort animals from getting clothing during unretire after being visited by adventurer
+	(*) Stopped animals with kills from getting trinkets from corpses
+	(*) Stopped animals from growing attached to and bestowing names on items in their possession
+	(*) Stopped embark screen from setting neighbors with regular sites that happen to have zombies (due to another bug)
+	(*) Made "place item in tomb" job governed by burial instead of item hauling labor
+	(*) Made outside refuse order respect inside/outside instead of above ground/subterranean
+	(*) Stopped inside above ground corpses/corpse pieces from being destroyed periodically
+	(*) Stopped evaporation of inside above ground water from depending on the weather
+	(*) Stopped water items on the ground from being cleanable -- they evaporate instead
+	(*) Made water spatter evaporate properly over time
+	(*) Sped up extrasensory detection
+	(*) Sped up tracking of food consumption
+	(*) Re-enabled effects of cave adaptation
+
+******************************************************
+
 Release notes for 0.40.12 (September 10, 2014):
 
 This release has some more bug fixes in it, mostly related to healthcare, prisoners and morale.
