@@ -36,6 +36,27 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.14 (October 25, 2014):
+
+Here is the next release.  The focus was not bugs this time, but rather completing the work started on emotions as well as basic fruit harvesting.  A note -- adding stepladders to old saves was not possible, so you'll have to wait for a new world for those.  Fallen fruit can still be gathered in old saves using the new plant gathering zones.  Dwarves in old saves have also had their current thoughts wiped clean to make way for the new emotion/circumstance pairs.
+
+New stuff
+	(*) Dwarf thoughts have been replaced with personality-dependent emotion/circumstance pairs
+	(*) Dwarf happiness has been replaced by a longer-term stress level, and a few new effects have been added
+	(*) Plant gathering zones can be used to set up fruit harvesting from trees using the new stepladder
+	(*) Plant gathering zones can also handle the old shrub jobs, and fallen fruit can also be gathered from zones
+	(*) Shrubs now have their berries/etc. gathered properly (bean-type plants that only have edible seeds are still an issue)
+	(*) As a stopgap, farm plot plants yield viable growths out of season upon harvest
+	(*) In adventure mode, it is possible to ask about people about yourself, other people, and how they are feeling
+
+Other bug fixes/tweaks
+	(*) Stopped IMMOBILE creatures from trying to flee terrain
+	(*) Fixed problem with fear vs. stating proper opinion
+	(*) Stopped harvest/plant jobs from being added to farms slated for destruction
+	(*) Deconstructed farm plot loses items
+
+******************************************************
+
 Release notes for 0.40.13 (September 17, 2014):
 
 This release fixes some more bugs, old and new.

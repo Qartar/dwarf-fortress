@@ -4,6 +4,27 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.14:
+
+	new/changed keys
+		CIVZONE_DUMP g -> d
+		CIVZONE_GATHER g
+		CIVZONE_GATHER_OPTIONS G
+		CIVZONE_GATHER_OPTIONS_PICK_TREES t
+		CIVZONE_GATHER_OPTIONS_PICK_SHRUBS s
+		CIVZONE_GATHER_OPTIONS_GATHER_FALLEN f
+
+	creatures
+		retired LIKES_FIGHTING, though it shouldn't give an error for the time being
+
+	item_tool
+		added stepladder
+
+	entity_default
+		added stepladder tool to MOUNTAIN
+
+******************************************************
+
 Auxiliary file changes for 0.40.13:
 
 	creature_standard
