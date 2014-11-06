@@ -36,6 +36,58 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.15 (November 5, 2014):
+
+Here's another release with bug fixes and small changes to brighten your day.
+
+Major bug fixes
+	(*) Made growing trees update cave-in and light information properly
+	(*) Handled stress counter timing properly in adv mode
+	(*) Stopped nerve check from bypassing broken parts between thought center and body roots
+	(*) Stopped part from being pulped if inner nervous tissue is not detached
+	(*) Made pulped parts bleed properly
+	(*) Stopped crash from trying to place unit in proper connected component of crowded retired fort
+	(*) Fixed reversed inside/outside check for outdoor refuse hauling
+
+Other bug fixes/tweaks
+	(*) Animals that can escape from cages no longer brought by traders
+	(*) Made reactions try to guess how their containers will be filled to stop problems with brewing large stacks etc.
+	(*) Small coin stacks can no longer be stuffed into non-containers
+	(*) Small coin stacks no longer pass through opponents
+	(*) Stopped tantrum dwarves from checking burrows for fistfights
+	(*) Changed tantrum action frequency
+	(*) Being in an owned site makes bogeyman not an issue
+	(*) Made ballista arrow heads and ballista arrows have edges
+	(*) Added ability to trade everything in the depot from either column
+	(*) Made column widths even in trade view and abbreviated strings differently
+	(*) Added select visible and select category to bring-to-depot menu
+	(*) Added totems to crafts tab of bring-to-depot screen
+	(*) Added a few categories to the kitchen menu
+	(*) Alphabetized stone and kitchen menus
+	(*) Added magma-safe indicator to stone menu
+	(*) Made encrust jobs respect furniture tools
+	(*) Cannot go into specific encrust menus if selected gem not available for encrust
+	(*) Dead dwarves removed from burrow count
+	(*) Made toggle button update properly when moving unit labor view to non-laborer
+	(*) Fixed a problem causing the right edge of the embark world map to disappear, including the cursor
+	(*) Fixed location of cursor in minimap for resized windows
+	(*) Made DOES_NOT_EXIST exclude creatures from certain lists properly
+	(*) Stopped stress reactions from being applied to unintelligent critters
+	(*) Stopped stress reactions of hidden creatures from being announced
+	(*) Fixed many typos (Gorobay)
+	(*) Updated description for pulping so it doesn't say "bruised" etc.
+	(*) Fixed broken artifact thought text
+	(*) Stopped immortality goal from having a broken display in thoughts
+	(*) Properly recognized multiple embark minecarts of the same material
+	(*) Slowed down tantrum/mood/etc. indicators
+	(*) Stopped zombies from interrupting your sleep to ask if they can help you with something
+	(*) Increased default embark points to compensate for more default equipment (stepladder etc.)
+	(*) Allowed deletion of first uniform
+	(*) Stopped crafts brought by traders from satisfying craft mandates
+	(*) Made weather init option clear up weather properly instead of just turning off the global simulation
+
+******************************************************
+
 Release notes for 0.40.14 (October 25, 2014):
 
 Here is the next release.  The focus was not bugs this time, but rather completing the work started on emotions as well as basic fruit harvesting.  A note -- adding stepladders to old saves was not possible, so you'll have to wait for a new world for those.  Fallen fruit can still be gathered in old saves using the new plant gathering zones.  Dwarves in old saves have also had their current thoughts wiped clean to make way for the new emotion/circumstance pairs.
