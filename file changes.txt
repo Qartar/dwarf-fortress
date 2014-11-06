@@ -4,6 +4,17 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.15:
+
+	new announcements
+		STRESSED_CITIZEN:A_D:D_D
+			for any of the temporary stress states aside from tantrum
+		CITIZEN_LOST_TO_STRESS:A_D:D_D
+			for any of the permanent states aside from berserk
+		CITIZEN_TANTRUM:A_D:D_D
+
+******************************************************
+
 Auxiliary file changes for 0.40.14:
 
 	new/changed keys
