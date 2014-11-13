@@ -36,6 +36,12 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.16 (November 12, 2014):
+
+The purpose of this release is to make stress from long-term separation due to goblin snatching less severe and to stop attackers from always winning in post-world-generation non-player battles.  The fix for the latter could not be done cleanly at this time, so the battle readouts in legends are a little off compared to the ones from world-gen, but defenders are very often successful now.  I also fixed some missing aunts/uncles/cousins in the listing of relatives.
+
+******************************************************
+
 Release notes for 0.40.15 (November 5, 2014):
 
 Here's another release with bug fixes and small changes to brighten your day.
