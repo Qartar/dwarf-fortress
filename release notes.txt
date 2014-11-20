@@ -36,6 +36,29 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.17 (November 19, 2014):
+
+Here is another friendly little release.
+
+Major bug fixes
+	(*) Fixed collapsing shrines
+	(*) Fixed army crash/bad behavior near the right/lower edge of the map
+	(*) Fixed a conversation crash related to uncivilized people/creatures trying to sell something in the market
+	(*) Made people only jump into actual conflicts, rather than animal encounters and training events
+
+Other bug fixes/tweaks
+	(*) Made stress levels drop faster the longer no stressors are applied
+	(*) Made gathering plants from the ground add to herbalist skill properly again
+	(*) Made plants that grow in winter-spring plantable at all proper times (Quietust)
+	(*) Optimized flag checks for non-windows OSs (ag)
+	(*) Fixed problem deleting stockpile links in the case that stockpile had multiple give/take settings
+	(*) Fixed blinking behavior for stockpiles/zones vs. ramps/stairs
+	(*) Fixed blinking behavior for designations vs. anything obscuring them
+	(*) Fixed double untranslated name in thoughts screen
+	(*) Fixed elf diplomacy typo
+
+******************************************************
+
 Release notes for 0.40.16 (November 12, 2014):
 
 The purpose of this release is to make stress from long-term separation due to goblin snatching less severe and to stop attackers from always winning in post-world-generation non-player battles.  The fix for the latter could not be done cleanly at this time, so the battle readouts in legends are a little off compared to the ones from world-gen, but defenders are very often successful now.  I also fixed some missing aunts/uncles/cousins in the listing of relatives.
