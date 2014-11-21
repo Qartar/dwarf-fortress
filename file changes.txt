@@ -4,6 +4,12 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.18:
+
+	Just the usual.
+
+******************************************************
+
 Auxiliary file changes for 0.40.17:
 
 	Just the usual.

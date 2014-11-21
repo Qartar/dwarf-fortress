@@ -36,6 +36,12 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.18 (November 20, 2014):
+
+The flag changes brought forth a compiler issue on Windows (breaking smelting, for example).  Hopefully it'll work better now.
+
+******************************************************
+
 Release notes for 0.40.17 (November 19, 2014):
 
 Here is another friendly little release.
