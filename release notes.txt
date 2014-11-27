@@ -36,6 +36,25 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.19 (November 26, 2014):
+
+Here is another release for November, mostly related to livestock.
+
+New stuff
+	(*) Added gelding and associated profession/skill/etc.
+
+Other bug fixes/tweaks
+	(*) Showed animal gender symbols in a few more places
+	(*) Got rid of mating-at-a-distance
+	(*) Added drink tab to kitchen screen
+	(*) Moved all remaining announcements to announcements.txt
+	(*) Added ability add/remove bp flags to set bp group
+	(*) Tweaked crowded pasture anger counter
+	(*) Stopped liaison from inserting own gender into position change news
+	(*) Added more work-arounds for compiler issue (fixing broken vault weapons and other problems)
+
+******************************************************
+
 Release notes for 0.40.18 (November 20, 2014):
 
 The flag changes brought forth a compiler issue on Windows (breaking smelting, for example).  Hopefully it'll work better now.
