@@ -4,6 +4,17 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.20:
+
+	new keys
+		DESIGNATE_STANDARD_MARKER:m
+		DESIGNATE_MINE_MODE:a
+		DESIGNATE_TOGGLE_MARKER:M
+		BUILDJOB_NOW:n
+
+	changed key
+		DESIGNATE_FORTIFY a -> F
+
 Auxiliary file changes for 0.40.19:
 
 	new keys
