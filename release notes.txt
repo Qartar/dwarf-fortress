@@ -36,6 +36,29 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.20 (December 18, 2014):
+
+Here is the job priorities release.  It should work fine with old saves, though existing hauling jobs may need to work themselves out for a bit.  Further job prioritization work can be done when we get through the framework for start scenarios, since we'll better understand how dwarves fit into the fortress at that time.
+
+New stuff
+	(*) New job selection process where dwarves choose important tasks with more regularity
+	(*) Very important jobs can remove dwarves from less important jobs
+	(*) Ability to prioritize a job so that it gets done immediately
+	(*) Mining, engraving and other designation jobs can now be prioritized numerically
+	(*) Designation jobs can be placed in a "marker only" mode, marker can be removed later to start work
+	(*) Mining jobs can be set to automatically follow veins and clusters
+	(*) Mining designation can be set to only select visible gems or useful stone
+
+Major bug fixes
+	(*) Fixed crash related to armies failing to take over villages
+
+Other bug fixes/tweaks
+	(*) Hauling jobs that used to need a held container now allow the dwarf to carry many items without a container
+	(*) Building jobs can swipe items from hauling jobs if the item is not held
+	(*) Wall/floor construction and road construction use new skill-free labor settings
+
+******************************************************
+
 Release notes for 0.40.19 (November 26, 2014):
 
 Here is another release for November, mostly related to livestock.
