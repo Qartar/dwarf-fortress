@@ -36,6 +36,20 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.21 (December 19, 2014):
+
+This fixes some large and small problems with yesterday's release.  Save corruption was quite possible, so upgrading is important!  You can still bring your old saves from 0.40.03+ into this new version.
+
+Major bug fixes
+	(*) Made hauling jobs that chain to other hauling jobs respect job postings, instead of causing crashes and other horror
+	(*) Fixed stair/ramp removal
+
+Other bug fixes/tweaks
+	(*) Made digging look up/down for continuing jobs
+	(*) Fixed problem with harvest jobs stealing dwarves from each other
+
+******************************************************
+
 Release notes for 0.40.20 (December 18, 2014):
 
 Here is the job priorities release.  It should work fine with old saves, though existing hauling jobs may need to work themselves out for a bit.  Further job prioritization work can be done when we get through the framework for start scenarios, since we'll better understand how dwarves fit into the fortress at that time.
