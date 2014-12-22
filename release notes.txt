@@ -36,6 +36,16 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.40.22 (December 21, 2014):
+
+Major bug fixes
+	(*) Multi-item jobs like artifact moods, forging breastplates and smelting pig iron should work now
+
+Other bug fixes/tweaks
+	(*) Made toggle marker behave like toggle engraving mouse-wise
+
+******************************************************
+
 Release notes for 0.40.21 (December 19, 2014):
 
 This fixes some large and small problems with yesterday's release.  Save corruption was quite possible, so upgrading is important!  You can still bring your old saves from 0.40.03+ into this new version.
