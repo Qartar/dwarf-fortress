@@ -10,3 +10,4 @@ else
 	export DYLD_FALLBACK_FRAMEWORK_PATH=${PWD}/libs
 fi
 cd "${PWD}"; ./dwarfort.exe "$@" &
+if grep -q '\[PRINT_MODE:TEXT\]' data/init/init.txt ; then fg; fi
