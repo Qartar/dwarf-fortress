@@ -34,6 +34,22 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+
+
+******************************************************
+
+Release notes for 0.40.23 (December 24, 2014):
+
+A third set of fixes for the job priority release, as well as a fix for the army "camp forever" problem from July.
+
+Major bug fixes
+	(*) Fixed cancellation bug with farming jobs
+	(*) Fixed problem causing camping armies to lose sight of certain goals once play began
+
+Other bug fixes/tweaks
+	(*) Stopped situation where channeling dwarf decides to stand on channel tile
+	(*) Fixed some raw typos (Gorobay)
+
 ******************************************************
 
 Release notes for 0.40.22 (December 21, 2014):
