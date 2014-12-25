@@ -4,6 +4,13 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.23:
+
+	creature_small_riverlake and creature_standard
+		breath -> breathe a few places (Gorobay)
+
+******************************************************
+
 Auxiliary file changes for 0.40.22:
 
 	Just the usual.
