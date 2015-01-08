@@ -4,6 +4,23 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.24:
+
+	plant_standard:
+			muck root, bloated tubers got seeds
+	creature_tropical_new:
+			pangolin [REMOVE_TISSUE:SKIN]
+	creature_small_ocean:
+			mussel and oyster got leather/tallow/soap
+	creature_other:
+			wambler got leather/tallow/soap, changed FLUFF/PUDGE tokens to HAIR/FAT to avoid template conflict (still named the same)
+	creature_next_underground:
+			floater and blog got leather
+			pond grabber stopped using claw template -- did manual name change instead
+			flesh ball FLESH token to MUSCLE to avoid template conflicts, also added flesh name change
+
+******************************************************
+
 Auxiliary file changes for 0.40.23:
 
 	creature_small_riverlake and creature_standard
