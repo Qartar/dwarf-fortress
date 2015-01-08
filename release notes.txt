@@ -34,7 +34,45 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+******************************************************
 
+Release notes for 0.40.24 (January 7, 2015):
+
+Here is another release with fixes.  Old saves are compatible, but there will be some error logs due to minor issues with the old raws.  These logs can be ignored, but old saves will still experience problems like blank seed names.
+
+Major bug fixes
+	(*) Fixed problem causing dwarves to sometimes fail to attack monsters/invaders
+	(*) Stopped active blocks/parries from rarely freezing adv mode
+	(*) Stopped certain situations where you could be stuck in the air above certain tiles
+	(*) Fixed a few problems with necromancers attacking (and generally being killed by) their zombies
+	(*) Stopped crash from moving/centering squad menu going out of bounds
+	(*) Fixed crash involving squads and minimap
+	(*) Fixed unretire crash that generally triggered when caravan arrived
+	(*) Stopped dwarf from stressing out over the same wound forever
+	(*) Stopped certain inaccessible jobs from blocking lower priority ones
+
+Other bug fixes/tweaks
+	(*) Allowed embarks with x/y dim 1
+	(*) Made removal of trees check building/bridge/machine stability
+	(*) Stopped worker chaining to next construction job from choosing suspended one
+	(*) Tentatively fixed text mode error on OSX (lethosor)
+	(*) Tentatively fixed broken sound on some linuxes (Baughn)
+	(*) Fixed problem with water disappearing when it crosses the z=0 boundary
+	(*) Made certain old civilian weapon assignments clear over time
+	(*) Made t/q building selector respect stockpile shapes when looking for closest one
+	(*) Fixed error with underground pops in small forts not appearing
+	(*) Stopped mood jobs from going outside of burrows
+	(*) Capped various combat skill gains per action (Urist Da Vinci)
+	(*) Stopped "fighting" skill from increasing from trap/projectile attacks
+	(*) Stopped random creature proboscis from sometimes messing up poison attacks
+	(*) Fixed key display issue in bindings screen (lethosor)
+	(*) Fixed problem with display of kill order status
+	(*) Made geld indicator appear for pets on animal screen properly
+	(*) Fixed display problem with agreement conclusion dates
+	(*) Added error logs for missing materials set to defaults, fixed various raws
+	(*) Stopped announcement screen date from overrunning title depending on window size
+	(*) Differentiated two pain readouts on health screen
+	(*) Fixed a few empty announcement errors
 
 ******************************************************
 
