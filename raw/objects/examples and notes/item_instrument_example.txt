@@ -1,0 +1,88 @@
+item_instrument example
+
+[OBJECT:ITEM]
+
+All of the vanilla instruments are generated.  Here's an example of how to add your own non-generated instrument.  Use the INSTRUMENT:<token> format to add specific instruments to an entity in its raws.  You'll also need to provide reactions (see the other example file).
+
+[ITEM_TOOL:EXAMPLE DRUM BODY]
+[NO_DEFAULT_JOB]
+[INCOMPLETE_ITEM]
+[UNIMPROVABLE]
+[NAME:thokit drum:thokit drums]
+[VALUE:10]
+[BONE_MAT]
+[TILE:155]
+[UNIMPROVABLE]
+[SIZE:19550]
+[MATERIAL_SIZE:3]
+[DESCRIPTION:The hourglass thokit drum makes up the bulk of the instrument.]
+
+[ITEM_TOOL:EXAMPLE DRUM HEAD]
+[NO_DEFAULT_JOB]
+[INCOMPLETE_ITEM]
+[UNIMPROVABLE]
+[NAME:thokit head:thokit heads]
+[VALUE:10]
+[LEATHER_MAT]
+[TILE:155]
+[UNIMPROVABLE]
+[SIZE:3450]
+[MATERIAL_SIZE:3]
+[DESCRIPTION:The thokit head is stretched over the instrument and used to produce sound.]
+
+[ITEM_INSTRUMENT:EXAMPLE DRUM]
+[NAME:thokit:thokit]
+[VALUE:50]
+[SIZE:23000]
+	Add PLACED_AS_BUILDING as a stand-alone tag if you want a stationary instrument.
+[DOMINANT_MATERIAL_PIECE:BODY]
+[INSTRUMENT_PIECE:BODY:EXAMPLE DRUM BODY:drum:drums:STANDARD]
+	Format is <token>:<tool token>:<singular>:<plural>:<STANDARD or ALWAYS_PLURAL or ALWAYS_SINGULAR>
+
+[INSTRUMENT_PIECE:HEAD:EXAMPLE DRUM HEAD:head:heads:STANDARD]
+[VOLUME_mB:0:10000]
+
+[SOUND_PRODUCTION:STRUCK_BY_BP:HEAD]
+	Sound production methods are: PLUCKED_BY_BP, PLUCKED (requires two tokens, actor then target), BOWED (two tokens), STRUCK_BY_BP, STRUCK (two tokens), VIBRATE_BP_AGAINST_OPENING, BLOW_AGAINST_FIPPLE, BLOW_OVER_OPENING_SIDE, BLOW_OVER_OPENING_END, BLOW_OVER_SINGLE_REED, BLOW_OVER_DOUBLE_REED, BLOW_OVER_FREE_REED, STRUCK_TOGETHER, SHAKEN, SCRAPED (two tokens), FRICTION (two tokens), RESONATOR, BAG_OVER_REED (two tokens), AIR_OVER_REED (two tokens, AIR_OVER_FREE_REED (two tokens) and AIR_AGAINST_FIPPLE (two tokens).
+	You can use this tag multiple times.
+
+[PITCH_CHOICE:MEMBRANE_POSITION:HEAD]
+	Pitch choice methods are MEMBRANE_POSITION, SUBPART_CHOICE, KEYBOARD, STOPPING_FRET (requires two tokens, first for "string" second for "neck" -- or whatever is being pressed against what), STOPPING_AGAINST_BODY (two tokens), STOPPING_HOLE, STOPPING_HOLE_KEY, SLIDE, HARMONIC_SERIES, VALVE_ROUTES_AIR, BP_IN_BELL and FOOT_PEDALS (two token, first is what is being changed e.g. "strings", second is "body" which has pedalboard -- or whatever piece is being stepped on).
+	You can use this tag multiple times.
+
+[TUNING:TIGHTENING:HEAD]
+	Tuning methods are PEGS, ADJUSTABLE_BRIDGES, CROOKS, TIGHTENING and LEVERS.
+	You can use this tag multiple times.
+
+[PITCH_RANGE:1020:3020]
+	Pitch is <min>:<max> in cents with middle C at zero.  There are 1200 cents in an octave.  The game verbally differentiates values from -4200 to 4200, but you can go outside that if you like.  The in-game generated instruments will range from roughly C0 to C8 (-4800 to 4800), sometimes beyond for really unusual ones.
+	You can also use INDEFINITE_PITCH.
+
+[TIMBRE:FULL:CHOPPY:FOCUSED]
+	You can add as many timbre words as you want.  The generated timbres have a series of checks for conflicts, but they don't apply to the raws, so how you use them is up to you.  The current timbres are CLEAR, NOISY, FULL, THIN, ROUND, SHARP, SMOOTH, CHOPPY, STEADY, EVOLVING, STRONG, DELICATE, BRIGHT, GRACEFUL, SPARSE, BREATHY, STRAINED, BROAD, LIGHT, MELLOW, WOBBLING, FOCUSED, EVEN, FLUID, VIBRATING, QUAVERING, EERIE, FRAGILE, BRITTLE, PURE, PIERCING, STRIDENT, WAVERING, HARSH, REEDY, NASAL, BUZZY, ROUGH, WARM, RUGGED, HEAVY, FLAT, DARK, CRISP, SONOROUS, WATERY, GENTLE, SLICING, LIQUID, RAUCOUS, BREEZY, RASPY, WISPY, SHRILL, MUDDY, RICH, DULL, FLOATING, RINGING, RESONANT, SWEET, RIPPLING and SPARKLING.
+
+[REGISTER:1020:1320:STRONG:VIBRATING:STRIDENT]
+	Registers also have a min/max pitch range.  The timbres here are in addition to the global timbre, so don't assign a global timbre unless you feel it is compatible with each register.
+
+[REGISTER:1320:3020:VIBRATING:RAUCOUS]
+[MUSIC_SKILL:PLAY_PERCUSSION_INSTRUMENT]
+[DESCRIPTION:The thokit is a mid-size hand-held percussion instrument.  It consists of an hourglass bone drum with a leather head.  The musician strikes the head.  The instrument has a one-and-a-half octave range going from a mid-high to a very high pitch.  Tuning is accomplished by adjusting the tension of the head.  At all pitches, the instrument has a full choppy focused timbre.  It has two registers.  The low register has a strong vibrating strident timbre.  The high register begins at mid-high pitch and has a vibrating raucous timbre.]
+
+-------------------------------------------------
+
+Here's an example of an instrument without parts.
+
+[ITEM_INSTRUMENT:EXAMPLE WIND]
+[NAME:ecosh:ecosh]
+[VALUE:50]
+[SIZE:25000]
+[MATERIAL_SIZE:3]
+[WOOD_MAT]
+[SOUND_PRODUCTION:BLOW_OVER_OPENING_END:SELF]
+	If the instrument has no parts, use SELF for the piece tokens.
+[PITCH_CHOICE:SUBPART_CHOICE:SELF]
+[VOLUME_mB:0:10000]
+[PITCH_RANGE:-1200:3000]
+[TIMBRE:SPARSE:WOBBLING:QUAVERING]
+[MUSIC_SKILL:PLAY_WIND_INSTRUMENT]
+[DESCRIPTION:The ecosh is a mid-size hand-held wind instrument consisting of three adjacent cylindrical wooden pipes.  The musician blows across the end of each pipe.  The instrument has a three-and-a-half octave range going from a mid-low to a very high pitch.  The instrument has a sparse wobbling quavering timbre.]
