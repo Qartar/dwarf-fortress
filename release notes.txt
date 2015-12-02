@@ -36,6 +36,66 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.42.01 (December 1, 2015):
+
+Here is the new version we've been working on all year!  The flow of fortress life is quite a bit different now -- specific breaks and parties have been replaced by taverns and performances and needs and inebriation.  You can designate a tavern, temple or library from a meeting area zone, bedroom or dining room using the new Assign Location option.  The location list ('l') will let you know what sort of furniture and items you need, and you can set tavern keepers, scribes and other occupations there as well.  You'll need to set up a drink stockpile and a chest for goblets in taverns for drink service to work properly, but dwarves can still drink without a tavern as before.  You can assign multiple rooms/zones to a single location.  There's a lot more -- see the feature list below.
+
+The bug fix list below is partial.  Large chunks of the game were changed, which has a way of making old bugs go away while bringing in new ones to take their place.  We'll be focusing on bugs old and new in subsequent releases, starting with crashing saves and moving down the list.  The next set of bug-fix releases will be measured on a scale of days and weeks rather than months, as usual.
+
+New stuff
+	(*) Ability to designate taverns, temples and libraries in the fortress
+	(*) Taverns and libraries also exist in adventure mode and world generation
+	(*) Tavern keepers can serve drinks in both modes, goblets can be used by dwarves to drink (in taverns or otherwise)
+	(*) Performances include stories, poetry, music and dance (you can view activity descriptions from the unit/job list)
+	(*) Art forms are randomly generated for each civilization
+	(*) Instruments are now all generated, instruments can be used in both modes
+	(*) Most instruments are constructed from multiple pieces using different materials
+	(*) Personalities and values lead to needs which can be met by various actions in both modes
+	(*) The fort has visitors, residency petitions and eventual citizenship, including non-dwarves
+	(*) Tavern visitors include mercenaries, monster slayers, bandits, diplomats and performers
+	(*) Can set details for clothing/armor jobs to make them for other races that can equip items
+	(*) Monster slayers can petition your fortress to go down and fight monsters once you discover the underground
+	(*) Performance troupes are active in world generation and into play, visiting the fort, can be formed in adventure mode
+	(*) New knowledge system divided into nine branches (though it has very few practical effects so far)
+	(*) Fortress scholars can advance knowledge, form master-apprentice relationships and write down their findings
+	(*) Fortress scribes can copy works in your library
+	(*) Scholars can visit your fortress libraries, bringing knowledge from around the world
+	(*) Devoted historical figures can visit your fortress temples
+	(*) Three forms of writing material: papyrus sheets, paper sheets and parchment sheets
+	(*) Papyrus sheets are made directly from the plant at the farmer's workshop
+	(*) Paper is made from pressed slurries (start at the quern/mill, then go to a screw press)
+	(*) Parchment is made from hide and milk of lime at the tanner's (bake quicklime at a kiln, then make milk of lime at an ashery)
+	(*) Sheets are used to make quires or with rollers to make scrolls -- these are then used for writing
+	(*) Quires can be bound into codices with bindings after they contain writing
+	(*) Dwarves read books in the library (they don't need to be scholars)
+	(*) Values can be passed in writing (both modes) and through adventure mode arguments (uses some conversation skills)
+	(*) Animal people are playable as adventurers, arrive as fort visitors and sometimes live in towns in (playable) populations
+	(*) Children play with toys now, and they can also play make believe, in both modes
+	(*) Personality can be customized/randomized in adventure mode, appearance can be randomized as well
+	(*) Temples can be defiled in both modes, dwarf temples can be assigned to particular gods
+	(*) Adventurer can rent rooms in inns
+	(*) Adventurers can compose new poems, music and dances
+	(*) Adventurers can write material down on empty quires or scrolls
+	(*) Alcohol causes inebriation, erratic behavior, unconsciousness, death
+	(*) Festivals occur in world generation, though we haven't gotten them out of there yet
+	(*) Dwarves will wear trinkets again
+
+Major bug fixes
+	(*) Fixed some army pathing issues
+	(*) Goblins have mounts again
+	(*) Fixed long-standing flow bug with unit occupancy
+	(*) Stopped some issues with brawls escalating to non-lethal
+
+Other bug fixes/tweaks
+	(*) Looking at reaction screen for redded-out reactions in workshop will indicate missing reagents now
+	(*) Fixed inversion problem with half of the child/parent conversation thoughts
+	(*) Lots of historical figures that weren't around from the beginning didn't have deities when they were supposed to
+	(*) Allowed site finder to look for 1x1 sites
+	(*) Human civilizations now have randomized values
+	(*) Added ability to set invasion wave cap size
+
+******************************************************
+
 Release notes for 0.40.24 (January 7, 2015):
 
 Here is another release with fixes.  Old saves are compatible, but there will be some error logs due to minor issues with the old raws.  These logs can be ignored, but old saves will still experience problems like blank seed names.
