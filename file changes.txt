@@ -4,6 +4,213 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.42.01:
+
+	new keys
+		ASSIGN_LOCATION:l
+		LOCATION_NEW:a
+		LOCATION_RETIRE:X
+		LOCATION_INN_TAVERN:i
+		LOCATION_LIBRARY:l
+		LOCATION_TEMPLE:t
+		LOCATION_RENAME:n
+		UNITJOB_VIEW_UNIT:v
+		UNITJOB_VIEW_JOB:j
+		STOCKPILE_SHEET:S
+		D_PETITIONS:P
+		D_LOCATIONS:l
+		A_RANDOM_APPEARANCE:r
+		A_RANDOM_APPEARANCE_FULL:f
+		A_RANDOM_PERSONALITY:r
+		A_COMPOSE_FILTER:f
+		A_CUSTOM_PERSONALITY:f
+		A_CHANGE_DREAM:g
+		A_ACTION_COMPOSE:C
+		A_ACTION_WRITE:w
+		BUILDJOB_DETAILS_FILTER:f
+		BUILDJOB_DETAILS:d
+		UNITVIEW_PRF_OCCUPATION:o
+		LOCATION_DETAILS:d
+		LOCATION_RESTRICTION:r
+		LOCATION_SET_NUMBER_1:a
+		LOCATION_SET_NUMBER_2:b
+		HOTKEY_BUILDING_INSTRUMENT:I
+		HOTKEY_BUILDING_BOOKCASE:alt+c
+
+	changed keys
+		D_ARTLIST:L
+
+	remove keys
+		UNITJOB_VIEW
+		HOTKEY_GLASS_INSTRUMENT
+		HOTKEY_CRAFTS_MAT_INSTRUMENT
+
+	new announcements
+		[GUEST_ARRIVAL:A_D:D_D]
+		[CANNOT_SPEAK:A_D:D_D]
+		[RESEARCH_BREAKTHROUGH:A_D:D_D]
+		[SERVICE_ORDER_DELIVERY:A_D]
+		[PERFORMANCE_START_FAILURE:A_D]
+		[BEGIN_ACTIVITY:A_D]
+		[MIDDLE_OF_ACTIVITY:A_D]
+		[ACTIVITY_SECTION_CHANGE:A_D]
+		[CONCLUDE_ACTIVITY:A_D]
+		[LEARNED_WRITTEN_CONTENT:A_D]
+		[LEARNED_ART_FORM:A_D]
+		[PERFORMER_UPDATE:A_D]
+		[BUILDING_DESTROYED_OR_TOPPLED:A_D:D_D]
+		[DEITY_CURSE:A_D:D_D:BOX:P:R]
+		[COMPOSITION_COMPLETE:A_D]
+		[COMPOSITION_FAILED:A_D]
+		[NEW_APPRENTICESHIP:A_D:D_D]
+		[PETITION_IGNORED:A_D:D_D]
+
+	changed announcements
+		[EAT_ITEM:A_D]
+		[DRINK_ITEM:A_D]
+		[CONSUME_FAILURE:A_D]
+		[DROP_ITEM:A_D]
+		[PICK_UP_ITEM:A_D]
+
+	creatures
+		human gets [OUTSIDER_CONTROLLABLE]
+		animal people get [LOCAL_POPS_CONTROLLABLE][LOCAL_POPS_PRODUCE_HEROES]
+		gorlaks,plump helmet men get [LOCAL_POPS_CONTROLLABLE][LOCAL_POPS_PRODUCE_HEROES]
+		dwarves get [STRANGE_MOODS] <-- add this to any imported save raws!
+		dwarves get [SYNDROME_DILUTION_FACTOR:INEBRIATION:150]
+			general format is [SYNDROME_DILUTION_FACTOR:<SYN_IDENTIFIER>:<percentage, higher means more resistance, 100 is default effect>]
+		beak dogs get [COMMON_DOMESTIC], works with EVIL to make them appear at all, though there is still an issue with them starving
+		both gnomes get [SYNDROME_DILUTION_FACTOR:INEBRIATION:500]
+
+	inorganic
+		[IS_CERAMIC], used by instruments/tools that have [CERAMIC_MAT]
+		added quicklime and milk of lime
+
+	item
+		instruments
+			removed instrument file and added example files for instruments with many new tokens
+
+		tools
+			several tools were added to support the new stuff
+			new mat tokens
+				[LEATHER_MAT]
+				[SILK_MAT]
+				[THREAD_PLANT_MAT]
+				[GLASS_MAT]
+				[CERAMIC_MAT]
+				[STONE_MAT]
+				[BONE_MAT]
+				[SHELL_MAT]
+			[NO_DEFAULT_JOB] -- only custom reactions are used to make this item
+			[INCOMPLETE_ITEM] -- won't be used in world gen libraries (to differentiate scrolls from quires)
+									also put it on bindings, rollers, instr. pieces for completeness/future use
+			[DEFAULT_IMPROVEMENT:<imp type>:<possibly specific type or part token>:<tool mat flag like HARD_MAT or SILK_MAT>]
+
+	entity
+		removed specific instruments
+		[GENERATE_POETIC_FORMS]
+		[GENERATE_MUSICAL_FORMS]
+		[GENERATE_DANCE_FORMS]
+		new value: KNOWLEDGE
+		[VARIABLE_VALUE:<value token or ALL>:<min>:<max>]
+			used this for humans with ALL:-30:30
+		[CIV_CONTROLLABLE] -> [SITE_CONTROLLABLE]
+		removed [INDIV_CONTROLLABLE], now have [ALL_MAIN_POPS_CONTROLLABLE] for adv mode
+		removed ADVENTURE_TIER
+		the normal tokens to include new stuff in entities
+
+	materials
+		new syndrome tokens
+			[SYN_CONCENTRATION_ADDED:<amount>:<max>]
+				each 100 of amount will contribute SEV in general to each effect (before dilution), max goes up to 1000
+				the concentration does not decrease, but will stay at the maximum attained until the syndrome wears off
+			[SYN_IDENTIFIER:<token>]
+				causes these syndromes to use the same concentration pool, first one in wins (the rest just stack)
+				would be better to make syndromes their own raw at this point to needing this, will happen later
+			[SYN_NO_HOSPITAL]
+				affected creature will not go to the hospital for effects no matter how bad they get
+			base effect tokens
+				ABRUPT_START, ABRUPT_END -- without these, effects will generally build toward the peak and then drop off
+				DWF_STRETCH:<factor> -- this makes effects last longer in dwarf mode
+			new effects
+				[CE_CHANGE_PERSONALITY:FACET:<facet token>:<amount>:<base effect tokens>]
+					can have multiple facets in one effect by listing them as FACET:<token>:<amount> over and over -- see inebriation
+				[CE_FEEL_EMOTION:EMOTION:<emotion token>:SEV:<amount>:<base effect tokens>]
+					due to the way emotions work, you'll need additional effects for each emotion you want to stack
+				[CE_ERRATIC_BEHAVIOR:SEV:<amount>:<base effect tokens>]
+
+	reaction
+		various new reactions for paper, codices, scrolls, parchment etc.
+		new buildings supported: GLASS, WOOD (for wood furnace), MASON, ASHERY, LEATHER, BOWYER, SIEGE, CLOTHES, METALSMITH, CARPENTER
+		reagants can get [IS_SAND_MATERIAL] (which checks for soil_sand) and [METAL_ITEM_MATERIAL] (which checks for ITEMS_METAL)
+		improvement products can now target products that are given [PRODUCT_TOKEN:<token>]
+			assuming the target is above the improvement in the raw def
+		improvement products can now be of type INSTRUMENT_PIECE:<piece token>
+		[DESCRIPTION:<string>]
+			used for the helpful hint box in the building menu
+			also have [DESCRIPTION:USE_TOOL:<token>] and [DESCRIPTION:USE_INSTRUMENT:<token>] if you want it to swipe those for hint box
+				can use any of these in succession to create paragraphs, though the helpful hint box only fits so much text
+		can now be placed in categories for building menus
+			within a reaction, define category with [CATEGORY:<token>]
+				after you make a category, in one of its reactions, you can use these to further define it
+					[CATEGORY_NAME:<string>] <-- for name in the menu
+					[CATEGORY_DESCRIPTION:<string>] <-- for helpful hint box
+					[CATEGORY_PARENT:<token>] <-- for nesting in menus
+						if you are defining a nesting structure within a reaction
+							just make sure the category of the reaction itself is the last defined
+					[CATEGORY_KEY:<key>] <-- hot key if any
+				you only need to define each category's subtokens once in any of the raw files
+					repeated subtokens will overwrite any loaded data
+		[MAX_MULTIPLIER:<#>] -- if you've got, say, a reaction with a bone reagent and want it to just do the reaction <#> times
+							instead of processing the whole stack -- this is a REACTION token, not a REAGENT token
+		reagents can have [CAN_USE_HOSPITAL_RESERVED] [CAN_USE_LOCATION_RESERVED] to allow them access to those items
+			(locations are taverns etc.)
+
+	graphics examples units
+		PERFORMER
+		POET
+		BARD
+		DANCER
+		SAGE
+		SCHOLAR
+		PHILOSOPHER
+		MATHEMATICIAN
+		HISTORIAN
+		ASTRONOMER
+		NATURALIST
+		CHEMIST
+		GEOGRAPHER
+		SCRIBE
+		PAPERMAKER
+		BOOKBINDER
+		TAVERN_KEEPER
+
+	skills
+		DANCE
+		MAKE_MUSIC
+		SING
+		PLAY_KEYBOARD_INSTRUMENT
+		PLAY_STRINGED_INSTRUMENT
+		PLAY_WIND_INSTRUMENT
+		PLAY_PERCUSSION_INSTRUMENT
+		CRITICAL_THINKING
+		LOGIC
+		MATHEMATICS
+		ASTRONOMY
+		CHEMISTRY
+		GEOGRAPHY
+		OPTICS_ENGINEER
+		FLUID_ENGINEER
+		PAPERMAKING
+		BOOKBINDING
+
+	d_init
+		[VISITOR_CAP:100]
+		[INVASION_SOLDIER_CAP:120]
+		[INVASION_MONSTER_CAP:40]
+
+******************************************************
+
 Auxiliary file changes for 0.40.24:
 
 	plant_standard:
@@ -50,6 +257,8 @@ Auxiliary file changes for 0.40.20:
 
 	changed key
 		DESIGNATE_FORTIFY a -> F
+
+******************************************************
 
 Auxiliary file changes for 0.40.19:
 

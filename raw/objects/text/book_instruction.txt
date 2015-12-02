@@ -1,55 +1,140 @@
 [NAME]
+A Course on [NAME]
 A Humble Offering to [NAME]
+A Meditation on [NAME]
+A Record of [NAME]
+A Treatise on [NAME]
+A World of [NAME]
+About [NAME]
 After [NAME]
+Against [NAME]
+An Exploration of [NAME]
+An Introduction to [NAME]
+An Offering to [NAME]
 At One With [NAME]
 Before [NAME]
 Better [NO_ART_NAME]
 Beyond [NAME]
+Book of [NAME]
+Captivated by [NAME]
 Choose [NAME]
+Classic [NO_ART_NAME]
+Commentary on [NAME]
 Common Sense [NO_ART_NAME]
+Concerning [NAME]
+Discourse on [NAME]
+Discovering [NAME]
+Doubts About [NAME]
+Dreams of [NAME]
+Elements of [NAME]
 Errors In [NAME]
+Exploring [NAME]
+Explorations of [NAME]
+Factual [NO_ART_NAME]
+For the Love of [NAME]
+Foundations of [NAME]
 Give Me [NAME]
+Great [NO_ART_NAME]
+In Pursuit of [NAME]
+Inquiries on [NAME]
+Interpretations of [NAME]
+Introduction to [NAME]
+It All Begins With [NAME]
 It Is [NAME]
+Journey to [NAME]
+Life With [NAME]
+Master of [NAME]
+Mastering [NAME]
+Meditations on [NAME]
+Misconceptions About [NAME]
 More [NO_ART_NAME]
 Musings on [NAME]
 My Thoughts on [NAME]
+Mysteries of [NAME]
 Never Underestimate [NAME]
+New [NO_ART_NAME]
+Of [NAME]
+On [NAME]
 Pathways to [NAME]
+Principles of [NAME]
+Question [NAME]
+Questions About [NAME]
+Records of [NAME]
+Reflections on [NAME]
+Secret [NO_ART_NAME]
 Start Your Day With [NAME]
+Strange [NO_ART_NAME]
 The Art of [NAME]
+The Book of [NAME]
 The Future of [NAME]
+The Great [NO_ART_NAME]
+The Hidden Meaning of [NAME]
 The History of [NAME]
+The Interpretation of [NAME]
+The Journey into [NAME]
+The Knowledge of [NAME]
+The Meaning of [NAME]
+The Mysteries of [NAME]
+The Mystery of [NAME]
 The Nuanced [NO_ART_NAME]
+The Possibilities of [NAME]
+The Pursuit of [NAME]
 The Secret of [NAME]
+The Student's [NO_ART_NAME]
+The Study of [NAME]
+The True [NO_ART_NAME]
 The Truth About [NAME]
 The Unabridged [NO_ART_NAME]
+The Way With [NAME]
 The Wizard's Guide to [NAME]
+The World of [NAME]
 The World Without [NAME]
+Thoughts on [NAME]
+Time Spent With [NAME]
 Traditional [NO_ART_NAME]
+Treatise on [NAME]
+True [NO_ART_NAME]
 Uncanny [NO_ART_NAME]
+Uncovering [NAME]
+Understanding [NAME]
+Unknown [NO_ART_NAME]
+Unusual [NO_ART_NAME]
+Useful [NO_ART_NAME]
 Victory By [NAME]
 [NAME] After The End
+[NAME] and Beyond
+[NAME] and More
+[NAME] and Other Topics
 [NAME] and Other Travesties
 [NAME] and The Coming Troubles
 [NAME] and The Universe
-[NAME] Comes Full Circle
+[NAME] Came Full Circle
 [NAME] Explained
 [NAME] Exposed
 [NAME] For Everyone
+[NAME] For Students
 [NAME] For The Beginning Practicioner
-[NAME] In [ANY_AGE]
+[NAME] In Practice
 [NAME] In The Modern Era
 [NAME] In The Time of My Ancestors
-[NAME] Is My Life
-[NAME] Is The Way
+[NAME] In Theory
+[NAME] In [ANY_AGE]
+[NAME] Interpreted
+[NAME] Might Help
 [NAME] Questioned
 [NAME] The Easy Way
+[NAME] Uncovered
+[NAME] Understood
 [NAME] When It Counts
+[NAME] Within Reason
 [NAME] Without Limits
 [NAME], Abridged
+[NAME], My Life
 [NAME], My Love
 [NAME]: A Brief History
+[NAME]: A Brief Introduction
 [NAME]: A New Approach
+[NAME]: A Quandary
 [NAME]: Before and After
 [NAME]: Common Practice
 [NAME]: Fact or Fiction?
@@ -63,5 +148,8 @@ Victory By [NAME]
 Can [NAME] Save The World?
 Could It Be [NAME]?
 Did [NAME] Falter?
+Do We Understand [NAME]?
+Do You Know [NAME]?
 First [NAME], Then The World!
+The [NO_ART_NAME] Book
 To [NAME] and Glory!
