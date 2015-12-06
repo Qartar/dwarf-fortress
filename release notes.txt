@@ -36,6 +36,25 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.42.02 (December 5, 2015):
+
+Here's a quick follow-up for some of the worst bugs.  There are still some strange things going on (horses all over, duplicate companions, etc.), but hopefully this version will work much better than the last one.
+
+Major bug fixes
+	(*) Fixed worl generation freeze caused by error in poetry refrains
+	(*) Fixed crash from building constructions on tree leaves etc.
+	(*) Fixed calendar crash from bandit bar hoppers
+	(*) Fixed crash with children joining socialize activities (most common with migrant waves)
+	(*) Made worship activity branch properly (so prayer needs can be satisfied)
+	(*) Fixed world gen seed not repeating after abort
+
+Other bug fixes/tweaks
+	(*) Can see deity for temple in location screen
+	(*) Cannot spot vampires from occ list anymore
+	(*) Fixed a few typos
+
+******************************************************
+
 Release notes for 0.42.01 (December 1, 2015):
 
 Here is the new version we've been working on all year!  The flow of fortress life is quite a bit different now -- specific breaks and parties have been replaced by taverns and performances and needs and inebriation.  You can designate a tavern, temple or library from a meeting area zone, bedroom or dining room using the new Assign Location option.  The location list ('l') will let you know what sort of furniture and items you need, and you can set tavern keepers, scribes and other occupations there as well.  You'll need to set up a drink stockpile and a chest for goblets in taverns for drink service to work properly, but dwarves can still drink without a tavern as before.  You can assign multiple rooms/zones to a single location.  There's a lot more -- see the feature list below.
