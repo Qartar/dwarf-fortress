@@ -4,6 +4,40 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.42.03:
+
+	critters
+		removed [TRAINABLE] from giraffes
+		changed [TRAINABLE] to [TRAINABLE_WAR] for rhinos
+		gave dog/cat/horse/donkey/pig/sheep/goat adjectives in NAME
+		fixed crocodile/alligator toe count
+		elephant gets more prefstrings
+		fixed some busted venom immunity entries
+
+	init
+		fixed typo in d_init (pregancies -> pregnancies)
+
+	items
+		removed duplicate [UNIMPROVABLE] tag from instrument piece examples
+		removed extra [SHAPED] from helm
+
+	keys
+		fixed input of { in interface (lethosor)
+
+	language
+		fixed summer and mightiness entries in language_words (Captain Mayday)
+
+	plants
+		added [STOCKPILE_PLANT_GROWTH] to feather tree eggs
+
+	reactions
+		added [NOT_WEB] to bookbinding reaction
+
+	speech
+		fixed who/whom in elf.txt
+
+******************************************************
+
 Auxiliary file changes for 0.42.02:
 
 	Just the usual.

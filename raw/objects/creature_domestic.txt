@@ -4,8 +4,8 @@ creature_domestic
 
 [CREATURE:DOG]
 	[DESCRIPTION:A medium-sized highly social mammalian carnivore.  It has a keen sense of smell.  It can be trained to obey commands.]
-	[NAME:dog:dogs:dog]
-	[CASTE_NAME:dog:dogs:dog]
+	[NAME:dog:dogs:canine]
+	[CASTE_NAME:dog:dogs:canine]
 	[CREATURE_TILE:'d'][COLOR:6:0:0]
 	[PETVALUE:30][NATURAL]
 	[LARGE_ROAMING]
@@ -123,8 +123,8 @@ creature_domestic
 
 [CREATURE:CAT]
 	[DESCRIPTION:A small mammalian carnivore.  It is usually domestic and hunts vermin.]
-	[NAME:cat:cats:cat]
-	[CASTE_NAME:cat:cats:cat]
+	[NAME:cat:cats:feline]
+	[CASTE_NAME:cat:cats:feline]
 	[CREATURE_TILE:'c'][COLOR:0:0:1]
 	[PETVALUE:20]
 	[LARGE_ROAMING]
@@ -361,8 +361,8 @@ creature_domestic
 
 [CREATURE:DONKEY]
 	[DESCRIPTION:A medium-sized, hooved herbivore.  Some are domesticated as beasts of burden.]
-	[NAME:donkey:donkeys:donkey]
-	[CASTE_NAME:donkey:donkeys:donkey]
+	[NAME:donkey:donkeys:asinine]
+	[CASTE_NAME:donkey:donkeys:asinine]
 	[CHILD:1][GENERAL_CHILD_NAME:donkey foal:donkey foals]
 	[CREATURE_TILE:'D'][COLOR:6:0:0]
 	[PETVALUE:200]
@@ -474,8 +474,8 @@ creature_domestic
 
 [CREATURE:HORSE]
 	[DESCRIPTION:A large hooved, maned herbivore.  They can run swiftly and many are domesticated as steeds.]
-	[NAME:horse:horses:horse]
-	[CASTE_NAME:horse:horses:horse]
+	[NAME:horse:horses:equine]
+	[CASTE_NAME:horse:horses:equine]
 	[CREATURE_TILE:'H'][COLOR:7:0:0]
 	[PETVALUE:200]
 	[PREFSTRING:strength]
@@ -719,7 +719,7 @@ creature_domestic
 
 [CREATURE:SHEEP]
 	[DESCRIPTION:A medium-sized herding animal.  It is prized for its thick wool coat.]
-	[NAME:sheep:sheep:sheep]
+	[NAME:sheep:sheep:ovine]
 	[CHILD:1][GENERAL_CHILD_NAME:lamb:lambs]
 	[CREATURE_TILE:'s'][COLOR:7:0:1]
 	[PETVALUE:100]
@@ -861,7 +861,7 @@ creature_domestic
 
 [CREATURE:PIG]
 	[DESCRIPTION:A medium-sized domestic animal.  It has a distinctive snout and corkscrew tail.  It is thought by some to be intelligent.]
-	[NAME:pig:pigs:pig]
+	[NAME:pig:pigs:porcine]
 	[CHILD:1][GENERAL_CHILD_NAME:piglet:piglets]
 	[CREATURE_TILE:'p'][COLOR:5:0:1]
 	[PETVALUE:100]
@@ -975,7 +975,7 @@ creature_domestic
 
 [CREATURE:GOAT]
 	[DESCRIPTION:A medium-sized herding animal.  It is known for its short horns and beard.]
-	[NAME:goat:goats:goat]
+	[NAME:goat:goats:hircine]
 	[CHILD:1][GENERAL_CHILD_NAME:goat kid:goat kids]
 	[CREATURE_TILE:'g'][COLOR:6:0:0]
 	[PETVALUE:50]
