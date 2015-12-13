@@ -5043,6 +5043,10 @@ language_words
 		[THE_COMPOUND_ADJ]
 
 [WORD:MIGHTINESS]
+	[NOUN:mightiness:mightinesses]
+		[THE_COMPOUND_NOUN_SING]
+		[THE_NOUN_SING]
+		[OF_NOUN_SING]
 
 [WORD:MILE]
 	[NOUN:mile:miles]
@@ -8112,6 +8116,14 @@ language_words
 		[FRONT_COMPOUND_ADJ]
 
 [WORD:SUMMER]
+	[NOUN:summer:summers]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
+		[THE_NOUN_SING]
+		[OF_NOUN_SING]
+		[REAR_COMPOUND_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 
 [WORD:SUN]
 	[NOUN:sun:suns]
