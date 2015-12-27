@@ -4,6 +4,41 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.42.04:
+
+	data/speech/general.txt
+		fixed another whom typo
+
+	creatures
+		removed PARCHMENT from rhino lizard
+		leech, moon snail get [EXTRAVISION]
+		moon snail got heart,guts,brain,mouth
+		giant toad -> giant cave toad, made taupe gray
+		walrus attack changed to tusk_stab variation
+		lizards got toes, claws, eggs
+		muskox got horns
+		wild boar/warthog gets tusk attack
+		animal people and giant animals for many old raw entries
+			removed redundant savage_tropical file -- will add replacement scorpion later
+
+	creature variations
+		animal person support for BODY_WITH_HEAD_FLAG (for worm)
+
+	inorganic
+		quicklime got solid density
+		typo in note for dolomite
+
+	plant_crops
+		papyrus structural mat got [STATE_NAME_ADJ:SOLID:papyrus]
+		many crops got [MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
+
+	tools
+		added NO_DEFAULT_IMPROVEMENTS to quire to stop it from getting cloth description
+
+	book_instruction typo for practitioner
+
+******************************************************
+
 Auxiliary file changes for 0.42.03:
 
 	critters
