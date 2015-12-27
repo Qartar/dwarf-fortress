@@ -113,7 +113,7 @@ Victory By [NAME]
 [NAME] Exposed
 [NAME] For Everyone
 [NAME] For Students
-[NAME] For The Beginning Practicioner
+[NAME] For The Beginning Practitioner
 [NAME] In Practice
 [NAME] In The Modern Era
 [NAME] In The Time of My Ancestors
