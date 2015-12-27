@@ -36,6 +36,36 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.42.04 (December 26, 2015):
+
+Various fixes and various giant and peopled animals.  I held off on common domestic animal people for now, but there are plenty of canine and feline critters that got the treatment.
+
+New stuff
+	(*) Giant and person versions of many of the older creatures, including the elephant
+	(*) Vampire purges in world generation to control their overfeeding which was stopping cities from growing
+
+Major bug fixes
+	(*) Allowed dwarves praying at temple dedicated to no particular god to choose prayer target according to need
+	(*) Stopped adv mode goblin animals from fighting gobs and each other
+	(*) Fixed error causing underground sewer dwellers to copy town stockpile, lag-killing certain towns
+	(*) Stopped crash with goblet trading
+	(*) Made retire store away merchants and diplomats and not mark visitors and residents as hostile
+	(*) Made non-military visitors do citizenship petitions properly
+	(*) Fixed broken merchant-elevated-to-liaison that sits at trade depot for entire life
+
+Other bug fixes/tweaks
+	(*) Fixed error with building profiles causing underground bandit leaders to roam streets
+	(*) Vampire guests of various kinds give themselves cover identities (those on-site will still be revealed in old saves)
+	(*) Stopped some position elevation announcements from giving away vampires
+	(*) Removed trade goods from retired sites if living merchant is still present
+	(*) Made animals less afraid of casual relationships
+	(*) Various animal tweaks that came up during the peopling (see file changes.txt)
+	(*) Marked visitors correctly in site text export
+	(*) Fixed a cause of string entry key conflicts
+	(*) Made it list proper subregion when talking about certain adventurer rumor sites instead of subregion where speaker is standing
+
+******************************************************
+
 Release notes for 0.42.03 (December 12, 2015):
 
 Here's another release which cleans up various outstanding issues.
