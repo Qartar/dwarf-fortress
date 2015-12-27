@@ -582,7 +582,7 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[NAME:giant monitor lizard:giant monitor lizards:giant monitor lizard]
 	[CASTE_NAME:giant monitor lizard:giant monitor lizards:giant monitor lizard]
 	[GENERAL_CHILD_NAME:giant monitor lizard hatchling:giant monitor lizard hatchlings]
-	[DESCRIPTION:A huge monster in the shape of monitor lizard.]
+	[DESCRIPTION:A huge monster in the shape of a monitor lizard.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'M']
