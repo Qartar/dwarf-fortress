@@ -145,7 +145,7 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 
 Hedgehogs were sponsored by the generous contributions of the Bay 12 community.
 
-	Hedgehog: Closest thing to a zefie in Vanilla DF. –Sponsored by Strife
+	Hedgehog: Closest thing to a zefie in Vanilla DF. -Sponsored by Strife
 
 [CREATURE:HEDGEHOG]
 	[DESCRIPTION:A small round mammal whose back is covered in spines.  It is nocturnal and feeds on insects.  It curls into a ball when startled and is found in temperate regions.]

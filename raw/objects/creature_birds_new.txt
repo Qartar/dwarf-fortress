@@ -3984,7 +3984,7 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 
 Hornbills were sponsored by the generous contributions of the Bay 12 community.
 
-	Sponsored by Hornbill Interactive – Jim Regan / balrogkernel
+	Sponsored by Hornbill Interactive - Jim Regan / balrogkernel
 
 [CREATURE:BIRD_HORNBILL]
 	[DESCRIPTION:A tiny bird with a large, brightly-colored bill.]
