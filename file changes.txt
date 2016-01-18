@@ -4,6 +4,17 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.42.05:
+
+	creatures
+		added skink, chameleon, anole and iguana to creature_reptiles
+		fixed rhino/giraffe description typos
+		got rid of lizard eggs again, specified it as common lizard zootoca vivipara in note
+		corrected monitor lizard toes, added tongues and teeth
+		added leopard gecko toes, tongues and teeth
+
+******************************************************
+
 Auxiliary file changes for 0.42.04:
 
 	data/speech/general.txt

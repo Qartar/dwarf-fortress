@@ -3314,7 +3314,7 @@ creature_large_tropical
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:rhinoceros man:rhinoceros men:rhinoceros man]
-	[DESCRIPTION:A person with the head and horns a rhinoceros.]
+	[DESCRIPTION:A person with the head and horns of a rhinoceros.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:60:80]
@@ -3451,7 +3451,7 @@ creature_large_tropical
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:giraffe man:giraffe men:giraffe man]
-	[DESCRIPTION:A person with the head and neck a giraffe.]
+	[DESCRIPTION:A person with the head and neck of a giraffe.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:60:80]

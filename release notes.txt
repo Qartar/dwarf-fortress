@@ -36,6 +36,41 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.42.05 (January 17, 2015):
+
+Here's another one!  We're still going to be working through adventure reputation/quest/etc. improvements, so consider this a first stage.  Other highlights are the fortress mode sparring and mug-carrying fixes.  Enjoy your zombies.
+
+New stuff
+	(*) New hearth orders for killing beasts and fighting outlaws
+	(*) Added a hunter reputation and cleaned up reputation system around beast-slaying
+	(*) Made citizens understand their relationship to bandits and added reputation for protecting people from them
+	(*) A few lizards
+
+Major bug fixes
+	(*) Made drunken dwarves spar properly again
+	(*) Stopped dwarves from carrying mugs forever
+	(*) Stopped adv goblin performance troupes from attacking strangers while traveling
+	(*) Stopped reanimated corpses from being stuck on wrong side of conflicts
+	(*) Gave underground populations zone assignments to stop them from erupting outward
+	(*) Fixed inconsistent underground vegetation generation (which caused underground site maps to generate inconsistently)
+	(*) Fixed various city vegetation clearing routines which were causing holes in the ground above sewers and catacombs
+
+Other bug fixes/tweaks
+	(*) Zombies no longer dodge, parry, block, wrestle or run, and they do charging attacks whenever possible
+	(*) Zombies don't get defense adjustments for body part type and they don't find or stop combat opportunities
+	(*) Reduced zombie strength bonus (old saves will still be strong)
+	(*) Made severing all non-smashed heads put down a zombie (can be reanimated if has working grasp, smashing heads already worked)
+	(*) Made severing/smashing any working grasp put down a headless zombie (can be reanimated if has another working grasp)
+	(*) Neck gets same combat chance adjustment as head
+	(*) Made bandits that run off cancel town harassment goals
+	(*) Bandits camps don't immediately send new armies to re-harass towns
+	(*) Stopped camp bandits from being placed in trees so often
+	(*) Allowed save/load in arena
+	(*) Made creature object load bar page properly
+	(*) Labeled xml encoding as cp437 instead of utf-8
+
+******************************************************
+
 Release notes for 0.42.04 (December 26, 2015):
 
 Various fixes and various giant and peopled animals.  I held off on common domestic animal people for now, but there are plenty of canine and feline critters that got the treatment.
