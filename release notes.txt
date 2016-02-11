@@ -36,7 +36,37 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
-Release notes for 0.42.05 (January 17, 2015):
+Release notes for 0.42.06 (February 10, 2016):
+
+Here's the material and image specification release, along with several important bug fixes.  There's more to be done with job settings -- we need to improve work orders and allow the decoration of specific objects, to name a few, but this should be a good start.
+
+New stuff
+	(*) Can set specific job material in job details
+	(*) Added jobs to construct the various specific crafts
+	(*) Can specify images in statue, figurine, engraving, decorate jobs to varying degrees
+	(*) Can specify group's symbol at embark
+	(*) Can specify type of decoration
+	(*) Added adv mode bone craft carving with image specification
+
+Major bug fixes
+	(*) Counted exported wealth properly again (old saves will start counting w/ next caravan that leaves)
+	(*) Flour, dye, seeds etc. not dumped out of bags into barrels
+	(*) Allowed captured intelligent non-residents to be chained/caged/pitted again
+	(*) Various useful objects like minecarts and goblets no longer ownable as personal possessions
+	(*) Made ownable objects that aren't worn storeable again
+	(*) Fixed problem causing some surface-underground sites to become disconnected
+
+Other bug fixes/tweaks
+	(*) Allowed travel map to be shown even when you can't travel
+	(*) "Really attack?" gives more information
+	(*) Show adv companions by first name in announcements etc.
+	(*) Used adjectives from physical descriptions for use in adv mode creature designations
+	(*) Stopped premature elevation of wagons to historical status
+	(*) Fixed missing space when reporting success on beast mission
+
+******************************************************
+
+Release notes for 0.42.05 (January 17, 2016):
 
 Here's another one!  We're still going to be working through adventure reputation/quest/etc. improvements, so consider this a first stage.  Other highlights are the fortress mode sparring and mug-carrying fixes.  Enjoy your zombies.
 

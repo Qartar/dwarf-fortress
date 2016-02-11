@@ -4,6 +4,17 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.42.06:
+
+	announcements
+		removed TRAVEL_ADVISORY
+
+	reaction
+		added adv bone carving reactions, with category support
+		added has_edge for reagent
+
+******************************************************
+
 Auxiliary file changes for 0.42.05:
 
 	creatures
