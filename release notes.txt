@@ -36,6 +36,42 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.43.01 (May 9, 2016):
+
+A new version number!  With the work order additions and adventurer-created sites, this one ended up with more new stuff and fewer bug fixes than expected, and my version calculator just tipped over at 0.43.  You can use the new 'b' site building option in adventure mode to create a site (outside the bounds of other sites).  For dwarf mode work orders, you can set conditions and details from the manager.  You can also create orders tied to specific shops from their workshop profiles.
+
+A miscellaneous note: in order to retire at the adventurer sites you create, you'll need to name the site, create a main hall zone, and claim the hall during conversation (or while shouting to yourself).
+
+Next up we'll be doing more bug fix releases to make sure we have a vaguely presentable DF before we disappear into a new compiler and 64 bits.
+
+New stuff
+	(*) Ability to build up new sites in adv mode, either yourself or by assigning companions
+	(*) Ability to do carpentry in adv mode
+	(*) Ability to chop down trees in adv mode
+	(*) Ability to make stone axes in adv mode
+	(*) Ability to pull branches from trees in adv mode
+	(*) Can put start conditions on work orders (by amount of resources or dependence on other work orders)
+	(*) Can specify materials/images/etc. in work orders
+	(*) Can create work order from profile which is tied to specific workshop
+	(*) Can set maximum number of shops that a general work order can task at once
+	(*) Can set maximum number of general work orders per shop or disallow them by profession or altogether (note: this won't work for active old-save jobs)
+	(*) Allowed perpetual work orders
+	(*) Repeatable work orders, ability to set restart frequencies
+
+Major bug fixes
+	(*) Stopped masterpiece trading from causing artisans to suffer effects of art defacement
+
+Other bug fixes/tweaks
+	(*) Got rid of work order limit of 30 jobs
+	(*) Improved work order filtering (respect partial vs. full results etc.)
+	(*) Stopped work orders from taking more than one slot per workshop
+	(*) Stopped non-citizens from being charged for violating production orders
+	(*) Stopped mother from getting both her and spouse's miscarriage thought
+	(*) Refreshed material list when deleting uniform item
+	(*) XML export now has the exact site rectangle
+
+******************************************************
+
 Release notes for 0.42.06 (February 10, 2016):
 
 Here's the material and image specification release, along with several important bug fixes.  There's more to be done with job settings -- we need to improve work orders and allow the decoration of specific objects, to name a few, but this should be a good start.
