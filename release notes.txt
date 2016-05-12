@@ -36,6 +36,23 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.43.02 (May 11, 2016):
+
+Smoothed out some rough areas in the adventure part of the release.  We'll be continuing on with bug fix releases.
+
+Major bug fixes
+	(*) Stopped zone corruption problem from adventure sites (caused crashes)
+	(*) Stopped adventure camps from being aged by the age of the world repeatedly
+	(*) Stopped certain site build orders from skipping the collapse check
+	(*) Stopped prisoners in goblin sites from starting no quarter fights with their rescuers
+	(*) Made people that join you stop personal/shared activities that might interfere them from following you
+
+Other bug fixes/tweaks
+	(*) Stopped felling of trees in the arena, so you wouldn't be teleported to a weird hidden region map
+	(*) Indicated child/baby state of prisoners during look etc.
+
+******************************************************
+
 Release notes for 0.43.01 (May 9, 2016):
 
 A new version number!  With the work order additions and adventurer-created sites, this one ended up with more new stuff and fewer bug fixes than expected, and my version calculator just tipped over at 0.43.  You can use the new 'b' site building option in adventure mode to create a site (outside the bounds of other sites).  For dwarf mode work orders, you can set conditions and details from the manager.  You can also create orders tied to specific shops from their workshop profiles.
