@@ -4,7 +4,14 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
-Auxiliary file changes for 0.42.07:
+Auxiliary file changes for 0.43.02:
+
+	body_default
+		fixed plural for some of the left foot entries
+
+******************************************************
+
+Auxiliary file changes for 0.43.01:
 
 	removed TRAVEL_ADVISORY announcement properly
 	added BRANCH item type
