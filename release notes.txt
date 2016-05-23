@@ -36,6 +36,39 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.43.03 (May 22, 2016):
+
+Here are some more bug fixes.
+
+Major bug fixes
+	(*) Made customized magma forge jobs use metal instead of making things out of coal
+	(*) Adjusted conflict code to stop taverngoers from joining siegers over petty grievances
+	(*) Fixed material overcount in adv site work menu
+
+Other bug fixes/tweaks
+	(*) Made pain from broken tissues depend on relative part size
+	(*) Made embark profiles load fish properly
+	(*) Made assigning an animal to a restraint remove it from pasture assignments properly
+	(*) Made pasturing jobs respect connectivity in creation and in seeing if they should continue
+	(*) Made dwarves remove animals assigned to pastures from cages/chains that are in the pasture
+	(*) Fixed display error causing creature to be described as gigantic too often
+	(*) Allowed metal mechanisms to be made from the job manager
+	(*) Made dragonfire affect metal items and generally amplified fire effects a bit
+	(*) Stopped veins in large mineral clusters from being improperly restricted
+	(*) Stopped placement issue with minerals that had more than one specific environment
+	(*) Stopped woodcutters from using axes without edges (like training axes)
+	(*) Allowed soil critters to live in wider temperature ranges
+	(*) Fixed problem with temperature checks on certain wilderness populations
+	(*) Made construct mechanisms job show material
+	(*) Made mountain travel restriction not affect other actions
+	(*) Allowed adventure mode divers to move through deep water properly
+	(*) Made placing items on tables remove item from your inventory properly
+	(*) Made improvement reactions increase and apply skill properly
+	(*) Reported site of adventurer masterpieces correctly
+	(*) Stopped manually-set low frame rate cap from being stuck
+
+******************************************************
+
 Release notes for 0.43.02 (May 11, 2016):
 
 Smoothed out some rough areas in the adventure part of the release.  We'll be continuing on with bug fix releases.
