@@ -4,6 +4,19 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.43.04:
+
+	announcements
+		RESOLVE_SHARED_ITEMS D_D -> UCR
+
+	creatures
+		fixed kobold agility entry
+
+	materials
+		gave [STOCKPILE_GLOB_PASTE] to the paper slurry thread material (Dwarfu)
+
+******************************************************
+
 Auxiliary file changes for 0.43.03:
 
 	reactions
