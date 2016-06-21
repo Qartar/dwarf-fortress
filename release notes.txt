@@ -36,6 +36,34 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.43.04 (June 20, 2016):
+
+Here's another bug-fix release.  Assuming no issues crop up immediately, we'll now dive into 64-bit land for next time!
+
+Major bug fixes
+	(*) Fixed error deciding when patients should be moved
+	(*) Fixed initialization problem with tools causing stone axes to be thought of as ranged
+	(*) Stopped completed work order jobs from checking off every matching order
+	(*) Stopped masterpiece trades in containers from triggering artwork defacement
+	(*) Stopped storage from always failing in the second tavern/library/temple you define
+	(*) Stopped broken crash-prone entry from appearing at the end of the stocks list
+
+Other bug fixes/tweaks
+	(*) Attackers will remove armor from unconscious opponents if it is blocking attacks
+	(*) Made people wear more armor according to their roles again
+	(*) Allowed new citizens with some previously site-wide occupations to be reassigned
+	(*) Allowed some site-wide occupations for dwarves
+	(*) Made combat damage weapon and armors depending on material differences etc.
+	(*) Made dwarves prefer undamaged equipment during the periodic uniform upgrades
+	(*) Allowed strong attacks/shakes to translate some force to joints and parent parts even if blocked by armor
+	(*) Reduced clothing stopping power based on penetration depth
+	(*) Made paper slurries stockpile-able (won't work without updated raws)
+	(*) Fixed problem with adv mode tribute demand check
+	(*) Fixed ghost initial positioning problem
+	(*) Made macros save correctly even if the macro directory is deleted
+
+******************************************************
+
 Release notes for 0.43.03 (May 22, 2016):
 
 Here are some more bug fixes.
