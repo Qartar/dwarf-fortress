@@ -36,6 +36,24 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.43.05 (July 5, 2016):
+
+Here are the first official 64-bit releases!  This would not be possible without help from our community -- you can view the exciting and sometimes late-night discussion over in the 0.43.04 release thread if you want to see how the cake was baked.  This release should also make worlds generated with the same seed more consistent, and it has a few other minor fixes we managed to sneak in.
+
+New stuff
+	(*) 64-bit support, pulling the game from the distant past into the previous decade
+
+Major bug fixes
+	(*) Fixed problem with artistic skill assignment causing world histories to diverge
+	(*) Fixed problem with worldgen trade causing world histories to diverge
+
+Other bug fixes/tweaks
+	(*) Stopped babies/children from competing in w.g. events
+	(*) Made gorlaks able to open doors, stopped desizing of their heads
+	(*) Fixed some mem leaks
+
+******************************************************
+
 Release notes for 0.43.04 (June 20, 2016):
 
 Here's another bug-fix release.  Assuming no issues crop up immediately, we'll now dive into 64-bit land for next time!
