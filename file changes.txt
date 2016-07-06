@@ -4,6 +4,13 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.43.05:
+
+	creatures
+		gorlak CANOPENDOORS and lost HUMANOID_RELSIZES
+
+******************************************************
+
 Auxiliary file changes for 0.43.04:
 
 	announcements
