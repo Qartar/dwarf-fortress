@@ -1,26 +1,23 @@
 /*
-    SDL_ttf:  A companion library to SDL for working with TrueType (tm) fonts
-    Copyright (C) 1997-2009 Sam Lantinga
+  SDL_ttf:  A companion library to SDL for working with TrueType (tm) fonts
+  Copyright (C) 2001-2012 Sam Lantinga <slouken@libsdl.org>
 
-    This library is free software; you can redistribute it and/or
-    modify it under the terms of the GNU Library General Public
-    License as published by the Free Software Foundation; either
-    version 2 of the License, or (at your option) any later version.
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
 
-    This library is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-    Library General Public License for more details.
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
 
-    You should have received a copy of the GNU Library General Public
-    License along with this library; if not, write to the Free
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-
-    Sam Lantinga
-    slouken@libsdl.org
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
 */
-
-/* $Id: SDL_ttf.h 5122 2009-10-17 18:16:33Z slouken $ */
 
 /* This library is a wrapper around the excellent FreeType 2.0 library,
    available at:
@@ -30,8 +27,8 @@
 #ifndef _SDL_TTF_H
 #define _SDL_TTF_H
 
-#include "SDL.h"
-#include "begin_code.h"
+#include <SDL/SDL.h>
+#include <SDL/begin_code.h>
 
 /* Set up for C function definitions, even when using C++ */
 #ifdef __cplusplus
@@ -42,7 +39,7 @@ extern "C" {
 */
 #define SDL_TTF_MAJOR_VERSION	2
 #define SDL_TTF_MINOR_VERSION	0
-#define SDL_TTF_PATCHLEVEL	10
+#define SDL_TTF_PATCHLEVEL	11
 
 /* This macro can be used to fill a version structure with the compile-time
  * version of the SDL_ttf library.
@@ -236,6 +233,9 @@ extern DECLSPEC void SDLCALL TTF_Quit(void);
 /* Check if the TTF engine is initialized */
 extern DECLSPEC int SDLCALL TTF_WasInit(void);
 
+/* Get the kerning size of two glyphs */
+extern DECLSPEC int TTF_GetFontKerningSize(TTF_Font *font, int prev_index, int index);
+
 /* We'll use SDL for reporting errors */
 #define TTF_SetError	SDL_SetError
 #define TTF_GetError	SDL_GetError
@@ -244,6 +244,6 @@ extern DECLSPEC int SDLCALL TTF_WasInit(void);
 #ifdef __cplusplus
 }
 #endif
-#include "close_code.h"
+#include <SDL/close_code.h>
 
 #endif /* _SDL_TTF_H */

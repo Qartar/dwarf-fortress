@@ -2,25 +2,41 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildMachineOSBuild</key>
+	<string>15C50</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>SDL_ttf</string>
-	<key>CFBundleGetInfoString</key>
-	<string>http://www.libsdl.org</string>
 	<key>CFBundleIdentifier</key>
-	<string>SDL_ttf</string>
+	<string>org.libsdl.SDL-ttf</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Simple DirectMedia Layer</string>
+	<string>SDL_ttf</string>
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.6</string>
-	<key>CFBundleSignature</key>
-	<string>SDL_ttfX</string>
+	<string>2.0.11</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>2.0.10</string>
+	<string>2.0.11</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>7D175</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>15E60</string>
+	<key>DTSDKName</key>
+	<string>macosx10.11</string>
+	<key>DTXcode</key>
+	<string>0730</string>
+	<key>DTXcodeBuild</key>
+	<string>7D175</string>
 </dict>
 </plist>
