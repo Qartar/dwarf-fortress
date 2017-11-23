@@ -4,6 +4,89 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.01:
+
+	removed scout speech files
+
+	new announcements
+		[AMBUSH_HERO:A_D:D_D:BOX:P:R]
+		[RUMOR_SPREAD:A_D:D_D]
+		[SERVICE_ORDER_RUMOR_RECEIVED:A_D:D_D]
+		[RETURNING_RUMOR_RECEIVED:A_D:D_D]
+
+	new keys
+		HOTKEY_BUILDING_DISPLAY_FURNITURE:F
+		BUILDJOB_DISPLAY_FURNITURE_SET:D
+		BUILDJOB_DISPLAY_FURNITURE_CANCEL:C
+		A_ASSUME_IDENTITY_NEW:n
+		A_ASSUME_IDENTITY_NONE:x
+		A_ASSUME_IDENTITY_NAME:n
+		A_ASSUME_IDENTITY_ORIGIN:o
+		A_ASSUME_IDENTITY_PROFESSION:p
+		A_ASSUME_IDENTITY_WORSHIP:w
+		CHOOSE_NAME_FIRST:f
+		A_BARTER_SHOW:s
+		A_LOG_ARTIFACTS:A
+		CIV_RAID:r
+		CIV_CENTER_ON_FORT:y
+		CIV_REMOVE_MISSION:x
+		CIV_RESCUE:r
+		CIV_RECOVER:r
+		CIV_WORLD:w
+		CIV_MISSIONS:m
+		CIV_NEWS:n
+		CIV_PEOPLE:p
+		CIV_ARTIFACTS:a
+		CIV_CIVS:c
+
+	creatures
+		added [CREATURE_CLASS:MAMMAL] and [CREATURE_CLASS:POISONOUS] for use by SKULKING entity
+
+	items
+		pedestal, display case
+
+	reaction
+		adv: pedestal
+		dwf: display case
+
+	plant_new_trees
+		community-gathered density/color data
+
+	entity
+		pedestal, display case stuff
+		SKULKING lost SCOUT
+		[ANIMAL] def for entities
+			You must use one of the following tags to specify the animal:
+			[ANIMAL_TOKEN:<token>] -- this ANIMAL def only applies to this one creature
+			[ANIMAL_CASTE_TOKEN:<token>] -- this ANIMAL def only applies to this caste (requires ANIMAL_TOKEN)
+			[ANIMAL_CLASS:<class>] -- this ANIMAL def only applies to castes with all of these classes
+			[ANIMAL_FORBIDDEN_CLASS:<class>] -- forbid castes with any of these classes
+			Sites with populations of animals will have all castes, but only use the specified castes for roles like mount.
+			The following tags override creature tags.  If a caste matches two ANIMAL defs, ALWAYS prevails over NEVER.
+			[ANIMAL_ALWAYS_PRESENT] -- without this tag, the animal will only be present if found in the environment
+			[ANIMAL_NEVER_MOUNT] -- overrides MOUNT and MOUNT_EXOTIC (either normally triggers mount role)
+			[ANIMAL_ALWAYS_MOUNT]
+			[ANIMAL_NEVER_WAGON_PULLER] -- overrides WAGON_PULLER
+			[ANIMAL_ALWAYS_WAGON_PULLER]
+			[ANIMAL_NEVER_SIEGE] -- overrides TRAINABLE_WAR + not CAN_LEARN
+			[ANIMAL_ALWAYS_SIEGE]
+			[ANIMAL_NEVER_PET] -- overrides PET and PET_EXOTIC (either normally triggers pet role)
+			[ANIMAL_ALWAYS_PET]
+			[ANIMAL_NEVER_PACK_ANIMAL] -- overrides PACK_ANIMAL
+			[ANIMAL_ALWAYS_PACK_ANIMAL]
+		SKULKING gets animal def
+			[ANIMAL]
+				[ANIMAL_CLASS:POISONOUS]
+				[ANIMAL_FORBIDDEN_CLASS:MAMMAL]
+				[ANIMAL_NEVER_MOUNT]
+				[ANIMAL_NEVER_PULLER]
+				[ANIMAL_NEVER_PACK]
+				[ANIMAL_ALWAYS_PET]
+				[ANIMAL_ALWAYS_SIEGE]
+		skulking gets [NO_ARTIFACT_CLAIMS]
+
+******************************************************
+
 Auxiliary file changes for 0.43.05:
 
 	creatures
