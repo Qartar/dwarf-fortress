@@ -141,6 +141,11 @@ SCRIBE
 PAPERMAKER
 BOOKBINDER
 TAVERN_KEEPER
+CRIMINAL
+PEDDLER
+PROPHET
+PILGRIM
+MONK
 
 
 You can also use the entity/site link tokens in place of the profession tokens:

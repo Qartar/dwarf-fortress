@@ -286,6 +286,7 @@ Gila monsters were sponsored by the generous contributions of the Bay 12 communi
 	[CASTE_NAME:gila monster:gila monsters:gila monster]
 	[CHILD:1][GENERAL_CHILD_NAME:gila monster hatchling:gila monster hatchlings]
 	[CREATURE_TILE:'g'][COLOR:4:0:1]
+	[CREATURE_CLASS:POISONOUS]
 	[AMPHIBIOUS]
 	[BIOME:ANY_DESERT]
 	[LARGE_ROAMING]
