@@ -4,6 +4,12 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.02:
+
+	Just the usual.
+
+******************************************************
+
 Auxiliary file changes for 0.44.01:
 
 	removed scout speech files
@@ -16,8 +22,8 @@ Auxiliary file changes for 0.44.01:
 
 	new keys
 		HOTKEY_BUILDING_DISPLAY_FURNITURE:F
-		BUILDJOB_DISPLAY_FURNITURE_SET:D
-		BUILDJOB_DISPLAY_FURNITURE_CANCEL:C
+		BUILDJOB_DISPLAY_FURNITURE_SET:d
+		BUILDJOB_DISPLAY_FURNITURE_CANCEL:c
 		A_ASSUME_IDENTITY_NEW:n
 		A_ASSUME_IDENTITY_NONE:x
 		A_ASSUME_IDENTITY_NAME:n
