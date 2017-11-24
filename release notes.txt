@@ -36,6 +36,21 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.02 (November 23, 2017):
+
+Hopefully this'll stop the problems we've been having in world generation!
+
+Linux Update: I should be able to test the Linux drive on Saturday once I get the hard drive enclosure, and we'll go from there.  Apologies for the continuing delay.
+
+Major bug fixes
+	(*) Fixed world gen crash associated to agents checking on site government after it collapses
+
+Other bug fixes/tweaks
+	(*) Stopped returning pet dogs from petitioning for sanctuary like rescued prisoners
+	(*) Stopped uncontested raids reports from starting at year 0
+
+******************************************************
+
 Release notes for 0.44.01 (November 22, 2017):
 
 This is the artifact release, featuring the ability to send your dwarves off to cause trouble in the world, improved kobold sites, cover identities, artifact questers, and a bit of artifact diplomacy.
