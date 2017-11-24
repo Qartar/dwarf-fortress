@@ -36,6 +36,84 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.02 (November 23, 2017):
+
+Hopefully this'll stop the problems we've been having in world generation!
+
+Linux Update: I should be able to test the Linux drive on Saturday once I get the hard drive enclosure, and we'll go from there.  Apologies for the continuing delay.
+
+Major bug fixes
+	(*) Fixed world gen crash associated to agents checking on site government after it collapses
+
+Other bug fixes/tweaks
+	(*) Stopped returning pet dogs from petitioning for sanctuary like rescued prisoners
+	(*) Stopped uncontested raids reports from starting at year 0
+
+******************************************************
+
+Release notes for 0.44.01 (November 22, 2017):
+
+This is the artifact release, featuring the ability to send your dwarves off to cause trouble in the world, improved kobold sites, cover identities, artifact questers, and a bit of artifact diplomacy.
+
+In fort mode, the 'c' screen which used to list civilizations still does that as a suboption, but its main purpose now is to show the world map and allow you to interact with it.  You can either raid a neighbor generally, or send off squads to recover specific artifacts or rescue particular people (in which case, the squads will still bring back other artifacts and prisoners, but focus on the goal.)  A squad questing after an artifact will seek out information if the first site doesn't work out, and this might take several months, so be prepared.  Squads can also be captured during raids, though typically someone will return to tell the tale.  When squads return, a report will become available; a yellow 'R' will appear over on the left margin, and pressing 'r' will let you see it.  Sometimes reports are quite lengthy as squads stumble from tavern to tavern; you can press enter to skip to the end of the path animation.
+
+There are some rough edges here!  Be sure not to send off your commander if you are planning to reorganize your military, as they are the only one with the power to assign new squads and cannot do so while off the map.  There was a last-minute hiccup with artifacts known to be held by people (rather than stored on sites); these fort-mode missions will be fruitless for the moment; the most common instance here is books authored by people that then hang on to them, so don't try to steal their books!  It says on the map screen when an artifact is held by somebody, so it should be easy to avoid.  Raids do not bring back non-artifacts or build skills; these issues may or may not be addressed in the short-term depending on difficulties that arise.
+
+The interactions with heroes and invading armies are more straightforward.  There will either be 'P'etitions or a diplomacy popup to handle.
+
+In adventure mode, you can assume a cover identity.  You do this from the 'k' conversation menu (if you are already talking to somebody, it'll be hidden in "start new conversation".)  If you choose to link your identity to a civilization, you'll be carrying that baggage with you, especially when you are being interrogated by goblin guards, so one should be prudent.  To turn off the identity, go back to the "assume an identity" menu and choose the 'x' "no identity" option.  You can also reuse existing identities from this menu.
+
+People in adventure mode that are seeking an artifact will list "missing treasure" among their troubles, and you can then inquire further.
+
+In order to name an object, use 'I' to interact with it, and it'll be one of the options for appropriate objects.  For example, you can give a name to your spear or waterskin, but not to the water or food you start with.
+
+There are also various adventure rough edges.  For instance, if you pick up and then immediately replace a museum piece in adventure mode, and then tell somebody about it, you'll get credit as a Treasure Hunter.  It'll be difficult to fix that without additional property information, etc.  It's also generally hard right now to find artifact quests, as most things are in their proper place and/or not subject to an outside claim.  We'll be working with this a bit as we generally work on stabilizing the release.
+
+Overall, many of the changes occurred under the hood, in preparation for the myth and magic release, but now the magic release will be able to incorporate artifacts of all kinds without additional delay, so hopefully it was time well spent.
+
+As usual, your old saves should work, but please back them up before diving into the new release!  It is quite likely that forts will fall into technical ruin as bugs come up and are handled at this early stage.  Old forts won't have object additions like the pedestals and display cases, but they should be able to send out raids from the 'c' screen.
+
+We will be focusing on the worst bugs (crashes etc.) at first, and then we'll broaden out into other bugs, old and new, and minor suggestions/usability improvements, as well as a general smoothing out of the new features.  We're still working on the design side of the first magic release, so we anticipate we'll be doing smaller releases for a while.
+
+New stuff
+	(*) Ability to send out squads to raid sites, rescuing prisoners and recovering artifacts
+	(*) Display cases and pedestals, museum zones, both in forts and other sites
+	(*) Can view the world map w/ rumors from fort mode
+	(*) Artifacts created during worldgen: dwarf moods, named heroic objects, holy relics, heirlooms
+	(*) New artifact events in play and worldgen: questers seek artifacts and ask for or steal them, invaders demand artifacts
+	(*) New historical events associated to the creation of artifacts (used in fort and worldgen)
+	(*) Agents used by civilizations to gather information, can assume cover identities
+	(*) Improved kobold site maps
+	(*) Goblin site denizens demand an identity instead of immediately attacking every stranger
+	(*) More modding control over pets and other animals
+	(*) Adventurer can assume a cover identity at will
+	(*) Adventurer can name their possessions
+	(*) New adventurer reputations related to artifacts
+	(*) New religious activity: monks, pilgrims and prophets
+	(*) Museums and other room types can be added to fort locations like taverns and libraries
+	(*) Various additional data in the XML export
+
+Major bug fixes
+	(*) Fixed weapon trap crash vs. item breakage
+	(*) Fixed bug preventing monster slayers from visiting those forts with monsters to slay
+	(*) Made animated skulls, hair and other bits easier to pulp
+	(*) Made idle and vermin-hunting dwarves come down from trees more successfully
+	(*) Made thirst/hunger and being pushed out of the way less likely to terminate dances
+
+Other bug fixes/tweaks
+	(*) Alphabetized broad stock screen categories
+	(*) Fixed problem with historical bodies not respecting wounds/processing
+	(*) Fixed bug causing religions to worship too many gods, with duplicates
+	(*) Made simple burrow beasts start in caves as possible
+	(*) Fixed broken historical collection linkage with beast attacks during festivals
+	(*) Fixed one instance of broken animal person greetings
+	(*) Stopped natural animals from w.g. rampaging through sites owned by entities at peace with wildlife
+	(*) Took age into account for w.g. fights vs. body size (e.g. proper dragon size)
+	(*) Stopped people from being enough to satisfy a need to see great beasts
+	(*) Made visitors less nervous about going to neutral locations
+
+******************************************************
+
 Release notes for 0.43.05 (July 5, 2016):
 
 Here are the first official 64-bit releases!  This would not be possible without help from our community -- you can view the exciting and sometimes late-night discussion over in the 0.43.04 release thread if you want to see how the cake was baked.  This release should also make worlds generated with the same seed more consistent, and it has a few other minor fixes we managed to sneak in.
