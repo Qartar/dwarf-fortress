@@ -4,6 +4,12 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.03:
+
+	Updated plant_new_trees with file that has the same encoding as the others (jecowa).
+
+******************************************************
+
 Auxiliary file changes for 0.44.02:
 
 	Just the usual.
