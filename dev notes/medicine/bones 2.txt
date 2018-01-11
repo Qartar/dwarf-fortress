@@ -1,0 +1,56 @@
+Resecting was pretty confusing to me, too, honestly. That's one of those areas where I just don't have the medical training to know 100% for certain. My best guess from the material I read is that it involves possibly removing some bone, but also realigning pieces of bone.
+
+I just can't find anything concrete enough online, specifically about bone resection. I'll try to dig up a doctor to ask. 
+
+Yeah, I didn't know much about titanium refining before, but it looks like the problem with pure titanium is that if you try to refine it in the normal way, you'd end up with titanium carbide.
+
+That's not necessarily a bad thing, but probably not good for medical applications.
+
+Titanium can be found natively, though:
+http://en.wikipedia.org/wiki/Native_metal
+
+http://www.galleries.com/minerals/ELEMENTS/TITANIUM/titanium.htm
+
+as can titanium carbide, in the form of khamrabaevite (native titanium and khamrabaevite are both very rare), so atleast I learned something.
+
+(Also, in addition to titanium, and to what I know is in the game already, cadmium, chromium, indium, iridium, mercury, osmium, palladium, rhodium, ruthenium, tellurium, and zinc can all be found natively. Mostly, they're very rare, and occur in small quantities. Zinc is the exception.)http://en.wikipedia.org/wiki/Native_Metals
+
+Well, I've had a lot of personal experience with injuries, but being shot isn't one of them, fortunately.
+
+I'm not sure about the toxicity of bullets that are left in the body, but I do know that lead is in pretty much *everything*, in trace amounts. Almost all soil has it, and it's not as horribly poisonous as, say, mercury, arsenic, cadmium, radium, etc.
+
+Mostly, it's really bad for kids, and it's bad if it's dissolved (in alchohol or water), and then drank over long periods of time.
+
+Here's a pretty good article on lead poisoning:
+http://www.nlm.nih.gov/medlineplus/ency/article/002473.htm
+
+As an aside--Part of my own personal version/vision of dwarfs is that, to them, lead is like zinc, with no poison effect. It's just part of their daily breakfast.
+
+Having researched stainless a bit more, it looks like it does work well enough for most people, without additional health problems, for long periods of time.
+
+However, there's evidence that some people are more susceptible to having problems with it than others.
+http://www.arthroplastyjournal.org/article/S0883-5403(07)00593-1/abstract
+
+Also, the rods, screws, whatever, can be removed, after the bone has healed. Not sure how good of an idea that is, with the DF technology level, and it can be difficult to do, in the case of deep implants that have been in place for a long time, but under controlled conditions, and under the care of a good surgeon, I'd think dwarfs could survive it.
+
+Nickel-iron might possibly be an alternative to stainless, and could be found in meteorites, if nowhere else. (Possibly, advanced metals like titanium could also be found in meteorites? I know iridium can.).
+
+Gold might work very well as rods/screws/wires, etc. provided the patient didn't actually move around a whole lot. So that might be a fix, where you'd take a specific dwarf who was injured, and bolt him/her back together, with the requirement that he/she not do any heavy physical work until the bone has healed.
+
+Kind of a stop-gap, but something. 
+
+As an aside--One thing about the Baghdad Battery that I find interesting: some people think it's the source of the "Philosopher's Stone", that alchemists supposedly would use to transform lead into gold.
+
+So yeah, if that's based in fact, then it'd be extremely extremely special knowledge that only like 1 or 2 people had, and then apparently didn't bother telling anybody else about.
+
+Mythbusters: The fact that a lemon *does* produce a comparable charge kind of leads me to speculate that someone, somewhere *would* have stumbled onto a use for that charge, in all of human history. And then went on to make something relatively simple (if profound) into something excrutiatingly complex.
+
+Not much supporting evidence for it, though. You're absolutely right about that.
+
+Thermite's a possibility. It's relatively straightforward--not really any more complicated than gunpowder, maybe even less.
+
+I'm not sure if you'd want it in the game, due to it having been discovered in 1895, and due to it's properties, but it's one of those chemical reactions that's straight-forward enough that it *could* have been discovered long before it was. Especially since it's a metallic reaction. 
+
+It's also non-explosive, so it doesn't have the same level of game-breakingness as gunpowder.
+
+I'm really looking forward to rocksalt being useful, someday. It's cool. 
