@@ -36,6 +36,34 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.04 (January 10, 2018):
+
+This is another bug fix release to start the new year.  A few of the bad five-second freeze/lag problems caused by the new release have been fixed, and large beasts should move off the edge of the map again.  Over in adventure mode, inappropriate creatures shouldn't yell 'identify yourself' and companions should participate in conflicts as they used to, and some other issues of reputation should be solved, especially among citizens of the starting town.
+
+Major bug fixes
+	(*) Stopped displayed artifacts from duplicating on retirement/offloading of site
+	(*) Made attacking giant monsters path to targets properly again
+	(*) Stopped extraneous dwarf mode conversation text generation (freezes)
+	(*) Stopped negative artifact location rumors from passing around so much (freezes)
+	(*) Made removing first stop of hauling route w/ assigned vehicle not cause issues/crashes
+	(*) Stopped crash caused by yielding to muggers
+	(*) Stopped creatures from asking for identity when they shouldn't be able to speak
+	(*) Fixed problem with companions and other close people not always recognizing your relationship to them
+
+Other bug fixes/tweaks
+	(*) Made returning mercenaries stop petitioning for sanctuary (existing petitions will still be there)
+	(*) Prevented unirrigated etc. top-left corners etc. from stopping planting in farms
+	(*) Stopped inaccessible pile tiles from stopping bin/barrel placement throughout pile
+	(*) Allowed stairs to be carved in ice that is one tile above stone properly
+	(*) Added building item TSK indicator to ground items as well
+	(*) Stopped designations for removal of ramps/constructions from working on hidden tiles
+	(*) Removed incorrect back instruction from burrow naming
+	(*) Properly saved freeing hf in relevant historical event (Quietust)
+	(*) Fixed a few cases of historical event for identities reporting wrong historical figure
+	(*) Fixed kitchen job hotkeys
+
+******************************************************
+
 Release notes for 0.44.03 (December 25, 2017):
 
 Here are some bug fixes to close out the year.  Notably, visitors shouldn't arrive in such large numbers so early on, and fewer of them should overstay their welcome (in old saves, people already in transit will arrive, but it should taper off.)  Adventure mode commanders etc. should recognize more of your accomplishments properly and not talk about unknown creatures so much, but identities have introduced some non-trivial issues there that we'll have to build through more carefully, and there'll be some ongoing silliness.
