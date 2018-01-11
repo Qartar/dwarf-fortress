@@ -1,0 +1,295 @@
+Well, one of the main problems with implanting objects into the body is that our human immune system will reject most things.
+
+Titanium is typically used, because the body doesn't normally reject it, because it doesn't corrode, and because it naturally osseointegrates (bonds with bone). http://en.wikipedia.org/wiki/Osseointegration
+
+I've also heard of gold being used. The story is, there was a man who had to have an artificial heart, and his body rejected the normally used titanium hearts 4 times, so eventually they gave him an actual heart of gold.  8)
+
+I couldn't find a reference to this online though, so it may be an urban legend.
+
+Gold, however, is completely inert to any chemicals found in the body, according to Wiki, and several other online sources, so it is atleast a possibility.
+
+Iron/steel are a bad idea to use in the body. They rust. Bad for the liver, probably promotes infection, as some bacteria live on rust (rusted metal can cause tetanus, aka "lockjaw"-etc).
+http://en.wikipedia.org/wiki/Clostridium_tetani
+
+Aluminum is toxic, atleast to humans
+http://en.wikipedia.org/wiki/Aluminum#Health_concerns
+
+(as is lead, ofcourse), and silver, while it has health-benefits: http://en.wikipedia.org/wiki/Silver#Medicine
+can cause some medical problems:
+http://en.wikipedia.org/wiki/Argyria
+
+From Wikipedia: Closed fractures are those in which the skin is intact, while open (compound) fractures involve wounds that communicate with the fracture and may expose bone to contamination. Open injuries carry a higher risk of infection; they require antibiotic treatment and usually urgent surgical treatment (debridement). This involves removal of all dirt, contamination, and dead tissue.
+
+Resection basically is a synonym for re-orientation. So, just getting all the bones to line up, properly. It's really a navigational term, where, to "resect", you'd line up points on a map, one step at a time.
+
+The bones might come out slightly shorter, even if set properly, but it's more a question of the surgeon's skill, coupled with the sheer severity of the damage, than anything else.
+
+Stainless steel is very resistant to corrosion, but it's not 100% immune. So it's possible our dwarfs could use it for some applications, if that's what you decide, but there are big chemical differences between "steel" and "stainless steel", and the main problem with steel being the lack of osseointegration, with eventual corrosion a secondary-but important- consideration.
+
+Steel, and stainless steel, *were* used, however.
+
+In my opinion, it might be better to add titanium into the mix, possibly as a better but harder to get alternative, since we've already got aluminum (another "modern" metal), rather than trying to shoehorn stainless steel into always, consistently, working "'cause they're dwarfs".
+
+Not that that's not a possibility.
+
+Electroplating is also a possibility,
+http://en.wikipedia.org/wiki/Baghdad_Battery
+
+but if the surface of the rod itself gets scratched, it'll then begin to rust.
+
+Here's a really good-and pretty short-article on the history of treating various fractures:
+http://www.discoveriesinmedicine.com/Enz-Ho/Fractures-Treatments-and-Devices.html
+
+According to the article, the idea of steel bone screws actually originated in 1893, with Hugh Arbuthnot Lane, but I only found this one reference to him, online.
+
+Soap is good, because it removes a lot of the germs and dirt (where the germs live) from a wounded area, and keeping that area clean is very important.
+
+Another opinion: It could work in such a way that soap just generally enhanced dwarf healing, without doing anything specific--like a "nurse" dwarf could bring a wounded dwarf a bucket of water, and a bar of soap, for greater effect.
+
+Ancient antiseptics also include honey, boiled wine, distilled spirits, wood (tannic acid), salt, and, in general, herbs and spices. Specific herbs also had a greater effect, although I don't know of any particular one, off the top of my head (Either I or one of the volunteers should be creating a large database on medicinal herbs for you, soon.).
+
+Acetum (the acid in vinegar) was used by the Romans to wash wounds. Vinegar itself has antiseptic qualities.
+From Wikipedia: Vinegar has been used to fight infections since Hippocrates, who lived between 460-377 BC, prescribed it for curing persistent coughs. Some studies have suggested vinegar may fight fungal infection, and it may also have antibacterial properties.
+
+Here's the results of a study conducted by 'Good Housekeeping' for the benefit of 'Hints from Heloise' http://www.cbsnews.com/stories/2000/12/26/48hours/main259812.shtml
+
+"*"We put the mold into the grout of the tiles," says Gina Marino, Good Housekeeping's microbiologist.
+
+This mold and bacteria had to grow for a few days.
+
+And when it was time for results of the experiment, vinegar's greatest booster flew in to hear the answer to her question.
+
+"Well, with mold, it's sort of effective," Marino says. "It reduced it by 90 percent actually."
+
+But what was really exciting for Heloise is how well vinegar worked against bacteria.
+
+It was 99.9 percent effective.
+
+Vinegar worked far better than anyone expected.
+
+Is this the birth of a hint? "Yes," she says announcing her intention to write bout it.
+
+What will she say?
+
+"It works!! It works!!" she says.
+
+Vinegar is once again No. 1 on Heloise's Hint Parade.
+
+"Kills Bacteria! Kills mold!" she enthuses.*"
+
+
+Here are some recipes for cleansing lotions that could have been made in ancient times (mostly, it's facial cleanser vanity stuff, but it's stuff that seems pretty straightforward, and that would probably be possible in the 1400AD timeframe):
+
+http://www.recipezaar.com/Olive-Oil-Facial-Cleansing-Lotion-42017
+
+http://www.recipezaar.com/Lavender-or-Rosemary-Cleansing-Lotion-167604
+
+http://www.mabelwhite.com/SupplyCo/RecipeLotion.htm
+
+http://www.bathandbodyrecipes.com/bath-body-recipe-298/honey-floral-facial-cleansing-lotion-recipe.html
+
+Here's a recipe for just liquid soap--
+http://candleandsoap.about.com/od/liquidsoap/ss/basicliquidsoap.htm
+
+The bar soap we have now could also probably be broken down into water, to make a liquid cleanser, I would think?
+
+Speaking of soap, here's a link to borax, a mineable substance with detergent, and other applications. I don't think we currently have it in the game? I could be wrong about that.
+http://en.wikipedia.org/wiki/Borax
+
+On splints, from Wikipedia
+http://en.wikipedia.org/wiki/Splint_(medicine)
+
+Different forms of the splint have been used sparingly throughout history, however, the splint gained great popularity as a medical device during the French and Indian War. Generally consisting of two small wooden planks, the splint was commonly tied around the fracture with rope, cloth, or even rawhide during frontier times in American history. To this day, the splint is commonly used to secure small fractures and breaks.
+
+Here are some articles on the history of orthopedics, from online:
+*1*
+http://www.orthopedics-md.com/historyOrtho.html
+*2*
+http://www.scienceclarified.com/Oi-Ph/Orthopedics.html
+*3*
+http://www.worldortho.med.usyd.edu.au/history.html
+
+*1*Ancient History of Orthopedics
+In Eqypt, splints have been found on mummies made of bamboo, reeds, wood or bark, padded with linen. In ancient Greece, the works of Hippocrates-
+http://en.wikipedia.org/wiki/Hippocrates
+
+-detail the treatment for dislocations of the shoulders, knees, and hips, as well as treatments for infections resulting from compound fractures.
+
+During the rise of Rome, Galen (129-199 BC)-
+http://en.wikipedia.org/wiki/Galen
+
+-a Greek, became a gladiatorial surgeon. His learning helped provide the best care possible for the Roman army.He is often referred to as the father of modern medicine, and many of his techniques and teachings were standard throughout the Middle Ages. He studied the skeleton and the muscles that move it. He studied the relationship of the brain' response from the nerves to the muscles.
+
+"During this Graeco-Roman period, there were also attempts to provide artificial prostheses. There are accounts of wooden legs, iron hands and artificial feet."
+
+(From Wikipedia
+http://en.wikipedia.org/wiki/Artificial_limb#History
+
+An artificial limb is mythologically referred to in the Rigveda, the "iron leg" given to Vishpala by the Ashvins.
+
+The first specimen discovered archaeologically, known as the Roman Capua Leg, was found in a tomb in Capua, Italy, dating to 300 BC, and was made of copper and wood.
+
+Two artificial toes found on Egyptian mummies are even older, dating to 1295–664 BC; these are being tested (as of July 2007) to determine whether they could have been used in life.
+
+Armorers in the 15th and 16th centuries made artificial limbs out of iron for soldiers who lost limbs. Over the next several centuries, craftsmen began to develop artificial limbs from wood instead of metal because of the lighter weight of the material.)
+
+*2*Humans have had to contend with broken or malformed bones since prehistory. Ancient Egyptian hieroglyphics (system of writing in which pictures or symbols represent words or sounds) depict injured limbs wrapped and braced to heal normally.
+
+As wars were waged on a larger scale and weaponry became more efficient and deadly over time, fractures and other bone injuries became more common.
+
+Physicians soon developed simple prostheses (pronounced pros-THEE-sees; artificial limbs) to replace limbs that were amputated as the result of a wound. A hand, for example, was replaced with a hook attached to a cup that fit over the wrist.
+
+Early orthopedists (orthopedic physicians) concentrated on the correction of birth defects such as scoliosis (abnormal sideways curvature of the spine) and clubfoot
+http://en.wikipedia.org/wiki/Clubfoot
+
+(deformed foot marked by a curled or twisted shape).
+
+Gradually orthopedists included fractures, dislocations, and trauma to the spine and skeleton within their specialty.
+
+For many years, orthopedics was a physical specialty. The orthopedist manipulated bones and joints to restore alignment, and then applied casts or braces to maintain the structure until it healed.
+
+Fractures of the hip, among other injuries, were considered untreatable and were ignored. The patient was simply made as comfortable as possible while the fracture healed on its own.
+
+Often the healing process was not complete, and the patient was left with a lifelong handicap that made walking or bending difficult.
+
+*3*
+ANCIENT ORTHOPAEDICS
+
+PRIMITIVE MAN
+
+Although we have no written historical accounts, primitive man provides us his fossils. These show that the same pathology affecting bone existed in primitive times, hence an environmental cause for many of our common ailments seems unlikely.
+
+Evidence of fractured bones has been found, in some of which union has occurred in very fair alignment. This is interesting to note, as it gives us an ethical manner in which we can see the effects of no treatment at all, i.e. applying rest by instinct and early motion.
+
+It is inevitable that, at some stage, primitive man created a very crude splint, and that from that stage on, its advantages were recognised. Primitive man was probably also the first to perform crude amputations of limbs and fingers, and to trephine the skull.
+
+ANCIENT EGYPT.
+
+Mummified bodies, wall paintings and hieroglyphics, have shown us that the people of the Egyptian age suffered from the same problems that we suffer today. They also show us some of the orthopaedic practices of that time.
+
+Splints have been found on mummies and they were made of bamboo, reeds, wood or bark, padded with linen.
+
+There is also evidence of the use of crutches, with the earliest known record of the use of a crutch coming from a carving made in 2830 BC on the entrance of a portal on Hirkouf's tomb.
+
+Perhaps the most important source describing the practices of the Ancient Egyptians comes from a papyrus, which was stolen from a tomb in 1862.
+
+The papyrus was then sold to an American Egyptologist by the name of Edwin Smith and so is sometimes known as the Edwin Smith papyrus. The author is not known, but believed to be Imhotep.
+http://en.wikipedia.org/wiki/Imhotep
+
+Imhotep was seen as a genius of his time. He was a physician, an architect, an astrologer, and a chief minister in Egypt and Greece, with some evidence that he received this status only 100 years after his death.
+
+In the papyrus, the examination of peripherals was described together with an understanding that pulses reflected the action of the heart from which vessels went to the limbs.
+
+In this papyrus, injuries were classified according to their prognosis into three categories: an ailment which they would treat, an ailment that they would contend and an ailment which they would not treat. The papyrus also mentioned many cases and the treatment involved.
+
+These include, reducing a dislocated mandible, the signs of spinal injuries, and the signs of torticollis ("wry neck")-
+http://en.wikipedia.org/wiki/Torticollis
+
+also-the treatment of a fractured clavicle as well as signs and treatment of other fractures. Discharge was referred to as "ryt", this is presumably the pus of osteomyelitis.
+http://en.wikipedia.org/wiki/Osteomyelitis
+
+ANCIENT GREECE
+
+Many principles behind conditions and their treatment have been attributed to the Ancient Greeks. They could be regarded as the first to use a scientific approach, however they were also the first to document in detail their history and developments.
+
+Homer alone, in his account of the Trojan war, has provided us with an adequate insight to the understanding of injuries at that time and the treatment used for those injuries. The Iliad also contains references to various deformities. The Greek anatomists of Alexandria, during the 3rd century BC were also great contributors.
+
+Herophilus,
+http://en.wikipedia.org/wiki/Herophilos
+
+who is believed to have practised human dissection, is regarded as the first to divide nerves into sensory and motor components and also the first to distinguish arteries from veins.
+
+Hegetor, also of Alexandria, but of 100 BC, described in detail the anatomical relations of the hip joint, and was the first to record a description of the ligamentum teres (Round ligament, found in liver, uteris, and head of femur.).
+
+In the period between 430 and 330 BC a very important Greek text was collated and is known as the Corpus Hippocrates. It is named after Hippocrates who is known as the father of Medicine. Hippocrates was born on the island of Cos in 460 BC and died at an old age in 370 BC.
+
+He is known as having brought a systematic and scientific approach to Medicine and as having defined for the first time the position and the role of a doctor in society. Although centuries have passed, the Hippocratic oath will always remain central to our practices.
+
+Various volumes in the Corpus Hippocrates had relevance to Orthopaedics. One such volume is the one on joints. Here dislocation of the shoulder was described together with the various methods used in reduction. There were also sections describing the reduction of acromioclavicular (joint at the top of the shoulder), temporomandibular (joint of the jaw), knee, and hip and elbow joint dislocations.
+
+The correction of club foot was described. The problem of infection after compound fractures was described and treated with pitch cerate
+("cerate" is something of a consistency between an ointment and a plaster, so one of those, made with pine pitch.) http://en.wikipedia.org/wiki/Cerate
+
+and wine compresses without forcible bandaging. Probing into any compound fracture was avoided.
+
+Hippocrates had a thorough understanding of fractures. He knew of the principles of traction
+http://en.wikipedia.org/wiki/Traction_(orthopedics)
+
+and counter-traction. (same page)
+
+He developed special splints for fractures of the tibia, similar to external fixation.
+
+Hippocrates also developed the Hippocratic bench or "scamnum".
+http://en.wikipedia.org/wiki/Scamnum
+
+Of all the developments that Hippocrates has given to us, his careful clinical observation and rationale thinking must be particularly commended.
+
+THE ROMAN ERA
+
+Although the teachings of Hippocrates were to dominate thinking for many centuries after his death, there are several contributors to Orthopaedics worthy of mention.
+
+During the Roman era, there was another respected Greek figure by the name of Galen (129-199 BC). He was originally from Pergamon and became a gladiatorial surgeon there before travelling to Rome.
+
+Galen is often referred to as "the father of sports medicine". He gave a good account of the skeleton and the muscles that move it. In particular, the way that signals are given from the brain through the nerves and to the muscles. He first recorded a case of cervical ribs.
+http://en.wikipedia.org/wiki/Cervical_rib
+
+He described bone destruction, sequestration (a medical condition where a piece of tissue is not attached to the pulmonary blood supply and does not communicate with the other tissues) and regeneration in osteomyelitis and sometimes performed resection in such cases.
+
+Galen is believed to be the first to have used the Greek words, kyphosis (hunchback),
+http://en.wikipedia.org/wiki/Kyphosis
+
+lordosis (swayback)
+http://en.wikipedia.org/wiki/Lordosis
+
+and scoliosis (crooked back)
+http://en.wikipedia.org/wiki/Scoliosis
+
+for the deformities described in the Hippocratic texts. He also devised several methods for correcting these deformities.
+
+During this Graeco-Roman period, there were also attempts to provide artificial prostheses. There are accounts of wooden legs, iron hands and artificial feet.
+
+Soranus of Ephesus
+http://en.wikipedia.org/wiki/Soranus_of_Ephesus
+
+is said to have first described rickets (softening of bones).
+http://en.wikipedia.org/wiki/Rickets
+
+Ruphus of Ephesus
+http://en.wikipedia.org/wiki/Rufus_of_Ephesus
+
+described tendon ganglia (A ganglion is a sac-like swelling or cyst formed from the tissue that lines a joint or tendon.)
+and their treatment by compression.
+
+Antyllus
+http://en.wikipedia.org/wiki/Antyllus
+
+of the 3rd century is said to have practised subcutaneous tenotomy (tendon surgery) to relieve contractions around a joint. It is said that he used both linen and catgut sutures for the procedures. Various drills, saws and chisels were also developed during this period.
+
+THE ARAB ERA.
+
+Another Greek named Paul of Aegina (625-690 A.D.)
+http://en.wikipedia.org/wiki/Paul_of_Aegina
+
+worked in Alexandria and wrote "The Epitome of Medicine" which consisted of seven books based on the Hippocratic texts. The sixth book dealt with fractures and dislocations.
+http://en.wikipedia.org/wiki/Medical_Compendium_in_Seven_Books
+
+With the invasion of Alexandria by the Moslems, many great books such as these were taken and translated into the Arab language. The great library of Alexandria was burnt.
+
+Although the Arab practices were regarded as an extension of those of the Greeks, the use of Plaster-of-Paris in the l0th century-
+http://en.wikipedia.org/wiki/Plaster_of_paris
+
+-was significant. With the addition of water to a powder of anhydrous calcium sulphate (Anhydrite)
+http://en.wikipedia.org/wiki/Anhydrite
+
+a hard crystalline material was produced.
+
+A Persian by the name of Abu Mansur Muwaffak
+http://en.wikipedia.org/wiki/Muvaffak
+
+described the coating of plaster for fractures and other bony injuries of the limb.
+
+It was not until the l2th century that Europe began to awake gradually from its Dark Ages. Universities and hospitals were beginning to be established, human dissection resumed and the great Greek texts were being translated from Arabic to Latin.
+
+However, until the l6th century, all developments remained within the shadow cast by Hippocrates.
+
+--I hope that helps. 

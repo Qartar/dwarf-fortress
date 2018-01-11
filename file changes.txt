@@ -4,6 +4,13 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.04:
+
+	reaction_other
+		render fat job gets [BUILDING:KITCHEN:HOTKEY_KITCHEN_RENDER_FAT]
+
+******************************************************
+
 Auxiliary file changes for 0.44.03:
 
 	Updated plant_new_trees with file that has the same encoding as the others (jecowa).
