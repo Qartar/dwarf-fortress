@@ -36,6 +36,15 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.05 (January 14, 2018):
+
+One fix on top of the last release, for visitors that had become broken, acting like partial residents.  Any broken visitors themselves are unpatchable in affected saves, so it was important to get this one up quickly.  Old saves are compatible as usual, and should not get new broken visitors, but visitors that are currently acting strange will still be acting strange, and likely will not depart.
+
+Major bug fixes
+	(*) Stopped certain visitors from being treated like (buggy) residents
+
+******************************************************
+
 Release notes for 0.44.04 (January 10, 2018):
 
 This is another bug fix release to start the new year.  A few of the bad five-second freeze/lag problems caused by the new release have been fixed, and large beasts should move off the edge of the map again.  Over in adventure mode, inappropriate creatures shouldn't yell 'identify yourself' and companions should participate in conflicts as they used to, and some other issues of reputation should be solved, especially among citizens of the starting town.
