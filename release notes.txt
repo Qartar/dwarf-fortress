@@ -36,6 +36,50 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.06 (March 9, 2018):
+
+Here's the first substantial update to the fortress's world map screen.  New raid options are available, and it shouldn't be hard for you to antagonize your neighbors now if that's what you want to do.  Use the 'd'etails option when preparing the raid to set what sorts of actions you'd like your raiders to perform.  Skills and equipment matter, and skills can be improved during missions.  The skill of your best tactician is important (you'll see feedback in the mission report.)  If you demand tribute on an ongoing basis and the target site agrees to your demands, you'll receive something like a merchant caravan on an annual basis a few seasons after the initial demand.  They'll drop goods off at your depot and depart.  These goods can be carried off immediately for storage, but there's a new report so you can look at a complete list of what was delivered; the same is true of spoils from raids.
+
+A few notes on the bug fixes below:  the identity fixes won't stop bad feelings from existing conflicts in old saves.  Also in old saves, distracted animals might still appear to be broken at first, but they should sort themselves out after a bit.
+
+New stuff
+	(*) Can pillage and raze and demand tribute from other sites
+	(*) Dwarves on missions can now can gain skills
+	(*) Military tactics skill is now gained and matters in off-site battles
+
+Major bug fixes
+	(*) Fixed several problems causing the meeting queue to get gummed up
+	(*) Made monster-type critters and non-monster-type critters have proper hostile again
+	(*) Allowed people in the same squad to know each other's identities
+	(*) Made scribe copy job cancel properly to free up materials
+	(*) Fixed calculation of available writing materials in library
+
+Other bug fixes/tweaks
+	(*) Various speed tweaks
+	(*) Made clean job work inside and on outdoor constructions
+	(*) Made clean jobs continue to nearby tiles
+	(*) Made drunkenness make you less private instead of more private and fixed a typo there
+	(*) Made dwarven adventurers experience trances properly
+	(*) Made non-historical populations defend sites post w.g.
+	(*) Made off-site raid stealth success depend on site
+	(*) Fixed broken flags on merchant historical event
+	(*) Stopped dwarves being dragged to cages/chains from trying to clean the floor
+	(*) Stopped live generals from being elevated from zombie populations
+	(*) Stopped animals from developing need for alcohol after experiencing trauma
+	(*) Stopped unintelligent creatures associated to civilizations, like domestic animals, from worshipping gods when given historical status
+	(*) Stopped animals from revealing the location of artifacts to questers
+	(*) Stopped animals from forming grudges and other chat-based relationships
+	(*) Sped up legends loading in high-artifact worlds
+	(*) Stopped rooting around in the dirt from resetting path
+	(*) Fixed issue causing certain older army units from not appearing
+	(*) Fixed a few errors with abstract skill calculation for armies
+	(*) Reconciled bandit's map and in-play valuations of opponent strength to stop aborted ambushes
+	(*) Disallowed certain flying/swimming/visual/projectile/attack moves involving half-stairways
+	(*) Made branches/twigs burning over walls leave behind a floor properly
+
+
+******************************************************
+
 Release notes for 0.44.05 (January 14, 2018):
 
 One fix on top of the last release, for visitors that had become broken, acting like partial residents.  Any broken visitors themselves are unpatchable in affected saves, so it was important to get this one up quickly.  Old saves are compatible as usual, and should not get new broken visitors, but visitors that are currently acting strange will still be acting strange, and likely will not depart.
