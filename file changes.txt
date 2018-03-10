@@ -4,6 +4,23 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.06:
+
+	new keys
+		CIV_MISSION_DETAILS:d
+		CIV_MISSION_FREE_CAPTIVES:f
+		CIV_MISSION_RELEASE_OTHERS:o
+		CIV_MISSION_TAKE_ARTIFACTS:A
+		CIV_MISSION_TAKE_ITEMS:i
+		CIV_MISSION_TAKE_LIVESTOCK:l
+		CIV_MISSION_RAID:r
+		CIV_MISSION_PILLAGE:g
+		CIV_MISSION_RAZE:x
+		CIV_MISSION_TRIBUTE_ONE_TIME:t
+		CIV_MISSION_TRIBUTE_ONGOING:T
+
+******************************************************
+
 Auxiliary file changes for 0.44.05:
 
 	Just the usual.
