@@ -36,6 +36,26 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.07 (March 12, 2018):
+
+This is a stability patch for the last release.  A few raid-related crashes are fixed, as well as some strange behavior related to stolen livestock.  To get the full fix for stolen livestock, old saves will need to add [PET] to beak dogs and unicorns.  This isn't crucial; if it isn't done, those animals will no longer be stolen in that save.  But if you were experiencing the bug, the existing animals will be broken until the tag is added.
+
+Major bug fixes
+	(*) Fixed crash from returning certain kinds of contained loot
+	(*) Fixed crash from exploring entity-free site
+	(*) Stopped certain failed tribute raids from staying out forever
+	(*) Stopped certain stolen livestock from being treated like half-citizens
+
+Other bug fixes/tweaks
+	(*) Fixed sieger behavior that caused them to mill around outside for too long
+	(*) Stopped stolen livestock from being attacked after they are named
+	(*) Fixed failure to give half of the one-time tribute items
+	(*) Allowed military tactics as starting skill choice on embark
+	(*) Corrected one-time tribute text
+	(*) Made it produce a proper spoils report if only livestock are stolen
+
+******************************************************
+
 Release notes for 0.44.06 (March 9, 2018):
 
 Here's the first substantial update to the fortress's world map screen.  New raid options are available, and it shouldn't be hard for you to antagonize your neighbors now if that's what you want to do.  Use the 'd'etails option when preparing the raid to set what sorts of actions you'd like your raiders to perform.  Skills and equipment matter, and skills can be improved during missions.  The skill of your best tactician is important (you'll see feedback in the mission report.)  If you demand tribute on an ongoing basis and the target site agrees to your demands, you'll receive something like a merchant caravan on an annual basis a few seasons after the initial demand.  They'll drop goods off at your depot and depart.  These goods can be carried off immediately for storage, but there's a new report so you can look at a complete list of what was delivered; the same is true of spoils from raids.
