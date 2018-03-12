@@ -4,6 +4,13 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.07:
+
+	creatures
+		added [PET] to unicorns and beak dogs
+
+******************************************************
+
 Auxiliary file changes for 0.44.06:
 
 	new keys
