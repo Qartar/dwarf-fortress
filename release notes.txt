@@ -36,6 +36,25 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.08 (March 28, 2018):
+
+This should stop Linux from freezing.  It also includes some other bug fixes that could be quickly incorporated.
+
+Major bug fixes
+	(*) Stopped linux from freezing
+	(*) Fixed crash from demanding tribute from parentless site entities
+	(*) Stopped artifacts from moving out of backpack and similar when at old forts or lairs
+	(*) Properly stopped imprisoned dwarves from claiming positions in fort
+
+Other bug fixes/tweaks
+	(*) Made dwarves visit museums properly
+	(*) Stopped every tribute rejection from being attached to your fort's history
+	(*) Cleaned tribute/spoil reports between forts properly
+	(*) Added military tactics and leaderships as relevant skills for squad-leading nobles/appointments
+	(*) Made uniform settings copy properly when pasting schedule orders
+
+******************************************************
+
 Release notes for 0.44.07 (March 12, 2018):
 
 This is a stability patch for the last release.  A few raid-related crashes are fixed, as well as some strange behavior related to stolen livestock.  To get the full fix for stolen livestock, old saves will need to add [PET] to beak dogs and unicorns.  This isn't crucial; if it isn't done, those animals will no longer be stolen in that save.  But if you were experiencing the bug, the existing animals will be broken until the tag is added.
