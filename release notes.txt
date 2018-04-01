@@ -36,6 +36,18 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.09 (April 1, 2018):
+
+And the linux freeze fix process broke projectiles.  So that's hopefully all working all around now.
+
+Major bug fixes
+	(*) Made projectiles and weapon traps work again
+
+Other bug fixes/tweaks
+	(*) Changed w.g. population calculation for conflicts
+
+******************************************************
+
 Release notes for 0.44.08 (March 28, 2018):
 
 This should stop Linux from freezing.  It also includes some other bug fixes that could be quickly incorporated.
