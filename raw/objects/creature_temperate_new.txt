@@ -669,7 +669,7 @@ Adders were sponsored by the generous contributions of the Bay 12 community.
 	IL
 
 [CREATURE:ADDER]
-	[DESCRIPTION:A small snake with ridged scales and a powerful venomous bite.]
+	[DESCRIPTION:A tiny snake with ridged scales and a powerful venomous bite.]
 	[NAME:adder:adders:adder]
 	[CASTE_NAME:adder:adders:adder]
 	[CREATURE_TILE:'a'][COLOR:6:0:0]
@@ -1188,7 +1188,7 @@ Kingsnakes were sponsored by the generous contributions of the Bay 12 community.
 	Ouroboros
 
 [CREATURE:KINGSNAKE]
-	[DESCRIPTION:A tiny, brightly-colored snake.  It is known for eating other snakes and being mistaken for its poisonous cousins.]
+	[DESCRIPTION:A small, brightly-colored snake.  It is known for eating other snakes and being mistaken for its venomous cousins.]
 	[NAME:kingsnake:kingsnakes:kingsnake]
 	[CASTE_NAME:kingsnake:kingsnakes:kingsnake]
 	[CREATURE_TILE:'k'][COLOR:7:0:1]
