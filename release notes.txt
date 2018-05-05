@@ -34,6 +34,35 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+
+******************************************************
+
+Release notes for 0.44.10 (May 5, 2018):
+
+Here's our next effort, which should change the general situation regarding the (often inebriated) fortress dwarves and their lack of apparent stress.  Part of this involves a new system of memories, which we'll be improving as we go now.  You'll be able to see these in thought paragraphs as they are remembered, so don't worry if they aren't apparent at first.  There were also other problems with inebriation and overall stress balance; some of the latter will be ongoing, if we've overcorrected, as varied long-term forts are difficult to test, but we'll continue working with it.
+
+I've updated how the adventurer information log works.  It's hopefully a bit more useful for navigation now, when it comes to adventuring and reporting back what has happened.  Old saves might not have everything linked up at first.  Hearing rumors again and so forth should make the log start to work better for them.  You can also cross narrow rivers in travel now (the ones that are jumpable or near jumpable at a sprint.)  Uncrossable rivers will display with double lines in the travel view.
+
+New stuff
+	(*) Made short and long term memories of emotions and their circumstances
+
+Major bug fixes
+	(*) Fixed crash relating to religion trying to store holy relic without a temple
+	(*) Stopped inebriation personality alterations from being permanent
+
+Other bug fixes/tweaks
+	(*) Balanced stress effects
+	(*) Allowed nicknaming of all buildings/zones/stockpiles
+	(*) Can now zoom to item and unit for item inaccessible announcements
+	(*) Added dwarf-style personality and other information in adventurer description from status screen
+	(*) Updated adventurer log screen
+	(*) Allowed adventurer to cross over narrow rivers in travel map
+	(*) Shows status of single assigned workers in q/t workshop menus
+	(*) Separated thoughts for seeing somebody die and finding the body
+	(*) Changed how drunken fistfights work
+	(*) Side-stepped unit load failure, creating substitute unit upon irreversible corruption
+	(*) Added check for duplicate items from returning squads and others to avoid crashes/corruption
+
 ******************************************************
 
 Release notes for 0.44.09 (April 1, 2018):

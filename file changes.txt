@@ -4,6 +4,29 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.10:
+
+	Note:  Item inaccessible ANNOUNCE_ZOOM/2 will only be correct on new announcements (not 0.44.09 and before.)
+
+	new keys
+		ANNOUNCE_ZOOM_2:x
+		BUILDJOB_NAME:ctrl+n
+		D_BITEM_NAME:ctrl+n
+		CIVZONE_NAME:ctrl+n
+		A_LOG_SORT:o
+
+	removed key
+		BUILDJOB_BED_NAME
+
+	changed key
+		INTERFACEKEY_A_LOG_TASKS -> INTERFACEKEY_A_LOG_PIN
+
+	creatures
+		corrected adder description
+		corrected kingsnake description
+
+******************************************************
+
 Auxiliary file changes for 0.44.09:
 
 	Just the usual.
