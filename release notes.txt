@@ -37,6 +37,33 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.11 (June 23, 2018):
+
+There are now peaceful and not-so-peaceful ways of expanding your influence in the world.  Once a site becomes linked to you (through prosperity or by conquest; you'll see a message), you can send a messenger there to request workers, or send dwarves from the fort out to such sites (from v-p).  This only works on historical figures, so you might find you don't have off-site workers available at first, though some sites do have them.  This release should also improve the issues dwarves were having with negative thoughts, and they can also now experience permanent changes in their personalities and intellectual values due to events in their lives.
+
+Note: Insurrections were such a problem in sites that I had to turn them off for your fortress's holdings; we'll get back to that later.  It wasn't even the insurrections, really; the dwarves were bailing on the occupation immediately because they were afraid of insurrections.
+
+New stuff
+	(*) Your civilization will send out groups to found sites near prosperous fortresses
+	(*) Existing sites near prosperous fortresses will associate themselves to those fortresses
+	(*) Added ability to take over sites and install administrators
+	(*) Can view your new holdings from the 'c' screen
+	(*) Can send workers off-site and send out messengers to request their return
+	(*) Mulling over long-term memories can lead to shifts in intellectual values and personality changes
+
+Major bug fixes
+	(*) Fixed hauling route crash
+	(*) Fixed problem causing county stage to be skipped in noble elevation
+	(*) Stopped all visiting barons from being elevated along with your baron
+	(*) Changed horror calculation from seeing a dead body
+	(*) Stopped similar memories close in time from taking all the memory space
+	(*) Stopped stuttering lag from repeated vegetation connectivity checks
+
+Other bug fixes/tweaks
+	(*) Camping refugees will be awake during the day now
+
+******************************************************
+
 Release notes for 0.44.10 (May 5, 2018):
 
 Here's our next effort, which should change the general situation regarding the (often inebriated) fortress dwarves and their lack of apparent stress.  Part of this involves a new system of memories, which we'll be improving as we go now.  You'll be able to see these in thought paragraphs as they are remembered, so don't worry if they aren't apparent at first.  There were also other problems with inebriation and overall stress balance; some of the latter will be ongoing, if we've overcorrected, as varied long-term forts are difficult to test, but we'll continue working with it.
