@@ -4,6 +4,32 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.44.11
+
+	announcements
+		[NEW_HOLDING:A_D:D_D:BOX:P:R]
+		[NEW_MARKET_LINK:A_D:D_D:BOX:P:R]
+
+	creatures
+		conger eel typo
+		whale shark typo
+		carp typo
+
+	new keys
+		CIV_HOLDINGS:h
+		CIV_MAP_LEGEND:l
+		CIV_MISSION_CONQUER:q
+		CIV_MISSION_DEMAND_SURRENDER:Q
+		UNITVIEW_PRF_EXPEL:e
+
+	changed keys
+		UNITVIEW_PRF_PET:a
+
+	graphics_example
+		MESSENGER added to list (new occupation-linked unit type)
+
+******************************************************
+
 Auxiliary file changes for 0.44.10:
 
 	Note:  Item inaccessible ANNOUNCE_ZOOM/2 will only be correct on new announcements (not 0.44.09 and before.)
