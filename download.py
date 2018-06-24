@@ -1,11 +1,13 @@
 import re
 import os
-import requests
+import urllib.request
 import subprocess
 import zipfile
 import tarfile
 import shutil
 from itertools import chain
+
+git = 'C:/Program Files/Git/bin/git.exe'
 
 PLATFORMS = {
     'legacy' : 'legacy',
@@ -100,7 +102,17 @@ def extract_version_date(version_text):
 #-------------------------------------------------------------------------------
 def download_versions():
     """ Return the html of the downloads page for extracting versions and packages """
-    return requests.get('http://www.bay12games.com/dwarves/older_versions.html').text
+    return urllib.request.urlopen('http://www.bay12games.com/dwarves/older_versions.html').read().decode('utf-8')
+
+#-------------------------------------------------------------------------------
+def repair_versions(versions_text):
+    """ """
+    for v in versions_text:
+        start = 0
+        while start >= 0:
+            end = v.find(r'<p class="menu">', start + 1)
+            yield v[start:end]
+            start = end
 
 #-------------------------------------------------------------------------------
 def extract_versions(downloads_text):
@@ -112,7 +124,7 @@ def extract_versions(downloads_text):
 
     # Build up the list of versions
     versions = []
-    for v in versions_text:
+    for v in repair_versions(versions_text):
         # Find the release name for this version
         version_match = version_pattern.search(v)
         if version_match is None:
@@ -126,10 +138,11 @@ def extract_versions(downloads_text):
         for package in version_packages:
             basename = package.split('.')[0]
             platform = ''
-            for key, value in PLATFORMS.iteritems():
-                if basename.endswith('_' + value):
+            platform_value = ''
+            for key, value in PLATFORMS.items():
+                if len(value) > len(platform_value) and basename.endswith('_' + value):
                     platform = key
-                    break
+                    platform_value = value
             packages_dict[platform] = package
 
         versions.append((version_match.group(0), packages_dict))
@@ -140,9 +153,9 @@ def extract_versions(downloads_text):
 #-------------------------------------------------------------------------------
 def download_package(package_path, package_name):
     """ Download the package from bay12games.com """
-    package = requests.get('http://www.bay12games.com/dwarves/{0}'.format(package_name))
+    package = urllib.request.urlopen('http://www.bay12games.com/dwarves/{0}'.format(package_name))
     with open(package_path, 'wb') as f:
-        f.write(package.content)
+        f.write(package.read())
 
 #-------------------------------------------------------------------------------
 def extract_package(repository, package_path):
@@ -170,39 +183,40 @@ def git_initialize(repository):
     """ Perform first time initialization of the repository """
     if os.path.exists(repository):
         # Detach from master branch so we can delete it
-        subprocess.call(['git', 'checkout', '--detach', 'master'], cwd=repository)
+        subprocess.call([git, 'checkout', '--detach', 'master'], cwd=repository)
         # Delete master branch and re-create it as an orphan
-        subprocess.call(['git', 'branch', '-D', 'master'], cwd=repository)
-        subprocess.call(['git', 'checkout', '--orphan', 'master'], cwd=repository)
+        subprocess.call([git, 'branch', '-D', 'master'], cwd=repository)
+        subprocess.call([git, 'checkout', '--orphan', 'master'], cwd=repository)
     else:
         # Initialize a new repository
-        subprocess.call(['git', 'init', repository])
+        subprocess.call([git, 'init', repository])
 
 #-------------------------------------------------------------------------------
 def git_prepare(repository):
     """ Prepare the repository for a new package version """
     # Remove all untracked and ignored files in the repository
-    subprocess.call(['git', 'clean', '-fdx'], cwd=repository)
+    subprocess.call([git, 'clean', '-fdx'], cwd=repository)
     # Remove all indexed files in the repository
-    subprocess.call(['git', 'rm', '-rf', './'], cwd=repository)
+    subprocess.call([git, 'rm', '-rf', '.'], cwd=repository)
 
 #-------------------------------------------------------------------------------
 def git_commit(repository, message):
     """ Commit the state of the repository as a new commit """
-    subprocess.call(['git', 'add', '.'], cwd=repository)
-    p = subprocess.Popen(['git', 'commit',
+    subprocess.call([git, 'add', '.'], cwd=repository)
+    p = subprocess.Popen([git, 'commit',
                           '--author="Tarn Adams <toadyone@bay12games.com>"',
                           '--date="{0}"'.format(extract_version_date(message)),
                           '--file', '-'], stdin=subprocess.PIPE, cwd=repository)
-    p.communicate(input=message)
+    p.communicate(input=message.encode('utf-8'))
 
 #-------------------------------------------------------------------------------
 def git_list_versions(repository, branch):
     """ Return a dictionary of all versions that have been added to the repository with their commit hashes """
     try:
-        commits = subprocess.check_output(['git', 'log', '--oneline', branch], cwd=repository)
-        return dict([reversed(x.split(None, 1)) for x in commits.splitlines()])
+        commits = subprocess.check_output([git, 'log', '--oneline', branch, '--'], cwd=repository)
+        return dict([reversed(x.split(None, 1)) for x in commits.decode('utf-8').splitlines()])
     except:
+        print("git_list_versions() failed")
         return dict()
 
 #-------------------------------------------------------------------------------
@@ -211,16 +225,16 @@ def extract_release_notes(repository, summary):
     # Check if the release notes file exists
     if os.path.exists(os.path.join(repository, 'release notes.txt')):
         # Add release notes to index, otherwise Git won't recognize it on the first commit.
-        subprocess.call(['git', 'add', 'release notes.txt'], cwd=repository)
+        subprocess.call([git, 'add', 'release notes.txt'], cwd=repository)
         try:
-            output = subprocess.check_output(['git', 'diff', '--cached', 'release notes.txt'], cwd=repository)
+            output = subprocess.check_output([git, 'diff', '--cached', 'release notes.txt'], cwd=repository)
             # Search for additions to the release notes file
-            notes = re.search(r'^\+(Release notes for.*?(\r|\n|\r\n))(^\+.*?(\r|\n|\r\n))*', output, re.MULTILINE)
+            notes = re.search(r'^\+(Release notes for.*?(\r|\n|\r\n))(^\+.*?(\r|\n|\r\n))*', output.decode('utf-8'), re.MULTILINE)
             # Remove the line addition markers from the diff
             lines = [x.lstrip('+') for x in notes.group(0).splitlines()]
             # Don't add extra line separators to the release notes
             last_index = len(lines)
-            for idx in xrange(last_index, 0, -1):
+            for idx in range(last_index, 0, -1):
                 if lines[idx-1] == '' or lines[idx-1].startswith('****'):
                     last_index = idx-1
                 else:
@@ -229,7 +243,7 @@ def extract_release_notes(repository, summary):
             return str('\n').join([summary, ''] + lines[0:last_index] + [''])
 
         except Exception as e:
-            print str(e)
+            print(str(e))
 
     # If file does not exist or extraction failed just use the summary
     return str('\n').join([summary, ''])
@@ -237,26 +251,26 @@ def extract_release_notes(repository, summary):
 #-------------------------------------------------------------------------------
 def git_check_branch(repository, branch):
     """ Return true if the branch already exists in the repository """
-    output = subprocess.check_output(['git', 'branch', '--list', branch], cwd=repository)
-    return True if branch in output.split() else False
+    output = subprocess.check_output([git, 'branch', '--list', branch], cwd=repository)
+    return True if branch in output.decode('utf-8').split() else False
 
 #-------------------------------------------------------------------------------
 def git_initialize_branch(repository, branch, parent = None):
     """ Initialize the branch into a new worktree and return the worktree path """
-    worktree = os.path.joint(repository, branch)
+    worktree = os.path.join(repository, branch)
 
     if git_check_branch(repository, branch):
         # If the branch already exists then just check it out as-is into a worktree
-        subprocess.call(['git', 'worktree', 'add', branch, branch], cwd=repository)
+        subprocess.call([git, 'worktree', 'add', branch, branch], cwd=repository)
     elif parent is None:
         # If the branch does not exist and does not have a parent then create a new orphan branch
-        subprocess.call(['git', 'worktree', 'add', '--detach', branch], cwd=repository)
-        subprocess.call(['git', 'checkout', '--orphan', branch], cwd=worktree)
+        subprocess.call([git, 'worktree', 'add', '--detach', branch], cwd=repository)
+        subprocess.call([git, 'checkout', '--orphan', branch], cwd=worktree)
         # Delete any files that were left around from orphaning
-        subprocess.call(['git', 'rm', '--rf', './'], cwd=worktree)
+        subprocess.call([git, 'rm', '-rf', '.'], cwd=worktree, stderr=None)
     else:
         # If the branch does not exist but has a parent then create a new branch starting at parent
-        subprocess.call(['git', 'worktree', 'add', '-b', branch, branch, parent], cwd=repository)
+        subprocess.call([git, 'worktree', 'add', '-b', branch, branch, parent], cwd=repository)
 
     # Return the path to the branch worktree
     return worktree
@@ -266,7 +280,7 @@ def git_finalize_branch(repository, branch):
     """ Clean up the branch worktree """
     if os.path.exists(os.path.join(repository, branch)):
         shutil.rmtree(os.path.join(repository, branch))
-        subprocess.call(['git', 'worktree', 'prune'])
+        subprocess.call([git, 'worktree', 'prune'])
 
 #-------------------------------------------------------------------------------
 def filter_platform_packages(platforms, versions):
@@ -326,10 +340,9 @@ def populate_branch(repository, branch, versions):
     # Get list of versions that have already been committed to this branch
     git_versions = git_list_versions(repository, branch)
     # Get list of versions that have NOT been committed to this branch
-    new_versions = set(branch_packages.iterkeys()) - set(git_versions.iterkeys())
+    new_versions = set(branch_packages.keys()) - set(git_versions.keys())
 
     if len(new_versions) == 0:
-        print '{0} is up to date.'.format(branch)
         return
 
     # Sort list of uncommitted versions by version number
@@ -351,28 +364,30 @@ def populate_branch(repository, branch, versions):
         # Initialize this branch as an orphan
         worktree = git_initialize_branch(repository, branch)
 
+    print('Populating branch: \'' + branch + '\'...')
+
     for version in sorted_versions:
         # Look up the branch package by version
         package_name = branch_packages[version]
         package_path = os.path.join('..', package_name)
 
         if not os.path.exists(package_path):
-            print 'Downloading package...'
+            print('Downloading package...')
             download_package(package_path, package_name)
 
-        print 'Preparing repository...'
+        print('Preparing repository...')
         git_prepare(worktree)
 
-        print 'Extracting package...'
+        print('Extracting package...')
         extract_package(worktree, package_path)
 
-        print 'Extracting release notes...'
+        print('Extracting release notes...')
         release_notes = extract_release_notes(worktree, version)
 
-        print 'Creating commit...'
+        print('Creating commit...')
         git_commit(worktree, release_notes)
 
-        print 'Removing package...'
+        print('Removing package...')
         #remove_package(worktree)
 
     git_finalize_branch(repository, branch)
@@ -381,16 +396,16 @@ def populate_branch(repository, branch, versions):
 def main():
     repository_path = '.'
 
-    print 'Downloading version list...'
+    print('Downloading version list...')
     downloads_text = download_versions()
 
-    print 'Parsing version list...'
+    print('Parsing version list...')
     versions = extract_versions(downloads_text)
 
-    print 'Initializing repository...'
+    print('Updating repository...')
     #git_initialize(repository_path)
 
-    for branch in BRANCHES.iterkeys():
+    for branch in BRANCHES.keys():
         populate_branch(repository_path, branch, versions)
 
 #-------------------------------------------------------------------------------
