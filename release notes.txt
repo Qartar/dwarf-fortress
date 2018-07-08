@@ -37,6 +37,24 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.44.12 (July 7, 2018):
+
+Just some cleaning before we embark on the villain changes.  There's a new offloading popup that can come up on the season change if you have enough activity in your world; it can take a little time in larger worlds, but that's all time that is no longer intermittent lag and it's also less time overall due to reduced redundancies.  If you have an autosave, the offload will be incorporated into that, so autosaves might seem slightly longer (if so, you are also getting the same lag reduction.)
+
+Major bug fixes
+	(*) Fixed crash from corrupted units
+	(*) Made baron elevate to count properly
+	(*) Removed intermittent lag from off-site conceptions and births (added seasonal unit offloading)
+	(*) Made squad orders respect successful site conquest (so new members don't try to reconquer)
+
+Other bug fixes/tweaks
+	(*) Fixed broken display for multiple adventurer agreements
+	(*) Show proper mission text for messengers instead of No Job
+	(*) Made tantruming dwarves cancel activities
+	(*) Controlled how market links are formed somewhat
+
+******************************************************
+
 Release notes for 0.44.11 (June 23, 2018):
 
 There are now peaceful and not-so-peaceful ways of expanding your influence in the world.  Once a site becomes linked to you (through prosperity or by conquest; you'll see a message), you can send a messenger there to request workers, or send dwarves from the fort out to such sites (from v-p).  This only works on historical figures, so you might find you don't have off-site workers available at first, though some sites do have them.  This release should also improve the issues dwarves were having with negative thoughts, and they can also now experience permanent changes in their personalities and intellectual values due to events in their lives.
