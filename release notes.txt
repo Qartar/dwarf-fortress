@@ -34,6 +34,64 @@ IF YOUR KEYBOARD ISN'T WORKING:
 
 If you can get to the ESC keybindings menu (from the start screen, press ESC and then 2/8 to scroll to Key Bindings), you can set your key bindings.  If your "?" key on your keyboard doesn't work for help, you can set the keybinding properly here.  It might not display as a "*".  You can set the display up properly in "data/init/interface.txt" using the display strings at the top of the file.
 
+******************************************************
+
+Release notes for 0.47.01 (January 29, 2020):
+
+Here is the villains release!  There are various bits we're going to have to loop back around to after the graphics work is complete (see previous lengthy dev log), so perhaps this should be called the first villains release, or more "the guilds and temples and adventurer parties and pets release which also has artifact heists and extensive historical villainy, with lots of new mostly evil magical stuff", ha ha.  We will get to the fortress plots beyond artifact heists when we return, as well as the ability for the adventurer to be a villain and to investigate them more effectively.
+
+The features are listed below.  For fortress mode, the most important new elements that will be commonly encountered are petitions for guildhalls and temples.  When enough believers or laboring dwarves are in the fort, you'll receive a petition, and it's up to you if you want to try to build the location for them or not.  To satisfy the temple petitions, you must assign a priest (the game will remind you with an announcement when your temple is ready for one, after a certain value threshold is crossed.)  The main benefits of guildhalls and priests currently is the ability of guild members to share knowledge, and of priests to give inspiring sermons and comfort stressed-out dwarves.
+
+Less commonly, but also important, a villain may target your fortress, especially when you get up to having artifacts they might covet.  If you notice an artifact has been stolen in a non-kobold way (the announcements will be different, make sure you have a sheriff to receive the reports), you will be able to interrogate anybody about the crime - witness reports might be useful with a name, or they might just indicate the artifact is missing.  Interrogation leads to a report indicator on the left, which you can read in the usual way (with 'r'.)  This also opens up the counterintelligence screen, which will keep track of information for you.  If you manage to interrogate the handler of any treacherous dwarf, generally on a return visit, you might even get the name of their master, if they have one, or get details of other plots throughout the world, though most of them cannot impact your fort directly (yet.)
+
+Dwarves have some more general relationship types now (especially the historical ones, who can arrive as war buddies or athletic rivals), and they can also have multiple lovers or get divorced or have children before they are married.
+
+Most aquifers in the fort are now slower filling.  You still have to act pretty quickly (this makes them remain useful for wells and other liquid matter), but it is very possible to just wall them off or otherwise deal with the water if you are ready.  You can still place a wall on top of shallow water.  If you want an old-style aquifer, just embark where there's a "heavy aquifer."
+
+Your fort may also be invaded by horrible things if the necromancers or demons have been entertaining themselves.
+
+The main new bit in adventure mode is right in the beginning - well, not quite.  Don't be fooled by the first character creation screen (which is unchanged), you'll get to the good stuff right after.  There are a lot of new options there (starting background, religion, starting site selection, equipment including quality, mounts/pets), including the option to make party members, who can be from different civilization.  Mounts greatly speed up travel if everybody has one (make sure the mount is their pet.)  If you forget a mount or meet with tragedy, you can claim a new mount generally from the pastures of human cities, or wherever tame animals can be found.  You do not have to purchase them currently.  Just press 'h' near one (the same key you use to mount and lead animals.)  If the wrong party member claims it, that party member can give it to the right one as a gift (a new conversation option which can be applied to anybody.)  Pack animals (including many mounts) can also carry items.  Press 'p' to place an item on a creature.  This can greatly increase your capacity to carry food or treasure.  If you claim a pet that is unnamed, you can name them as a conversation option (with the pet.)
+
+In adventure mode, if you have judge of intent, you'll be able to see the new readout of your conversation partner's mood/relationship with you (without that skill, you still get some basic info.)  You have the ability to interrogate people, using the persuade and intimidate skills, though this is limited now because we didn't get to most evidence.  People can confess to schemes, and sometimes that'll even be meaningful, but it's mostly a giant mush of data until we add more structure.  But it shouldn't be hard to find some even without proper story/evidence hooks - just go to a nearby castle in a human town, and some portion of the nobles and administrators there will be up to something.  But it'll be ultimately unsatisfying until we get to more.  As a small note, only confessions of schemes will show up in the new adv mode intrigue view currently (confessions of masters/handlers don't have a proper evidence link yet.)  Finally, there were a ton of existing conversation options and most are not linked to the new conversation variables (like confidence and agitation and how much they want to leave.)  But you should see them in action if you interrogate, argue about values, flatter, tell jokes or pacify.  Additionally, depending on personality, most people slowly loses patience with a conversation no matter what the subject is, unless they are kept entertained.  These ephemeral conversation values are reset every two hours, so don't worry if you lose a chance to speak to somebody at a given time.
+
+If you want to play with divination dice, you'll need to find a pedestal with some at a shrine.  About half of the shrines should have them, though a lot of the smaller road and intersection shrines won't have room and will just have statues.  Shrines labeled in text on the travel map have the best chance, since they are large.  Temples can also have them in the basement with the relics.  To roll dice, make sure they are in your hand and 'I'nteract with them.  Rolling should be an option there.  Once you do that, the roll announcement has a lot of information.  Statues generally give some idea as to whose shrine you are at.  Shrines can be both for organized religions or generally to a deity, and both types can have divination traditions.
+
+New stuff
+	(*) Guilds organize and petition for guildhalls, guild members can do skill demonstrations
+	(*) Members of organized religions can petition for temples and priesthood recognition, priests give sermons and comfort stressed dwarves
+	(*) Traitor dwarves, artifact heists, interrogation for crime from the justice screen, counterintelligence readout with organization charts
+	(*) Most aquifers are much slower filling
+	(*) Can start with a party in adventure mode
+	(*) Specify background and starting location and beliefs in adventure mode (most labor skills still meaningless)
+	(*) Can start with specified equipment and pets in adventure mode
+	(*) Tactical combat mode for adventurer party
+	(*) Adventurer can ride mounts, place items on pack animals, lead animals, claim pets, gift pets, and name pets (rider skill matters for melee/ranged rolls currently)
+	(*) Can pet animals in adventure mode
+	(*) Addition mood information in adventure mode conversations, (simple) interrogation options, flattery, joke-telling, calming remarks, (very simple) sermons
+	(*) Simple intrigue display with actors and charts discovered in interrogation in adventure mode (in 'Q')
+	(*) Divination shrines with dice and various effects
+	(*) Lots of new intermediate positions (mostly without new mechanics) in entities (chamberlains etc.)
+	(*) Alliances against world-ending threats in world generation
+	(*) Various villainous activity in world generation, in play off-site, and (more limited) in fort mode, world generation surveillance, interrogation and punishment.  Historical plots include theft, sabotage, abduction, assassination, coups, corrupt advancement promises, embezzlement, starting wars, and framing enemies.
+	(*) Romantic relationship changes (multiple lovers, affairs, children outside marriage, divorces, etc.) as well as other relationship changes and details (friendship/rival types, variables like trust, respect and loyalty)
+	(*) Merchant companies, military orders and mercenary companies, craft guilds in world generation
+	(*) Individual mercenaries and companies can upgrade their equipment, and richer world gen people can purchase houses and build up their own city towers
+	(*) Various religious interactions (shrine building, sermons, persecution) in world generation, lots of religious demographics tracking which influences shrine creation, religious sites and sermons influencing membership numbers, holy cities and a few levels of priest
+	(*) Various horrifying new necromancer/mummy/demon/vampire etc. matter - snow-balling zombie invasions, multiple experiment types, intelligent undead lieutenants with new powers, nightmarish summons, spreading evil zones, promises of immortality in villainous plots
+	(*) Dwarves can trigger dig-deep disasters in world generation, with repercussions coming to other sites, including fort mode
+	(*) Some new locations, some map details still in-progress, monasteries, private city towers, guildhalls, merchant counting houses, forts (bandits and mercenaries), castles have returned (basically unchanged), better necromancer towers and simple outlying buildings
+
+Major bug fixes
+	(*) Fixed visitor crash related to broken meetings
+	(*) Fixed crash related to broken crimes and travelers/sent-away dwarves
+
+Other bug fixes/tweaks
+	(*) Changed werecreature trigger condition
+	(*) Bogeyman limited to a few regions and given new powers
+	(*) Fixed error where bandit groups would be deleted prematurely in worldgen
+	(*) Fixed size issue with certain werecreatures
+	(*) Fixed bug where only last half of performance sentence was shown
+	(*) Fixed problem where biome and landmass names were sometimes split on the same biome/landmass
 
 ******************************************************
 
