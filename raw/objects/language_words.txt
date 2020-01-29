@@ -19787,3 +19787,8 @@ language_words
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 
+[WORD:COMPANY]
+	[NOUN:company:companies]
+		[THE_NOUN_SING]
+		[OF_NOUN_PLUR]
+
