@@ -4,6 +4,120 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.47.01
+
+	new reaction tags:
+		[SKILL_ROLL_RANGE:<basic range>:<multiplier>]
+			The skill roll is: random(basic range) + random((skill level * multipler)/2 + 1) + random((skill level * multipler)/2 + 1)
+			random(x) returns a number between 0 and x-1, so basic range is always 1 or more.  The default is 11.
+			The default multiplier is 5.
+		[SKILL_IP:<integer>]  Default is 30.
+		[ATTRIBUTE_IP:<integer>]  Default is 10.
+
+	interactions
+		new standard interaction pet animal
+
+	interaction examples
+		interaction_secret.txt has been updated with bogeyman summoning and an example undead lt with the propel and fog powers
+		example - bogeyman transformation.txt has been added to show the body transformation effect
+		example - shrine effects.txt has the new healing and item effects, a summoned pet, and also has another transformation example
+		all creatures w/ spit + animal people variation get it
+		DEFEND as new usage hint so they'll use self-targeting stuff without having to flee combat
+
+	items
+		new tool: altar
+		new tool: die
+
+	creatures
+		many creatures get pet animal (main ones, gremlins, satyrs, giants, cyclopes, minotaurs, harpies, merpeople, gnomes, gorlaks)
+		SHARP_ROCK as a material emission type
+		[SPREAD_EVIL_SPHERES_IF_RULER]
+
+	descriptors
+		some new shapes (used for dice)
+
+	language
+		company word, merchant company symbol
+		removed monastery and convent from language_SYM
+
+	variations
+		animal people get pet animal interaction
+		lessened quadruped gait energy use
+
+	entity
+		main ones get
+			[SELECT_SYMBOL:MERCHANT_COMPANY:NAME_ENTITY_MERCHANT_COMPANY]
+			[SELECT_SYMBOL:CRAFT_GUILD:NAME_ENTITY_CRAFT_GUILD]
+		dungeon master position for dwarves
+		elf princess gets [RESPONSIBILITY:ESPIONAGE]
+		USE_NON_EXOTIC_PET_RACE to PLAINS entities to make them use all local non-exotic pet options
+		altar and die use
+
+	new position responsibilities -- most of these don't do anything yet, but they are linked to the new entity positions
+		ESPIONAGE
+		ADVISE_LEADERS
+		OVERSEE_LEADER_HOUSEHOLD
+		MANAGE_ANIMALS
+		MANAGE_LEADER_HOUSEHOLD_FOOD
+		MANAGE_LEADER_HOUSEHOLD_DRINKS
+		PREPARE_LEADER_MEALS
+		MANAGE_LEADER_HOUSEHOLD_CLEANLINESS
+		MAINTAIN_SEWERS
+		FOOD_SUPPLY
+		FIRE_SAFETY
+		JUDGE
+		BUILDING_SAFETY
+		CONSTRUCTION_PERMITS
+		MAINTAIN_ROADS
+		MAINTAIN_BRIDGES
+		MAINTAIN_TUNNELS
+
+	new announcements
+		[EMERGENCY_TACTICAL_CONTROL:A_D:D_D:BOX]
+		[AGREEMENT_SATISFIED:A_D:D_D]
+		[AGREEMENT_WARNING:A_D:D_D]
+		[AGREEMENT_ABANDONED:A_D:D_D]
+		[NEW_GUILD:A_D:D_D]
+		[CRIME_WITNESS_HANDOFF:A_D:D_D:BOX:P:R]
+		[CRIME_WITNESS_STOLEN:A_D:D_D:BOX:P:R]
+		[CRIME_WITNESS_ITEM_MOVED:A_D:D_D:BOX:P:R]
+		[CRIME_WITNESS_ITEM_MISSING:A_D:D_D:BOX:P:R]
+		[MOUNT:A_D:D_D:UCR]
+		[CANNOT_MOUNT:A_D:D_D]
+		[FAILED_MOUNT:A_D:D_D:UCR]
+		[DISMOUNT:A_D:D_D:UCR]
+		[FAILED_DISMOUNT:A_D:D_D:UCR]
+
+	new keys
+		[A_CONV_PERSUADE:1]
+		[A_CONV_INTIMIDATE:2]
+		[A_TACTICAL_SETTINGS:E]
+		[CSHEET_BACKGROUND:B]
+		[CSHEET_NEW_CHARACTER:N]
+		[CSHEET_SKILLS:S]
+		[CSHEET_APPEARANCE:A]
+		[CSHEET_PERSONALITY:P]
+		[CSHEET_EQUIPMENT:E]
+		[CSHEET_PETS:M]
+		[CSHEET_RANDOMIZE_BACKGROUND:R]
+		[CSHEET_SELECT_BACKGROUND_OPTION:Enter]
+		[CSHEET_WORSHIP_UP:w]
+		[CSHEET_WORSHIP_DOWN:q]
+		[CSHEET_NEW_ITEM:n]
+		[CSHEET_QUALITY_UP:w]
+		[CSHEET_QUALITY_DOWN:q]
+		[CSHEET_NAME_PET:n]
+		[CSHEET_REMOVE_PET:r]
+		[CSHEET_ADD_PET:Enter]
+		[A_LOG_INTRIGUE:i]
+		[ARENA_CREATURE_TAME:t]
+		[JUSTICE_INTERROGATE:i]
+		[JUSTICE_COUNTERINTELLIGENCE:c]
+		[LOCATION_GUILDHALL:g]
+		[LOCATION_RECOGNIZE_PRIESTHOOD:p]
+
+******************************************************
+
 Auxiliary file changes for 0.44.12
 
 	plant_new_trees
