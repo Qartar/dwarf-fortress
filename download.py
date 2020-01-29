@@ -153,9 +153,16 @@ def extract_versions(downloads_text):
 #-------------------------------------------------------------------------------
 def download_package(package_path, package_name):
     """ Download the package from bay12games.com """
-    package = urllib.request.urlopen('http://www.bay12games.com/dwarves/{0}'.format(package_name))
-    with open(package_path, 'wb') as f:
-        f.write(package.read())
+    try:
+        package = urllib.request.urlopen('http://www.bay12games.com/dwarves/{0}'.format(package_name))
+        with open(package_path, 'wb') as f:
+            f.write(package.read())
+    except urllib.error.HTTPError as e:
+        # 0.47.01 renamed 64-bit "legacy" packages to "legacy64" but did not update download URL
+        package64_name = package_name.replace('legacy', 'legacy64')
+        package = urllib.request.urlopen('http://www.bay12games.com/dwarves/{0}'.format(package64_name))
+        with open(package_path, 'wb') as f:
+            f.write(package.read())
 
 #-------------------------------------------------------------------------------
 def extract_package(repository, package_path):
