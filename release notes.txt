@@ -36,6 +36,44 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.47.02 (February 6, 2020):
+
+This is the first bug-fix release, focusing on newly introduced problems.  Most notably, world gen crashes should happen less often, having babies should cause less trouble, and some adventure mode problems with quests and mounts should be fixed.  We'll continue on with this process, working in some older bugs for next time as well.
+
+Major bug fixes
+	(*) Fixed crash from starting in adventure mode as an outsider
+	(*) Fixed world gen crash involving civs attacking ruins that still had livestock
+	(*) Fixed world gen crash involving criminals and arrest
+	(*) Fixed crash from certain description strings
+	(*) Fixed crash involving stressed out wilderness creatures wanting to complain to priests
+	(*) Stopped carried newborns from setting their mothers' paths like riders
+	(*) Stopped flying mount from taking control when it is airborne
+	(*) Fixed broken hearthperson links for adventurers
+	(*) Made animals follow the follow command instead of waiting forever
+	(*) Fixed issues with mount movement after fast travel
+
+Other bug fixes/tweaks
+	(*) Made undead riled up by dwarf raids as with normal civs
+	(*) Starting dwarves pulled from underground cultures no longer start with cave adaptation
+	(*) Stopped non-dwarves from doing w.g. underworld disasters
+	(*) Increased werebeast triggers further to match semi-megabeasts
+	(*) Took quantity into consideration in chargen equipment value
+	(*) Fixed item quality interaction effect range setting
+	(*) Fixed masterpiece quality error in chargen equipment value
+	(*) Allowed legless animal people to pet animals
+	(*) Stopped pets from dropping all packed luggage when they attack
+	(*) Stopped some cases of animals being called recruits after travelling
+	(*) Fixed broken scroll/expand commands in adventurer intrigue log
+	(*) Stopped chargen beliefs from persisting incorrectly when certain options are selected
+	(*) Fixed villain network export from legends (only works for living - no snapshots)
+	(*) Changed Create New World civ number distribution (new numbers suggested by Talvieno)
+	(*) Changed human 'fortress' to 'castle' to avoid confusing with dwarf fortresses
+	(*) Fixed inconsistency in kill name changes
+	(*) Fixed interrogator/conspirator xml
+	(*) Fixed some busted world gen param newlines
+
+******************************************************
+
 Release notes for 0.47.01 (January 29, 2020):
 
 Here is the villains release!  There are various bits we're going to have to loop back around to after the graphics work is complete (see previous lengthy dev log), so perhaps this should be called the first villains release, or more "the guilds and temples and adventurer parties and pets release which also has artifact heists and extensive historical villainy, with lots of new mostly evil magical stuff", ha ha.  We will get to the fortress plots beyond artifact heists when we return, as well as the ability for the adventurer to be a villain and to investigate them more effectively.
