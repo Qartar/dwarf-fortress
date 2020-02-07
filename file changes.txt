@@ -4,6 +4,21 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.47.02
+
+	creatures
+		c_variation_default -- added pet_animal to legless animal people
+
+	entities
+		[MINING_UNDERWORLD_DISASTERS] to dwarf entity
+
+	world gen params
+		fixed some newlines for the new parameters
+		changed default civ numbers in world gen params (new numbers suggested by Talvieno)
+		made werebeast attack triggers match semimegabeast (50/5000/50000)
+
+******************************************************
+
 Auxiliary file changes for 0.47.01
 
 	new reaction tags:
