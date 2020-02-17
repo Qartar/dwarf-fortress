@@ -36,6 +36,38 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.47.03 (February 16, 2020):
+
+Here's another bug-fix release, ranging into some older issues as well.  There's been some work on the raid crash/corruption problem, though I suspect that is ongoing - hopefully the frequency is lessened.  I've also done a few quick changes to socializing and stress, but that's a longer project as well.  Dwarves clump now in zones and taverns, which should help with the friendship rate, and I've made the most stressable dwarves a little more fixable.  One of the major causes of loyalty spirals/civil wars has been handled, and I did some work with hospital rest and diagnosis problems.
+
+Reminder:  We'll start coding on the graphical version in a few weeks.  We'll still have these bug-fix releases periodically, though there will be an initial gap of some time while I get the core framework done to the point where the artists can use it.  But there should be at least one more bug-fix release around the change of the month before that work begins.
+
+Major bug fixes
+	(*) Cleaned up equipment tracking issue for returning fort-mode raiders
+	(*) Made historical spies drop possibly divisive cover identities when arriving as regular fort citizens
+	(*) Stopped patients that have been in traction for a week from requiring diagnosis repeatedly
+	(*) Made dwarves inside hospitals return to rest if rest is cancelled
+	(*) Supported doctor's guildhall to fix broken petitions
+	(*) Fixed freeze related to forbidding doors/hatches
+	(*) Fixed crash related to starting modded fort mode critters with natural skills
+	(*) Stopped crash related to artifacts/books placed on adv pack animals
+	(*) Fixed crash related to deleting zones in adv mode site planning
+	(*) Fixed unretirement crash in adv mode
+	(*) Fixed bug causing you to become a different historical figure when unretiring
+	(*) Fixed w.g. crash related to imprisonment by civilizations that have lost their capitals
+
+Other bug fixes/tweaks
+	(*) Allowed placement of altars in fort mode (they have no specific function yet)
+	(*) Added person-seeking behavior to socialize activity and to jobless milling about in zones
+	(*) Changed stress calculation for high vulnerability personalities
+	(*) Made mummies control tombs more fully so allies couldn't call on zombies to fight themselves
+	(*) Stopped mercenaries from being hired to attack their own forts
+	(*) Fixed problem causing w.g. people to falsely befriend themselves for information
+	(*) Fixed xml log for entities acquiring buildings
+	(*) Fixed xml log for entities breaching the underworld
+
+******************************************************
+
 Release notes for 0.47.02 (February 6, 2020):
 
 This is the first bug-fix release, focusing on newly introduced problems.  Most notably, world gen crashes should happen less often, having babies should cause less trouble, and some adventure mode problems with quests and mounts should be fixed.  We'll continue on with this process, working in some older bugs for next time as well.

@@ -4,6 +4,16 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.47.03
+
+	new keys
+		HOTKEY_BUILDING_OFFERING_PLACE:Alt+a
+
+	world gen params
+		got rid of extra space
+
+******************************************************
+
 Auxiliary file changes for 0.47.02
 
 	creatures
