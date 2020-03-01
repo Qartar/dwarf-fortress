@@ -36,6 +36,37 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.47.04 (February 29, 2020):
+
+Our second leap day release!  Fixes old and new this time.  From the new category, aside from crashes, marriages were being dissolved frequently and friendly visiting experiments were breaking too much furniture.  Among the older bugs fixed, we've got the one where people could teleport through walls while fighting or sparring, a loyalty cascade civil war issue, and a creature/item duplication bugs that was corrupting saves.
+
+Barring sudden issues, this will be the final bug-fix release before we get the code work started on the graphical version.  There's a lot left to fix before that version is ready to be released, and we'll be doing parallel bug fix releases as the graphics stuff progresses.
+
+Major bug fixes
+	(*) Fixed w.g. crash related to society infiltration
+	(*) Fixed w.g. crash related to variable position creation
+	(*) Fixed crash involving misbehaving roads
+	(*) Fixed loyalty cascade due to death of questers etc. that had positive relationships with fort dwarves
+	(*) Stopped charge collisions from teleporting people through walls
+	(*) Fixed save corruption/duplication related to fort/adv retirement
+	(*) Stopped dwarves from silently dissolving their marriages when they make a close friend
+	(*) Stopped large visitors and residents from seeking and destroying buildings even if they do so as invaders
+	(*) Stopped overwide shrines in npc forts from flooding the underground
+	(*) Fixed issue causing broken castle maps
+
+Other bug fixes/tweaks
+	(*) Stopped pantheons of mortal races from frequently having very high numbers of deities
+	(*) Fixed summon effects for small-sized creatures
+	(*) Removed building destroyer/trample/trapavoid from smaller procedural creatures
+	(*) Made divorce thought appear properly
+	(*) Added stone altar building job
+	(*) Fixed broken reunion historical entry
+	(*) Removed various forgotten beast traits from experiments
+	(*) Corrected issue with rumor system
+	(*) Made item creation interactions work harder to select a material if none is provided
+
+******************************************************
+
 Release notes for 0.47.03 (February 16, 2020):
 
 Here's another bug-fix release, ranging into some older issues as well.  There's been some work on the raid crash/corruption problem, though I suspect that is ongoing - hopefully the frequency is lessened.  I've also done a few quick changes to socializing and stress, but that's a longer project as well.  Dwarves clump now in zones and taverns, which should help with the friendship rate, and I've made the most stressable dwarves a little more fixable.  One of the major causes of loyalty spirals/civil wars has been handled, and I did some work with hospital rest and diagnosis problems.

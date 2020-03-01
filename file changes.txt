@@ -4,6 +4,13 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.47.04
+
+	creatures
+		removed sticky feet reference from leopard gecko
+
+******************************************************
+
 Auxiliary file changes for 0.47.03
 
 	new keys
