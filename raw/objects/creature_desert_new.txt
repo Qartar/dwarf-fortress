@@ -7,7 +7,7 @@ Geckos were sponsored by the generous contributions of the Bay 12 community.
 	Ghoulz - 15 minutes could save you 15% or more on carp insurance.
 
 [CREATURE:GECKO_LEOPARD]
-	[DESCRIPTION:A tiny, brightly-colored lizard with feet that can stick to branch and stone.]
+	[DESCRIPTION:A tiny, brightly-colored lizard.]
 	[NAME:leopard gecko:leopard geckos:leopard gecko]
 	[CASTE_NAME:leopard gecko:leopard geckos:leopard gecko]
 	[CREATURE_TILE:249][COLOR:6:0:1]
@@ -19,7 +19,6 @@ Geckos were sponsored by the generous contributions of the Bay 12 community.
 	[CARNIVORE]
 	[BIOME:ANY_DESERT]
 	[POPULATION_NUMBER:250:500]
-	[PREFSTRING:amazing sticky feet]
 	[PREFSTRING:coloration]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
